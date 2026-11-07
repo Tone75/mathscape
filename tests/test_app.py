@@ -2,16 +2,32 @@
 
 import base64
 import json
+import logging
 from pathlib import Path
 
 import numpy as np
 import pytest
 from streamlit.testing.v1 import AppTest
+from streamlit.elements.lib import policies
 
 from mathscape import probability
 
 
 APP = Path(__file__).resolve().parents[1] / "app.py"
+
+
+@pytest.fixture(autouse=True)
+def reject_duplicate_widget_defaults(monkeypatch, caplog):
+    # Streamlit logs this warning only once per process. Re-arm it per test
+    # so an earlier test cannot hide a state/default conflict in a later one.
+    monkeypatch.setattr(policies, "_shown_default_value_warning", False)
+    caplog.set_level(logging.WARNING, logger=policies.__name__)
+    yield
+    assert not any(
+        "was created with a default value" in record.getMessage()
+        and "Session State API" in record.getMessage()
+        for record in caplog.get_records("call")
+    ), "A widget duplicates its Session State value with an explicit default"
 
 
 def new_app():
@@ -193,3 +209,57 @@ def test_nonfinite_density_is_reported_without_rendering_invalid_plot(monkeypatc
     assert len(app.error) == 1
     assert "非有限" in app.error[0].value
     assert not plots(app)
+
+
+@pytest.mark.parametrize("lab, key, label, initial, edited", [
+    ("Fractal Explorer", "f_real", "中心 Re(c)", -0.7, -0.75),
+    ("Fractal Explorer", "f_imag", "中心 Im(c)", 0.0, 0.1),
+    ("Fractal Explorer", "f_width", "表示幅（実軸・虚軸共通）", 3.0, 0.8),
+    ("Chaos Explorer", "chaos_r", "成長パラメータ r", 3.8, 3.6),
+])
+def test_state_initialization_manual_edit_and_lab_reentry(lab, key, label, initial, edited):
+    app = new_app()
+    widget(app.radio, "Labを選択").set_value(lab).run()
+    elements = app.slider if key == "chaos_r" else app.number_input
+    assert widget(elements, label).value == initial
+    assert app.session_state[key] == initial
+
+    # A pre-existing state value must survive a rerun without a widget default
+    # competing with it. Then verify direct user editing and another rerun.
+    app.session_state[key] = edited
+    app.run()
+    elements = app.slider if key == "chaos_r" else app.number_input
+    assert widget(elements, label).value == edited
+    widget(elements, label).set_value(initial).run()
+    app.run()
+    assert app.session_state[key] == initial
+    assert_healthy(app)
+
+    # The existing app resets hidden widgets on leaving a Lab. Preserve that
+    # behavior and ensure defaults are correctly initialized on returning.
+    elements = app.slider if key == "chaos_r" else app.number_input
+    widget(elements, label).set_value(edited).run()
+    widget(app.radio, "Labを選択").set_value("Probability Explorer").run()
+    widget(app.radio, "Labを選択").set_value(lab).run()
+    assert app.session_state[key] == initial
+    assert_healthy(app)
+
+
+@pytest.mark.parametrize("preset, expected", [
+    ("安定固定点 · r=2.5", 2.5),
+    ("周期2 · r=3.2", 3.2),
+    ("複雑な軌道 · r=3.9", 3.9),
+])
+def test_chaos_presets_and_manual_slider_remain_independent(preset, expected):
+    app = new_app()
+    widget(app.radio, "Labを選択").set_value("Chaos Explorer").run()
+    widget(app.selectbox, "観察プリセット").select(preset).run()
+    assert app.session_state.chaos_r == expected
+    widget(app.slider, "成長パラメータ r").set_value(3.6).run()
+    app.run()
+    assert app.session_state.chaos_r == 3.6
+    widget(app.selectbox, "観察プリセット").select("自由探索").run()
+    assert app.session_state.chaos_r == 3.6
+    widget(app.selectbox, "観察プリセット").select(preset).run()
+    assert app.session_state.chaos_r == expected
+    assert_healthy(app)
