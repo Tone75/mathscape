@@ -14,7 +14,9 @@ CODEX_RECEIPT RQ-M02-v1: 固定仕様全文と末尾プロンプトを受領。�
 
 再開時は `mathscape/bootstrap.py`、`mathscape/bootstrap_ui.py`、`scripts/run_bootstrap_benchmark.py` と対応テストを入口とする。通常の `python -m pytest -q` は主実験を起動しない。主実験を再実行する必要はなく、不支持・保留を理由に追加実験しない。コード不具合修正時の最大1回再実行も旧結果・理由・修正版を残す別attemptと累計wall≤600秒が必要。
 
-Notion親子票・Homeへ受領・着手・事前固定を反映済み。最終成果SHA・PR・レビュー待ちの同期は提出時に記録する。次の単一RQは有限B_bootによるBCa尾部端点の安定性を候補として提案しただけで、今回は実行していない。旧改善票MATH-006/011/027、MATH-005本格再開試験、外部科学レビューは未完了のまま保持する。
+提出先は [stacked PR #2](https://github.com/Tone75/mathscape/pull/2)、実装・科学成果commitは `6a651c0995cbdd7a2de77d903c09cb23dbe369a8`。baseは `feat/inference-lab-v0.2`。最新の提出HEADは `gh pr view 2 --repo Tone75/mathscape --json headRefOid` で確認できる。この提出参照は科学成果固定後の文書commitで追記している。
+
+Notion親子票・Home・固定仕様への成果参照に、受領・固定成果SHA・PR・483テスト・主実験1回・資源・画面検証・新成果レビュー待ちを同期済み。PENDING_NOTION_SYNCなし。次の単一RQは有限B_bootによるBCa尾部端点の安定性を候補として提案しただけで、今回は実行していない。旧改善票MATH-006/011/027、MATH-005本格再開試験、外部科学レビューは未完了のまま保持する。
 
 ## 以下はRQ-M01提出時点の履歴
 
