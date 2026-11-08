@@ -1,0 +1,17 @@
+{
+  "question_id": "RQ-M02",
+  "source_git_sha": "2496eb06d77593e8ea2f19834de3b7aed2675a07",
+  "manifest_sha256": "cd73e65b711422fc1a1d17052a0ebfa0b1639869ab5839d612bd3a2171049ec8",
+  "measurement": "/usr/bin/time -p around the sole main CLI process",
+  "command": "/usr/bin/time -p .venv/bin/python scripts/run_bootstrap_benchmark.py --run --source-commit 2496eb06d77593e8ea2f19834de3b7aed2675a07",
+  "exit_code": 0,
+  "real_seconds": 14.62,
+  "user_seconds": 11.8,
+  "system_seconds": 2.64,
+  "precision_seconds": 0.01,
+  "scope": "full CLI process including interpreter startup, imports, preregistration/source/environment checks, main computation, all outputs and process exit",
+  "main_execution_count": 1,
+  "reruns": 0,
+  "log_sha256": "1e0b07346197ff352aedf551f78b346f0fd02104c800fdc753980311daaafc42",
+  "recorded_utc": "2026-11-08T07:04:33.389543+00:00"
+}
