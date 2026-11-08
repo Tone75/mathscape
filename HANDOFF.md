@@ -1,5 +1,13 @@
 # MATHSCAPE — minimal handoff
 
+## 最新の受入と実行状態：RQ-M05
+
+Owner明示承認と最新Notionに従い、RQ-M04（提出HEAD `fb2216d6fc506dd74779104edad024c61bc9e1e1`、科学成果 `137efab0dc949359a58fc481676d6da6341b0408`、事前固定 `60101c72e6073c7350c9f21900b98afc19cbab00`、PR #4）は受入済み、MATH-036〜039 Done、H1／H2保留を保持する。下記の旧レビュー待ちは提出時点の履歴であり開始条件ではない。merge・外部科学レビュー・Owner本人の個別新操作とは区別する。
+
+CODEX_RECEIPT RQ-M05-v1：開始HEADは承認済みと一致、working tree clean／別worktreeなし。新branch `feat/rq-m05-matched-moments`。固定仕様全文と末尾プロンプト・親子票・Homeを読んだ。既存732 pytest成功（15.42秒）。NextはMATH-040だけ、開始した040／041をIn Progressにして041→042→043の順に実行する。正本と受領は `evidence/rq_m05/SPEC.md`／`CODEX_RECEIPT.md`。
+
+母平均0／分散1／歪度2のガンマと対数正規、n20／α.05／K1／B4999、seed0／1／2、R10000を固定。K1の端点SD／S／Ase／ApopはNA。主実験1回、指定別namespaceスモーク1回、事前固定・入力照合後に実行する。通常pytest・保存監査・UIから主実験を起動しない。旧実験証拠・既存PR／main／タグ／Releaseは保持し、新成果は別stacked PRのレビュー待ちとして提出する。
+
 ## 最新の受入と実行状態：RQ-M04
 
 2026-11-08のOwner明示承認とNotionの最新記録に従い、RQ-M03（提出HEAD `9b4a0fa1b3bea7751069deaaf0f3669125930403`、科学成果 `568c689a71d67bca393fa5000d7b855e7c609e45`、PR #3、H1／H2／H3支持）は受入済み、MATH-032〜035はDone。下記の旧受入待ちは提出時点の履歴であり開始条件ではない。外部科学レビュー・Owner本人の新機能個別操作・PR mergeとは区別する。

@@ -1,0 +1,221 @@
+{
+  "schema_version": 1,
+  "question_id": "RQ-M05",
+  "created_utc": "2026-11-08T12:11:11.775416+00:00",
+  "design": {
+    "distributions": [
+      "gamma",
+      "lognormal"
+    ],
+    "n": 20,
+    "master_seeds": [
+      0,
+      1,
+      2
+    ],
+    "R": 10000,
+    "K": 1,
+    "B": 4999,
+    "alpha": 0.05,
+    "true_mean": 0.0,
+    "true_variance": 1.0,
+    "true_skewness": 2.0,
+    "methods": [
+      "t",
+      "percentile",
+      "bca"
+    ]
+  },
+  "totals": {
+    "generation_cells": 6,
+    "original_samples": 60000,
+    "original_observations": 1200000,
+    "inner_streams": 60000,
+    "bootstrap_samples": 299940000,
+    "logical_resampling_indices": 5998800000,
+    "original_method_records": 180000,
+    "seed_summary_rows": 18,
+    "pooled_summary_rows": 6
+  },
+  "populations": {
+    "gamma": "G~Gamma(shape=1,scale=1),X=G-1; mean0 variance1 skewness2 excesskurtosis6 support[-1,infinity)",
+    "lognormal": "v=2*sinh(asinh(1)/3),t=1+v^2,s=sqrt(log1p(v^2)),m=sqrt(t),d=sqrt(t)*v; X=(exp(sZ)-m)/d; v^3+3v=2; no rounded generation constants",
+    "lognormal_constants": {
+      "v": 0.5960716379833215,
+      "t": 1.3553013976081199,
+      "s": 0.5513835899408821,
+      "m": 1.1641741268419084,
+      "d": 0.6939311786844594
+    },
+    "contract": "theoretical standardization only, never force sample moments; infer arithmetic mean of X, not log mean; kurtosis/tails/support still differ, no isolated causal kurtosis claim",
+    "moment_checks": "deterministic public SciPy mvsk check for mean0/variance1/skewness2 absolute error<=1e-10, and matching excess kurtosis/support"
+  },
+  "randomness": {
+    "generator": "Generator(PCG64(SeedSequence(...)))",
+    "entropy": "master_seed",
+    "main_namespace": 5058613,
+    "smoke_namespace": 1397567541,
+    "distribution_ids": {
+      "gamma": 1,
+      "lognormal": 2
+    },
+    "spawn_key": [
+      "namespace",
+      "distribution_id",
+      "n",
+      "outer_id",
+      "purpose_id",
+      "inner_id"
+    ],
+    "purpose_ids": {
+      "original_sample": 0,
+      "bootstrap": 1
+    },
+    "inner_id": 0,
+    "outer_ids": "0..9999",
+    "excluded_from_key": [
+      "B",
+      "method",
+      "UI_state",
+      "batch_size"
+    ],
+    "independence": "independent populations, never pair L/G by matching IDs; same-original percentile/BCa share one B4999 mean vector; originals plus their independent inner randomness are the population-repetition units",
+    "no_prefix": "one B level; no prefix comparison or old-panel reuse"
+  },
+  "inference": {
+    "definitions": "unchanged ddof1 t, linear quantiles, half-tie z0, jackknife acceleration and prior BCa validity rules",
+    "truth_separation": "infer_single accepts original context/bootstrap means only; no population label/parameters/truth",
+    "invalid": "reason-labelled, no fallback/clipping/adaptive B; warnings tau=B*min(q,1-q)<10 retained without exclusion"
+  },
+  "metrics": {
+    "C": "I(lower<=0<=upper)",
+    "Mbelow": "I(upper<0), interval wholly below truth",
+    "Mabove": "I(lower>0), interval wholly above truth",
+    "T": "Mbelow-Mabove",
+    "identity": "C+Mbelow+Mabove=1 for valid intervals",
+    "mean_width": "upper-lower",
+    "warning_rate": "tail warning indicator",
+    "independent_unit": "original sample and its one independent bootstrap computation; R10000 per seed/N30000 per population; no sd/sqrt(N*B)",
+    "stability": "K1: lower_sd/upper_sd/S/Ase/Apop are NA for ALL methods including t; do not fill zero",
+    "intervals": "99% original-level mean t intervals for descriptive summaries; no clipping outside rate bounds; zero variance makes decision bounds undefined"
+  },
+  "confirmation": {
+    "target": "BCa B4999 only",
+    "sign": "lognormal minus gamma, independent groups",
+    "H1": "difference in C",
+    "H2": "difference in T",
+    "design": "independent Welch99% intervals, ddof1/Satterthwaite, each N30000",
+    "rule": "lo>.01 or hi<-.01: supported practical difference (direction); lo>-.01 and hi<.01: not_supported practical-difference hypothesis AND equivalence_supported for this metric/these fixed conditions; otherwise touching/straddling=>inconclusive",
+    "invalid": "any required missing/invalid original, nonfinite or SE0=>NA/inconclusive; conditional complete-case references never decide",
+    "seeds": "all 3 seed differences/99% descriptive intervals reported; NO seed direction gate",
+    "scope": "both metrics must individually support equivalence before saying both within1pp; no general moment sufficiency/causal/infinite-B claim",
+    "multiplicity": "2 approximate99% intervals; Bonferroni sum noncoverage about<=2%, not exact finite-sample guarantee"
+  },
+  "descriptive": {
+    "population_contrasts": "all3methods C/T/width independent L-G Welch, allseed and pooled",
+    "method_contrasts": "all3 same-original method pairs C/T/width with paired original-level MCSE, allseed and pooled; descriptive only"
+  },
+  "invalid_policy": {
+    "denominators": "retain planned/observed/valid/invalid/missing counts; invalid never becomes noncoverage",
+    "local_gate": "other-method invalids do not poison complete BCa target; required invalid/missing gives mainNA",
+    "conditional": "conditional_ references with finite-count denominators only"
+  },
+  "storage": {
+    "panel_axes": [
+      "original",
+      "method"
+    ],
+    "sample_dtype": "float64 little-endian C-order",
+    "sample_sha256_dtype": "S64 ASCII hex",
+    "sample_hash": "SHA256 of original little-endian float64 C-order bytes",
+    "outer_id_dtype": "uint16",
+    "reason": "uint8 codes indexing per-panel Unicode reason_labels, code0 empty-valid reason",
+    "numeric_diagnostics": "float64 lower/upper/z0/a/q_low/q_high/tau_low/tau_high, arrays(R,3)",
+    "masks": "bool valid/tail_warning arrays(R,3)",
+    "original_records": "original_metrics.csv.gz, streaming 180000 rows, gzip mtime0; IDs join NPZ hashes, no repeated bootstrap arrays",
+    "record_columns": [
+      "distribution",
+      "master_seed",
+      "outer_id",
+      "method",
+      "complete",
+      "reason_code",
+      "reason",
+      "valid_inner",
+      "total_inner",
+      "invalid_inner",
+      "C",
+      "Mbelow",
+      "Mabove",
+      "T",
+      "mean_width",
+      "warning_rate",
+      "lower_sd",
+      "upper_sd",
+      "S",
+      "Ase",
+      "Apop"
+    ],
+    "full_bootstrap_saved": false,
+    "estimate": {
+      "raw_sample_bytes": 9600000,
+      "raw_numeric_diagnostic_bytes": 11520000,
+      "raw_hash_bytes": 3840000,
+      "raw_mask_reason_id_bytes": 660000,
+      "npz_reserve_bytes": 28311552,
+      "csv_gz_reserve_bytes": 10485760,
+      "single_html_reserve_bytes": 5242880,
+      "other_public_reserve_bytes": 6291456,
+      "total_public_reserve_bytes": 50331648
+    },
+    "estimate_caveat": "conservative allocation, not guaranteed compression; actual size guard stops without scientific resizing if unexpectedly exceeded",
+    "audit_limit": "saved samples/endpoints permit aggregate audit, not a complete reconstruction of all60000 bootstrap generation sequences; frozen code/fixtures cover RNG/resampling logic"
+  },
+  "policy": {
+    "wall_seconds": 300,
+    "internal_stop_seconds": 294,
+    "cleanup_reserve_seconds": 6,
+    "peak_rss_bytes": 2147483648,
+    "output_bytes": 52428800,
+    "max_resample_elements": 1000000,
+    "confirmatory_quantities": 2,
+    "decision_confidence": 0.99,
+    "practical_margin": 0.01
+  },
+  "execution": {
+    "main": "once only, no extra seeds/R/K/B or redraw on outcome/invalid/timeout",
+    "smoke": "sole separately authorized6cells,R2,K1,B99 in smoke namespace;12originals/12streams/1188resamples; no scientific selection",
+    "outer_guard": "run_matched_guarded.py starts one child; TERM295s/KILL298s/finish target299s; worker soft-stop294s and reserve cleanup, outer CLI externally timed",
+    "correction": "actual code bug only, at most one separately authorized attempt retaining old source/results/reason, cumulative mainwall<=600s",
+    "stop": "save completed panels plus observed partial panel/CSV records and diagnostics, no automatic scale changes"
+  },
+  "environment": {
+    "python": "3.12.13",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "plotly": "6.9.0",
+    "os": "Darwin",
+    "os_release": "25.6.0",
+    "architecture": "arm64",
+    "streamlit": "1.67.0",
+    "pytest": "9.2.0"
+  },
+  "source_files_sha256": {
+    "mathscape/matched_moments.py": "2c968c674ceb78b8b716a94d5f3165b928162c6c04150ba5d2d2b446f9926135",
+    "mathscape/stability.py": "e27f2bf98378911cb1c0502bb93a5d944fd5dd2978354e6fbd99595d2bc5f070",
+    "mathscape/bootstrap.py": "24d4ffbc8e5b463ee6770a35e1d17beca9ee41a37083d457dbca25abd9f7b6cb",
+    "mathscape/inference.py": "6e26d2a6991ecfca0729e7057f0eda63bf100b0941fc0b397caa2eb13e226708",
+    "scripts/run_matched_benchmark.py": "39a5edc94e4c7ec0baf21adfff4ea209c8b95b98b0bf56b04b713dc592395d6f",
+    "scripts/run_matched_guarded.py": "1c1a0804b2b8b655b296f8e48e719950c231a71d0831655a11923782ec274471",
+    "scripts/audit_matched.py": "e3503288ee2e9fe29e545d678925266cf6cb3885f44bf890bb3999d8eeeec6c5",
+    "scripts/run_bootstrap_benchmark.py": "9fdeabae419aecd487ff063775001880643c265207c7c5ea8192b455d72864a3",
+    "scripts/run_stability_benchmark.py": "4be7f9a10f7d328cc914c0aaceaf28d027718a44a2f8afd63a896e848b209488",
+    "tests/test_matched_moments.py": "fc1801586b02607517e5db2c0c777f539ba5ea84295de09db3d13f30c6c7b5c6",
+    "tests/test_matched_runner.py": "68b17d9bd9118fd82683322c7bc1aae4d6ec65bdd216e80072b20a232e188408",
+    "tests/test_matched_guard.py": "ce6073ae8bda23f0062f0bc2a7bdb00792011ac97cbbbb81b118e5ee7dd04076",
+    "tests/test_matched_audit.py": "44d41c33eaee6ed698b8c9a4022baa0f512c5e1acd3577ac44fe94f5efb4221a",
+    "requirements.txt": "dcb36fe5c1d5413b4918722462d3382f171d839c0e69b45725b57b871b2bce5d",
+    "evidence/rq_m05/SPEC.md": "61f68f06c0232c1c905f9cc3e65529b85cb3c1ef488c2a8a77869f32eb0f42ab",
+    "evidence/rq_m05/population_checks.json": "04eb540c7924d029bedc5118556462fe3c922622e918a6e6c1e6febd07ce8c77"
+  }
+}
