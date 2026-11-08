@@ -22,6 +22,8 @@ Notion同期・固定成果・検証結果は以下へ記録する。成果提�
 
 CLI全体ツール観測wall0.602秒、実験内部wall0.183秒、Peak RSS103,809,024 bytes。新しい依存関係・課金・Webホスティング・タグ・Release・mainマージはなし。固定実験を繰り返す必要はない。結果を望ましい形にする再抽選はしない。
 
-Notionは接続でき、CODEX_RECEIPT・着手・数理検証を反映済み。提出時に最終SHA・PR・検証・レビュー待ちを追記する。PENDING_NOTION_SYNCは現時点なし。親票と子票はOwnerレビュー待ちとしてIn Progressを維持し、Doneにしない。
+提出先は [PR #1](https://github.com/Tone75/mathscape/pull/1)。実装・科学成果を固定したcommitは `cc240b0e32b424bb8881c153f17e56608d5fe51f`（この提出参照の追記はその後の文書commit）。PRの最新HEADは `gh pr view 1 --repo Tone75/mathscape --json headRefOid` で確認できる。
+
+Notion同期は完了し、親票・MATH-024〜026・Project Home・固定仕様への成果参照に、受領・固定SHA・PR・検証・レビュー待ちを反映した。PENDING_NOTION_SYNCなし。親票と子票はOwnerレビュー待ちとしてIn Progressを維持し、Doneにしていない。
 
 未解決: Owner受入・利用評価・独立した科学レビュー、MATH-005の別セッション再開試験は未実施。次の候補RQはREPORTに1件だけ記載し、実行は停止する。続きの判断前にPR・Notionの最新状態とローカル差分を確認する。
