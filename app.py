@@ -15,7 +15,13 @@ st.set_page_config(page_title="MATHSCAPE｜数学を触れる実験室", page_ic
 
 ACCENT = "#46DCC0"
 SECOND = "#FFB86B"
-LABS = ["Probability Explorer", "Chaos Explorer", "Fractal Explorer"]
+LABS = ["Probability Explorer", "Chaos Explorer", "Fractal Explorer", "Inference Lab"]
+
+
+def inference_lab():
+    from mathscape.inference_ui import render_inference_lab
+
+    render_inference_lab()
 
 
 def chart(fig, x_title, y_title, height=410):
@@ -185,7 +191,8 @@ st.sidebar.title("LABORATORY")
 lab = st.sidebar.radio("Labを選択", LABS)
 st.sidebar.divider()
 try:
-    {LABS[0]: probability_lab, LABS[1]: chaos_lab, LABS[2]: fractal_lab}[lab]()
+    {LABS[0]: probability_lab, LABS[1]: chaos_lab, LABS[2]: fractal_lab,
+     LABS[3]: inference_lab}[lab]()
 except (ValueError, ArithmeticError) as error:
     st.error(f"計算条件を確認してください：{error}")
 st.divider()

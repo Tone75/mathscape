@@ -1,0 +1,7 @@
+{
+  "status": "started",
+  "started_utc": "2026-11-08T06:28:59.132903+00:00",
+  "source_git_sha": "f249efec49478b3d43fb68f8cb8d43b9f2ead58d",
+  "manifest_sha256": "4d9fd6044277ebe6b2ba06c028869cfa680fa8c26d424eb9697a31d2aadd8348",
+  "policy": "single explicit attempt; no automatic rerun"
+}
