@@ -1,0 +1,12 @@
+{
+  "question_id": "RQ-M04",
+  "scope": "sole guarded main attempt; full external CLI includes interpreter, guard, child imports/verification/computation/output and final records",
+  "command": ".venv/bin/python scripts/run_shape_guarded.py --source-commit 60101c72e6073c7350c9f21900b98afc19cbab00",
+  "external_cli_seconds": {
+    "real": 44.3,
+    "user": 37.58,
+    "sys": 6.17
+  },
+  "main_attempts": 1,
+  "reruns": 0
+}

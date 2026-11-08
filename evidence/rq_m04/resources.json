@@ -1,0 +1,115 @@
+{
+  "question_id": "RQ-M04",
+  "status": "completed",
+  "started_utc": "2026-11-08T10:52:49.313292+00:00",
+  "source_git_sha": "60101c72e6073c7350c9f21900b98afc19cbab00",
+  "manifest_sha256": "94dbdbfbe20acef3e1f19bcd847f6a2ced6792fc3588994f2f14a64d4f0dc3c2",
+  "namespace": 5058612,
+  "single_main_attempt": true,
+  "environment": {
+    "python": "3.12.13",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "plotly": "6.9.0",
+    "os": "Darwin",
+    "os_release": "25.6.0",
+    "architecture": "arm64"
+  },
+  "R": 400,
+  "K": 10,
+  "B_values": [
+    999,
+    4999
+  ],
+  "n": 20,
+  "total_cells": 18,
+  "bootstrap_arrays_saved": false,
+  "original_samples_saved": true,
+  "max_resample_elements": 1000000,
+  "wall_scope": "module start before heavy imports through calculation/output, excluding interpreter startup and final resources write; external time records full CLI",
+  "active_cell": [
+    "gamma_16",
+    2
+  ],
+  "completed_cells": 18,
+  "completed_cell_keys": [
+    [
+      "normal",
+      0
+    ],
+    [
+      "normal",
+      1
+    ],
+    [
+      "normal",
+      2
+    ],
+    [
+      "gamma_0.5",
+      0
+    ],
+    [
+      "gamma_0.5",
+      1
+    ],
+    [
+      "gamma_0.5",
+      2
+    ],
+    [
+      "gamma_1",
+      0
+    ],
+    [
+      "gamma_1",
+      1
+    ],
+    [
+      "gamma_1",
+      2
+    ],
+    [
+      "gamma_2",
+      0
+    ],
+    [
+      "gamma_2",
+      1
+    ],
+    [
+      "gamma_2",
+      2
+    ],
+    [
+      "gamma_4",
+      0
+    ],
+    [
+      "gamma_4",
+      1
+    ],
+    [
+      "gamma_4",
+      2
+    ],
+    [
+      "gamma_16",
+      0
+    ],
+    [
+      "gamma_16",
+      1
+    ],
+    [
+      "gamma_16",
+      2
+    ]
+  ],
+  "incomplete_cells": [],
+  "finished_utc": "2026-11-08T10:53:32.855625+00:00",
+  "process_wall_seconds": 44.145620250026695,
+  "process_peak_rss_bytes": 253296640,
+  "output_bytes_before_resources": 27097928,
+  "output_bytes_total": 27099841
+}

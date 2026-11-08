@@ -1,0 +1,147 @@
+{
+  "status": "passed",
+  "scope": "Independent comparison of browser-visible rounded metrics/theory and saved original hashes, plus exact downloaded files; AppTest additionally checks full precision endpoint arrays and all36 tables",
+  "observations": 22,
+  "visible_numeric_cells": 176,
+  "checks": [
+    {
+      "step": "normal_B4999_k0",
+      "saved_CSV_metrics_equal": true,
+      "theory_metadata_equal": true,
+      "original_hash_equal": true
+    },
+    {
+      "step": "normal_B999_k0",
+      "saved_CSV_metrics_equal": true,
+      "theory_metadata_equal": true,
+      "original_hash_equal": true
+    },
+    {
+      "step": "normal_B999_k9",
+      "saved_CSV_metrics_equal": true,
+      "theory_metadata_equal": true,
+      "original_hash_equal": true
+    },
+    {
+      "step": "normal_BCa_hidden",
+      "saved_CSV_metrics_equal": true,
+      "theory_metadata_equal": true,
+      "original_hash_equal": true
+    },
+    {
+      "step": "normal_after_lab_roundtrip",
+      "saved_CSV_metrics_equal": true,
+      "theory_metadata_equal": true,
+      "original_hash_equal": true
+    },
+    {
+      "step": "normal_after_mode_roundtrip",
+      "saved_CSV_metrics_equal": true,
+      "theory_metadata_equal": true,
+      "original_hash_equal": true
+    },
+    {
+      "step": "gamma_0.5_B4999_initial",
+      "saved_CSV_metrics_equal": true,
+      "theory_metadata_equal": true,
+      "original_hash_equal": true
+    },
+    {
+      "step": "gamma_0.5_B999_k0",
+      "saved_CSV_metrics_equal": true,
+      "theory_metadata_equal": true,
+      "original_hash_equal": true
+    },
+    {
+      "step": "gamma_0.5_B999_k9",
+      "saved_CSV_metrics_equal": true,
+      "theory_metadata_equal": true,
+      "original_hash_equal": true
+    },
+    {
+      "step": "gamma_0.5_explicit_original1",
+      "saved_CSV_metrics_equal": true,
+      "theory_metadata_equal": true,
+      "original_hash_equal": true
+    },
+    {
+      "step": "gamma_1_B999_initial",
+      "saved_CSV_metrics_equal": true,
+      "theory_metadata_equal": true,
+      "original_hash_equal": true
+    },
+    {
+      "step": "gamma_1_B4999_k0",
+      "saved_CSV_metrics_equal": true,
+      "theory_metadata_equal": true,
+      "original_hash_equal": true
+    },
+    {
+      "step": "gamma_1_B4999_k9",
+      "saved_CSV_metrics_equal": true,
+      "theory_metadata_equal": true,
+      "original_hash_equal": true
+    },
+    {
+      "step": "gamma_16_B4999_initial",
+      "saved_CSV_metrics_equal": true,
+      "theory_metadata_equal": true,
+      "original_hash_equal": true
+    },
+    {
+      "step": "gamma_16_B999_k0",
+      "saved_CSV_metrics_equal": true,
+      "theory_metadata_equal": true,
+      "original_hash_equal": true
+    },
+    {
+      "step": "gamma_16_B999_k9",
+      "saved_CSV_metrics_equal": true,
+      "theory_metadata_equal": true,
+      "original_hash_equal": true
+    },
+    {
+      "step": "gamma_0.5_return_restores_original1_k9",
+      "saved_CSV_metrics_equal": true,
+      "theory_metadata_equal": true,
+      "original_hash_equal": true
+    },
+    {
+      "step": "gamma_0.5_percentile_hidden_original1",
+      "saved_CSV_metrics_equal": true,
+      "theory_metadata_equal": true,
+      "original_hash_equal": true
+    },
+    {
+      "step": "gamma_0.5_after_lab_roundtrip_original1",
+      "saved_CSV_metrics_equal": true,
+      "theory_metadata_equal": true,
+      "original_hash_equal": true
+    },
+    {
+      "step": "gamma_0.5_original0_k0_restored",
+      "saved_CSV_metrics_equal": true,
+      "theory_metadata_equal": true,
+      "original_hash_equal": true
+    },
+    {
+      "step": "normal_return_restores_k9",
+      "saved_CSV_metrics_equal": true,
+      "theory_metadata_equal": true,
+      "original_hash_equal": true
+    },
+    {
+      "step": "gamma_0.5_final_representative",
+      "saved_CSV_metrics_equal": true,
+      "theory_metadata_equal": true,
+      "original_hash_equal": true
+    }
+  ],
+  "all36_CSV_bytes_equal": true,
+  "self_contained_HTML_bytes_equal": true,
+  "not_checked": [
+    "Owner individual new operations",
+    "External scientific review",
+    "Other browsers/mobile viewport"
+  ]
+}

@@ -1,0 +1,240 @@
+{
+  "question_id": "RQ-M04",
+  "status": "passed",
+  "mismatch_count": 0,
+  "mismatches": [],
+  "audit_implementation": "independent saved-original/endpoint reconstruction; no primary core or runner imports",
+  "source_panels_sha256": {
+    "normal_seed0.npz": "48aa91abd4e9a1c974f468cd9d4aa484c6686aeeaf210ad7f83cd00014ba2a42",
+    "normal_seed1.npz": "af70fb20ec97240e7d55871b0d947cdfc9cf819f83772a2a1dac58bdec9b10b4",
+    "normal_seed2.npz": "9f5dee6b0835a2cac5ff0940f5698a96825d50e1e957e17c092483b7e2fcb590",
+    "gamma_0.5_seed0.npz": "7d1c5f9e99ce91520f5c70b0f3497cbaf440c5046735f907369e0b21a26c36bf",
+    "gamma_0.5_seed1.npz": "bb5439409ea790fa73e323fcbe970c3d28524d133828289bcf69e4b9b4c875be",
+    "gamma_0.5_seed2.npz": "cade40938ce767a9b79244ca126d3fb985e09b558678a94eae2f503c1336b968",
+    "gamma_1_seed0.npz": "8df89bfc038ae9a70bbcc6f0a418a259a309591e8ba11e0610e84a85ef910675",
+    "gamma_1_seed1.npz": "aaaa9541f37c3ce840289ca97687436dea0a9f369de8569ae9aacebe2defbc36",
+    "gamma_1_seed2.npz": "32cd87b8e45266dfae17b6b26bc54970f801ed2794a9278c8fdf3fc2756af315",
+    "gamma_2_seed0.npz": "142a472752cafa7e5289c209ea3b459eb83b6568db677ea1a97793ffd93a6c0b",
+    "gamma_2_seed1.npz": "bb95bf86f5599f07d1b0a6143eaa43b6f142fb80e42a37753391acb285623b36",
+    "gamma_2_seed2.npz": "6eb41292d89b03b55fdd5a03f8f8fdaffc9237a7bea54602cf4fd8a68490a4ed",
+    "gamma_4_seed0.npz": "d0c144bd8d3548ee6d2439f361831bc1213257bd5de13d61d519956037847b4a",
+    "gamma_4_seed1.npz": "86ae2e70888145c8f6e47a13e94313be8027c1bbbce1b25f5cbd21e2e7c5b90a",
+    "gamma_4_seed2.npz": "63a9c2814bda6244f908308b7418708847e86683dcceff3c9aa8f43eebfcbe9a",
+    "gamma_16_seed0.npz": "6c972ccf5fceb45262e02a898c47d9e6913adb3951ad786e5c35d0ec16a29f20",
+    "gamma_16_seed1.npz": "2267f378e4ecb965ca1085a40dcf00be7fa66d5dc82f0d701eec519760b10e1a",
+    "gamma_16_seed2.npz": "11723b9f4efe02fe3d4eccca99336b4346c51d9149720c1bd2272c24d35e8f3b"
+  },
+  "original_samples": 7200,
+  "table_counts": {
+    "original_metrics.csv": {
+      "reconstructed": 43200,
+      "saved": 43200
+    },
+    "summary.csv": {
+      "reconstructed": 108,
+      "saved": 108
+    },
+    "pooled_summary.csv": {
+      "reconstructed": 36,
+      "saved": 36
+    },
+    "paired_B_summary.csv": {
+      "reconstructed": 72,
+      "saved": 72
+    },
+    "paired_method_summary.csv": {
+      "reconstructed": 144,
+      "saved": 144
+    }
+  },
+  "hypotheses": {
+    "question_id": "RQ-M04",
+    "confirmatory_quantities": 2,
+    "decision_confidence": 0.99,
+    "independent_originals_per_population": 1200,
+    "target_method": "bca",
+    "target_B": 4999,
+    "quantities": {
+      "H1": {
+        "N1": 1200,
+        "N0": 1200,
+        "finite_count1": 1200,
+        "finite_count0": 1200,
+        "mean1": 0.9039999999999999,
+        "mean0": 0.9266666666666666,
+        "variance1": 0.08500483736447041,
+        "variance0": 0.06387545176536004,
+        "difference": -0.022666666666666724,
+        "df": 2350.653492869575,
+        "low": -0.05138094003419205,
+        "high": 0.006047606700858604,
+        "se": 0.01113853256080854,
+        "valid": true,
+        "status": "inconclusive",
+        "threshold": -0.02,
+        "seed_threshold": 0.0,
+        "direction": "less",
+        "seed_points": [
+          0.0050000000000000044,
+          -0.0050000000000000044,
+          -0.06799999999999984
+        ],
+        "group1": "gamma_0.5",
+        "group0": "gamma_16",
+        "independent_groups": true,
+        "conditional_welch": {
+          "N1": 1200,
+          "N0": 1200,
+          "finite_count1": 1200,
+          "finite_count0": 1200,
+          "mean1": 0.9039999999999999,
+          "mean0": 0.9266666666666666,
+          "variance1": 0.08500483736447041,
+          "variance0": 0.06387545176536004,
+          "difference": -0.022666666666666724,
+          "df": 2350.653492869575,
+          "low": -0.05138094003419205,
+          "high": 0.006047606700858604,
+          "se": 0.01113853256080854,
+          "valid": true
+        }
+      },
+      "H2": {
+        "N": 1200,
+        "finite_count": 1200,
+        "mean": 0.036333333333333336,
+        "sd": 0.3048070072170193,
+        "mcse": 0.008799020383381513,
+        "low": 0.013632423914901,
+        "high": 0.05903424275176567,
+        "df": 1199,
+        "valid": true,
+        "status": "inconclusive",
+        "threshold": 0.03,
+        "seed_threshold": 0.0,
+        "direction": "greater",
+        "seed_points": [
+          0.015,
+          0.0345,
+          0.059500000000000004
+        ],
+        "conditional_interval": {
+          "N": 1200,
+          "finite_count": 1200,
+          "mean": 0.036333333333333336,
+          "sd": 0.3048070072170193,
+          "mcse": 0.008799020383381513,
+          "low": 0.013632423914901,
+          "high": 0.05903424275176567,
+          "df": 1199,
+          "valid": true
+        }
+      }
+    },
+    "seed_details": [
+      {
+        "master_seed": 0,
+        "H1": {
+          "N1": 400,
+          "N0": 400,
+          "finite_count1": 400,
+          "finite_count0": 400,
+          "mean1": 0.9179999999999999,
+          "mean0": 0.9129999999999999,
+          "variance1": 0.07411127819548873,
+          "variance0": 0.07231177944862156,
+          "difference": 0.0050000000000000044,
+          "df": 797.879490452581,
+          "low": -0.04440055824199183,
+          "high": 0.05440055824199184,
+          "se": 0.01913263296335023,
+          "valid": true
+        },
+        "H2": {
+          "N": 400,
+          "finite_count": 400,
+          "mean": 0.015,
+          "sd": 0.2839481755814608,
+          "mcse": 0.01419740877907304,
+          "low": -0.02174583511267312,
+          "high": 0.05174583511267312,
+          "df": 399,
+          "valid": true
+        }
+      },
+      {
+        "master_seed": 1,
+        "H1": {
+          "N1": 400,
+          "N0": 400,
+          "finite_count1": 400,
+          "finite_count0": 400,
+          "mean1": 0.915,
+          "mean0": 0.92,
+          "variance1": 0.07751879699248124,
+          "variance0": 0.07082706766917295,
+          "difference": -0.0050000000000000044,
+          "df": 796.3795116198582,
+          "low": -0.054724085426716654,
+          "high": 0.044724085426716645,
+          "se": 0.019257846755391307,
+          "valid": true
+        },
+        "H2": {
+          "N": 400,
+          "finite_count": 400,
+          "mean": 0.0345,
+          "sd": 0.28908246518804626,
+          "mcse": 0.014454123259402313,
+          "low": -0.0029102653697718264,
+          "high": 0.07191026536977183,
+          "df": 399,
+          "valid": true
+        }
+      },
+      {
+        "master_seed": 2,
+        "H1": {
+          "N1": 400,
+          "N0": 400,
+          "finite_count1": 400,
+          "finite_count0": 400,
+          "mean1": 0.879,
+          "mean0": 0.9469999999999998,
+          "variance1": 0.10286616541353384,
+          "variance0": 0.04816140350877193,
+          "difference": -0.06799999999999984,
+          "df": 705.444797372254,
+          "low": -0.11818705083172515,
+          "high": -0.017812949168274528,
+          "se": 0.01943113281066661,
+          "valid": true
+        },
+        "H2": {
+          "N": 400,
+          "finite_count": 400,
+          "mean": 0.059500000000000004,
+          "sd": 0.33763106616854033,
+          "mcse": 0.016881553308427017,
+          "low": 0.015807042787158374,
+          "high": 0.10319295721284164,
+          "df": 399,
+          "valid": true
+        }
+      }
+    ],
+    "hypotheses": {
+      "H1": {
+        "status": "inconclusive"
+      },
+      "H2": {
+        "status": "inconclusive"
+      }
+    }
+  },
+  "limitations": [
+    "Actual bootstrap prefix reuse, raw rank counts and quantile interpolation cannot be reconstructed without saved bootstrap arrays.",
+    "Common IDs, t/a invariance, q/tau/z0 tie-count lattice, hashes and RNG metadata are checked; actual generation/prefix reuse remains a frozen-source and reference-test responsibility.",
+    "This internal independent implementation audit is not an external scientific review."
+  ]
+}
