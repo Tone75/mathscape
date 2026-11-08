@@ -1,0 +1,211 @@
+{
+  "question_id": "RQ-M02",
+  "scope": "smoke only; no scientific decisions",
+  "R": 2,
+  "B_boot": 99,
+  "namespace": 1397567538,
+  "outer_samples_max": 36,
+  "source_hashes": {
+    "mathscape/bootstrap.py": "24d4ffbc8e5b463ee6770a35e1d17beca9ee41a37083d457dbca25abd9f7b6cb",
+    "mathscape/inference.py": "6e26d2a6991ecfca0729e7057f0eda63bf100b0941fc0b397caa2eb13e226708",
+    "scripts/run_bootstrap_benchmark.py": "9fdeabae419aecd487ff063775001880643c265207c7c5ea8192b455d72864a3"
+  },
+  "environment": {
+    "python": "3.12.13",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "plotly": "6.9.0",
+    "os": "Darwin",
+    "os_release": "25.6.0",
+    "architecture": "arm64"
+  },
+  "status": "completed",
+  "completed_cells": 18,
+  "cells": [
+    {
+      "distribution": "normal",
+      "n": 5,
+      "master_seed": 0,
+      "valid_counts": [
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "distribution": "normal",
+      "n": 5,
+      "master_seed": 1,
+      "valid_counts": [
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "distribution": "normal",
+      "n": 5,
+      "master_seed": 2,
+      "valid_counts": [
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "distribution": "normal",
+      "n": 20,
+      "master_seed": 0,
+      "valid_counts": [
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "distribution": "normal",
+      "n": 20,
+      "master_seed": 1,
+      "valid_counts": [
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "distribution": "normal",
+      "n": 20,
+      "master_seed": 2,
+      "valid_counts": [
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "distribution": "normal",
+      "n": 100,
+      "master_seed": 0,
+      "valid_counts": [
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "distribution": "normal",
+      "n": 100,
+      "master_seed": 1,
+      "valid_counts": [
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "distribution": "normal",
+      "n": 100,
+      "master_seed": 2,
+      "valid_counts": [
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "distribution": "centered_exponential",
+      "n": 5,
+      "master_seed": 0,
+      "valid_counts": [
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "distribution": "centered_exponential",
+      "n": 5,
+      "master_seed": 1,
+      "valid_counts": [
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "distribution": "centered_exponential",
+      "n": 5,
+      "master_seed": 2,
+      "valid_counts": [
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "distribution": "centered_exponential",
+      "n": 20,
+      "master_seed": 0,
+      "valid_counts": [
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "distribution": "centered_exponential",
+      "n": 20,
+      "master_seed": 1,
+      "valid_counts": [
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "distribution": "centered_exponential",
+      "n": 20,
+      "master_seed": 2,
+      "valid_counts": [
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "distribution": "centered_exponential",
+      "n": 100,
+      "master_seed": 0,
+      "valid_counts": [
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "distribution": "centered_exponential",
+      "n": 100,
+      "master_seed": 1,
+      "valid_counts": [
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "distribution": "centered_exponential",
+      "n": 100,
+      "master_seed": 2,
+      "valid_counts": [
+        2,
+        2,
+        2
+      ]
+    }
+  ],
+  "completed_outer_groups": 36,
+  "process_wall_seconds": 0.42193279205821455,
+  "process_peak_rss_bytes": 100548608,
+  "output_bytes_before_resources": 491,
+  "output_bytes_total": 4220
+}

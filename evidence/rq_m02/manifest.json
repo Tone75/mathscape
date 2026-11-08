@@ -1,0 +1,193 @@
+{
+  "schema_version": 1,
+  "question_id": "RQ-M02",
+  "created_utc": "2026-11-08T07:02:42.599680+00:00",
+  "question": "For matched populations, how do t, percentile and BCa mean intervals change coverage, width and miss direction on the same samples?",
+  "design": {
+    "distributions": [
+      "normal",
+      "centered_exponential"
+    ],
+    "sample_sizes": [
+      5,
+      20,
+      100
+    ],
+    "master_seeds": [
+      0,
+      1,
+      2
+    ],
+    "R": 2000,
+    "B_boot": 999,
+    "alpha": 0.05,
+    "true_mean": 0.0,
+    "true_variance": 1.0,
+    "d": 0.0,
+    "methods": [
+      "t",
+      "percentile",
+      "bca"
+    ]
+  },
+  "totals": {
+    "generation_cells": 18,
+    "outer_sample_groups": 36000,
+    "method_summary_rows": 54,
+    "bootstrap_sample_groups": 35964000,
+    "logical_resampling_indices": 1498500000
+  },
+  "randomness": {
+    "generator": "numpy.random.Generator(numpy.random.PCG64(numpy.random.SeedSequence(...)))",
+    "main_namespace": 5058610,
+    "smoke_namespace": 1397567538,
+    "entropy": "master_seed",
+    "distribution_ids": {
+      "normal": 1,
+      "centered_exponential": 2
+    },
+    "spawn_key": [
+      "namespace",
+      "distribution_id",
+      "n",
+      "replicate_id",
+      "purpose_id"
+    ],
+    "purposes": {
+      "original_sample": 0,
+      "bootstrap_resampling": 1
+    },
+    "excluded_from_key": [
+      "method",
+      "alpha",
+      "display_order",
+      "batch_size"
+    ],
+    "replicate_ids": "0..1999 inclusive, each with its own original and resampling streams",
+    "pairing": "all 3 methods share the same original sample; percentile and BCa share exactly the same bootstrap mean vector",
+    "independence": "distinct outer replicates have independently keyed original and resampling streams; no common index array is broadcast across replicates; seed IDs alone are not proof of independence"
+  },
+  "methods": {
+    "t": "existing unknown-variance ddof=1, df=n-1 two-sided t interval",
+    "percentile": "quantile(bootstrap_means,[alpha/2,1-alpha/2],method='linear')",
+    "bca": {
+      "ties": "(# bootstrap means < sample mean + 0.5 * # equal)/B_boot",
+      "z0": "normal.ppf(tie_adjusted_probability)",
+      "acceleration": "sum((x-mean(x))**3)/(6*sum((x-mean(x))**2)**1.5), independently checked against delete-one jackknife",
+      "adjusted_quantile": "Phi(z0+(z0+z_p)/(1-a*(z0+z_p)))",
+      "no_fallback": "no clipping or substitution with t/percentile when BCa is undefined"
+    },
+    "finite_bootstrap": "evaluate the finite B_boot=999 procedure, not B_boot->infinity or a separate inner-MC convergence study"
+  },
+  "invalid_policy": {
+    "reasons": "nonfinite sample, n<2, constant sample, nonfinite z0/a, bad adjusted quantile order and other undefined numerical outputs remain reason-labelled invalid",
+    "main_aggregates": "any invalid method interval makes its unconditional rates and width summaries NA; total R and valid/invalid counts remain explicit",
+    "pair_aggregates": "any invalid paired interval makes main paired differences NA; joint-valid reference values are explicitly prefixed conditional_ and never used for decisions",
+    "tail_warning": "B_boot*min(q,1-q)<10 at either endpoint; recorded separately, does not invalidate or change the method"
+  },
+  "summaries": {
+    "coverage": "closed interval includes true mean 0",
+    "miss_above": "lower > true mean (interval wholly above truth)",
+    "miss_below": "upper < true mean (interval wholly below truth)",
+    "partition": "for fully valid cells coverage+miss_above+miss_below=1",
+    "descriptive_rates": "95% Wilson intervals and Bernoulli MCSE",
+    "decision_rates": "99% Wilson intervals, columns separate from descriptive 95% intervals",
+    "width": "mean, median, sample SD ddof=1, MCSE=SD/sqrt(R), 99% mean +/- z(.995)*MCSE",
+    "paired": "per-outer-replicate coverage indicator and width differences, sample SD ddof=1 / sqrt(R); preserve sums and sums of squares",
+    "pooling": "sum sufficient statistics over the 3 seed cells (6000 independent outer replicates), never treat 3 seed means as sample size 3; pooled median uses saved interval widths only"
+  },
+  "decision": {
+    "scope": "hypotheses refer only to centered_exponential; normal is reference, n=100 descriptive",
+    "confidence": "each of 5 preregistered quantities uses a 99% interval, a Bonferroni-type approximate familywise 95% decision; paired normal approximation is not an exact simultaneous guarantee",
+    "quantities": {
+      "H1_width": {
+        "n": 5,
+        "comparison": "percentile-t",
+        "quantity": "mean_width_difference",
+        "desired": "upper < 0",
+        "threshold": 0.0,
+        "direction": "less"
+      },
+      "H1_coverage": {
+        "n": 5,
+        "comparison": "percentile-t",
+        "quantity": "coverage_difference",
+        "desired": "upper < -0.02",
+        "threshold": -0.02,
+        "direction": "less"
+      },
+      "H2_improvement": {
+        "n": 20,
+        "comparison": "bca-percentile",
+        "quantity": "coverage_difference",
+        "desired": "lower > 0.01",
+        "threshold": 0.01,
+        "direction": "greater"
+      },
+      "H2_level": {
+        "n": 20,
+        "method": "bca",
+        "quantity": "coverage",
+        "desired": "upper < 0.96",
+        "threshold": 0.96,
+        "direction": "less"
+      },
+      "H3_level": {
+        "n": 5,
+        "method": "bca",
+        "quantity": "coverage",
+        "desired": "upper < 0.93",
+        "threshold": 0.93,
+        "direction": "less"
+      }
+    },
+    "hypothesis_quantities": {
+      "H1": [
+        "H1_width",
+        "H1_coverage"
+      ],
+      "H2": [
+        "H2_improvement",
+        "H2_level"
+      ],
+      "H3": [
+        "H3_level"
+      ]
+    },
+    "support": "all relevant pooled 99% intervals satisfy the strict desired inequalities and every seed point estimate is strictly on the same desired side of its threshold",
+    "not_supported": "at least one relevant interval lies completely on the opposite side (strictly beyond threshold); record this contrary evidence before discussing mixed seeds",
+    "inconclusive": "interval touches/straddles threshold, mixed seed directions, any invalid or incomplete cell; contrary intervals are separately recorded",
+    "normal_t_gate": "all 9 normal t coverage counts in inclusive binom.ppf(epsilon/(2*9),R,.95)..binom.ppf(1-epsilon/(2*9),R,.95), epsilon=.001; unresolved reference checks prevent a final scientific conclusion",
+    "prohibitions": "no threshold changes, seed selection, method additions, extra R/B/n or redraws in response to outcomes"
+  },
+  "policy": {
+    "wall_seconds": 300,
+    "peak_rss_bytes": 2147483648,
+    "output_bytes": 52428800,
+    "max_resample_elements": 1000000,
+    "normal_t_comparisons": 9,
+    "normal_t_familywise_epsilon": 0.001,
+    "decision_confidence": 0.99,
+    "decision_quantities": 5
+  },
+  "execution": {
+    "main": "once only; bug correction at most one separately authorized attempt retaining reason, old source and old outputs, cumulative main wall <=600 seconds",
+    "smoke": "one separately authorized R=2,B_boot=99 check over 18 cells (36 outer samples) in smoke namespace; never used to choose hypotheses/design",
+    "over_budget": "save completed and incomplete cells, stop; no automatic resizing, expansion or rerun",
+    "retained": "endpoints, valid/reason/tail flags only; never raw samples or full bootstrap arrays"
+  },
+  "environment": {
+    "python": "3.12.13",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "plotly": "6.9.0",
+    "os": "Darwin",
+    "os_release": "25.6.0",
+    "architecture": "arm64"
+  },
+  "source_files_sha256": {
+    "mathscape/bootstrap.py": "24d4ffbc8e5b463ee6770a35e1d17beca9ee41a37083d457dbca25abd9f7b6cb",
+    "mathscape/inference.py": "6e26d2a6991ecfca0729e7057f0eda63bf100b0941fc0b397caa2eb13e226708",
+    "scripts/run_bootstrap_benchmark.py": "9fdeabae419aecd487ff063775001880643c265207c7c5ea8192b455d72864a3"
+  }
+}
