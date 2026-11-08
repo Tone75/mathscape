@@ -118,7 +118,30 @@
     "scope": "Conservative full sizes of every new or modified public file relative to accepted RQ-M03 HEAD; includes full README/HANDOFF, not just added lines. Ignored development files/virtual environment are not public artifacts.",
     "limit_bytes": 52428800,
     "files": 71,
-    "bytes": 28513937,
-    "MiB": 27.193009
+    "bytes": 28518351,
+    "MiB": 27.197219
+  },
+  "publication": {
+    "PR": "https://github.com/Tone75/mathscape/pull/4",
+    "PR_state": "OPEN",
+    "PR_draft": false,
+    "base_branch": "feat/rq-m03-stability",
+    "head_branch": "feat/rq-m04-distribution-shape",
+    "science_git_sha": "137efab0dc949359a58fc481676d6da6341b0408",
+    "latest_submission_head_command": "gh pr view 4 --repo Tone75/mathscape --json headRefOid",
+    "Notion_synced": [
+      "MATH-036",
+      "MATH-037",
+      "MATH-038",
+      "MATH-039",
+      "Project Home",
+      "Fixed specification"
+    ],
+    "PENDING_NOTION_SYNC": false,
+    "Owner_review": "pending",
+    "task_status": "In Progress",
+    "Next_only": "MATH-036",
+    "protected_remote_refs_equal_start": 8,
+    "new_tag_release_merge": false
   }
 }

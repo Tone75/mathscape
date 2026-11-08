@@ -14,6 +14,10 @@ MATH-039の保存専用ビューを追加し、旧612を含む全732 pytest成�
 
 再開入口は `mathscape/distribution_shape.py`、`scripts/run_shape_guarded.py`、`scripts/run_shape_benchmark.py`、`scripts/audit_shape.py` と `evidence/rq_m04/`。主実験を再抽選せず、通常pytest・保存監査・UIから主実験を起動しない。RQ-M03以前の証拠・既存PR／main／タグ／Release・別改善票・外部科学レビューを保持する。
 
+提出先 [stacked PR #4](https://github.com/Tone75/mathscape/pull/4)、科学成果 `137efab0dc949359a58fc481676d6da6341b0408`。baseはPR #3の承認済み `feat/rq-m03-stability`。この成果参照追記は科学成果固定後の文書commitで、最新提出HEADは `gh pr view 4 --repo Tone75/mathscape --json headRefOid` で取得できる。Notion036〜039・Home・固定仕様へ固定SHA／結果／検証／資源／PR／未解決事項を同期済み、PENDING_NOTION_SYNCなし。全変更公開成果約27.2MiB、50MiB内。保護対象remote 8 refs（main・旧3作業branch・既存2タグと各参照先）は開始時と一致。RQ-M04新成果の受入を代行せず、レビュー待ちで停止する。
+
+次の単一RQ候補は「母平均・母分散・歪度を揃えた異なる分布族で、BCa被覆と非被覆方向はどう異なるか」。別の事前固定を要する提案のみで追加実行しない。既存別改善票・MATH-005本格再開試験・外部科学レビュー等の状態を今回の完了へ含めない。
+
 ## 最新の受入と実行状態：RQ-M03
 
 2026-11-08のOwner明示承認に従い、RQ-M02（提出HEAD `dd3b377f02c19381b9fa6ffbcd0eff635911940c`、科学成果 `6a651c0995cbdd7a2de77d903c09cb23dbe369a8`、PR #2、H1支持・H2保留・H3支持）は受入済みとして扱う。下記の旧「受入待ち」は提出時点の履歴であり開始条件ではない。外部科学レビュー・Owner本人の個別新操作の実施とは区別する。

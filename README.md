@@ -97,6 +97,8 @@ manifest・数理／生成／集計／判定／独立監査・環境・乱数写
 
 旧612件を含む全732 pytest成功（16.01秒）、`pip check`成功。新規数理・実行器・監査・ガードの106件と保存ビューAppTest14件を追加しました。実ブラウザでは正規／r=.5／r=1／r=16、B／k／表示手法／Lab・モード往復、分布別原標本IDの復元、固定α、旧4 Lab代表操作を確認しました。22画面条件の176表示値と原標本hashが保存CSV・NPZと一致し、CSV／自己完結HTMLの実ダウンロードも元ファイルと一致しました。[検証記録](evidence/rq_m04/validation.json)・[操作証拠](evidence/rq_m04/browser/)を参照できます。新成果のOwner受入・外部科学レビュー・別ブラウザ／モバイルは未実施です。
 
+提出先は [stacked PR #4](https://github.com/Tone75/mathscape/pull/4)、科学成果SHA `137efab0dc949359a58fc481676d6da6341b0408`。baseは承認済み `feat/rq-m03-stability`、最新提出HEADは `gh pr view 4 --repo Tone75/mathscape --json headRefOid` で確認できます。Notion親子票・Home・固定仕様へ同期済み。MATH-036〜039は新成果レビュー待ちのIn Progress、Nextは036のみ。保守的な全変更ファイル合計は約27.2MiB、50MiB内。新タグ・Release・mergeは行っていません。
+
 ### RQ-M03：再標本化回数と端点の安定性
 
 同じ原標本を固定し、独立なK=20の再標本化系列間で区間端点の標本SD（ddof=1）を測ります。各系列のB=199／999／4,999は共通のbootstrap平均列のprefixです。BCaのz₀と調整分位点は各prefixから再計算し、tと加速係数aは原標本固定で不変です。B=4,999を真値・無限Bの正解とは扱いません。
