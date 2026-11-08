@@ -1,0 +1,22 @@
+{
+  "date": "2026-11-08",
+  "local_http_port": 8533,
+  "initial_default_click_to_snapshot_ms": 678,
+  "timing_scope": "execution button click through UI state/snapshot capture; includes browser automation overhead, not a frame-accurate paint metric",
+  "presets": [
+    "差がなくても棄却することがある",
+    "同じ真の差でもnで検出しやすさが変わる",
+    "母分布の歪み"
+  ],
+  "alpha_only_visible_sample_points_unchanged": true,
+  "lab_roundtrip_visible_sample_points_unchanged": true,
+  "pending_applied_separation_observed": true,
+  "fixed_comparison_real_csv_observed": true,
+  "explicit_new_sample_trial_id": 1,
+  "old_labs": {
+    "probability": "sigma slider",
+    "chaos": "r=3.2 preset",
+    "fractal": "zoom in width1.5 and reset"
+  },
+  "owner_review": "not performed"
+}

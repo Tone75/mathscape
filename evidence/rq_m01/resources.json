@@ -1,0 +1,27 @@
+{
+  "status": "completed",
+  "started_utc": "2026-11-08T06:28:59.132903+00:00",
+  "source_git_sha": "f249efec49478b3d43fb68f8cb8d43b9f2ead58d",
+  "manifest_sha256": "4d9fd6044277ebe6b2ba06c028869cfa680fa8c26d424eb9697a31d2aadd8348",
+  "policy": "single explicit attempt; no automatic rerun",
+  "environment": {
+    "python": "3.12.13",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "os": "Darwin",
+    "os_release": "25.6.0",
+    "architecture": "arm64"
+  },
+  "completed_cells": 54,
+  "total_cells": 54,
+  "batch_size": 1000,
+  "raw_samples_saved": false,
+  "wall_scope": "benchmark batches, CSV and figures; excludes imports/preflight and final resources write",
+  "rss_scope": "whole runner process lifetime; Darwin ru_maxrss is bytes, other Unix KiB converted to bytes",
+  "incomplete_cells": [],
+  "wall_seconds": 0.18294358404818922,
+  "process_peak_rss_bytes": 103809024,
+  "output_bytes_before_resources": 35562,
+  "finished_utc": "2026-11-08T06:28:59.316446+00:00",
+  "output_bytes_total": 36572
+}
