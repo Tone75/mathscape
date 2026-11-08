@@ -1,5 +1,11 @@
 # MATHSCAPE — minimal handoff
 
+## 最新の受入と実行状態：RQ-M04
+
+2026-11-08のOwner明示承認とNotionの最新記録に従い、RQ-M03（提出HEAD `9b4a0fa1b3bea7751069deaaf0f3669125930403`、科学成果 `568c689a71d67bca393fa5000d7b855e7c609e45`、PR #3、H1／H2／H3支持）は受入済み、MATH-032〜035はDone。下記の旧受入待ちは提出時点の履歴であり開始条件ではない。外部科学レビュー・Owner本人の新機能個別操作・PR mergeとは区別する。
+
+CODEX_RECEIPT RQ-M04-v1: 開始HEADは承認済みと一致、未コミット変更・別worktreeなし。新branch `feat/rq-m04-distribution-shape`。固定仕様全文・末尾プロンプト・親子票を受領し、037→038→039の順で実行する。NextはMATH-036だけ、開始した036／037だけIn Progress。既存612テスト成功（10.91秒）。詳細は `evidence/rq_m04/CODEX_RECEIPT.md`。新成果は別stacked PRでレビュー待ちとして提出し、旧成果／既存PR／main／タグ／Releaseは保持する。
+
 ## 最新の受入と実行状態：RQ-M03
 
 2026-11-08のOwner明示承認に従い、RQ-M02（提出HEAD `dd3b377f02c19381b9fa6ffbcd0eff635911940c`、科学成果 `6a651c0995cbdd7a2de77d903c09cb23dbe369a8`、PR #2、H1支持・H2保留・H3支持）は受入済みとして扱う。下記の旧「受入待ち」は提出時点の履歴であり開始条件ではない。外部科学レビュー・Owner本人の個別新操作の実施とは区別する。
