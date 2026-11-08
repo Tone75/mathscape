@@ -248,7 +248,7 @@ Streamlitをループバックで実起動しHTTP／health成功。実ブラウ�
 
 21画面状態の**147表示数値**と原標本hashを保存CSV／NPZに照合し全件一致した。画面の仮説区間端4値、L初期例の端点表を目視で読んだ6値も一致。要約CSVと自己完結HTMLを実ダウンロードし正本との全bytes一致、選択原標本CSVの20観測からNPZと同じhashを再構成した。生のbootstrap列は再生成していない。1件のID入力直後の観測は、再描画前の旧適用IDを表示しており、そのhashと整合していた。適用後の新IDを別途確認した。画面の応答時間を別途ベンチマークしたとは主張しない。
 
-証拠は [browser/](browser/)、[画面・CSV照合](browser/csv_validation.json)、[統合検証](validation.json)。サーバーの例外・対象重複初期値警告、ブラウザconsoleの警告・エラーは0。確認用サーバーは停止した。新成果のOwner受入、Owner本人の個別新操作、外部科学レビュー、別ブラウザ／モバイル表示は未実施。科学成果SHA・PR・最終公開成果量は末尾の提出記録へ追記する。
+証拠は [browser/](browser/)、[画面・CSV照合](browser/csv_validation.json)、[統合検証](validation.json)。サーバーの例外・対象重複初期値警告、ブラウザconsoleの警告・エラーは0。確認用サーバーは停止した。新成果のOwner受入、Owner本人の個別新操作、外部科学レビュー、別ブラウザ／モバイル表示は未実施。科学成果SHA・PR・最終公開成果量は末尾の提出記録に記す。
 
 ## 安全な保存結果検証と再現手順
 
@@ -289,3 +289,13 @@ python scripts/audit_matched.py --evidence evidence/rq_m05/reproduction
 尖度・尾・支持域などは一致していない。観測差をそれら一つの因果効果とは解釈しない。記述比較の有意な結果だけを新仮説にせず、不支持・同等性支持を理由に別の族・歪度・nを選び直さない。新規定理・教育効果・実データへの普遍的推奨を実証した研究ではない。実現済みの一つの95%区間に真値が95%の確率で存在するとも説明しない。
 
 **次の単一RQ候補：** 同じ前三母モーメントを持つG／Lの固定原標本で、BCa端点の条件付き再標本化変動はどの程度異なるか。今回はK1で推定対象外だった量を、別の事前登録・計算枠・K>1の設計で扱う候補である。今回のC／T同等性を再抽選するものではなく、現時点では実装・追加実験を行わない。
+
+## 提出記録
+
+科学成果SHAは [`254af9ed19cf3197310bc372c704ecc32c3b9b4e`](https://github.com/Tone75/mathscape/commit/254af9ed19cf3197310bc372c704ecc32c3b9b4e)、提出先は [stacked PR #5](https://github.com/Tone75/mathscape/pull/5)。承認済みRQ-M04 HEADを含み、未mergeのPR #4のbranch `feat/rq-m04-distribution-shape` をbaseに新差分を分離した。事前固定SHA、科学成果SHA、この成果参照追記の文書commitを区別する。最新提出HEADは `gh pr view 5 --repo Tone75/mathscape --json headRefOid` で確認できる。
+
+Notion親MATH-040／子041〜043・Project Home・固定仕様へ、M04受入維持、固定SHA、H1／H2実用差仮説不支持・範囲限定同等性支持、全条件への参照、検証、資源、PR、未解決事項を同期済み。PENDING_NOTION_SYNCなし。新成果はレビュー待ちで親子票In Progress、Nextは040のみ。Owner受入・外部科学レビュー・Owner本人の個別新操作・別ブラウザ／モバイル・mergeを完了扱いにしない。
+
+今回の全変更公開成果は保守的に約**24.2MiB**。README／HANDOFFは追加行だけでなく全量を算入し、全原標本・端点・圧縮180,000レコード・単一の自己完結HTML・操作証拠を含む。正確bytes／ファイル数は [validation.json](validation.json) に記録した。50MiB内、新規依存・課金・外部ホスティング・自動化設定なし。公開内容を個人メール・個人絶対パス・認証情報について検査し、Gitのauthorは当該GitHubアカウントのnoreplyを利用した。旧実験証拠と保護対象9 remote refs（main・旧4作業branch・既存2タグと参照先）は開始時と一致した。既存PR #1〜#4・タグ／Releaseは保持し、新タグ・Release・mergeは行わない。
+
+検証の入口は [validation.json](validation.json)、[pytest出力](pytest.txt)、[pip check](pip_check.txt)、[サーバーログ](browser/server_log.txt)、[画面照合](browser/csv_validation.json)。既存の別改善票・MATH-005本格再開試験・外部科学レビューを今回の完了へ含めず、次の候補を追加実行せず停止する。

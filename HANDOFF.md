@@ -16,6 +16,10 @@ CODEX_RECEIPT RQ-M05-v1：開始HEADは承認済みと一致、working tree clea
 
 再開入口は `mathscape/matched_moments.py`／`matched_ui.py`、`scripts/run_matched_guarded.py`／`run_matched_benchmark.py`／`audit_matched.py`。新成果はレビュー待ちで040〜043 In Progress、Nextは040だけ。新成果のOwner受入・外部科学レビュー・Owner本人の個別新操作・別ブラウザ／モバイルは未実施。既存別改善票・MATH-005本格再開試験へ完了範囲を広げない。
 
+提出先 [stacked PR #5](https://github.com/Tone75/mathscape/pull/5)、科学成果 `254af9ed19cf3197310bc372c704ecc32c3b9b4e`。baseはPR #4の承認済み `feat/rq-m04-distribution-shape`。この参照追記は科学成果固定後の文書commitで、最新提出HEADは `gh pr view 5 --repo Tone75/mathscape --json headRefOid` で取得できる。Notion040〜043・Home・固定仕様へ固定SHA／結果／検証／資源／PR／未解決事項を同期済み、PENDING_NOTION_SYNCなし。保守的な全変更公開成果約24.2MiB、50MiB内。保護対象remote 9 refs（main・旧4作業branch・既存2タグと参照先）は開始時と一致した。新タグ・Release・mergeなし、レビュー待ちとして提出し停止する。
+
+次の単一RQ候補は「同じ前三母モーメントを持つG／Lの固定原標本で、BCa端点の条件付き再標本化変動はどの程度異なるか」。K1で推定不能だった量を別の事前固定で扱う提案のみで、追加実験は行わない。
+
 ## 最新の受入と実行状態：RQ-M04
 
 2026-11-08のOwner明示承認とNotionの最新記録に従い、RQ-M03（提出HEAD `9b4a0fa1b3bea7751069deaaf0f3669125930403`、科学成果 `568c689a71d67bca393fa5000d7b855e7c609e45`、PR #3、H1／H2／H3支持）は受入済み、MATH-032〜035はDone。下記の旧受入待ちは提出時点の履歴であり開始条件ではない。外部科学レビュー・Owner本人の新機能個別操作・PR mergeとは区別する。

@@ -138,7 +138,30 @@
     "scope": "Conservative full sizes of all public new/modified files relative to accepted RQ-M04 HEAD, including full README/HANDOFF, compact saved inputs/endpoints, gzip180k records, one self-contained HTML and browser proof. Ignored development files/virtual environment are not public artifacts.",
     "limit_bytes": 52428800,
     "files": 59,
-    "bytes": 25396522,
-    "MiB": 24.220011
+    "bytes": 25401171,
+    "MiB": 24.224444
+  },
+  "publication": {
+    "PR": "https://github.com/Tone75/mathscape/pull/5",
+    "PR_state": "OPEN",
+    "PR_draft": false,
+    "base_branch": "feat/rq-m04-distribution-shape",
+    "head_branch": "feat/rq-m05-matched-moments",
+    "science_git_sha": "254af9ed19cf3197310bc372c704ecc32c3b9b4e",
+    "latest_submission_head_command": "gh pr view 5 --repo Tone75/mathscape --json headRefOid",
+    "Notion_synced": [
+      "MATH-040",
+      "MATH-041",
+      "MATH-042",
+      "MATH-043",
+      "Project Home",
+      "Fixed specification"
+    ],
+    "PENDING_NOTION_SYNC": false,
+    "Owner_review": "pending",
+    "task_status": "In Progress",
+    "Next_only": "MATH-040",
+    "protected_remote_refs_equal_start": 9,
+    "new_tag_release_merge": false
   }
 }

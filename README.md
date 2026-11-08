@@ -93,6 +93,8 @@ python -m pytest -q
 
 全180,000レコード／18 seed行／6 pooled行／分布差12行／方法対応差24行を保存原標本・端点から独立再計算し不一致0。主CLI外側36.66秒、Peak RSS230,817,792 bytes（220.125MiB）。全862 pytest成功（旧732＋新130、20.64秒）、新AppTest11件、pip check成功。実ブラウザで両分布・全方法・seed／ID・Lab／モード往復・分布別復元・固定α／B／K・NA、旧4 LabとRQ-M02〜04代表操作を確認しました。21画面状態147表示数値と保存データ、3種類の実ダウンロードが一致しました。全条件・再現手順・監査限界は [REPORT.md](evidence/rq_m05/REPORT.md)、[検証記録](evidence/rq_m05/validation.json)と[操作証拠](evidence/rq_m05/browser/)を参照できます。
 
+提出先は [stacked PR #5](https://github.com/Tone75/mathscape/pull/5)、科学成果SHA `254af9ed19cf3197310bc372c704ecc32c3b9b4e`。baseは承認済み `feat/rq-m04-distribution-shape`、最新提出HEADは `gh pr view 5 --repo Tone75/mathscape --json headRefOid` で確認できます。Notion親子票・Home・仕様へ同期済み。新成果はレビュー待ちで040〜043 In Progress、Nextは040のみ。公開変更成果は約24.2MiB、50MiB内です。新成果のOwner受入・外部科学レビュー・Owner本人の個別新操作・別ブラウザ／モバイルは未実施で、新タグ・Release・mergeは行っていません。
+
 ### RQ-M04：分布の形と被覆
 
 `G~Gamma(shape=r, scale=1), X=(G−r)/√r` とし、r=.5／1／2／4／16と正規対照N(0,1)を比較します。母平均0・母分散1・n=20・両側α=.05を固定し、原標本自体を平均0・分散1へ再標準化しません。形状rを変えると理論歪度2/√r、超過尖度6/r、下限−√rが同時に変わるため、歪度単独の因果効果とは扱いません。r=16は正規分布とは別の条件です。
