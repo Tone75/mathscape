@@ -1,0 +1,26 @@
+{
+  "question_id": "RQ-M04",
+  "scope": "smoke only; no scientific decisions",
+  "R": 2,
+  "K": 4,
+  "B_values": [
+    19,
+    99
+  ],
+  "namespace": 1397567540,
+  "source_files_sha256": {
+    "mathscape/distribution_shape.py": "aa2594fecea0f8b5ab7b9b58ed47cd29ee1470cfefc88b5775a04d724e3b966f",
+    "mathscape/stability.py": "e27f2bf98378911cb1c0502bb93a5d944fd5dd2978354e6fbd99595d2bc5f070",
+    "mathscape/bootstrap.py": "24d4ffbc8e5b463ee6770a35e1d17beca9ee41a37083d457dbca25abd9f7b6cb",
+    "mathscape/inference.py": "6e26d2a6991ecfca0729e7057f0eda63bf100b0941fc0b397caa2eb13e226708",
+    "scripts/run_shape_benchmark.py": "2824ebd6abbdeefb91cbb76a02745ee692f8ec4e7bc1c186c0bc608aebea0631",
+    "scripts/run_stability_benchmark.py": "4be7f9a10f7d328cc914c0aaceaf28d027718a44a2f8afd63a896e848b209488",
+    "scripts/run_bootstrap_benchmark.py": "9fdeabae419aecd487ff063775001880643c265207c7c5ea8192b455d72864a3",
+    "scripts/audit_shape.py": "f57ec83c49ce146d93405d0cdc5bc3bd92a92e6704993bc2e3544a382724da2a",
+    "scripts/run_shape_guarded.py": "2b34e780ae50bbab388e0dccbd869d3e2a0546b135172006a449786297ae0303",
+    "tests/test_shape_guard.py": "90a203d59af819e141fe8a7e99f9239195e462e03191c68c8d06c0951cb39e6f",
+    "tests/test_distribution_shape.py": "ed8b852b3387f86269695995d2a7c8e7fc115420737445bc4bc052c1a465ef41",
+    "tests/test_shape_runner.py": "ca7d6fc44541d159d19bd51b0bb2346272e3a203285b73d9053dd76a14812779",
+    "tests/test_shape_audit.py": "3c6e8eda75e044cfa6414268203b642b2231ba24d00f0a83fc70e19ce872a5b4"
+  }
+}

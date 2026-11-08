@@ -1,5 +1,23 @@
 # MATHSCAPE — minimal handoff
 
+## 最新の受入と実行状態：RQ-M04
+
+2026-11-08のOwner明示承認とNotionの最新記録に従い、RQ-M03（提出HEAD `9b4a0fa1b3bea7751069deaaf0f3669125930403`、科学成果 `568c689a71d67bca393fa5000d7b855e7c609e45`、PR #3、H1／H2／H3支持）は受入済み、MATH-032〜035はDone。下記の旧受入待ちは提出時点の履歴であり開始条件ではない。外部科学レビュー・Owner本人の新機能個別操作・PR mergeとは区別する。
+
+CODEX_RECEIPT RQ-M04-v1: 開始HEADは承認済みと一致、未コミット変更・別worktreeなし。新branch `feat/rq-m04-distribution-shape`。固定仕様全文・末尾プロンプト・親子票を受領し、037→038→039の順で実行する。NextはMATH-036だけ、開始した036／037だけIn Progress。既存612テスト成功（10.91秒）。詳細は `evidence/rq_m04/CODEX_RECEIPT.md`。新成果は別stacked PRでレビュー待ちとして提出し、旧成果／既存PR／main／タグ／Releaseは保持する。
+
+事前固定 `60101c72e6073c7350c9f21900b98afc19cbab00`、manifest SHA256 `94dbdbfbe20acef3e1f19bcd847f6a2ced6792fc3588994f2f14a64d4f0dc3c2`。新規106参照テストと指定別namespaceスモーク1回後、guarded主実験1回で18セル・7,200原標本・72,000系列完了。再実行0・無効0、H1／H2保留。H1は99%区間が−2ppをまたぎseed0方向も未達、H2は99%区間が+3ppをまたぐ。保留を差ゼロ等と扱わず、追加試行をしない。
+
+外側CLI44.30秒、worker内部44.14562025秒、Peak RSS253,296,640 bytes。保存原標本・端点から独立実装で43,200原標本別行、108 seed／36 pooled、72 B対応差／144手法対応差、全指標と2仮説・seed条件を再計算し不一致0。生bootstrap列は保存せず、実prefix生成の保証は固定ソース・参照テストと分けて説明する。
+
+MATH-039の保存専用ビューを追加し、旧612を含む全732 pytest成功（16.01秒）、pip check成功、新AppTest14件。実ブラウザで正規／r=.5／r=1／r=16のB／k／手法／Lab・モード保持、分布変更時の別原標本と復元、固定α、22条件176表示値とCSV／NPZ、CSV・HTML実ダウンロード一致、旧4 Lab代表操作を確認。ログの例外・対象重複初期値警告なし、確認用サーバー停止済み。証拠は `validation.json`／`browser/`。新成果はレビュー待ちで親子票036〜039はIn Progress、Nextは036だけを維持する。新成果のOwner受入・外部科学レビュー・Owner本人の個別新操作・別ブラウザ／モバイルを実施済みにしない。
+
+再開入口は `mathscape/distribution_shape.py`、`scripts/run_shape_guarded.py`、`scripts/run_shape_benchmark.py`、`scripts/audit_shape.py` と `evidence/rq_m04/`。主実験を再抽選せず、通常pytest・保存監査・UIから主実験を起動しない。RQ-M03以前の証拠・既存PR／main／タグ／Release・別改善票・外部科学レビューを保持する。
+
+提出先 [stacked PR #4](https://github.com/Tone75/mathscape/pull/4)、科学成果 `137efab0dc949359a58fc481676d6da6341b0408`。baseはPR #3の承認済み `feat/rq-m03-stability`。この成果参照追記は科学成果固定後の文書commitで、最新提出HEADは `gh pr view 4 --repo Tone75/mathscape --json headRefOid` で取得できる。Notion036〜039・Home・固定仕様へ固定SHA／結果／検証／資源／PR／未解決事項を同期済み、PENDING_NOTION_SYNCなし。全変更公開成果約27.2MiB、50MiB内。保護対象remote 8 refs（main・旧3作業branch・既存2タグと各参照先）は開始時と一致。RQ-M04新成果の受入を代行せず、レビュー待ちで停止する。
+
+次の単一RQ候補は「母平均・母分散・歪度を揃えた異なる分布族で、BCa被覆と非被覆方向はどう異なるか」。別の事前固定を要する提案のみで追加実行しない。既存別改善票・MATH-005本格再開試験・外部科学レビュー等の状態を今回の完了へ含めない。
+
 ## 最新の受入と実行状態：RQ-M03
 
 2026-11-08のOwner明示承認に従い、RQ-M02（提出HEAD `dd3b377f02c19381b9fa6ffbcd0eff635911940c`、科学成果 `6a651c0995cbdd7a2de77d903c09cb23dbe369a8`、PR #2、H1支持・H2保留・H3支持）は受入済みとして扱う。下記の旧「受入待ち」は提出時点の履歴であり開始条件ではない。外部科学レビュー・Owner本人の個別新操作の実施とは区別する。

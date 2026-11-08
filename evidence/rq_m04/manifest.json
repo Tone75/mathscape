@@ -1,0 +1,205 @@
+{
+  "schema_version": 1,
+  "question_id": "RQ-M04",
+  "created_utc": "2026-11-08T10:52:22.984376+00:00",
+  "question": "With mean 0, variance 1 and n20 held fixed, how do standardized-gamma shapes differ in BCa coverage and miss direction, separately from finite-B endpoint variability?",
+  "design": {
+    "distributions": [
+      "normal",
+      "gamma_0.5",
+      "gamma_1",
+      "gamma_2",
+      "gamma_4",
+      "gamma_16"
+    ],
+    "gamma_shapes": {
+      "gamma_0.5": 0.5,
+      "gamma_1": 1.0,
+      "gamma_2": 2.0,
+      "gamma_4": 4.0,
+      "gamma_16": 16.0
+    },
+    "n": 20,
+    "master_seeds": [
+      0,
+      1,
+      2
+    ],
+    "R": 400,
+    "K": 10,
+    "B_values": [
+      999,
+      4999
+    ],
+    "alpha": 0.05,
+    "true_mean": 0.0,
+    "true_variance": 1.0,
+    "methods": [
+      "t",
+      "percentile",
+      "bca"
+    ]
+  },
+  "totals": {
+    "generation_cells": 18,
+    "original_samples": 7200,
+    "inner_streams": 72000,
+    "original_metric_rows": 43200,
+    "seed_summary_rows": 108,
+    "pooled_summary_rows": 36,
+    "bootstrap_samples": 359928000,
+    "logical_resampling_indices": 7198560000
+  },
+  "population_contract": {
+    "gamma": "G~Gamma(shape=r,scale=1), X=(G-r)/sqrt(r), using population moments; never restandardize each original sample",
+    "normal": "independent N(0,1) control, not identical to gamma r16",
+    "shape_properties": "skewness=2/sqrt(r), excess kurtosis=6/r, lower bound=-sqrt(r); all change jointly, not an isolated causal skewness effect",
+    "r1": "equal in distribution to Exp(scale=1)-1, but a new independently keyed panel; never reuse old RQ data"
+  },
+  "randomness": {
+    "generator": "Generator(PCG64(SeedSequence(...)))",
+    "entropy": "master_seed",
+    "main_namespace": 5058612,
+    "smoke_namespace": 1397567540,
+    "distribution_ids": {
+      "normal": 1,
+      "gamma_0.5": 2,
+      "gamma_1": 3,
+      "gamma_2": 4,
+      "gamma_4": 5,
+      "gamma_16": 6
+    },
+    "spawn_key": [
+      "namespace",
+      "distribution_id",
+      "n",
+      "outer_id",
+      "purpose_id",
+      "inner_id"
+    ],
+    "purpose_ids": {
+      "original_sample": 0,
+      "bootstrap": 1
+    },
+    "original_inner_id": 0,
+    "outer_ids": "0..399",
+    "bootstrap_inner_ids": "0..9",
+    "excluded_from_key": [
+      "B",
+      "method",
+      "display_order",
+      "batch_size",
+      "alpha"
+    ],
+    "prefix": "generate one length4999 bootstrap-mean vector per original/inner pair; use prefixes999/4999; recompute each prefix z0/q; cached t/a depend only on original",
+    "independence": "different distributions are independent groups even with the same seed/outer ID; same original/B/inner shares means between percentile and BCa; K and B are not independent population sample counts"
+  },
+  "inference": {
+    "definitions": "unchanged RQ-M02/M03: ddof1 t, linear empirical quantiles, half-tie z0, mean jackknife acceleration, prior BCa denominator/quantile validity rules",
+    "truth_separation": "inference receives only original sample/bootstrap mean vector/alpha, never population/r/true mean or variance",
+    "no_substitution": "no fallback, quantile clipping or adaptive B; invalid intervals retain reasons",
+    "tau": "B*min(q,1-q) per endpoint; either tau<10 warns, without exclusion or invalidation"
+  },
+  "metrics": {
+    "C": "mean_k I(lower<=0<=upper)",
+    "Mbelow": "mean_k I(upper<0), interval wholly below truth",
+    "Mabove": "mean_k I(lower>0), interval wholly above truth",
+    "T": "Mbelow-Mabove",
+    "partition": "C+Mbelow+Mabove=1 for complete valid originals",
+    "S": "sqrt((sample Var_k(lower)+sample Var_k(upper))/2), ddof1",
+    "Ase": "S/(sample SD ddof1/sqrt(20))",
+    "Apop": "S/(1/sqrt(20)), simulation evaluation only; never used to construct inference intervals",
+    "t_control": "K/B copies are display references; actual interval count=R, S/Ase/Apop/endpoint SD=0 if valid",
+    "aggregation": "within-original K means first, then independent originals; R400 per seed/N1200 pooled; no Wilson or sd/sqrt(R*K)",
+    "intervals": "99% original-level mean t intervals, no clipping to rate range; zero variance gives undefined decision bounds with descriptive mean retained",
+    "paired_B": "B4999-B999 within original, descriptive C/Ase/Apop/T/mean_width differences with original-level MCSE",
+    "paired_methods": "percentile-t, bca-percentile, bca-t within original at each B; descriptive C/Ase/Apop/T/mean_width differences"
+  },
+  "hypotheses": {
+    "H1": {
+      "method": "bca",
+      "B": 4999,
+      "quantity": "mean(C,gamma_0.5)-mean(C,gamma_16)",
+      "design": "independent 2-group Welch 99% interval, each N1200; Satterthwaite df",
+      "threshold": -0.02,
+      "direction": "less",
+      "support": "pooled upper<-.02 and all 3 seed point differences<0",
+      "not_supported": "pooled lower>-.02",
+      "seed_threshold": 0.0
+    },
+    "H2": {
+      "method": "bca",
+      "B": 4999,
+      "distribution": "gamma_0.5",
+      "quantity": "mean(T)",
+      "design": "original-level t99% interval, N1200,df1199",
+      "threshold": 0.03,
+      "direction": "greater",
+      "support": "pooled lower>.03 and all 3 seed point means>0",
+      "not_supported": "pooled upper<.03",
+      "seed_threshold": 0.0
+    },
+    "status": "strict interval and separate seed conditions required; touching/straddling threshold or seed failure=>inconclusive. Invalid/unfinished needed originals or zero variance=>inconclusive. Not-supported is not zero-difference/symmetry proof",
+    "multiplicity": "2 quantities with99% intervals, approximate multiplicity control, not exact simultaneous guarantee",
+    "descriptive": "other distributions, B999, endpoint stability, warnings, method/B differences remain descriptive; no promotion based on significance, no monotonicity/causal/limit-B claims"
+  },
+  "invalid_policy": {
+    "original": "any required invalid inner interval makes that method/B original C/T/S/Ase/Apop/width/warning primary metrics NA",
+    "comparison": "missing/invalid original needed by H1/H2 makes that main quantity NA/inconclusive; unrelated populations or B999 invalids do not poison complete confirmatory targets",
+    "conditional": "jointly complete original references use conditional_ prefix and explicit denominator; never invalid-as-noncoverage or silent omission",
+    "budgets": "retain planned/observed/complete original counts and actual valid/invalid interval counts; stop preserving complete/incomplete cells"
+  },
+  "storage": {
+    "panel_axes": [
+      "original",
+      "B",
+      "method",
+      "inner"
+    ],
+    "original_hash": "SHA256 of little-endian float64 C-order vector bytes",
+    "saved": "originals,IDs/hashes,endpoints,z0/a/q/tau,valid/reason/warnings; no full bootstrap/index arrays",
+    "capacity": "float64 numeric endpoints/diagnostics, compressed NPZ, compact reason strings; no retention of all original bootstrap arrays",
+    "audit_limit": "saved diagnostics cannot prove actual bootstrap-prefix generation or raw rank counts; frozen source and deterministic references cover that contract"
+  },
+  "policy": {
+    "wall_seconds": 300,
+    "peak_rss_bytes": 2147483648,
+    "output_bytes": 52428800,
+    "internal_stop_seconds": 294,
+    "cleanup_reserve_seconds": 6,
+    "max_resample_elements": 1000000,
+    "confirmatory_quantities": 2,
+    "decision_confidence": 0.99
+  },
+  "execution": {
+    "main": "once only, no added seeds/R/K/B or redraw on unsupported/inconclusive/invalid/timeout",
+    "outer_deadline": "standard entry is scripts/run_shape_guarded.py; parent watchdog controls the full worker CLI with TERM at295s, KILL at298s and finish target299s. Worker soft-stops at294s with cleanup reserve, and ignores repeated TERM during final resource writes",
+    "smoke": "one separately authorized 18cell/R2/K4/prefix19,99 check in smoke namespace;36 originals,144 inner streams,14256 bootstrap samples; no scientific selection",
+    "bug_correction": "actual code bug only, at most one separately authorized attempt retaining old source/results/reason, cumulative mainwall<=600s",
+    "stop": "preserve complete/incomplete cells without automatic shrinking/expansion/retry"
+  },
+  "environment": {
+    "python": "3.12.13",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "plotly": "6.9.0",
+    "os": "Darwin",
+    "os_release": "25.6.0",
+    "architecture": "arm64"
+  },
+  "source_files_sha256": {
+    "mathscape/distribution_shape.py": "aa2594fecea0f8b5ab7b9b58ed47cd29ee1470cfefc88b5775a04d724e3b966f",
+    "mathscape/stability.py": "e27f2bf98378911cb1c0502bb93a5d944fd5dd2978354e6fbd99595d2bc5f070",
+    "mathscape/bootstrap.py": "24d4ffbc8e5b463ee6770a35e1d17beca9ee41a37083d457dbca25abd9f7b6cb",
+    "mathscape/inference.py": "6e26d2a6991ecfca0729e7057f0eda63bf100b0941fc0b397caa2eb13e226708",
+    "scripts/run_shape_benchmark.py": "2824ebd6abbdeefb91cbb76a02745ee692f8ec4e7bc1c186c0bc608aebea0631",
+    "scripts/run_stability_benchmark.py": "4be7f9a10f7d328cc914c0aaceaf28d027718a44a2f8afd63a896e848b209488",
+    "scripts/run_bootstrap_benchmark.py": "9fdeabae419aecd487ff063775001880643c265207c7c5ea8192b455d72864a3",
+    "scripts/audit_shape.py": "f57ec83c49ce146d93405d0cdc5bc3bd92a92e6704993bc2e3544a382724da2a",
+    "scripts/run_shape_guarded.py": "2b34e780ae50bbab388e0dccbd869d3e2a0546b135172006a449786297ae0303",
+    "tests/test_shape_guard.py": "90a203d59af819e141fe8a7e99f9239195e462e03191c68c8d06c0951cb39e6f",
+    "tests/test_distribution_shape.py": "ed8b852b3387f86269695995d2a7c8e7fc115420737445bc4bc052c1a465ef41",
+    "tests/test_shape_runner.py": "ca7d6fc44541d159d19bd51b0bb2346272e3a203285b73d9053dd76a14812779",
+    "tests/test_shape_audit.py": "3c6e8eda75e044cfa6414268203b642b2231ba24d00f0a83fc70e19ce872a5b4"
+  }
+}

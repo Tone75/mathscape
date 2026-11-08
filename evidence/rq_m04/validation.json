@@ -1,0 +1,147 @@
+{
+  "question_id": "RQ-M04",
+  "status": "passed",
+  "source_git_sha": "60101c72e6073c7350c9f21900b98afc19cbab00",
+  "accepted_start_head": "9b4a0fa1b3bea7751069deaaf0f3669125930403",
+  "baseline_tests": 612,
+  "pytest": {
+    "command": "python -m pytest -q",
+    "passed": 732,
+    "failed": 0,
+    "wall_seconds": 16.01,
+    "new_tests": {
+      "mathematics": 51,
+      "runner": 18,
+      "independent_audit": 30,
+      "outer_guard": 7,
+      "AppTest": 14
+    },
+    "full_output": "pytest.txt"
+  },
+  "pip_check": {
+    "command": "python -m pip check",
+    "status": "passed",
+    "output": "pip_check.txt",
+    "new_dependencies": false
+  },
+  "independent_saved_audit": {
+    "status": "passed",
+    "mismatch_count": 0,
+    "original_samples": 7200,
+    "original_metric_rows": 43200,
+    "seed_summary_rows": 108,
+    "pooled_summary_rows": 36,
+    "paired_B_rows": 72,
+    "paired_method_rows": 144,
+    "hypotheses": 2,
+    "output": "independent_audit.json",
+    "external_scientific_review": false,
+    "limitation": "Full bootstrap arrays are not saved; actual prefix generation/rank interpolation is covered separately by frozen source and deterministic reference tests."
+  },
+  "browser": {
+    "status": "passed",
+    "scope": "Available real desktop browser; loopback Streamlit HTTP/health and self-contained figure HTTP both 200; representative operations, not exhaustive screen/device testing.",
+    "populations": [
+      "normal",
+      "gamma_0.5",
+      "gamma_1",
+      "gamma_16"
+    ],
+    "B_values": [
+      999,
+      4999
+    ],
+    "k_values": [
+      0,
+      9
+    ],
+    "observations": 22,
+    "visible_numeric_cells": 176,
+    "CSV_NPZ_theory_equal": true,
+    "original_hash_preserved_by": [
+      "B",
+      "k",
+      "method visibility",
+      "Lab round trip",
+      "mode round trip"
+    ],
+    "population_change": "Different independent original; each population restores its last seed/outer/k. Explicit original ID change changes hash.",
+    "alpha": 0.05,
+    "alpha_fixed": true,
+    "old_operations": [
+      "Probability beta parameters",
+      "Chaos preset and manual r",
+      "Fractal zoom/pan/reset",
+      "t inference apply",
+      "RQ-M02 alpha preserves original",
+      "RQ-M03 B/k/mode round trip preserves original"
+    ],
+    "CSV_and_HTML_actual_download_bytes_match": true,
+    "console_warnings": 0,
+    "console_errors": 0,
+    "screen_exceptions": 0,
+    "server_target_duplicate_initialization_warnings": 0,
+    "server_tracebacks": 0,
+    "servers_stopped": true,
+    "evidence": "browser/",
+    "response_latency_benchmarked": false
+  },
+  "fixed_experiment": {
+    "main_attempts": 1,
+    "reruns": 0,
+    "specified_smokes": 1,
+    "completed_cells": 18,
+    "invalid_intervals": 0,
+    "source_files_unchanged": 13,
+    "manifest_unchanged": true,
+    "old_evidence_unchanged": true,
+    "CLI_wall_seconds": 44.3,
+    "peak_RSS_bytes": 253296640,
+    "resample_batch_elements_cap": 1000000,
+    "resource_limits_met": true
+  },
+  "hypotheses": {
+    "H1": "inconclusive",
+    "H2": "inconclusive",
+    "detail": "hypotheses.json"
+  },
+  "submission_state": "Review pending; submission is distinct from Owner acceptance; no new tags, releases, merges or prior PR modifications.",
+  "not_performed": [
+    "Owner acceptance of RQ-M04",
+    "Owner individual new-feature operations",
+    "External scientific review",
+    "Other browsers/mobile viewport",
+    "Unrelated improvement tickets or full MATH-005 restart trial",
+    "Next research question execution"
+  ],
+  "artifact_size": {
+    "scope": "Conservative full sizes of every new or modified public file relative to accepted RQ-M03 HEAD; includes full README/HANDOFF, not just added lines. Ignored development files/virtual environment are not public artifacts.",
+    "limit_bytes": 52428800,
+    "files": 71,
+    "bytes": 28518351,
+    "MiB": 27.197219
+  },
+  "publication": {
+    "PR": "https://github.com/Tone75/mathscape/pull/4",
+    "PR_state": "OPEN",
+    "PR_draft": false,
+    "base_branch": "feat/rq-m03-stability",
+    "head_branch": "feat/rq-m04-distribution-shape",
+    "science_git_sha": "137efab0dc949359a58fc481676d6da6341b0408",
+    "latest_submission_head_command": "gh pr view 4 --repo Tone75/mathscape --json headRefOid",
+    "Notion_synced": [
+      "MATH-036",
+      "MATH-037",
+      "MATH-038",
+      "MATH-039",
+      "Project Home",
+      "Fixed specification"
+    ],
+    "PENDING_NOTION_SYNC": false,
+    "Owner_review": "pending",
+    "task_status": "In Progress",
+    "Next_only": "MATH-036",
+    "protected_remote_refs_equal_start": 8,
+    "new_tag_release_merge": false
+  }
+}

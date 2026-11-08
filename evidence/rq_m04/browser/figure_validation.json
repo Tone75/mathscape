@@ -1,0 +1,13 @@
+{
+  "url": "http://127.0.0.1:8556/overview.html",
+  "rendered_four_panels": true,
+  "observed": [
+    "all six independent populations",
+    "BCa coverage and miss directions separated",
+    "Ase and Apop separated",
+    "B999 dashed and B4999 solid",
+    "99% original-level MC intervals, N1200,K10"
+  ],
+  "console_warnings_errors": [],
+  "self_contained_html_download_verified": true
+}

@@ -1,0 +1,500 @@
+{
+  "scope": "Agent-operated local browser validation, not Owner individual operation or external scientific review",
+  "browser": "ChatGPT in-app browser",
+  "url": "http://127.0.0.1:8555/",
+  "old_labs": [
+    {
+      "lab": "Probability Explorer",
+      "operations": [
+        "beta selection",
+        "alpha=.5 slider"
+      ],
+      "metrics": [
+        "0.2",
+        "0.045714"
+      ]
+    },
+    {
+      "lab": "Chaos Explorer",
+      "operations": [
+        "r3.9 preset",
+        "manual r3.91"
+      ],
+      "metrics": [
+        "3.91",
+        "0.2",
+        "1e-8"
+      ]
+    },
+    {
+      "lab": "Fractal Explorer",
+      "operations": [
+        "zoom in",
+        "pan up",
+        "zoom out",
+        "reset"
+      ],
+      "result": "reset width3,360x360 rendered"
+    },
+    {
+      "lab": "Inference t",
+      "operations": [
+        "normal n20 d0 B500 apply"
+      ],
+      "result": "applied conditions and finite t results rendered; old fixed runner not invoked"
+    },
+    {
+      "lab": "Inference RQ-M02",
+      "operations": [
+        "centered exponential n5 apply",
+        "alpha .05 to .10 apply"
+      ],
+      "result": "sample mean .10481,SD .67927,n5 retained; old fixed runner not invoked"
+    },
+    {
+      "lab": "Inference RQ-M03",
+      "operations": [
+        "normal n5 B199 to4999",
+        "k0 to19",
+        "mode roundtrip"
+      ],
+      "sample_hash_retained": "原標本SHA-256：a51957761cf1683410aad64c63e2639bdf4da99bb74c4e916e1d7b571f3324f3",
+      "result": "old saved view/control selection retained; old runner not invoked"
+    }
+  ],
+  "saved_view": [
+    {
+      "step": "normal_B4999_k0",
+      "condition": "表示条件：正規分布（独立した対照） ／ seed=0 ／ 原標本ID=0 ／ B=4999 ／ k=0 ／ n20・固定α=0.05",
+      "sample_sha256": "1cdb433279b6e7f614249eef813bbf8472af39d33614f7b3b5e9fb90d9b4328d",
+      "theory": [
+        "0",
+        "0",
+        "−∞"
+      ],
+      "bca_metrics": [
+        "94.27%",
+        "0.65%",
+        "0.16%",
+        "0.04617",
+        "0.04575"
+      ],
+      "fixed_alpha": true,
+      "exceptions": 0
+    },
+    {
+      "step": "normal_B999_k0",
+      "condition": "表示条件：正規分布（独立した対照） ／ seed=0 ／ 原標本ID=0 ／ B=999 ／ k=0 ／ n20・固定α=0.05",
+      "sample_sha256": "1cdb433279b6e7f614249eef813bbf8472af39d33614f7b3b5e9fb90d9b4328d",
+      "theory": [
+        "0",
+        "0",
+        "−∞"
+      ],
+      "bca_metrics": [
+        "94.01%",
+        "0.64%",
+        "0.22%",
+        "0.1025",
+        "0.1016"
+      ],
+      "fixed_alpha": true,
+      "exceptions": 0
+    },
+    {
+      "step": "normal_B999_k9",
+      "condition": "表示条件：正規分布（独立した対照） ／ seed=0 ／ 原標本ID=0 ／ B=999 ／ k=9 ／ n20・固定α=0.05",
+      "sample_sha256": "1cdb433279b6e7f614249eef813bbf8472af39d33614f7b3b5e9fb90d9b4328d",
+      "theory": [
+        "0",
+        "0",
+        "−∞"
+      ],
+      "bca_metrics": [
+        "94.01%",
+        "0.64%",
+        "0.22%",
+        "0.1025",
+        "0.1016"
+      ],
+      "fixed_alpha": true,
+      "exceptions": 0
+    },
+    {
+      "step": "normal_BCa_hidden",
+      "condition": "表示条件：正規分布（独立した対照） ／ seed=0 ／ 原標本ID=0 ／ B=999 ／ k=9 ／ n20・固定α=0.05",
+      "sample_sha256": "1cdb433279b6e7f614249eef813bbf8472af39d33614f7b3b5e9fb90d9b4328d",
+      "theory": [
+        "0",
+        "0",
+        "−∞"
+      ],
+      "bca_metrics": [
+        "94.01%",
+        "0.64%",
+        "0.22%",
+        "0.1025",
+        "0.1016"
+      ],
+      "fixed_alpha": true,
+      "exceptions": 0
+    },
+    {
+      "step": "normal_after_lab_roundtrip",
+      "condition": "表示条件：正規分布（独立した対照） ／ seed=0 ／ 原標本ID=0 ／ B=999 ／ k=9 ／ n20・固定α=0.05",
+      "sample_sha256": "1cdb433279b6e7f614249eef813bbf8472af39d33614f7b3b5e9fb90d9b4328d",
+      "theory": [
+        "0",
+        "0",
+        "−∞"
+      ],
+      "bca_metrics": [
+        "94.01%",
+        "0.64%",
+        "0.22%",
+        "0.1025",
+        "0.1016"
+      ],
+      "fixed_alpha": true,
+      "exceptions": 0
+    },
+    {
+      "step": "normal_after_mode_roundtrip",
+      "condition": "表示条件：正規分布（独立した対照） ／ seed=0 ／ 原標本ID=0 ／ B=999 ／ k=9 ／ n20・固定α=0.05",
+      "sample_sha256": "1cdb433279b6e7f614249eef813bbf8472af39d33614f7b3b5e9fb90d9b4328d",
+      "theory": [
+        "0",
+        "0",
+        "−∞"
+      ],
+      "bca_metrics": [
+        "94.01%",
+        "0.64%",
+        "0.22%",
+        "0.1025",
+        "0.1016"
+      ],
+      "fixed_alpha": true,
+      "exceptions": 0
+    },
+    {
+      "step": "gamma_0.5_B4999_initial",
+      "condition": "表示条件：標準化ガンマ r=0.5 ／ seed=0 ／ 原標本ID=0 ／ B=4999 ／ k=0 ／ n20・固定α=0.05",
+      "sample_sha256": "a614535824d7a70894d7ce8256995fd4a958fbc76c135319b23518b6e4eb37c9",
+      "theory": [
+        "2.8284",
+        "12",
+        "-0.70711"
+      ],
+      "bca_metrics": [
+        "90.40%",
+        "0.84%",
+        "3.63%",
+        "0.06313",
+        "0.06209"
+      ],
+      "fixed_alpha": true,
+      "exceptions": 0
+    },
+    {
+      "step": "gamma_0.5_B999_k0",
+      "condition": "表示条件：標準化ガンマ r=0.5 ／ seed=0 ／ 原標本ID=0 ／ B=999 ／ k=0 ／ n20・固定α=0.05",
+      "sample_sha256": "a614535824d7a70894d7ce8256995fd4a958fbc76c135319b23518b6e4eb37c9",
+      "theory": [
+        "2.8284",
+        "12",
+        "-0.70711"
+      ],
+      "bca_metrics": [
+        "90.38%",
+        "0.82%",
+        "3.78%",
+        "0.1362",
+        "0.1326"
+      ],
+      "fixed_alpha": true,
+      "exceptions": 0
+    },
+    {
+      "step": "gamma_0.5_B999_k9",
+      "condition": "表示条件：標準化ガンマ r=0.5 ／ seed=0 ／ 原標本ID=0 ／ B=999 ／ k=9 ／ n20・固定α=0.05",
+      "sample_sha256": "a614535824d7a70894d7ce8256995fd4a958fbc76c135319b23518b6e4eb37c9",
+      "theory": [
+        "2.8284",
+        "12",
+        "-0.70711"
+      ],
+      "bca_metrics": [
+        "90.38%",
+        "0.82%",
+        "3.78%",
+        "0.1362",
+        "0.1326"
+      ],
+      "fixed_alpha": true,
+      "exceptions": 0
+    },
+    {
+      "step": "gamma_0.5_explicit_original1",
+      "condition": "表示条件：標準化ガンマ r=0.5 ／ seed=0 ／ 原標本ID=1 ／ B=999 ／ k=9 ／ n20・固定α=0.05",
+      "sample_sha256": "7d12d1ac7711d91f2854d6c4db3dca17705bad8214a881e4848b5ffe80c727e2",
+      "theory": [
+        "2.8284",
+        "12",
+        "-0.70711"
+      ],
+      "bca_metrics": [
+        "90.38%",
+        "0.82%",
+        "3.78%",
+        "0.1362",
+        "0.1326"
+      ],
+      "fixed_alpha": true,
+      "exceptions": 0
+    },
+    {
+      "step": "gamma_1_B999_initial",
+      "condition": "表示条件：標準化ガンマ r=1 ／ seed=0 ／ 原標本ID=0 ／ B=999 ／ k=0 ／ n20・固定α=0.05",
+      "sample_sha256": "24a8276b9a6cd08b52546b9bd5808a0db1e9fdc05f569e6aeacd3cdac197bdf9",
+      "theory": [
+        "2",
+        "6",
+        "-1"
+      ],
+      "bca_metrics": [
+        "90.94%",
+        "0.79%",
+        "3.38%",
+        "0.1209",
+        "0.1189"
+      ],
+      "fixed_alpha": true,
+      "exceptions": 0
+    },
+    {
+      "step": "gamma_1_B4999_k0",
+      "condition": "表示条件：標準化ガンマ r=1 ／ seed=0 ／ 原標本ID=0 ／ B=4999 ／ k=0 ／ n20・固定α=0.05",
+      "sample_sha256": "24a8276b9a6cd08b52546b9bd5808a0db1e9fdc05f569e6aeacd3cdac197bdf9",
+      "theory": [
+        "2",
+        "6",
+        "-1"
+      ],
+      "bca_metrics": [
+        "91.33%",
+        "0.79%",
+        "3.39%",
+        "0.05636",
+        "0.05583"
+      ],
+      "fixed_alpha": true,
+      "exceptions": 0
+    },
+    {
+      "step": "gamma_1_B4999_k9",
+      "condition": "表示条件：標準化ガンマ r=1 ／ seed=0 ／ 原標本ID=0 ／ B=4999 ／ k=9 ／ n20・固定α=0.05",
+      "sample_sha256": "24a8276b9a6cd08b52546b9bd5808a0db1e9fdc05f569e6aeacd3cdac197bdf9",
+      "theory": [
+        "2",
+        "6",
+        "-1"
+      ],
+      "bca_metrics": [
+        "91.33%",
+        "0.79%",
+        "3.39%",
+        "0.05636",
+        "0.05583"
+      ],
+      "fixed_alpha": true,
+      "exceptions": 0
+    },
+    {
+      "step": "gamma_16_B4999_initial",
+      "condition": "表示条件：標準化ガンマ r=16 ／ seed=0 ／ 原標本ID=0 ／ B=4999 ／ k=0 ／ n20・固定α=0.05",
+      "sample_sha256": "615e28bc945ac9d385f8ab9b7469450e4b3d23ebc9d4213e1a325accc26efc8c",
+      "theory": [
+        "0.5",
+        "0.375",
+        "-4"
+      ],
+      "bca_metrics": [
+        "92.67%",
+        "0.73%",
+        "2.03%",
+        "0.04644",
+        "0.04593"
+      ],
+      "fixed_alpha": true,
+      "exceptions": 0
+    },
+    {
+      "step": "gamma_16_B999_k0",
+      "condition": "表示条件：標準化ガンマ r=16 ／ seed=0 ／ 原標本ID=0 ／ B=999 ／ k=0 ／ n20・固定α=0.05",
+      "sample_sha256": "615e28bc945ac9d385f8ab9b7469450e4b3d23ebc9d4213e1a325accc26efc8c",
+      "theory": [
+        "0.5",
+        "0.375",
+        "-4"
+      ],
+      "bca_metrics": [
+        "92.58%",
+        "0.71%",
+        "2.05%",
+        "0.1025",
+        "0.1013"
+      ],
+      "fixed_alpha": true,
+      "exceptions": 0
+    },
+    {
+      "step": "gamma_16_B999_k9",
+      "condition": "表示条件：標準化ガンマ r=16 ／ seed=0 ／ 原標本ID=0 ／ B=999 ／ k=9 ／ n20・固定α=0.05",
+      "sample_sha256": "615e28bc945ac9d385f8ab9b7469450e4b3d23ebc9d4213e1a325accc26efc8c",
+      "theory": [
+        "0.5",
+        "0.375",
+        "-4"
+      ],
+      "bca_metrics": [
+        "92.58%",
+        "0.71%",
+        "2.05%",
+        "0.1025",
+        "0.1013"
+      ],
+      "fixed_alpha": true,
+      "exceptions": 0
+    },
+    {
+      "step": "gamma_0.5_return_restores_original1_k9",
+      "condition": "表示条件：標準化ガンマ r=0.5 ／ seed=0 ／ 原標本ID=1 ／ B=999 ／ k=9 ／ n20・固定α=0.05",
+      "sample_sha256": "7d12d1ac7711d91f2854d6c4db3dca17705bad8214a881e4848b5ffe80c727e2",
+      "theory": [
+        "2.8284",
+        "12",
+        "-0.70711"
+      ],
+      "bca_metrics": [
+        "90.38%",
+        "0.82%",
+        "3.78%",
+        "0.1362",
+        "0.1326"
+      ],
+      "fixed_alpha": true,
+      "exceptions": 0
+    },
+    {
+      "step": "gamma_0.5_percentile_hidden_original1",
+      "condition": "表示条件：標準化ガンマ r=0.5 ／ seed=0 ／ 原標本ID=1 ／ B=999 ／ k=9 ／ n20・固定α=0.05",
+      "sample_sha256": "7d12d1ac7711d91f2854d6c4db3dca17705bad8214a881e4848b5ffe80c727e2",
+      "theory": [
+        "2.8284",
+        "12",
+        "-0.70711"
+      ],
+      "bca_metrics": [
+        "90.38%",
+        "0.82%",
+        "3.78%",
+        "0.1362",
+        "0.1326"
+      ],
+      "fixed_alpha": true,
+      "exceptions": 0
+    },
+    {
+      "step": "gamma_0.5_after_lab_roundtrip_original1",
+      "condition": "表示条件：標準化ガンマ r=0.5 ／ seed=0 ／ 原標本ID=1 ／ B=999 ／ k=9 ／ n20・固定α=0.05",
+      "sample_sha256": "7d12d1ac7711d91f2854d6c4db3dca17705bad8214a881e4848b5ffe80c727e2",
+      "theory": [
+        "2.8284",
+        "12",
+        "-0.70711"
+      ],
+      "bca_metrics": [
+        "90.38%",
+        "0.82%",
+        "3.78%",
+        "0.1362",
+        "0.1326"
+      ],
+      "fixed_alpha": true,
+      "exceptions": 0
+    },
+    {
+      "step": "gamma_0.5_original0_k0_restored",
+      "condition": "表示条件：標準化ガンマ r=0.5 ／ seed=0 ／ 原標本ID=0 ／ B=4999 ／ k=0 ／ n20・固定α=0.05",
+      "sample_sha256": "a614535824d7a70894d7ce8256995fd4a958fbc76c135319b23518b6e4eb37c9",
+      "theory": [
+        "2.8284",
+        "12",
+        "-0.70711"
+      ],
+      "bca_metrics": [
+        "90.40%",
+        "0.84%",
+        "3.63%",
+        "0.06313",
+        "0.06209"
+      ],
+      "fixed_alpha": true,
+      "exceptions": 0
+    },
+    {
+      "step": "normal_return_restores_k9",
+      "condition": "表示条件：正規分布（独立した対照） ／ seed=0 ／ 原標本ID=0 ／ B=4999 ／ k=9 ／ n20・固定α=0.05",
+      "sample_sha256": "1cdb433279b6e7f614249eef813bbf8472af39d33614f7b3b5e9fb90d9b4328d",
+      "theory": [
+        "0",
+        "0",
+        "−∞"
+      ],
+      "bca_metrics": [
+        "94.27%",
+        "0.65%",
+        "0.16%",
+        "0.04617",
+        "0.04575"
+      ],
+      "fixed_alpha": true,
+      "exceptions": 0
+    },
+    {
+      "step": "gamma_0.5_final_representative",
+      "condition": "表示条件：標準化ガンマ r=0.5 ／ seed=0 ／ 原標本ID=0 ／ B=4999 ／ k=0 ／ n20・固定α=0.05",
+      "sample_sha256": "a614535824d7a70894d7ce8256995fd4a958fbc76c135319b23518b6e4eb37c9",
+      "theory": [
+        "2.8284",
+        "12",
+        "-0.70711"
+      ],
+      "bca_metrics": [
+        "90.40%",
+        "0.84%",
+        "3.63%",
+        "0.06313",
+        "0.06209"
+      ],
+      "fixed_alpha": true,
+      "exceptions": 0
+    }
+  ],
+  "csv_download": {
+    "downloaded": true,
+    "bytes": 71268,
+    "sha256": "b1c6160140f37b6b885321779ee31d4936bacb9c33003f925a8d98ef8a0ea51c"
+  },
+  "html_download": {
+    "downloaded": true,
+    "bytes": 4864877,
+    "sha256": "3c3e433494bb44a711911957a63b9e899e8a25c3e6e00e8cd5f4f7d461c25369"
+  },
+  "hypotheses_text": [
+    "H1：保留。BCa・B4999に固定した推定値-0.022667、99%区間[-0.051381, 0.0060476]。事前閾値-0.02、seed別点推定：0.005, -0.005, -0.068",
+    "H2：保留。BCa・B4999に固定した推定値0.036333、99%区間[0.013632, 0.059034]。事前閾値0.03、seed別点推定：0.015, 0.0345, 0.0595"
+  ],
+  "console_warnings_errors": []
+}
