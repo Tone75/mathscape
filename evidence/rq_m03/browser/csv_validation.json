@@ -1,0 +1,119 @@
+{
+  "status": "passed",
+  "scope": "Browser-visible rounded metrics and sample hashes compared independently to saved CSV/NPZ; full-precision arrays and all36 tables also checked in AppTest",
+  "checks": [
+    {
+      "step": "normal_n5_B199_k0",
+      "csv_metrics_equal": true,
+      "original_hash_equal": true
+    },
+    {
+      "step": "normal_n5_B999_k0",
+      "csv_metrics_equal": true,
+      "original_hash_equal": true
+    },
+    {
+      "step": "normal_n5_B4999_k0",
+      "csv_metrics_equal": true,
+      "original_hash_equal": true
+    },
+    {
+      "step": "normal_n5_B4999_k19",
+      "csv_metrics_equal": true,
+      "original_hash_equal": true
+    },
+    {
+      "step": "normal_n5_percentile_hidden",
+      "csv_metrics_equal": true,
+      "original_hash_equal": true
+    },
+    {
+      "step": "normal_n5_after_lab_roundtrip",
+      "csv_metrics_equal": true,
+      "original_hash_equal": true
+    },
+    {
+      "step": "normal_n5_after_mode_roundtrip",
+      "csv_metrics_equal": true,
+      "original_hash_equal": true
+    },
+    {
+      "step": "exponential_n5_B4999_k19",
+      "csv_metrics_equal": true,
+      "original_hash_equal": true
+    },
+    {
+      "step": "exponential_n5_B199_k19",
+      "csv_metrics_equal": true,
+      "original_hash_equal": true
+    },
+    {
+      "step": "exponential_n5_B199_k0",
+      "csv_metrics_equal": true,
+      "original_hash_equal": true
+    },
+    {
+      "step": "exponential_n5_B999_k0",
+      "csv_metrics_equal": true,
+      "original_hash_equal": true
+    },
+    {
+      "step": "exponential_n5_B4999_k0_visible_markers",
+      "csv_metrics_equal": true,
+      "original_hash_equal": true
+    },
+    {
+      "step": "exponential_n20_B4999_k0",
+      "csv_metrics_equal": true,
+      "original_hash_equal": true
+    },
+    {
+      "step": "exponential_n20_B199_k0",
+      "csv_metrics_equal": true,
+      "original_hash_equal": true
+    },
+    {
+      "step": "exponential_n20_B999_k0",
+      "csv_metrics_equal": true,
+      "original_hash_equal": true
+    },
+    {
+      "step": "exponential_n20_B999_k19",
+      "csv_metrics_equal": true,
+      "original_hash_equal": true
+    },
+    {
+      "step": "exponential_n20_explicit_original1",
+      "csv_metrics_equal": true,
+      "original_hash_equal": true
+    },
+    {
+      "step": "exponential_n20_original0_restored",
+      "csv_metrics_equal": true,
+      "original_hash_equal": true
+    },
+    {
+      "step": "exponential_n20_BCa_hidden",
+      "csv_metrics_equal": true,
+      "original_hash_equal": true
+    },
+    {
+      "step": "exponential_n20_after_lab_roundtrip",
+      "csv_metrics_equal": true,
+      "original_hash_equal": true
+    },
+    {
+      "step": "exponential_n20_final_B4999_k19_all_methods",
+      "csv_metrics_equal": true,
+      "original_hash_equal": true
+    }
+  ],
+  "visible_numeric_cells": 63,
+  "csv_download_bytes_equal": true,
+  "csv_download_sha256": "eb9f8153bf186d9ac2a3ee35a7682040300059450b0af9d7fbfc18598bb78f45",
+  "not_checked": [
+    "Owner individual operations",
+    "External scientific review",
+    "Other browsers and mobile viewport"
+  ]
+}

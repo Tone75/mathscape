@@ -1,0 +1,185 @@
+{
+  "question_id": "RQ-M03",
+  "confirmatory_quantities": 4,
+  "decision_confidence": 0.99,
+  "pooled_independent_originals": 300,
+  "quantities": {
+    "H1_n5": {
+      "N": 300,
+      "finite_count": 300,
+      "mean": -0.04413150316408888,
+      "sd": 0.04238505692195989,
+      "mcse": 0.002447102402351115,
+      "low": -0.050475302629505135,
+      "high": -0.03778770369867262,
+      "df": 299,
+      "valid": true,
+      "reason": "",
+      "threshold": 0.0,
+      "direction": "less",
+      "seed_points": [
+        -0.04758240851263765,
+        -0.042317475995890995,
+        -0.04249462498373799
+      ],
+      "status": "supported",
+      "complete_design": true,
+      "conditional_interval": {
+        "N": 300,
+        "finite_count": 300,
+        "mean": -0.04413150316408888,
+        "sd": 0.04238505692195989,
+        "mcse": 0.002447102402351115,
+        "low": -0.050475302629505135,
+        "high": -0.03778770369867262,
+        "df": 299,
+        "valid": true,
+        "reason": ""
+      },
+      "independent_unit": "original sample"
+    },
+    "H1_n20": {
+      "N": 300,
+      "finite_count": 300,
+      "mean": -0.06518917903698819,
+      "sd": 0.0222438225529512,
+      "mcse": 0.0012842476938752642,
+      "low": -0.0685184266508357,
+      "high": -0.061859931423140675,
+      "df": 299,
+      "valid": true,
+      "reason": "",
+      "threshold": 0.0,
+      "direction": "less",
+      "seed_points": [
+        -0.06860956158648242,
+        -0.061654969030398396,
+        -0.06530300649408377
+      ],
+      "status": "supported",
+      "complete_design": true,
+      "conditional_interval": {
+        "N": 300,
+        "finite_count": 300,
+        "mean": -0.06518917903698819,
+        "sd": 0.0222438225529512,
+        "mcse": 0.0012842476938752642,
+        "low": -0.0685184266508357,
+        "high": -0.061859931423140675,
+        "df": 299,
+        "valid": true,
+        "reason": ""
+      },
+      "independent_unit": "original sample"
+    },
+    "H3": {
+      "N": 300,
+      "finite_count": 300,
+      "mean": 0.7788333333333334,
+      "sd": 0.4093517661503248,
+      "mcse": 0.023633935238013874,
+      "low": 0.7175653841112056,
+      "high": 0.8401012825554611,
+      "df": 299,
+      "valid": true,
+      "reason": "",
+      "threshold": 0.93,
+      "direction": "less",
+      "seed_points": [
+        0.7819999999999999,
+        0.816,
+        0.7384999999999999
+      ],
+      "status": "supported",
+      "complete_design": true,
+      "conditional_interval": {
+        "N": 300,
+        "finite_count": 300,
+        "mean": 0.7788333333333334,
+        "sd": 0.4093517661503248,
+        "mcse": 0.023633935238013874,
+        "low": 0.7175653841112056,
+        "high": 0.8401012825554611,
+        "df": 299,
+        "valid": true,
+        "reason": ""
+      },
+      "independent_unit": "original sample"
+    },
+    "H2": {
+      "N1": 119,
+      "N0": 181,
+      "finite_count1": 119,
+      "finite_count0": 181,
+      "mean1": 0.139980130050774,
+      "mean0": 0.10732062046621677,
+      "variance1": 0.001700728395505761,
+      "variance0": 0.0004719612307684649,
+      "difference": 0.03265950958455724,
+      "se": 0.004110882614272926,
+      "df": 161.46231579982634,
+      "low": 0.021943995745907788,
+      "high": 0.04337502342320669,
+      "valid": true,
+      "reason": "",
+      "conditional_welch": {
+        "N1": 119,
+        "N0": 181,
+        "finite_count1": 119,
+        "finite_count0": 181,
+        "mean1": 0.139980130050774,
+        "mean0": 0.10732062046621677,
+        "variance1": 0.001700728395505761,
+        "variance0": 0.0004719612307684649,
+        "difference": 0.03265950958455724,
+        "se": 0.004110882614272926,
+        "df": 161.46231579982634,
+        "low": 0.021943995745907788,
+        "high": 0.04337502342320669,
+        "valid": true,
+        "reason": ""
+      },
+      "threshold": 0.02,
+      "direction": "greater",
+      "seed_points": [
+        0.02543576546465151,
+        0.028808368660450417,
+        0.04494002842849387
+      ],
+      "seed_group_counts_W0_W1": [
+        [
+          56,
+          44
+        ],
+        [
+          62,
+          38
+        ],
+        [
+          63,
+          37
+        ]
+      ],
+      "all_required_complete": true,
+      "group_requirements_met": true,
+      "original_total": 300,
+      "complete_original_count": 300,
+      "conditional_interval_status": "supported",
+      "status": "supported",
+      "interpretation": "association, not causal effect; class k0..9, evaluation k10..19"
+    }
+  },
+  "hypotheses": {
+    "H1": {
+      "status": "supported",
+      "n5": "supported",
+      "n20": "supported"
+    },
+    "H2": {
+      "status": "supported"
+    },
+    "H3": {
+      "status": "supported"
+    }
+  }
+}

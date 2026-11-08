@@ -1,0 +1,87 @@
+{
+  "question_id": "RQ-M03",
+  "status": "passed",
+  "baseline_tests": 483,
+  "pytest": {
+    "passed": 612,
+    "failed": 0,
+    "seconds": 10.95,
+    "command": ".venv/bin/python -m pytest -q",
+    "after_visible_marker_fix": true
+  },
+  "new_tests": {
+    "math": 64,
+    "runner": 20,
+    "independent_audit": 31,
+    "app": 14
+  },
+  "pip_check": "No broken requirements found.",
+  "local_start": {
+    "command": ".venv/bin/python -m streamlit run app.py --server.headless true --server.port 8553",
+    "http_status": 200,
+    "health": "ok",
+    "server_exception_matches": 0,
+    "duplicate_state_warning_matches": 0,
+    "owned_qa_servers_stopped": true
+  },
+  "saved_data_audit": {
+    "mismatch_count": 0,
+    "original_rows": 10800,
+    "seed_rows": 108,
+    "pooled_rows": 36,
+    "H2_group_rows": 8,
+    "paired_coverage_rows": 48,
+    "confirmatory_quantities": 4,
+    "bootstrap_generation_called": false
+  },
+  "browser": {
+    "observations": 21,
+    "visible_csv_numeric_cells": 63,
+    "downloaded_36_row_csv_bytes_equal": true,
+    "conditions": [
+      "normal n5 seed0 outer0",
+      "centered_exponential n5 seed0 outer0",
+      "centered_exponential n20 seed0 outer0"
+    ],
+    "sample_preservation": [
+      "B199/999/4999",
+      "k0/19",
+      "method hiding/restoring",
+      "Lab roundtrip",
+      "inference-mode roundtrip"
+    ],
+    "explicit_original_change": "exponential n20 original0 to1 changes hash and restoration to0 recovers it",
+    "fixed_alpha": 0.05,
+    "old_free_alpha_kept_separate": 0.1,
+    "old_labs": [
+      "Probability gamma k.5",
+      "Chaos preset3.2 and manual3.21",
+      "Fractal zoom/pan/reset",
+      "Inference t apply and RQ-M02 alpha/sample preservation"
+    ],
+    "console_warnings_errors": 0,
+    "standalone_figure_visually_checked": true,
+    "visible_marker_bug_fixed": "original points now filled circles; selected line-only caps have explicit stroke width; fixed numerical sources/data unchanged"
+  },
+  "preregistered_source_commit": "e12faa6c34917fec42856e04cd806a7d5ac6a2a8",
+  "manifest_sha256": "aec36ae1d78cd406d0fa6503c832118a7550e15bb3f5842000343c918c526534",
+  "preregistered_source_hashes_unchanged": true,
+  "main_attempts": 1,
+  "reruns": 0,
+  "not_performed": [
+    "Owner individual operation review of new work",
+    "Owner acceptance of new work",
+    "External scientific review",
+    "Other browsers/mobile viewport",
+    "RQ-M01/M02 fixed experiment reruns",
+    "MATH-005/006/011/027 unrelated work"
+  ],
+  "submission_artifacts": {
+    "conservative_changed_files": 55,
+    "bytes": 12971180,
+    "MiB": 12.370281219482422,
+    "cap_bytes": 52428800,
+    "within_cap": true,
+    "scope": "Entire contents of changed/new public files relative to accepted RQ-M02 HEAD, including existing README/HANDOFF contents; excluded .local logs and .venv/caches"
+  }
+}

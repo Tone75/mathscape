@@ -1,0 +1,309 @@
+{
+  "scope": "Agent-operated local browser verification, not Owner individual operation or external scientific review",
+  "browser": "ChatGPT in-app browser",
+  "url": "http://127.0.0.1:8553/",
+  "old_labs": [
+    {
+      "lab": "Probability Explorer",
+      "operations": [
+        "normal initial render",
+        "gamma selection",
+        "shape k=0.5 by slider"
+      ],
+      "result": "rendered PDF, moments and singular-endpoint explanation"
+    },
+    {
+      "lab": "Chaos Explorer",
+      "operations": [
+        "period2 preset r=3.2",
+        "manual r=3.21"
+      ],
+      "result": "updated r and trajectory charts"
+    },
+    {
+      "lab": "Fractal Explorer",
+      "operations": [
+        "zoom in width3 to1.5",
+        "pan right centerRe=-.325",
+        "zoom out",
+        "reset Re=-.7 width3"
+      ],
+      "result": "updated controls and fractal image"
+    },
+    {
+      "lab": "Inference Lab t",
+      "operations": [
+        "normal n20 B500 apply"
+      ],
+      "result": "applied conditions, finite t statistics and saved comparison rendered"
+    },
+    {
+      "lab": "Inference Lab RQ-M02",
+      "operations": [
+        "centered exponential n5 B999 apply",
+        "alpha .05 to .10 apply"
+      ],
+      "result": "sample mean .10481, SD .67927, n5 retained; applied alpha changed; saved comparisons rendered"
+    }
+  ],
+  "saved_view": [
+    {
+      "step": "normal_n5_B199_k0",
+      "condition": "表示条件：正規分布 N(0,1) ／ n=5 ／ master seed=0 ／ 原標本ID=0 ／ B=199 ／ 選択k=0 ／ 固定α=0.05",
+      "sample_sha256": "a51957761cf1683410aad64c63e2639bdf4da99bb74c4e916e1d7b571f3324f3",
+      "metrics": [
+        "81.15%",
+        "2.12%",
+        "0.1981"
+      ],
+      "fixed_alpha": true,
+      "exceptions": 0
+    },
+    {
+      "step": "normal_n5_B999_k0",
+      "condition": "表示条件：正規分布 N(0,1) ／ n=5 ／ master seed=0 ／ 原標本ID=0 ／ B=999 ／ 選択k=0 ／ 固定α=0.05",
+      "sample_sha256": "a51957761cf1683410aad64c63e2639bdf4da99bb74c4e916e1d7b571f3324f3",
+      "metrics": [
+        "82.35%",
+        "2.13%",
+        "0.1088"
+      ],
+      "fixed_alpha": true,
+      "exceptions": 0
+    },
+    {
+      "step": "normal_n5_B4999_k0",
+      "condition": "表示条件：正規分布 N(0,1) ／ n=5 ／ master seed=0 ／ 原標本ID=0 ／ B=4999 ／ 選択k=0 ／ 固定α=0.05",
+      "sample_sha256": "a51957761cf1683410aad64c63e2639bdf4da99bb74c4e916e1d7b571f3324f3",
+      "metrics": [
+        "82.22%",
+        "2.16%",
+        "0.05551"
+      ],
+      "fixed_alpha": true,
+      "exceptions": 0
+    },
+    {
+      "step": "normal_n5_B4999_k19",
+      "condition": "表示条件：正規分布 N(0,1) ／ n=5 ／ master seed=0 ／ 原標本ID=0 ／ B=4999 ／ 選択k=19 ／ 固定α=0.05",
+      "sample_sha256": "a51957761cf1683410aad64c63e2639bdf4da99bb74c4e916e1d7b571f3324f3",
+      "metrics": [
+        "82.22%",
+        "2.16%",
+        "0.05551"
+      ],
+      "fixed_alpha": true,
+      "exceptions": 0
+    },
+    {
+      "step": "normal_n5_percentile_hidden",
+      "condition": "表示条件：正規分布 N(0,1) ／ n=5 ／ master seed=0 ／ 原標本ID=0 ／ B=4999 ／ 選択k=19 ／ 固定α=0.05",
+      "sample_sha256": "a51957761cf1683410aad64c63e2639bdf4da99bb74c4e916e1d7b571f3324f3",
+      "metrics": [
+        "82.22%",
+        "2.16%",
+        "0.05551"
+      ],
+      "fixed_alpha": true,
+      "exceptions": 0
+    },
+    {
+      "step": "normal_n5_after_lab_roundtrip",
+      "condition": "表示条件：正規分布 N(0,1) ／ n=5 ／ master seed=0 ／ 原標本ID=0 ／ B=4999 ／ 選択k=19 ／ 固定α=0.05",
+      "sample_sha256": "a51957761cf1683410aad64c63e2639bdf4da99bb74c4e916e1d7b571f3324f3",
+      "metrics": [
+        "82.22%",
+        "2.16%",
+        "0.05551"
+      ],
+      "fixed_alpha": true,
+      "exceptions": 0
+    },
+    {
+      "step": "normal_n5_after_mode_roundtrip",
+      "condition": "表示条件：正規分布 N(0,1) ／ n=5 ／ master seed=0 ／ 原標本ID=0 ／ B=4999 ／ 選択k=19 ／ 固定α=0.05",
+      "sample_sha256": "a51957761cf1683410aad64c63e2639bdf4da99bb74c4e916e1d7b571f3324f3",
+      "metrics": [
+        "82.22%",
+        "2.16%",
+        "0.05551"
+      ],
+      "fixed_alpha": true,
+      "exceptions": 0
+    },
+    {
+      "step": "exponential_n5_B4999_k19",
+      "condition": "表示条件：中心化指数分布 Exp(1)−1 ／ n=5 ／ master seed=0 ／ 原標本ID=0 ／ B=4999 ／ 選択k=19 ／ 固定α=0.05",
+      "sample_sha256": "5702110038c986a1e29f11603f6e2c457fa560278c11e8427ddef85b0132a88a",
+      "metrics": [
+        "77.88%",
+        "2.36%",
+        "0.06065"
+      ],
+      "fixed_alpha": true,
+      "exceptions": 0
+    },
+    {
+      "step": "exponential_n5_B199_k19",
+      "condition": "表示条件：中心化指数分布 Exp(1)−1 ／ n=5 ／ master seed=0 ／ 原標本ID=0 ／ B=199 ／ 選択k=19 ／ 固定α=0.05",
+      "sample_sha256": "5702110038c986a1e29f11603f6e2c457fa560278c11e8427ddef85b0132a88a",
+      "metrics": [
+        "75.38%",
+        "2.34%",
+        "0.2096"
+      ],
+      "fixed_alpha": true,
+      "exceptions": 0
+    },
+    {
+      "step": "exponential_n5_B199_k0",
+      "condition": "表示条件：中心化指数分布 Exp(1)−1 ／ n=5 ／ master seed=0 ／ 原標本ID=0 ／ B=199 ／ 選択k=0 ／ 固定α=0.05",
+      "sample_sha256": "5702110038c986a1e29f11603f6e2c457fa560278c11e8427ddef85b0132a88a",
+      "metrics": [
+        "75.38%",
+        "2.34%",
+        "0.2096"
+      ],
+      "fixed_alpha": true,
+      "exceptions": 0
+    },
+    {
+      "step": "exponential_n5_B999_k0",
+      "condition": "表示条件：中心化指数分布 Exp(1)−1 ／ n=5 ／ master seed=0 ／ 原標本ID=0 ／ B=999 ／ 選択k=0 ／ 固定α=0.05",
+      "sample_sha256": "5702110038c986a1e29f11603f6e2c457fa560278c11e8427ddef85b0132a88a",
+      "metrics": [
+        "77.18%",
+        "2.33%",
+        "0.121"
+      ],
+      "fixed_alpha": true,
+      "exceptions": 0
+    },
+    {
+      "step": "exponential_n5_B4999_k0_visible_markers",
+      "condition": "表示条件：中心化指数分布 Exp(1)−1 ／ n=5 ／ master seed=0 ／ 原標本ID=0 ／ B=4999 ／ 選択k=0 ／ 固定α=0.05",
+      "sample_sha256": "5702110038c986a1e29f11603f6e2c457fa560278c11e8427ddef85b0132a88a",
+      "metrics": [
+        "77.88%",
+        "2.36%",
+        "0.06065"
+      ],
+      "fixed_alpha": true,
+      "exceptions": 0
+    },
+    {
+      "step": "exponential_n20_B4999_k0",
+      "condition": "表示条件：中心化指数分布 Exp(1)−1 ／ n=20 ／ master seed=0 ／ 原標本ID=0 ／ B=4999 ／ 選択k=0 ／ 固定α=0.05",
+      "sample_sha256": "132685dc3a7b1f48728185062f9c66f118f106fe738dade8c9ab126357579c4e",
+      "metrics": [
+        "91.72%",
+        "1.57%",
+        "0.05696"
+      ],
+      "fixed_alpha": true,
+      "exceptions": 0
+    },
+    {
+      "step": "exponential_n20_B199_k0",
+      "condition": "表示条件：中心化指数分布 Exp(1)−1 ／ n=20 ／ master seed=0 ／ 原標本ID=0 ／ B=199 ／ 選択k=0 ／ 固定α=0.05",
+      "sample_sha256": "132685dc3a7b1f48728185062f9c66f118f106fe738dade8c9ab126357579c4e",
+      "metrics": [
+        "90.30%",
+        "1.55%",
+        "0.2443"
+      ],
+      "fixed_alpha": true,
+      "exceptions": 0
+    },
+    {
+      "step": "exponential_n20_B999_k0",
+      "condition": "表示条件：中心化指数分布 Exp(1)−1 ／ n=20 ／ master seed=0 ／ 原標本ID=0 ／ B=999 ／ 選択k=0 ／ 固定α=0.05",
+      "sample_sha256": "132685dc3a7b1f48728185062f9c66f118f106fe738dade8c9ab126357579c4e",
+      "metrics": [
+        "91.43%",
+        "1.56%",
+        "0.1221"
+      ],
+      "fixed_alpha": true,
+      "exceptions": 0
+    },
+    {
+      "step": "exponential_n20_B999_k19",
+      "condition": "表示条件：中心化指数分布 Exp(1)−1 ／ n=20 ／ master seed=0 ／ 原標本ID=0 ／ B=999 ／ 選択k=19 ／ 固定α=0.05",
+      "sample_sha256": "132685dc3a7b1f48728185062f9c66f118f106fe738dade8c9ab126357579c4e",
+      "metrics": [
+        "91.43%",
+        "1.56%",
+        "0.1221"
+      ],
+      "fixed_alpha": true,
+      "exceptions": 0
+    },
+    {
+      "step": "exponential_n20_explicit_original1",
+      "condition": "表示条件：中心化指数分布 Exp(1)−1 ／ n=20 ／ master seed=0 ／ 原標本ID=1 ／ B=999 ／ 選択k=19 ／ 固定α=0.05",
+      "sample_sha256": "8cd0c34f9d56691edb8f254754d942d0c368f3e09ac74f2fa8421928a75992eb",
+      "metrics": [
+        "91.43%",
+        "1.56%",
+        "0.1221"
+      ],
+      "fixed_alpha": true,
+      "exceptions": 0
+    },
+    {
+      "step": "exponential_n20_original0_restored",
+      "condition": "表示条件：中心化指数分布 Exp(1)−1 ／ n=20 ／ master seed=0 ／ 原標本ID=0 ／ B=999 ／ 選択k=19 ／ 固定α=0.05",
+      "sample_sha256": "132685dc3a7b1f48728185062f9c66f118f106fe738dade8c9ab126357579c4e",
+      "metrics": [
+        "91.43%",
+        "1.56%",
+        "0.1221"
+      ],
+      "fixed_alpha": true,
+      "exceptions": 0
+    },
+    {
+      "step": "exponential_n20_BCa_hidden",
+      "condition": "表示条件：中心化指数分布 Exp(1)−1 ／ n=20 ／ master seed=0 ／ 原標本ID=0 ／ B=999 ／ 選択k=19 ／ 固定α=0.05",
+      "sample_sha256": "132685dc3a7b1f48728185062f9c66f118f106fe738dade8c9ab126357579c4e",
+      "metrics": [
+        "91.43%",
+        "1.56%",
+        "0.1221"
+      ],
+      "fixed_alpha": true,
+      "exceptions": 0
+    },
+    {
+      "step": "exponential_n20_after_lab_roundtrip",
+      "condition": "表示条件：中心化指数分布 Exp(1)−1 ／ n=20 ／ master seed=0 ／ 原標本ID=0 ／ B=999 ／ 選択k=19 ／ 固定α=0.05",
+      "sample_sha256": "132685dc3a7b1f48728185062f9c66f118f106fe738dade8c9ab126357579c4e",
+      "metrics": [
+        "91.43%",
+        "1.56%",
+        "0.1221"
+      ],
+      "fixed_alpha": true,
+      "exceptions": 0
+    },
+    {
+      "step": "exponential_n20_final_B4999_k19_all_methods",
+      "condition": "表示条件：中心化指数分布 Exp(1)−1 ／ n=20 ／ master seed=0 ／ 原標本ID=0 ／ B=4999 ／ 選択k=19 ／ 固定α=0.05",
+      "sample_sha256": "132685dc3a7b1f48728185062f9c66f118f106fe738dade8c9ab126357579c4e",
+      "metrics": [
+        "91.72%",
+        "1.57%",
+        "0.05696"
+      ],
+      "fixed_alpha": true,
+      "exceptions": 0
+    }
+  ],
+  "csv_download": {
+    "downloaded": true,
+    "bytes": 51450,
+    "sha256": "eb9f8153bf186d9ac2a3ee35a7682040300059450b0af9d7fbfc18598bb78f45"
+  },
+  "console_warnings_errors": []
+}

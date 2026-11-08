@@ -6,6 +6,12 @@
 
 CODEX_RECEIPT RQ-M03-v1: 開始HEADは承認済み提出HEADと一致、未コミット変更・別worktreeなし。新branch `feat/rq-m03-stability`。固定仕様全文と末尾プロンプトを受領し、MATH-033→034→035を順に実施する。NextはMATH-032だけ。詳細は `evidence/rq_m03/CODEX_RECEIPT.md`。既存483テスト成功。主実験は事前固定commit後に1回のみ。新成果はレビュー待ちで提出する。
 
+事前固定commit `e12faa6c34917fec42856e04cd806a7d5ac6a2a8`、manifest SHA256 `aec36ae1d78cd406d0fa6503c832118a7550e15bb3f5842000343c918c526534`。指定別namespaceスモーク1回後、主実験1回で12セル・1,200原標本・24,000系列を完了。再実行0、無効0、H1／H2／H3支持。H2は関連、H3は有限B=4,999の結果に限る。最大Bは真値ではない。全数値は `evidence/rq_m03/REPORT.md`／CSV／`hypotheses.json` を参照。
+
+主CLI外側wall13.62秒、内部13.563085292秒、Peak RSS225,509,376 bytes。別実装監査が保存原標本・端点から10800原標本別行、108 seed集計、36 pooled、8 H2群、48被覆差、4確認量を再計算し不一致0。全bootstrap列は保存していないため実prefix生成は固定ソース・参照テストで検証し、保存データ監査の範囲と区別する。外部科学レビューは未実施。
+
+再開の入口は `mathscape/stability.py`、`mathscape/stability_ui.py`、`scripts/run_stability_benchmark.py`、`scripts/audit_stability.py` と `evidence/rq_m03/`。主実験は再抽選せず、保存結果を利用する。通常pytest・UI・監査は主実験を起動しない。保存専用ビューを実装し、全612 pytest成功（10.95秒、旧483＋新129）・pip check成功。AppTest14件、実ブラウザで3条件・全B・k／手法／Lab／モード保持・固定α・CSV実ダウンロード一致・旧4 Lab代表操作を確認。画面で発見した原標本マーカーの非表示を修正し再検証した。証拠は `validation.json`／`browser/`。確認用サーバー停止済み。新PR提出はレビュー待ちとし、main・旧PR／タグ／Release、旧RQ-M01／M02証拠、別改善票は保持する。
+
 ## 最新の受入と実行状態：RQ-M02
 
 2026-11-08のOwner明示指示とNotionのOWNER_ACCEPTANCEを採用する。RQ-M01 / v0.2（科学成果 `cc240b0e32b424bb8881c153f17e56608d5fe51f`、提出HEAD `1dd298db671ad962fb705b5f407a9c1f51a11bb9`）はOwner受入・ユーザー動作確認ともに完了済み。下記の旧「Owner待ち」は提出時点の履歴であり、再確認を開始条件にしない。外部科学レビューや別改善票の完了を意味しない。

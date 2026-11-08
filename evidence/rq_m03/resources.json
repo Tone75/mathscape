@@ -1,0 +1,104 @@
+{
+  "question_id": "RQ-M03",
+  "status": "completed",
+  "started_utc": "2026-11-08T08:53:13.532652+00:00",
+  "source_git_sha": "e12faa6c34917fec42856e04cd806a7d5ac6a2a8",
+  "manifest_sha256": "aec36ae1d78cd406d0fa6503c832118a7550e15bb3f5842000343c918c526534",
+  "namespace": 5058611,
+  "single_main_attempt": true,
+  "environment": {
+    "python": "3.12.13",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "plotly": "6.9.0",
+    "os": "Darwin",
+    "os_release": "25.6.0",
+    "architecture": "arm64"
+  },
+  "R": 100,
+  "K": 20,
+  "B_values": [
+    199,
+    999,
+    4999
+  ],
+  "total_cells": 12,
+  "bootstrap_arrays_saved": false,
+  "original_samples_saved": true,
+  "max_resample_elements": 1000000,
+  "wall_scope": "module start before heavy imports through calculation/outputs, excluding interpreter startup and final resource write; external time records full CLI",
+  "active_cell": [
+    "centered_exponential",
+    20,
+    2
+  ],
+  "completed_cells": 12,
+  "completed_cell_keys": [
+    [
+      "normal",
+      5,
+      0
+    ],
+    [
+      "normal",
+      5,
+      1
+    ],
+    [
+      "normal",
+      5,
+      2
+    ],
+    [
+      "normal",
+      20,
+      0
+    ],
+    [
+      "normal",
+      20,
+      1
+    ],
+    [
+      "normal",
+      20,
+      2
+    ],
+    [
+      "centered_exponential",
+      5,
+      0
+    ],
+    [
+      "centered_exponential",
+      5,
+      1
+    ],
+    [
+      "centered_exponential",
+      5,
+      2
+    ],
+    [
+      "centered_exponential",
+      20,
+      0
+    ],
+    [
+      "centered_exponential",
+      20,
+      1
+    ],
+    [
+      "centered_exponential",
+      20,
+      2
+    ]
+  ],
+  "incomplete_cells": [],
+  "finished_utc": "2026-11-08T08:53:26.521416+00:00",
+  "process_wall_seconds": 13.563085292000324,
+  "process_peak_rss_bytes": 225509376,
+  "output_bytes_before_resources": 11881910,
+  "output_bytes_total": 11883793
+}

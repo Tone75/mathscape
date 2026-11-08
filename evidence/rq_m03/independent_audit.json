@@ -1,0 +1,161 @@
+{
+  "question_id": "RQ-M03",
+  "audit_implementation": "independent saved-data reconstruction; no primary aggregator imports",
+  "status": "passed",
+  "mismatch_count": 0,
+  "mismatches": [],
+  "source_panels_sha256": {
+    "normal_n5_seed0.npz": "3a4315b47fce3590a932f1206d36ba33da9b3bf8220d9756b10627020c33d40c",
+    "normal_n5_seed1.npz": "0ae04969d45757c5d944eb3ff7376eb7fe771deccd9f790ebe3a4200882bf493",
+    "normal_n5_seed2.npz": "d90a39fce8120768899ea59890f663cb201f4b911bb8dcb350d52d9e1273f139",
+    "normal_n20_seed0.npz": "f193bfa4fac63589215dbfada873ea0b2f8e4b38b5e46c2b1f40d6bc7a4e04ad",
+    "normal_n20_seed1.npz": "daf7fcc05cd9df799ca4a6e191c4163f5a6eb85a4e5004b3620dfa1141e56c25",
+    "normal_n20_seed2.npz": "a4d408705c462fd8235a1d2805e2eee33cc6c301bd1fd502d8feb55c2bde3e56",
+    "centered_exponential_n5_seed0.npz": "ef465d7d07e054ef21ce65531743ac8bb8e4546ea5a399d5dc7479922cd7f8f0",
+    "centered_exponential_n5_seed1.npz": "4747c2ec80fbd04371065612b57cdb0ffbebea9da75d044059486a2e2d283915",
+    "centered_exponential_n5_seed2.npz": "13b5960ce0e6d8fe27e2f1b357e52a775a9675e2ad3019bfe487dc27f227a6b4",
+    "centered_exponential_n20_seed0.npz": "0b3bf812f827ce9d2f73b09bcee1e7f4ea691626d70d5f6334d74bbf202f5961",
+    "centered_exponential_n20_seed1.npz": "0b7dea4da88e992ba48cee2d2a7630967fef6e97bd1f6a33ff53aa479c7de394",
+    "centered_exponential_n20_seed2.npz": "b3564cbba03e1a67d2b4e521427cc0df3625b62880e7b31040bdbb3b68fe7b35"
+  },
+  "original_samples": 1200,
+  "table_counts": {
+    "original_metrics.csv": {
+      "reconstructed": 10800,
+      "saved": 10800
+    },
+    "summary.csv": {
+      "reconstructed": 108,
+      "saved": 108
+    },
+    "pooled_summary.csv": {
+      "reconstructed": 36,
+      "saved": 36
+    },
+    "H2_groups.csv": {
+      "reconstructed": 8,
+      "saved": 8
+    },
+    "coverage_difference.csv": {
+      "reconstructed": 48,
+      "saved": 48
+    }
+  },
+  "hypotheses": {
+    "question_id": "RQ-M03",
+    "confirmatory_quantities": 4,
+    "decision_confidence": 0.99,
+    "pooled_independent_originals": 300,
+    "quantities": {
+      "H1_n5": {
+        "N": 300,
+        "finite_count": 300,
+        "mean": -0.04413150316408888,
+        "sd": 0.04238505692195989,
+        "mcse": 0.002447102402351115,
+        "low": -0.050475302629505135,
+        "high": -0.03778770369867262,
+        "df": 299,
+        "valid": true,
+        "seed_points": [
+          -0.04758240851263765,
+          -0.042317475995890995,
+          -0.042494624983737975
+        ],
+        "threshold": 0.0,
+        "direction": "less",
+        "status": "supported"
+      },
+      "H1_n20": {
+        "N": 300,
+        "finite_count": 300,
+        "mean": -0.06518917903698819,
+        "sd": 0.0222438225529512,
+        "mcse": 0.0012842476938752642,
+        "low": -0.0685184266508357,
+        "high": -0.061859931423140675,
+        "df": 299,
+        "valid": true,
+        "seed_points": [
+          -0.06860956158648242,
+          -0.061654969030398396,
+          -0.06530300649408377
+        ],
+        "threshold": 0.0,
+        "direction": "less",
+        "status": "supported"
+      },
+      "H3": {
+        "N": 300,
+        "finite_count": 300,
+        "mean": 0.7788333333333334,
+        "sd": 0.4093517661503248,
+        "mcse": 0.023633935238013874,
+        "low": 0.7175653841112056,
+        "high": 0.8401012825554611,
+        "df": 299,
+        "valid": true,
+        "seed_points": [
+          0.7819999999999999,
+          0.816,
+          0.7384999999999999
+        ],
+        "threshold": 0.93,
+        "direction": "less",
+        "status": "supported"
+      },
+      "H2": {
+        "N1": 119,
+        "N0": 181,
+        "difference": 0.03265950958455724,
+        "df": 161.4623157998264,
+        "low": 0.021943995745907788,
+        "high": 0.04337502342320669,
+        "se": 0.004110882614272926,
+        "seed_points": [
+          0.02543576546465151,
+          0.028808368660450417,
+          0.04494002842849387
+        ],
+        "threshold": 0.02,
+        "direction": "greater",
+        "status": "supported",
+        "all_required_complete": true,
+        "group_requirements_met": true,
+        "seed_group_counts_W0_W1": [
+          [
+            56,
+            44
+          ],
+          [
+            62,
+            38
+          ],
+          [
+            63,
+            37
+          ]
+        ],
+        "valid": true
+      }
+    },
+    "hypotheses": {
+      "H1": {
+        "status": "supported",
+        "n5": "supported",
+        "n20": "supported"
+      },
+      "H2": {
+        "status": "supported"
+      },
+      "H3": {
+        "status": "supported"
+      }
+    }
+  },
+  "limitations": [
+    "No bootstrap arrays are saved: actual prefix reuse, raw z0 rank counts and quantile interpolation values cannot be empirically reconstructed.",
+    "Common IDs/B prefixes, z0 tie-count lattice, BCa q/tau/a formulae and exact t invariance are checked; sequence/prefix generation is covered by frozen-source deterministic tests.",
+    "This is an internal independent implementation audit, not external scientific review."
+  ]
+}

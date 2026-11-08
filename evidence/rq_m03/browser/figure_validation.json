@@ -1,0 +1,14 @@
+{
+  "url": "http://127.0.0.1:8554/overview.html",
+  "rendered_four_panels": true,
+  "observed": [
+    "normal and centered exponential",
+    "endpoint variability and coverage separated",
+    "three B prefixes",
+    "six method/n legend groups",
+    "99% original-level intervals"
+  ],
+  "console_warnings_errors": [],
+  "initial_qa_server_connection_timeout": true,
+  "recovered_with_loopback_stdlib_server": true
+}
