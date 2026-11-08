@@ -1,0 +1,62 @@
+{
+  "scope": "Deterministic analytic construction and public SciPy mvsk/support check; no random sample generation",
+  "analytic_lognormal_constants": {
+    "v": 0.5960716379833215,
+    "t": 1.3553013976081199,
+    "s": 0.5513835899408821,
+    "m": 1.1641741268419084,
+    "d": 0.6939311786844594
+  },
+  "checks": {
+    "gamma": {
+      "actual": {
+        "mean": 0.0,
+        "variance": 1.0,
+        "skewness": 2.0,
+        "excess_kurtosis": 6.0,
+        "lower_bound": -1.0
+      },
+      "expected": {
+        "mean": 0.0,
+        "variance": 1.0,
+        "skewness": 2.0,
+        "excess_kurtosis": 6.0,
+        "lower_bound": -1.0
+      },
+      "absolute_errors": {
+        "mean": 0.0,
+        "variance": 0.0,
+        "skewness": 0.0,
+        "excess_kurtosis": 0.0,
+        "lower_bound": 0.0
+      },
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    "lognormal": {
+      "actual": {
+        "mean": 2.220446049250313e-16,
+        "variance": 1.0000000000000009,
+        "skewness": 2.0000000000000004,
+        "excess_kurtosis": 7.863462451016103,
+        "lower_bound": -1.67765069880406
+      },
+      "expected": {
+        "mean": 0.0,
+        "variance": 1.0,
+        "skewness": 2.0,
+        "excess_kurtosis": 7.863462451016096,
+        "lower_bound": -1.67765069880406
+      },
+      "absolute_errors": {
+        "mean": 2.220446049250313e-16,
+        "variance": 8.881784197001252e-16,
+        "skewness": 4.440892098500626e-16,
+        "excess_kurtosis": 7.105427357601002e-15,
+        "lower_bound": 0.0
+      },
+      "tolerance": 1e-10,
+      "passed": true
+    }
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "question_id": "RQ-M05",
+  "scope": "smoke only; no scientific decisions",
+  "R": 2,
+  "K": 1,
+  "B": 99,
+  "namespace": 1397567541,
+  "source_files_sha256": {
+    "mathscape/matched_moments.py": "2c968c674ceb78b8b716a94d5f3165b928162c6c04150ba5d2d2b446f9926135",
+    "mathscape/stability.py": "e27f2bf98378911cb1c0502bb93a5d944fd5dd2978354e6fbd99595d2bc5f070",
+    "mathscape/bootstrap.py": "24d4ffbc8e5b463ee6770a35e1d17beca9ee41a37083d457dbca25abd9f7b6cb",
+    "mathscape/inference.py": "6e26d2a6991ecfca0729e7057f0eda63bf100b0941fc0b397caa2eb13e226708",
+    "scripts/run_matched_benchmark.py": "39a5edc94e4c7ec0baf21adfff4ea209c8b95b98b0bf56b04b713dc592395d6f",
+    "scripts/run_matched_guarded.py": "1c1a0804b2b8b655b296f8e48e719950c231a71d0831655a11923782ec274471",
+    "scripts/audit_matched.py": "e3503288ee2e9fe29e545d678925266cf6cb3885f44bf890bb3999d8eeeec6c5",
+    "scripts/run_bootstrap_benchmark.py": "9fdeabae419aecd487ff063775001880643c265207c7c5ea8192b455d72864a3",
+    "scripts/run_stability_benchmark.py": "4be7f9a10f7d328cc914c0aaceaf28d027718a44a2f8afd63a896e848b209488",
+    "tests/test_matched_moments.py": "fc1801586b02607517e5db2c0c777f539ba5ea84295de09db3d13f30c6c7b5c6",
+    "tests/test_matched_runner.py": "68b17d9bd9118fd82683322c7bc1aae4d6ec65bdd216e80072b20a232e188408",
+    "tests/test_matched_guard.py": "ce6073ae8bda23f0062f0bc2a7bdb00792011ac97cbbbb81b118e5ee7dd04076",
+    "tests/test_matched_audit.py": "44d41c33eaee6ed698b8c9a4022baa0f512c5e1acd3577ac44fe94f5efb4221a",
+    "requirements.txt": "dcb36fe5c1d5413b4918722462d3382f171d839c0e69b45725b57b871b2bce5d",
+    "evidence/rq_m05/SPEC.md": "61f68f06c0232c1c905f9cc3e65529b85cb3c1ef488c2a8a77869f32eb0f42ab",
+    "evidence/rq_m05/population_checks.json": "04eb540c7924d029bedc5118556462fe3c922622e918a6e6c1e6febd07ce8c77"
+  },
+  "environment": {
+    "python": "3.12.13",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "plotly": "6.9.0",
+    "os": "Darwin",
+    "os_release": "25.6.0",
+    "architecture": "arm64",
+    "streamlit": "1.67.0",
+    "pytest": "9.2.0"
+  },
+  "status": "completed",
+  "completed_cells": 6,
+  "cells": [
+    {
+      "distribution": "gamma",
+      "master_seed": 0,
+      "valid_entries": 6
+    },
+    {
+      "distribution": "gamma",
+      "master_seed": 1,
+      "valid_entries": 6
+    },
+    {
+      "distribution": "gamma",
+      "master_seed": 2,
+      "valid_entries": 6
+    },
+    {
+      "distribution": "lognormal",
+      "master_seed": 0,
+      "valid_entries": 6
+    },
+    {
+      "distribution": "lognormal",
+      "master_seed": 1,
+      "valid_entries": 6
+    },
+    {
+      "distribution": "lognormal",
+      "master_seed": 2,
+      "valid_entries": 6
+    }
+  ],
+  "original_samples": 12,
+  "inner_streams": 12,
+  "bootstrap_samples": 1188,
+  "logical_resampling_indices": 23760,
+  "process_wall_seconds": 0.38567445799708366,
+  "process_peak_rss_bytes": 101187584,
+  "output_bytes_before_resources": 1821,
+  "output_bytes_total": 4795
+}

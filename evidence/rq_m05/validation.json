@@ -1,0 +1,167 @@
+{
+  "question_id": "RQ-M05",
+  "status": "passed",
+  "accepted_start_head": "fb2216d6fc506dd74779104edad024c61bc9e1e1",
+  "source_git_sha": "a8e87b3deb1a5256a200b28ea51301dec8aecb7e",
+  "manifest_sha256": "d02a4b1d2ea1f26d96549e35014903c0c86df32dc8b8507bf81cc2f6dfdc8454",
+  "baseline_tests": {
+    "passed": 732,
+    "wall_seconds": 15.42
+  },
+  "pytest": {
+    "command": "python -m pytest -q",
+    "passed": 862,
+    "failed": 0,
+    "wall_seconds": 20.64,
+    "new_tests": {
+      "mathematics": 66,
+      "runner": 18,
+      "outer_guard": 7,
+      "independent_audit": 28,
+      "AppTest": 11
+    },
+    "full_output": "pytest.txt"
+  },
+  "pip_check": {
+    "command": "python -m pip check",
+    "status": "passed",
+    "output": "pip_check.txt",
+    "new_dependencies": false
+  },
+  "independent_saved_audit": {
+    "status": "passed",
+    "mismatch_count": 0,
+    "original_samples": 60000,
+    "original_method_records": 180000,
+    "seed_rows": 18,
+    "pooled_rows": 6,
+    "population_contrast_rows": 12,
+    "paired_method_contrast_rows": 24,
+    "confirmatory_quantities": 2,
+    "output": "independent_audit.json",
+    "external_scientific_review": false,
+    "limitation": "Complete saved inputs/endpoints/diagnostics and summaries reconstructed; full bootstrap arrays/rank interpolation are not saved and complete bootstrap-generation audit is not claimed."
+  },
+  "browser": {
+    "status": "passed",
+    "scope": "Available real desktop browser; loopback app HTTP/health and self-contained HTML HTTP 200; representative operations, not exhaustive device testing.",
+    "populations": [
+      "gamma",
+      "lognormal"
+    ],
+    "master_seeds_visited": [
+      0,
+      1,
+      2
+    ],
+    "outer_IDs_visited": [
+      0,
+      1
+    ],
+    "methods": [
+      "t",
+      "percentile",
+      "bca"
+    ],
+    "method_visibility_including_none": true,
+    "new_view_states": 21,
+    "visible_numeric_metrics": 147,
+    "hypothesis_bound_values": 4,
+    "visually_read_interval_endpoint_values": 6,
+    "downloaded_original_observation_values": 20,
+    "original_hash_preserved_by": [
+      "method visibility",
+      "Lab round trip",
+      "mode round trip",
+      "download"
+    ],
+    "population_change": "Different independent original; each population restores its prior seed/outer. Explicit ID/seed changes original, resetting restores original hash.",
+    "alpha": 0.05,
+    "B": 4999,
+    "K": 1,
+    "fixed_conditions_visible": true,
+    "K1_stability_NA_including_t": true,
+    "summary_CSV_and_HTML_download_bytes_equal": true,
+    "selected_sample_CSV_exact_NPZ_hash": true,
+    "old_operations": [
+      "Probability beta parameter",
+      "Chaos preset/manual r",
+      "Fractal zoom/pan/reset",
+      "t inference apply",
+      "RQ-M02 alpha sample retention",
+      "RQ-M03 B/k sample retention",
+      "RQ-M04 population/B/k and sample retention"
+    ],
+    "console_warnings": 0,
+    "console_errors": 0,
+    "screen_exceptions": 0,
+    "server_target_initialization_warnings": 0,
+    "server_tracebacks": 0,
+    "servers_stopped": true,
+    "response_latency_benchmarked": false,
+    "evidence": "browser/"
+  },
+  "fixed_experiment": {
+    "main_attempts": 1,
+    "reruns": 0,
+    "specified_smokes": 1,
+    "completed_cells": 6,
+    "original_samples": 60000,
+    "independent_originals_per_population": 30000,
+    "invalid": 0,
+    "missing": 0,
+    "source_files_unchanged": 16,
+    "old_evidence_unchanged": true,
+    "CLI_wall_seconds": 36.66,
+    "worker_wall_seconds": 36.56295799999498,
+    "peak_RSS_bytes": 230817792,
+    "resample_batch_elements_cap": 1000000,
+    "resource_limits_met": true
+  },
+  "hypotheses": {
+    "H1": "not_supported",
+    "H2": "not_supported",
+    "both_metrics_equivalent": true,
+    "scope": "This preselected pair of populations, n20/alpha.05/BCa/B4999 and each indicator only; not universal moment sufficiency, equality or nominal95% calibration.",
+    "detail": "hypotheses.json"
+  },
+  "submission_state": "Review pending; submission distinct from Owner acceptance. No prior PR/main/tag/release modifications.",
+  "not_performed": [
+    "Owner acceptance of RQ-M05",
+    "Owner individual new-feature operations",
+    "External scientific review",
+    "Other browsers/mobile viewport",
+    "Unrelated improvement tickets/full MATH-005 restart trial",
+    "Next research question execution"
+  ],
+  "artifact_size": {
+    "scope": "Conservative full sizes of all public new/modified files relative to accepted RQ-M04 HEAD, including full README/HANDOFF, compact saved inputs/endpoints, gzip180k records, one self-contained HTML and browser proof. Ignored development files/virtual environment are not public artifacts.",
+    "limit_bytes": 52428800,
+    "files": 59,
+    "bytes": 25401171,
+    "MiB": 24.224444
+  },
+  "publication": {
+    "PR": "https://github.com/Tone75/mathscape/pull/5",
+    "PR_state": "OPEN",
+    "PR_draft": false,
+    "base_branch": "feat/rq-m04-distribution-shape",
+    "head_branch": "feat/rq-m05-matched-moments",
+    "science_git_sha": "254af9ed19cf3197310bc372c704ecc32c3b9b4e",
+    "latest_submission_head_command": "gh pr view 5 --repo Tone75/mathscape --json headRefOid",
+    "Notion_synced": [
+      "MATH-040",
+      "MATH-041",
+      "MATH-042",
+      "MATH-043",
+      "Project Home",
+      "Fixed specification"
+    ],
+    "PENDING_NOTION_SYNC": false,
+    "Owner_review": "pending",
+    "task_status": "In Progress",
+    "Next_only": "MATH-040",
+    "protected_remote_refs_equal_start": 9,
+    "new_tag_release_merge": false
+  }
+}

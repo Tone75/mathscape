@@ -1,0 +1,6 @@
+{
+  "scope": "External /usr/bin/time -p around exactly the specified smoke CLI, not a main experiment",
+  "real_seconds": 0.43,
+  "user_seconds": 0.37,
+  "system_seconds": 0.04
+}

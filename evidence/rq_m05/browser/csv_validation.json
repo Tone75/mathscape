@@ -1,0 +1,191 @@
+{
+  "status": "passed",
+  "scope": "Independent checks of browser-visible rounded metrics, applied original hashes, hypothesis bounds, visually read endpoint table and actual downloaded files. No random generation. AppTest separately verifies full-precision arrays/all6 display rows.",
+  "new_view_states": 21,
+  "visible_numeric_metrics": 147,
+  "hypothesis_bound_values": 4,
+  "visually_read_interval_endpoint_values": 6,
+  "downloaded_original_observation_values": 20,
+  "checks": [
+    {
+      "step": "gamma_seed0_outer0_initial",
+      "metrics_equal": true,
+      "hash_equal": true,
+      "applied_population": "gamma",
+      "applied_seed": 0,
+      "applied_outer": 0
+    },
+    {
+      "step": "gamma_BCa_hidden",
+      "metrics_equal": true,
+      "hash_equal": true,
+      "applied_population": "gamma",
+      "applied_seed": 0,
+      "applied_outer": 0
+    },
+    {
+      "step": "gamma_t_only",
+      "metrics_equal": true,
+      "hash_equal": true,
+      "applied_population": "gamma",
+      "applied_seed": 0,
+      "applied_outer": 0
+    },
+    {
+      "step": "gamma_no_methods_original_only",
+      "metrics_equal": true,
+      "hash_equal": true,
+      "applied_population": "gamma",
+      "applied_seed": 0,
+      "applied_outer": 0
+    },
+    {
+      "step": "gamma_methods_restored",
+      "metrics_equal": true,
+      "hash_equal": true,
+      "applied_population": "gamma",
+      "applied_seed": 0,
+      "applied_outer": 0
+    },
+    {
+      "step": "gamma_after_Lab_roundtrip",
+      "metrics_equal": true,
+      "hash_equal": true,
+      "applied_population": "gamma",
+      "applied_seed": 0,
+      "applied_outer": 0
+    },
+    {
+      "step": "gamma_after_mode_roundtrip",
+      "metrics_equal": true,
+      "hash_equal": true,
+      "applied_population": "gamma",
+      "applied_seed": 0,
+      "applied_outer": 0
+    },
+    {
+      "step": "lognormal_seed0_outer0_initial",
+      "metrics_equal": true,
+      "hash_equal": true,
+      "applied_population": "lognormal",
+      "applied_seed": 0,
+      "applied_outer": 0
+    },
+    {
+      "step": "lognormal_outer1_input_before_rerender",
+      "metrics_equal": true,
+      "hash_equal": true,
+      "applied_population": "lognormal",
+      "applied_seed": 0,
+      "applied_outer": 0
+    },
+    {
+      "step": "lognormal_outer1_applied",
+      "metrics_equal": true,
+      "hash_equal": true,
+      "applied_population": "lognormal",
+      "applied_seed": 0,
+      "applied_outer": 1
+    },
+    {
+      "step": "lognormal_seed2_outer1",
+      "metrics_equal": true,
+      "hash_equal": true,
+      "applied_population": "lognormal",
+      "applied_seed": 2,
+      "applied_outer": 1
+    },
+    {
+      "step": "gamma_return_restores_seed0_outer0",
+      "metrics_equal": true,
+      "hash_equal": true,
+      "applied_population": "gamma",
+      "applied_seed": 0,
+      "applied_outer": 0
+    },
+    {
+      "step": "gamma_outer1_explicit",
+      "metrics_equal": true,
+      "hash_equal": true,
+      "applied_population": "gamma",
+      "applied_seed": 0,
+      "applied_outer": 1
+    },
+    {
+      "step": "gamma_seed1_outer1",
+      "metrics_equal": true,
+      "hash_equal": true,
+      "applied_population": "gamma",
+      "applied_seed": 1,
+      "applied_outer": 1
+    },
+    {
+      "step": "lognormal_return_restores_seed2_outer1",
+      "metrics_equal": true,
+      "hash_equal": true,
+      "applied_population": "lognormal",
+      "applied_seed": 2,
+      "applied_outer": 1
+    },
+    {
+      "step": "lognormal_t_hidden",
+      "metrics_equal": true,
+      "hash_equal": true,
+      "applied_population": "lognormal",
+      "applied_seed": 2,
+      "applied_outer": 1
+    },
+    {
+      "step": "lognormal_methods_restored",
+      "metrics_equal": true,
+      "hash_equal": true,
+      "applied_population": "lognormal",
+      "applied_seed": 2,
+      "applied_outer": 1
+    },
+    {
+      "step": "lognormal_initial_restored",
+      "metrics_equal": true,
+      "hash_equal": true,
+      "applied_population": "lognormal",
+      "applied_seed": 0,
+      "applied_outer": 0
+    },
+    {
+      "step": "gamma_return_restores_seed1_outer1",
+      "metrics_equal": true,
+      "hash_equal": true,
+      "applied_population": "gamma",
+      "applied_seed": 1,
+      "applied_outer": 1
+    },
+    {
+      "step": "gamma_initial_restored",
+      "metrics_equal": true,
+      "hash_equal": true,
+      "applied_population": "gamma",
+      "applied_seed": 0,
+      "applied_outer": 0
+    },
+    {
+      "step": "gamma_after_all_three_downloads",
+      "metrics_equal": true,
+      "hash_equal": true,
+      "applied_population": "gamma",
+      "applied_seed": 0,
+      "applied_outer": 0
+    }
+  ],
+  "summary_CSV_bytes_equal": true,
+  "self_contained_HTML_bytes_equal": true,
+  "sample_CSV_reconstructs_exact_saved_original_hash": true,
+  "sample_CSV_rows": 20,
+  "not_checked": [
+    "Other browsers/mobile viewport",
+    "Owner individual new operations",
+    "External scientific review"
+  ],
+  "notes": [
+    "The input-before-rerender observation reports the still-applied ID0 and matching ID0 hash; ID1 was checked separately after application."
+  ]
+}

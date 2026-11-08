@@ -1,0 +1,29 @@
+{
+  "status": "passed",
+  "figure": "figures/overview.html",
+  "local_HTTP": 200,
+  "rendered_panels": 2,
+  "coverage_methods": [
+    "t",
+    "percentile",
+    "bca"
+  ],
+  "populations": [
+    "gamma",
+    "lognormal"
+  ],
+  "difference_band": [
+    -0.01,
+    0.01
+  ],
+  "MC_confidence": 0.99,
+  "independent_originals_per_population": 30000,
+  "console": [],
+  "actual_HTML_download": {
+    "step": "actual_download",
+    "file": "rq_m05-browser-overview.html",
+    "bytes": 4860636,
+    "sha256": "b79eaa6acb3bccf6a1d6b4b758f95c97c44bb96debcde5ceb749705bea7b8bf3"
+  },
+  "scope": "Actual browser rendering of saved self-contained HTML, not regeneration"
+}

@@ -1,0 +1,788 @@
+[
+  {
+    "step": "old_probability_beta_alpha0.5",
+    "metrics": [
+      "0.2",
+      "0.045714"
+    ]
+  },
+  {
+    "step": "old_chaos_preset3.2_manual3.21",
+    "metrics": [
+      "3.21",
+      "0.2",
+      "1.00e-08"
+    ]
+  },
+  {
+    "step": "old_fractal_zoom_in",
+    "metrics": [
+      "1.5",
+      "360 × 360",
+      "51.7%"
+    ]
+  },
+  {
+    "step": "old_fractal_pan_up",
+    "controls": [
+      {
+        "label": "中心 Re(c)",
+        "value": "-0.7000000"
+      },
+      {
+        "label": "中心 Im(c)",
+        "value": "0.3750000"
+      },
+      {
+        "label": "表示幅（実軸・虚軸共通）",
+        "value": "1.5000000"
+      }
+    ]
+  },
+  {
+    "step": "old_fractal_zoom_out",
+    "controls": [
+      {
+        "label": "中心 Re(c)",
+        "value": "-0.7000000"
+      },
+      {
+        "label": "中心 Im(c)",
+        "value": "0.3750000"
+      },
+      {
+        "label": "表示幅（実軸・虚軸共通）",
+        "value": "3.0000000"
+      }
+    ]
+  },
+  {
+    "step": "old_fractal_reset",
+    "controls": [
+      {
+        "label": "中心 Re(c)",
+        "value": "-0.7000000"
+      },
+      {
+        "label": "中心 Im(c)",
+        "value": "0.0000000"
+      },
+      {
+        "label": "表示幅（実軸・虚軸共通）",
+        "value": "3.0000000"
+      }
+    ],
+    "metrics": [
+      "3",
+      "360 × 360",
+      "17.2%"
+    ]
+  },
+  {
+    "step": "old_t_inference_apply",
+    "metrics": [
+      "0",
+      "-0.27381",
+      "1.0118",
+      "0.22625",
+      "-1.2102",
+      "0.24103",
+      "6.80%",
+      "93.20%",
+      "0.91762"
+    ]
+  },
+  {
+    "step": "old_m02_alpha0.05_to0.1",
+    "before": [
+      "0.10481",
+      "0.67927",
+      "5"
+    ],
+    "after": [
+      "0.10481",
+      "0.67927",
+      "5"
+    ],
+    "sample_metrics_equal": true
+  },
+  {
+    "step": "old_m03_B199_to4999_k0_to19",
+    "before": "a51957761cf1683410aad64c63e2639bdf4da99bb74c4e916e1d7b571f3324f3",
+    "after": "a51957761cf1683410aad64c63e2639bdf4da99bb74c4e916e1d7b571f3324f3"
+  },
+  {
+    "step": "old_m04_gamma1_B4999_to999_k0_to9",
+    "before": "24a8276b9a6cd08b52546b9bd5808a0db1e9fdc05f569e6aeacd3cdac197bdf9",
+    "after": "24a8276b9a6cd08b52546b9bd5808a0db1e9fdc05f569e6aeacd3cdac197bdf9",
+    "metrics": [
+      "2",
+      "6",
+      "-1",
+      "90.94%",
+      "0.79%",
+      "3.38%",
+      "0.1209",
+      "0.1189"
+    ]
+  },
+  {
+    "step": "gamma_seed0_outer0_initial",
+    "applied": "- paragraph: 表示条件：G：標準化ガンマ ／ seed=0 ／ 原標本ID=0 ／ n20・固定α=.05・B4999・K1",
+    "hash": "cfd609b63189516de31eb72a968c2097a6ce97ac1ce456772f955cf3de5a74df",
+    "labels": [
+      "共通の母平均",
+      "共通の母分散",
+      "共通の母歪度",
+      "BCa被覆差 ΔC（L−G）",
+      "BCa方向差 ΔT（L−G）",
+      "BCa被覆 G",
+      "BCa被覆 L"
+    ],
+    "metrics": [
+      "0",
+      "1",
+      "2",
+      "-0.203 pp",
+      "+0.197 pp",
+      "91.377%",
+      "91.173%"
+    ],
+    "fixed_conditions": true,
+    "stability_NA": true,
+    "exceptions": 0
+  },
+  {
+    "step": "gamma_BCa_hidden",
+    "applied": "- paragraph: 表示条件：G：標準化ガンマ ／ seed=0 ／ 原標本ID=0 ／ n20・固定α=.05・B4999・K1",
+    "hash": "cfd609b63189516de31eb72a968c2097a6ce97ac1ce456772f955cf3de5a74df",
+    "labels": [
+      "共通の母平均",
+      "共通の母分散",
+      "共通の母歪度",
+      "BCa被覆差 ΔC（L−G）",
+      "BCa方向差 ΔT（L−G）",
+      "BCa被覆 G",
+      "BCa被覆 L"
+    ],
+    "metrics": [
+      "0",
+      "1",
+      "2",
+      "-0.203 pp",
+      "+0.197 pp",
+      "91.377%",
+      "91.173%"
+    ],
+    "fixed_conditions": true,
+    "stability_NA": true,
+    "exceptions": 0
+  },
+  {
+    "step": "gamma_t_only",
+    "applied": "- paragraph: 表示条件：G：標準化ガンマ ／ seed=0 ／ 原標本ID=0 ／ n20・固定α=.05・B4999・K1",
+    "hash": "cfd609b63189516de31eb72a968c2097a6ce97ac1ce456772f955cf3de5a74df",
+    "labels": [
+      "共通の母平均",
+      "共通の母分散",
+      "共通の母歪度",
+      "BCa被覆差 ΔC（L−G）",
+      "BCa方向差 ΔT（L−G）",
+      "BCa被覆 G",
+      "BCa被覆 L"
+    ],
+    "metrics": [
+      "0",
+      "1",
+      "2",
+      "-0.203 pp",
+      "+0.197 pp",
+      "91.377%",
+      "91.173%"
+    ],
+    "fixed_conditions": true,
+    "stability_NA": true,
+    "exceptions": 0,
+    "selected_methods": [
+      "Remove t"
+    ]
+  },
+  {
+    "step": "gamma_no_methods_original_only",
+    "applied": "- paragraph: 表示条件：G：標準化ガンマ ／ seed=0 ／ 原標本ID=0 ／ n20・固定α=.05・B4999・K1",
+    "hash": "cfd609b63189516de31eb72a968c2097a6ce97ac1ce456772f955cf3de5a74df",
+    "labels": [
+      "共通の母平均",
+      "共通の母分散",
+      "共通の母歪度",
+      "BCa被覆差 ΔC（L−G）",
+      "BCa方向差 ΔT（L−G）",
+      "BCa被覆 G",
+      "BCa被覆 L"
+    ],
+    "metrics": [
+      "0",
+      "1",
+      "2",
+      "-0.203 pp",
+      "+0.197 pp",
+      "91.377%",
+      "91.173%"
+    ],
+    "fixed_conditions": true,
+    "stability_NA": true,
+    "exceptions": 0,
+    "selected_methods": []
+  },
+  {
+    "step": "gamma_methods_restored",
+    "applied": "- paragraph: 表示条件：G：標準化ガンマ ／ seed=0 ／ 原標本ID=0 ／ n20・固定α=.05・B4999・K1",
+    "hash": "cfd609b63189516de31eb72a968c2097a6ce97ac1ce456772f955cf3de5a74df",
+    "labels": [
+      "共通の母平均",
+      "共通の母分散",
+      "共通の母歪度",
+      "BCa被覆差 ΔC（L−G）",
+      "BCa方向差 ΔT（L−G）",
+      "BCa被覆 G",
+      "BCa被覆 L"
+    ],
+    "metrics": [
+      "0",
+      "1",
+      "2",
+      "-0.203 pp",
+      "+0.197 pp",
+      "91.377%",
+      "91.173%"
+    ],
+    "fixed_conditions": true,
+    "stability_NA": true,
+    "exceptions": 0,
+    "selected_methods": []
+  },
+  {
+    "step": "gamma_after_Lab_roundtrip",
+    "applied": "- paragraph: 表示条件：G：標準化ガンマ ／ seed=0 ／ 原標本ID=0 ／ n20・固定α=.05・B4999・K1",
+    "hash": "cfd609b63189516de31eb72a968c2097a6ce97ac1ce456772f955cf3de5a74df",
+    "labels": [
+      "共通の母平均",
+      "共通の母分散",
+      "共通の母歪度",
+      "BCa被覆差 ΔC（L−G）",
+      "BCa方向差 ΔT（L−G）",
+      "BCa被覆 G",
+      "BCa被覆 L"
+    ],
+    "metrics": [
+      "0",
+      "1",
+      "2",
+      "-0.203 pp",
+      "+0.197 pp",
+      "91.377%",
+      "91.173%"
+    ],
+    "fixed_conditions": true,
+    "stability_NA": true,
+    "exceptions": 0,
+    "selected_methods": [
+      "Remove t",
+      "Remove percentile",
+      "Remove BCa"
+    ]
+  },
+  {
+    "step": "gamma_after_mode_roundtrip",
+    "applied": "- paragraph: 表示条件：G：標準化ガンマ ／ seed=0 ／ 原標本ID=0 ／ n20・固定α=.05・B4999・K1",
+    "hash": "cfd609b63189516de31eb72a968c2097a6ce97ac1ce456772f955cf3de5a74df",
+    "labels": [
+      "共通の母平均",
+      "共通の母分散",
+      "共通の母歪度",
+      "BCa被覆差 ΔC（L−G）",
+      "BCa方向差 ΔT（L−G）",
+      "BCa被覆 G",
+      "BCa被覆 L"
+    ],
+    "metrics": [
+      "0",
+      "1",
+      "2",
+      "-0.203 pp",
+      "+0.197 pp",
+      "91.377%",
+      "91.173%"
+    ],
+    "fixed_conditions": true,
+    "stability_NA": true,
+    "exceptions": 0,
+    "selected_methods": [
+      "Remove t",
+      "Remove percentile",
+      "Remove BCa"
+    ]
+  },
+  {
+    "step": "lognormal_seed0_outer0_initial",
+    "applied": "- paragraph: 表示条件：L：標準化対数正規 ／ seed=0 ／ 原標本ID=0 ／ n20・固定α=.05・B4999・K1",
+    "hash": "ead8723e9cd563116de28eef9f35eb1b73b5706090e1e654b3f12553e373b117",
+    "labels": [
+      "共通の母平均",
+      "共通の母分散",
+      "共通の母歪度",
+      "BCa被覆差 ΔC（L−G）",
+      "BCa方向差 ΔT（L−G）",
+      "BCa被覆 G",
+      "BCa被覆 L"
+    ],
+    "metrics": [
+      "0",
+      "1",
+      "2",
+      "-0.203 pp",
+      "+0.197 pp",
+      "91.377%",
+      "91.173%"
+    ],
+    "fixed_conditions": true,
+    "stability_NA": true,
+    "exceptions": 0,
+    "selected_methods": [
+      "Remove t",
+      "Remove percentile",
+      "Remove BCa"
+    ]
+  },
+  {
+    "step": "lognormal_outer1_input_before_rerender",
+    "applied": "- paragraph: 表示条件：L：標準化対数正規 ／ seed=0 ／ 原標本ID=0 ／ n20・固定α=.05・B4999・K1",
+    "hash": "ead8723e9cd563116de28eef9f35eb1b73b5706090e1e654b3f12553e373b117",
+    "labels": [
+      "共通の母平均",
+      "共通の母分散",
+      "共通の母歪度",
+      "BCa被覆差 ΔC（L−G）",
+      "BCa方向差 ΔT（L−G）",
+      "BCa被覆 G",
+      "BCa被覆 L"
+    ],
+    "metrics": [
+      "0",
+      "1",
+      "2",
+      "-0.203 pp",
+      "+0.197 pp",
+      "91.377%",
+      "91.173%"
+    ],
+    "fixed_conditions": true,
+    "stability_NA": true,
+    "exceptions": 0,
+    "selected_methods": [
+      "Remove t",
+      "Remove percentile",
+      "Remove BCa"
+    ]
+  },
+  {
+    "step": "lognormal_outer1_applied",
+    "applied": "- paragraph: 表示条件：L：標準化対数正規 ／ seed=0 ／ 原標本ID=1 ／ n20・固定α=.05・B4999・K1",
+    "hash": "29bc96cceb8156be92c7f26e74a05fda7a3af3a2007ad166eac832ced7dc8b68",
+    "labels": [
+      "共通の母平均",
+      "共通の母分散",
+      "共通の母歪度",
+      "BCa被覆差 ΔC（L−G）",
+      "BCa方向差 ΔT（L−G）",
+      "BCa被覆 G",
+      "BCa被覆 L"
+    ],
+    "metrics": [
+      "0",
+      "1",
+      "2",
+      "-0.203 pp",
+      "+0.197 pp",
+      "91.377%",
+      "91.173%"
+    ],
+    "fixed_conditions": true,
+    "stability_NA": true,
+    "exceptions": 0,
+    "selected_methods": [
+      "Remove t",
+      "Remove percentile",
+      "Remove BCa"
+    ]
+  },
+  {
+    "step": "lognormal_seed2_outer1",
+    "applied": "- paragraph: 表示条件：L：標準化対数正規 ／ seed=2 ／ 原標本ID=1 ／ n20・固定α=.05・B4999・K1",
+    "hash": "fc04b85ddf5d7e018d3fc004f3c5510464a33297931e172a67dd86d2509ced7f",
+    "labels": [
+      "共通の母平均",
+      "共通の母分散",
+      "共通の母歪度",
+      "BCa被覆差 ΔC（L−G）",
+      "BCa方向差 ΔT（L−G）",
+      "BCa被覆 G",
+      "BCa被覆 L"
+    ],
+    "metrics": [
+      "0",
+      "1",
+      "2",
+      "-0.203 pp",
+      "+0.197 pp",
+      "91.377%",
+      "91.173%"
+    ],
+    "fixed_conditions": true,
+    "stability_NA": true,
+    "exceptions": 0,
+    "selected_methods": [
+      "Remove t",
+      "Remove percentile",
+      "Remove BCa"
+    ]
+  },
+  {
+    "step": "gamma_return_restores_seed0_outer0",
+    "applied": "- paragraph: 表示条件：G：標準化ガンマ ／ seed=0 ／ 原標本ID=0 ／ n20・固定α=.05・B4999・K1",
+    "hash": "cfd609b63189516de31eb72a968c2097a6ce97ac1ce456772f955cf3de5a74df",
+    "labels": [
+      "共通の母平均",
+      "共通の母分散",
+      "共通の母歪度",
+      "BCa被覆差 ΔC（L−G）",
+      "BCa方向差 ΔT（L−G）",
+      "BCa被覆 G",
+      "BCa被覆 L"
+    ],
+    "metrics": [
+      "0",
+      "1",
+      "2",
+      "-0.203 pp",
+      "+0.197 pp",
+      "91.377%",
+      "91.173%"
+    ],
+    "fixed_conditions": true,
+    "stability_NA": true,
+    "exceptions": 0,
+    "selected_methods": [
+      "Remove t",
+      "Remove percentile",
+      "Remove BCa"
+    ]
+  },
+  {
+    "step": "gamma_outer1_explicit",
+    "applied": "- paragraph: 表示条件：G：標準化ガンマ ／ seed=0 ／ 原標本ID=1 ／ n20・固定α=.05・B4999・K1",
+    "hash": "369e770cacffeff7a6615e1e754171c3e589422e98c97b8683def4ecbd668ef6",
+    "labels": [
+      "共通の母平均",
+      "共通の母分散",
+      "共通の母歪度",
+      "BCa被覆差 ΔC（L−G）",
+      "BCa方向差 ΔT（L−G）",
+      "BCa被覆 G",
+      "BCa被覆 L"
+    ],
+    "metrics": [
+      "0",
+      "1",
+      "2",
+      "-0.203 pp",
+      "+0.197 pp",
+      "91.377%",
+      "91.173%"
+    ],
+    "fixed_conditions": true,
+    "stability_NA": true,
+    "exceptions": 0,
+    "selected_methods": [
+      "Remove t",
+      "Remove percentile",
+      "Remove BCa"
+    ]
+  },
+  {
+    "step": "gamma_seed1_outer1",
+    "applied": "- paragraph: 表示条件：G：標準化ガンマ ／ seed=1 ／ 原標本ID=1 ／ n20・固定α=.05・B4999・K1",
+    "hash": "66a0ed5035791ddcc60c6f1cb2dab2c3b025e1fbbb57562f82d84fc147712cdd",
+    "labels": [
+      "共通の母平均",
+      "共通の母分散",
+      "共通の母歪度",
+      "BCa被覆差 ΔC（L−G）",
+      "BCa方向差 ΔT（L−G）",
+      "BCa被覆 G",
+      "BCa被覆 L"
+    ],
+    "metrics": [
+      "0",
+      "1",
+      "2",
+      "-0.203 pp",
+      "+0.197 pp",
+      "91.377%",
+      "91.173%"
+    ],
+    "fixed_conditions": true,
+    "stability_NA": true,
+    "exceptions": 0,
+    "selected_methods": [
+      "Remove t",
+      "Remove percentile",
+      "Remove BCa"
+    ]
+  },
+  {
+    "step": "lognormal_return_restores_seed2_outer1",
+    "applied": "- paragraph: 表示条件：L：標準化対数正規 ／ seed=2 ／ 原標本ID=1 ／ n20・固定α=.05・B4999・K1",
+    "hash": "fc04b85ddf5d7e018d3fc004f3c5510464a33297931e172a67dd86d2509ced7f",
+    "labels": [
+      "共通の母平均",
+      "共通の母分散",
+      "共通の母歪度",
+      "BCa被覆差 ΔC（L−G）",
+      "BCa方向差 ΔT（L−G）",
+      "BCa被覆 G",
+      "BCa被覆 L"
+    ],
+    "metrics": [
+      "0",
+      "1",
+      "2",
+      "-0.203 pp",
+      "+0.197 pp",
+      "91.377%",
+      "91.173%"
+    ],
+    "fixed_conditions": true,
+    "stability_NA": true,
+    "exceptions": 0,
+    "selected_methods": [
+      "Remove t",
+      "Remove percentile",
+      "Remove BCa"
+    ]
+  },
+  {
+    "step": "lognormal_t_hidden",
+    "applied": "- paragraph: 表示条件：L：標準化対数正規 ／ seed=2 ／ 原標本ID=1 ／ n20・固定α=.05・B4999・K1",
+    "hash": "fc04b85ddf5d7e018d3fc004f3c5510464a33297931e172a67dd86d2509ced7f",
+    "labels": [
+      "共通の母平均",
+      "共通の母分散",
+      "共通の母歪度",
+      "BCa被覆差 ΔC（L−G）",
+      "BCa方向差 ΔT（L−G）",
+      "BCa被覆 G",
+      "BCa被覆 L"
+    ],
+    "metrics": [
+      "0",
+      "1",
+      "2",
+      "-0.203 pp",
+      "+0.197 pp",
+      "91.377%",
+      "91.173%"
+    ],
+    "fixed_conditions": true,
+    "stability_NA": true,
+    "exceptions": 0,
+    "selected_methods": [
+      "Remove percentile",
+      "Remove BCa"
+    ]
+  },
+  {
+    "step": "lognormal_methods_restored",
+    "applied": "- paragraph: 表示条件：L：標準化対数正規 ／ seed=2 ／ 原標本ID=1 ／ n20・固定α=.05・B4999・K1",
+    "hash": "fc04b85ddf5d7e018d3fc004f3c5510464a33297931e172a67dd86d2509ced7f",
+    "labels": [
+      "共通の母平均",
+      "共通の母分散",
+      "共通の母歪度",
+      "BCa被覆差 ΔC（L−G）",
+      "BCa方向差 ΔT（L−G）",
+      "BCa被覆 G",
+      "BCa被覆 L"
+    ],
+    "metrics": [
+      "0",
+      "1",
+      "2",
+      "-0.203 pp",
+      "+0.197 pp",
+      "91.377%",
+      "91.173%"
+    ],
+    "fixed_conditions": true,
+    "stability_NA": true,
+    "exceptions": 0,
+    "selected_methods": [
+      "Remove percentile",
+      "Remove BCa",
+      "Remove t"
+    ]
+  },
+  {
+    "step": "lognormal_initial_restored",
+    "applied": "- paragraph: 表示条件：L：標準化対数正規 ／ seed=0 ／ 原標本ID=0 ／ n20・固定α=.05・B4999・K1",
+    "hash": "ead8723e9cd563116de28eef9f35eb1b73b5706090e1e654b3f12553e373b117",
+    "labels": [
+      "共通の母平均",
+      "共通の母分散",
+      "共通の母歪度",
+      "BCa被覆差 ΔC（L−G）",
+      "BCa方向差 ΔT（L−G）",
+      "BCa被覆 G",
+      "BCa被覆 L"
+    ],
+    "metrics": [
+      "0",
+      "1",
+      "2",
+      "-0.203 pp",
+      "+0.197 pp",
+      "91.377%",
+      "91.173%"
+    ],
+    "fixed_conditions": true,
+    "stability_NA": true,
+    "exceptions": 0,
+    "selected_methods": [
+      "Remove percentile",
+      "Remove BCa",
+      "Remove t"
+    ]
+  },
+  {
+    "step": "gamma_return_restores_seed1_outer1",
+    "applied": "- paragraph: 表示条件：G：標準化ガンマ ／ seed=1 ／ 原標本ID=1 ／ n20・固定α=.05・B4999・K1",
+    "hash": "66a0ed5035791ddcc60c6f1cb2dab2c3b025e1fbbb57562f82d84fc147712cdd",
+    "labels": [
+      "共通の母平均",
+      "共通の母分散",
+      "共通の母歪度",
+      "BCa被覆差 ΔC（L−G）",
+      "BCa方向差 ΔT（L−G）",
+      "BCa被覆 G",
+      "BCa被覆 L"
+    ],
+    "metrics": [
+      "0",
+      "1",
+      "2",
+      "-0.203 pp",
+      "+0.197 pp",
+      "91.377%",
+      "91.173%"
+    ],
+    "fixed_conditions": true,
+    "stability_NA": true,
+    "exceptions": 0,
+    "selected_methods": [
+      "Remove percentile",
+      "Remove BCa",
+      "Remove t"
+    ]
+  },
+  {
+    "step": "gamma_initial_restored",
+    "applied": "- paragraph: 表示条件：G：標準化ガンマ ／ seed=0 ／ 原標本ID=0 ／ n20・固定α=.05・B4999・K1",
+    "hash": "cfd609b63189516de31eb72a968c2097a6ce97ac1ce456772f955cf3de5a74df",
+    "labels": [
+      "共通の母平均",
+      "共通の母分散",
+      "共通の母歪度",
+      "BCa被覆差 ΔC（L−G）",
+      "BCa方向差 ΔT（L−G）",
+      "BCa被覆 G",
+      "BCa被覆 L"
+    ],
+    "metrics": [
+      "0",
+      "1",
+      "2",
+      "-0.203 pp",
+      "+0.197 pp",
+      "91.377%",
+      "91.173%"
+    ],
+    "fixed_conditions": true,
+    "stability_NA": true,
+    "exceptions": 0,
+    "selected_methods": [
+      "Remove percentile",
+      "Remove BCa",
+      "Remove t"
+    ]
+  },
+  {
+    "step": "actual_download",
+    "file": "rq_m05-browser-summary.csv",
+    "bytes": 10779,
+    "sha256": "eb6f1b6e220a87fbe13a115bb442ad01aca37dcc1fe216c3c46cad64b86cccd8"
+  },
+  {
+    "step": "actual_download",
+    "file": "rq_m05-browser-sample.csv",
+    "bytes": 2031,
+    "sha256": "ac39c960cc9d9efc24fc440603d3f9a3112402baa68337a5360f537d8014fa3e"
+  },
+  {
+    "step": "actual_download",
+    "file": "rq_m05-browser-overview.html",
+    "bytes": 4860636,
+    "sha256": "b79eaa6acb3bccf6a1d6b4b758f95c97c44bb96debcde5ceb749705bea7b8bf3"
+  },
+  {
+    "step": "gamma_after_all_three_downloads",
+    "applied": "- paragraph: 表示条件：G：標準化ガンマ ／ seed=0 ／ 原標本ID=0 ／ n20・固定α=.05・B4999・K1",
+    "hash": "cfd609b63189516de31eb72a968c2097a6ce97ac1ce456772f955cf3de5a74df",
+    "labels": [
+      "共通の母平均",
+      "共通の母分散",
+      "共通の母歪度",
+      "BCa被覆差 ΔC（L−G）",
+      "BCa方向差 ΔT（L−G）",
+      "BCa被覆 G",
+      "BCa被覆 L"
+    ],
+    "metrics": [
+      "0",
+      "1",
+      "2",
+      "-0.203 pp",
+      "+0.197 pp",
+      "91.377%",
+      "91.173%"
+    ],
+    "fixed_conditions": true,
+    "stability_NA": true,
+    "exceptions": 0,
+    "selected_methods": [
+      "Remove percentile",
+      "Remove BCa",
+      "Remove t"
+    ]
+  },
+  {
+    "step": "hypothesis_text_and_console",
+    "hypotheses": [
+      "  - paragraph: H1：実用差仮説は不支持。この2分布・n20・α.05・B4999・BCaの被覆Cについて±1pp内の実用的同等性を支持。99%差区間 [-0.797 pp, +0.390 pp]。",
+      "  - paragraph: H2：実用差仮説は不支持。この2分布・n20・α.05・B4999・BCaの方向差Tについて±1pp内の実用的同等性を支持。99%差区間 [-0.421 pp, +0.814 pp]。",
+      "    - paragraph: 両指標で±1pp内を支持。ただし、推論区間の被覆が名目95%を満たすという意味ではありません。"
+    ],
+    "console": [],
+    "figure_console": [],
+    "exceptions": 0
+  }
+]
