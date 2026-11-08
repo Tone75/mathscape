@@ -1,0 +1,123 @@
+{
+  "schema_version": 1,
+  "question_id": "RQ-M01",
+  "created_utc": "2026-11-08T06:28:28.207537+00:00",
+  "question": "How do sample size and population shape change one-sample t inference?",
+  "design": {
+    "distributions": [
+      "normal",
+      "centered_exponential"
+    ],
+    "sample_sizes": [
+      5,
+      20,
+      100
+    ],
+    "effects": [
+      0.0,
+      0.2,
+      0.5
+    ],
+    "master_seeds": [
+      0,
+      1,
+      2
+    ],
+    "B": 5000,
+    "mu0": 0.0,
+    "sigma": 1.0,
+    "alpha": 0.05,
+    "trial_id": 0
+  },
+  "totals": {
+    "cells": 54,
+    "sample_groups": 270000,
+    "observations": 11250000
+  },
+  "randomness": {
+    "generator": "numpy.random.Generator(numpy.random.PCG64(SeedSequence(...)))",
+    "distribution_ids": {
+      "normal": 1,
+      "centered_exponential": 2
+    },
+    "entropy": "master_seed",
+    "spawn_key": [
+      "distribution_id",
+      "n",
+      "d_float64_low32",
+      "d_float64_high32",
+      "trial_id"
+    ],
+    "effect_encoding": "IEEE754 float64 little-endian uint64; -0.0 canonicalized to +0.0; low32=bits&0xffffffff; high32=bits>>32",
+    "consumption": "one generator per cell; sequential row-major generation across batches; alpha and B are not in the RNG key",
+    "generation": {
+      "normal": "mu0 + sigma * (d + Z), Z~N(0,1)",
+      "centered_exponential": "mu0 + sigma * (d + E - 1), E~Exp(scale=1)"
+    },
+    "independence": "independent pseudo-random draws within and between sample groups; fixed seed IDs provide reproducibility, not a proof of independence"
+  },
+  "inference": {
+    "variance_ddof": 1,
+    "test": "two-sided one-sample t",
+    "reject": "unrounded p < alpha",
+    "coverage": "closed interval contains true mean mu0+sigma*d",
+    "boundary": "CI/test equivalence checks exclude isclose(abs(t), critical, rtol=1e-12, atol=1e-12); reported p and intervals are never adjusted",
+    "invalid": "retain B denominator and valid-only counts; any invalid group marks cell for investigation and aggregate rates/widths/intervals as NaN",
+    "rate_intervals": "95% Wilson, descriptive per cell; not simultaneous acceptance bands",
+    "width_sd": "sample SD ddof=1 across B widths",
+    "width_mcse": "width_sd/sqrt(B)",
+    "rate_mcse": "sqrt(rate*(1-rate)/B)",
+    "normal_theory": "nct.cdf(-critical,n-1,sqrt(n)*d)+nct.sf(critical,n-1,sqrt(n)*d); not assigned to nonnormal rows"
+  },
+  "policy": {
+    "max_batch": 1000,
+    "wall_seconds": 300,
+    "peak_rss_bytes": 2147483648,
+    "output_bytes": 52428800,
+    "normal_comparisons": 54,
+    "familywise_epsilon": 0.001
+  },
+  "normal_investigation_band": {
+    "comparisons": 54,
+    "familywise_epsilon": 0.001,
+    "tail_probability": "0.001/(2*54)",
+    "integer_bounds": "binom.ppf(tail,B,p), binom.ppf(1-tail,B,p), inclusive",
+    "p": "coverage=0.95; rejection=normal noncentral-t power (including alpha under d=0)",
+    "interpretation": "conservative investigation flag, not a proof/disproof and never a reason to redraw"
+  },
+  "hypotheses": {
+    "H1": {
+      "claim": "Normal iid t intervals cover at nominal level; under H0 rejection matches alpha",
+      "criterion": "supported if all 27 normal coverage counts and all 9 normal d=0 rejection counts lie in preregistered conservative bands, with zero invalids; otherwise unresolved/investigate, retaining every result"
+    },
+    "H2": {
+      "claim": "For normal populations, increasing n narrows mean CI width and increases theoretical power at nonzero fixed d",
+      "criterion": "supported if mean widths strictly decrease for n=5,20,100 within each normal d/seed, normal theory power strictly increases at d=0.2,0.5, every normal empirical rejection count is in its conservative theory band, and no invalids; otherwise unresolved/investigate; no single-sample monotonicity claim"
+    },
+    "H3": {
+      "claim": "Matched mean/variance need not give nominal small-sample inference under a right-skewed population",
+      "scope": "n=5,d=0; larger n and nonzero effects reported descriptively, without a required recovery direction",
+      "criterion": "supported if coverage or rejection for centered_exponential lies outside its nominal conservative binomial count range in all three seeds, with the same direction across seeds, while all matched normal counts lie inside their nominal ranges and all six cells have zero invalids; otherwise unresolved/not supported by this fixed design",
+      "nominal_band": "same conservative count construction p=0.95 or0.05, tail=0.001/(2*54); descriptive comparator only, excluded from the 54 normal-theory checks",
+      "direction": "neither direction nor n=100 recovery is fixed as a desired conclusion"
+    }
+  },
+  "execution": {
+    "first_fixed_run": "once only; no automatic repeats, seed additions or outcome-dependent filtering",
+    "bug_correction": "at most one separately authorized rerun; retain old results, source version and reason; this runner refuses any existing attempt in a destination",
+    "samples": "raw observations are never saved; at most one batch plus B inference outputs per cell retained",
+    "budget_response": "stop, preserve completed rows and record incomplete cells/resources; do not expand limits"
+  },
+  "environment": {
+    "python": "3.12.13",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "os": "Darwin",
+    "os_release": "25.6.0",
+    "architecture": "arm64"
+  },
+  "source_files_sha256": {
+    "mathscape/inference.py": "6e26d2a6991ecfca0729e7057f0eda63bf100b0941fc0b397caa2eb13e226708",
+    "scripts/run_inference_benchmark.py": "c1b3360da58b06247205e5ab58c319252fa58d812a534e74638d5108986d52d1"
+  }
+}
