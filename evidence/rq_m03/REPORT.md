@@ -8,7 +8,7 @@
 
 **問い：** 原標本を固定したとき、有限bootstrap回数Bと尾部解像度は、BCa区間端点の再標本化乱数による揺れにどう関係するか。また、Bを増やして端点が安定しても、小標本の被覆不足は残るか。
 
-実行前の正本は [manifest.json](manifest.json)。SHA-256は `aec36ae1d78cd406d0fa6503c832118a7550e15bb3f5842000343c918c526534`。数理・生成・集計・判定・監査ソースを固定したcommitは [`e12faa6c34917fec42856e04cd806a7d5ac6a2a8`](https://github.com/Tone75/mathscape/commit/e12faa6c34917fec42856e04cd806a7d5ac6a2a8)。実行時にHEAD・コミット内容・ソースハッシュ・環境版の一致を照合した。UI・科学レポート・操作証跡を含む最終提出SHAと新PRは、最終提出記録に追記する。
+実行前の正本は [manifest.json](manifest.json)。SHA-256は `aec36ae1d78cd406d0fa6503c832118a7550e15bb3f5842000343c918c526534`。数理・生成・集計・判定・監査ソースを固定したcommitは [`e12faa6c34917fec42856e04cd806a7d5ac6a2a8`](https://github.com/Tone75/mathscape/commit/e12faa6c34917fec42856e04cd806a7d5ac6a2a8)。実行時にHEAD・コミット内容・ソースハッシュ・環境版の一致を照合した。科学成果と提出先は下記の提出記録に固定した。
 
 | 項目 | 事前固定値 |
 | --- | --- |
@@ -228,6 +228,12 @@ python scripts/audit_stability.py --evidence evidence/rq_m03/reproduction
 ```
 
 ランナーは実行HEAD・ソース・manifest・環境の一致を要求し、既存attemptや成果の出力先を拒否する。環境差等で照合に失敗したら、その事実を記録し、元のmanifestを書き換えて通過させない。主実験・smokeをこのレポート作成時に追加実行していない。
+
+## 提出記録
+
+科学成果commitは [`568c689a71d67bca393fa5000d7b855e7c609e45`](https://github.com/Tone75/mathscape/commit/568c689a71d67bca393fa5000d7b855e7c609e45)、提出先は [stacked PR #3](https://github.com/Tone75/mathscape/pull/3)。branch `feat/rq-m03-stability`、baseは承認済みRQ-M02 head `dd3b377f02c19381b9fa6ffbcd0eff635911940c` を保持する `feat/rq-m02-bootstrap`。科学成果を固定した後、この参照追記と同期記録だけを文書commitへ分けた。最新の提出HEADは `gh pr view 3 --repo Tone75/mathscape --json headRefOid` で取得できる。
+
+Notionの親MATH-032・子033〜035・Project Home・固定仕様へ、受領、事前固定SHA、科学成果SHA、PR、H1〜H3、全条件表へのリンク、612テスト、独立監査、ブラウザの確認範囲、資源、未実施事項を同期済み。PENDING_NOTION_SYNCなし。新成果のレビュー待ちとしてIn Progressを維持し、Owner未受入のものをDoneにしていない。NextはMATH-032だけ。旧RQ-M01／M02、main、旧PR／タグ／Release、別改善票を保持し、新タグ・Release・外部ホスティングは作成していない。
 
 ## 限界と次の単一RQ候補
 

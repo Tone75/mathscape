@@ -95,6 +95,8 @@ manifest・数理・runner・集計／判定・監査・環境を主実験前com
 
 旧483件を含む全612 pytest成功、`pip check`成功。新保存ビューのAppTest14件と実ブラウザで、3条件・B／k／手法／Lab／モード往復の原標本保持、固定α、表示値とCSV・実ダウンロードの一致、旧4 Lab代表操作を確認しました。[検証記録](evidence/rq_m03/validation.json) と [操作証拠](evidence/rq_m03/browser/)を参照できます。Owner本人の新機能個別操作や外部科学レビューは未実施です。
 
+提出先は [stacked PR #3](https://github.com/Tone75/mathscape/pull/3)、科学成果SHAは `568c689a71d67bca393fa5000d7b855e7c609e45`。Notion親子票・Home・固定仕様へ同期済みです。新成果のOwnerレビューを待つ状態であり、新タグ・Releaseは作成していません。
+
 ### RQ-M02：信頼区間の方法比較
 
 同じ原標本にt・percentile bootstrap・BCaの3手法を適用します。percentileとBCaは同じ999個のbootstrap平均を使います。推論APIへ真の母平均・母分散・分布名は渡しません。tはddof=1／df=n−1、分位点はNumPy linear、BCaの同値は半分としてz₀を計算し、delete-one jackknifeに対応する加速係数aで分位点を補正します。都合のよいクリップや、計算不能時の別手法への置換はしません。

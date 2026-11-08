@@ -12,6 +12,8 @@ CODEX_RECEIPT RQ-M03-v1: 開始HEADは承認済み提出HEADと一致、未コ�
 
 再開の入口は `mathscape/stability.py`、`mathscape/stability_ui.py`、`scripts/run_stability_benchmark.py`、`scripts/audit_stability.py` と `evidence/rq_m03/`。主実験は再抽選せず、保存結果を利用する。通常pytest・UI・監査は主実験を起動しない。保存専用ビューを実装し、全612 pytest成功（10.95秒、旧483＋新129）・pip check成功。AppTest14件、実ブラウザで3条件・全B・k／手法／Lab／モード保持・固定α・CSV実ダウンロード一致・旧4 Lab代表操作を確認。画面で発見した原標本マーカーの非表示を修正し再検証した。証拠は `validation.json`／`browser/`。確認用サーバー停止済み。新PR提出はレビュー待ちとし、main・旧PR／タグ／Release、旧RQ-M01／M02証拠、別改善票は保持する。
 
+提出先 [stacked PR #3](https://github.com/Tone75/mathscape/pull/3)、科学成果 `568c689a71d67bca393fa5000d7b855e7c609e45`。この参照は科学成果固定後の文書commitで追記した。最新提出HEADは `gh pr view 3 --repo Tone75/mathscape --json headRefOid` で確認できる。Notion親子票・Home・固定仕様への同期済み、PENDING_NOTION_SYNCなし。全変更成果約12.4MiB（保守的な全変更ファイル合計、50MiB内）。新成果はレビュー待ちで親子票はIn Progress、NextはMATH-032だけ。外部科学レビュー・Ownerの個別新操作／今回受入・別ブラウザ／モバイルは未実施。次の単一RQは固定n／分散の標準化ガンマで歪度を変える候補のみを提案し、追加実行せず停止する。
+
 ## 最新の受入と実行状態：RQ-M02
 
 2026-11-08のOwner明示指示とNotionのOWNER_ACCEPTANCEを採用する。RQ-M01 / v0.2（科学成果 `cc240b0e32b424bb8881c153f17e56608d5fe51f`、提出HEAD `1dd298db671ad962fb705b5f407a9c1f51a11bb9`）はOwner受入・ユーザー動作確認ともに完了済み。下記の旧「Owner待ち」は提出時点の履歴であり、再確認を開始条件にしない。外部科学レビューや別改善票の完了を意味しない。
