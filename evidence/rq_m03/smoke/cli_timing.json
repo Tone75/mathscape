@@ -1,0 +1,9 @@
+{
+  "scope": "sole development smoke, no scientific conclusions",
+  "command": ".venv/bin/python scripts/run_stability_benchmark.py --smoke",
+  "external_cli_seconds": {
+    "real": 0.5,
+    "user": 0.38,
+    "sys": 0.04
+  }
+}

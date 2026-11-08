@@ -1,0 +1,12 @@
+{
+  "question_id": "RQ-M03",
+  "scope": "sole main attempt, external CLI including interpreter startup and final resources write",
+  "command": ".venv/bin/python scripts/run_stability_benchmark.py --run --source-commit e12faa6c34917fec42856e04cd806a7d5ac6a2a8",
+  "external_cli_seconds": {
+    "real": 13.62,
+    "user": 11.7,
+    "sys": 1.78
+  },
+  "main_attempts": 1,
+  "reruns": 0
+}
