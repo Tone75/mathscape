@@ -1,0 +1,198 @@
+{
+  "schema_version": 1,
+  "question_id": "RQ-M03",
+  "created_utc": "2026-11-08T08:52:36.017529+00:00",
+  "question": "With original samples fixed, how do finite bootstrap count and tail resolution relate to endpoint variability, and does small-sample undercoverage remain when endpoints stabilize?",
+  "design": {
+    "distributions": [
+      "normal",
+      "centered_exponential"
+    ],
+    "sample_sizes": [
+      5,
+      20
+    ],
+    "master_seeds": [
+      0,
+      1,
+      2
+    ],
+    "R": 100,
+    "K": 20,
+    "B_values": [
+      199,
+      999,
+      4999
+    ],
+    "alpha": 0.05,
+    "true_mean": 0.0,
+    "true_variance": 1.0,
+    "methods": [
+      "t",
+      "percentile",
+      "bca"
+    ]
+  },
+  "totals": {
+    "original_cells": 12,
+    "original_samples": 1200,
+    "inner_streams": 24000,
+    "B_expanded_cells": 36,
+    "seed_summary_rows": 108,
+    "pooled_summary_rows": 36,
+    "bootstrap_samples": 119976000,
+    "logical_resampling_indices": 1499700000
+  },
+  "randomness": {
+    "generator": "Generator(PCG64(SeedSequence(...)))",
+    "entropy": "master_seed",
+    "main_namespace": 5058611,
+    "smoke_namespace": 1397567539,
+    "distribution_ids": {
+      "normal": 1,
+      "centered_exponential": 2
+    },
+    "spawn_key": [
+      "namespace",
+      "distribution_id",
+      "n",
+      "outer_id",
+      "purpose_id",
+      "inner_id"
+    ],
+    "purpose_ids": {
+      "original_sample": 0,
+      "bootstrap": 1
+    },
+    "original_inner_id": 0,
+    "outer_ids": "0..99",
+    "bootstrap_inner_ids": "0..19",
+    "excluded_from_key": [
+      "B",
+      "method",
+      "display_order",
+      "batch_size",
+      "alpha"
+    ],
+    "prefix": "one length-4999 bootstrap mean vector per original/inner pair; B199 and B999 are prefixes, never separately generated; recompute z0 and adjusted q from each prefix",
+    "pairing": "percentile and BCa share each prefix; t and acceleration are computed once per original sample and stay unchanged over B/k",
+    "independence": "distinct keyed original and inner streams; independent original samples are the population-repetition units, not K or B; seed IDs do not replace an independence explanation"
+  },
+  "methods": {
+    "definitions": "preserve RQ-M02: half-tie z0, delete-one jackknife acceleration, linear empirical quantiles, no clipping/fallback, same BCa denominator/order validity conditions",
+    "truth_separation": "inference receives samples/bootstrap means/alpha only; truth 0 is used solely by evaluation",
+    "tail": "endpoint tau=B*min(q,1-q); either tau<10 is an interval warning, not invalidity or exclusion",
+    "maximum_B": "4999 is not truth, infinite-B answer, or an error reference"
+  },
+  "metrics": {
+    "se": "sample SD ddof=1 / sqrt(n)",
+    "A": "sqrt((sample Var_k(lower)+sample Var_k(upper))/2)/se, ddof=1, finite-K operational metric; not RMSE or an unbiased conditional SD estimator",
+    "coverage": "per-original C_i=mean_k I(lower<=0<=upper), never coverage of an averaged-endpoint interval",
+    "miss_above": "mean_k I(lower>0)",
+    "miss_below": "mean_k I(upper<0)",
+    "width_warning": "average widths/warnings within original first, then average over independent originals",
+    "summary_unit": "R=100 per seed, 300 pooled originals; never Wilson or sd/sqrt(R*K)",
+    "t_reference": "stored K copies are display references; interval counts/validity use only R original t intervals, endpoint SD/A are exactly zero if valid",
+    "intervals": "99% original-level mean t intervals; zero variance makes decision interval undefined; no clipping to rate range",
+    "B999_vs_B4999": "descriptive paired original-level C differences; a nonsignificant difference is not equivalence"
+  },
+  "hypotheses": {
+    "H1_n5": {
+      "population": "centered_exponential",
+      "n": 5,
+      "quantity": "mean_i[A_i(4999)-0.5*A_i(199)] using all K20",
+      "threshold": 0.0,
+      "direction": "less",
+      "support": "pooled 99% upper<0 and each seed mean<0"
+    },
+    "H1_n20": {
+      "population": "centered_exponential",
+      "n": 20,
+      "quantity": "mean_i[A_i(4999)-0.5*A_i(199)] using all K20",
+      "threshold": 0.0,
+      "direction": "less",
+      "support": "pooled 99% upper<0 and each seed mean<0"
+    },
+    "H2": {
+      "population": "centered_exponential",
+      "n": 20,
+      "B": 999,
+      "classify": "W=1 iff at least 5 of k0..9 have tail_warning; required classification intervals must all be valid",
+      "evaluate": "A_eval from only independent k10..19, ddof=1; never reuse classification endpoints for A_eval",
+      "quantity": "mean A_eval(W=1)-mean A_eval(W=0)",
+      "threshold": 0.02,
+      "direction": "greater",
+      "interval": "99% original-level Welch t interval with Satterthwaite df; undefined for zero SE",
+      "groups": "each pooled group >=30 originals; each seed each group >=5; insufficiency =>inconclusive, no R/K/threshold changes",
+      "support": "pooled lower>.02 and each seed difference>.02, all group-size/validity requirements satisfied",
+      "interpretation": "association of differing originals, not causal effect of warnings"
+    },
+    "H3": {
+      "population": "centered_exponential",
+      "n": 5,
+      "B": 4999,
+      "quantity": "mean over 300 independent originals of C_i from K20 coverage indicators",
+      "threshold": 0.93,
+      "direction": "less",
+      "support": "pooled 99% upper<.93 and each seed mean<.93"
+    },
+    "decision": "4 quantities with 99% intervals, approximate multiplicity control, not exact simultaneous guarantee; original-level t intervals for H1/H3, Welch for H2",
+    "status": "supported iff all interval/seed/validity/group requirements hold; wholly opposite interval =>not_supported; touching/straddling threshold, unmet seed conditions, invalid/incomplete or insufficient groups =>inconclusive. Preserve contrary evidence alongside missingness. H1 retains each n; either clearly not_supported makes overall H1 not_supported"
+  },
+  "invalid_policy": {
+    "original": "se<=0/nonfinite or undefined method intervals are reason-labelled; any required invalid K makes that original main A/C/width/warning metrics NA",
+    "aggregate": "any missing original needed for a confirmatory comparison makes its main estimate/interval NA and decision inconclusive; do not treat invalid as noncoverage",
+    "conditional": "jointly complete originals only may have conditional_ reference estimates with explicit finite-count denominators; never silently drop invalids"
+  },
+  "saved_schema": {
+    "panel_axes": [
+      "original",
+      "B",
+      "method",
+      "inner"
+    ],
+    "methods": [
+      "t",
+      "percentile",
+      "bca"
+    ],
+    "sample_hash": "SHA256 over little-endian float64 C-order original vector bytes",
+    "retain": "original vectors/IDs/hashes, endpoints, z0/a/q/tau, valid/reason/warnings; no full bootstrap mean/index arrays"
+  },
+  "policy": {
+    "wall_seconds": 300,
+    "peak_rss_bytes": 2147483648,
+    "output_bytes": 52428800,
+    "max_resample_elements": 1000000,
+    "decision_confidence": 0.99,
+    "confirmatory_quantities": 4,
+    "h2_min_pooled_group": 30,
+    "h2_min_seed_group": 5
+  },
+  "execution": {
+    "main": "once only; no redraw on unsupported/inconclusive/group shortage/timeout",
+    "smoke": "one separately authorized namespace smoke: 12cells,R2,K4,prefix B19/49/99;24 originals,96 inner streams,9504 bootstrap samples; no scientific decisions",
+    "correction": "only actual code bug permits at most one separately authorized rerun, retaining reason/old source/old outputs; cumulative main wall<=600s",
+    "budget_stop": "preserve complete/incomplete cells, no automatic scale changes or retries"
+  },
+  "environment": {
+    "python": "3.12.13",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "plotly": "6.9.0",
+    "os": "Darwin",
+    "os_release": "25.6.0",
+    "architecture": "arm64"
+  },
+  "source_files_sha256": {
+    "mathscape/stability.py": "e27f2bf98378911cb1c0502bb93a5d944fd5dd2978354e6fbd99595d2bc5f070",
+    "mathscape/bootstrap.py": "24d4ffbc8e5b463ee6770a35e1d17beca9ee41a37083d457dbca25abd9f7b6cb",
+    "mathscape/inference.py": "6e26d2a6991ecfca0729e7057f0eda63bf100b0941fc0b397caa2eb13e226708",
+    "scripts/run_stability_benchmark.py": "4be7f9a10f7d328cc914c0aaceaf28d027718a44a2f8afd63a896e848b209488",
+    "scripts/run_bootstrap_benchmark.py": "9fdeabae419aecd487ff063775001880643c265207c7c5ea8192b455d72864a3",
+    "scripts/audit_stability.py": "a0bd095547579b2dd096d621b4a40958f94c552c509f7cae2786c4f7291a2e35",
+    "tests/test_stability.py": "10907e259309da4aad9b1c1103a12062bb6dff2beead235bbb7de6ed7d16b356",
+    "tests/test_stability_runner.py": "96c6efe78b3bdf2355e2ddaf0e3d2a5c97b28ed9d50ada4b8ce32af769a4cf85",
+    "tests/test_stability_audit.py": "bed38d41dfe47b59dfbb9ce5e1489bae5831e4b63900ca261424d6a84912b912"
+  }
+}

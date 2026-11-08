@@ -1,5 +1,11 @@
 # MATHSCAPE — minimal handoff
 
+## 最新の受入と実行状態：RQ-M03
+
+2026-11-08のOwner明示承認に従い、RQ-M02（提出HEAD `dd3b377f02c19381b9fa6ffbcd0eff635911940c`、科学成果 `6a651c0995cbdd7a2de77d903c09cb23dbe369a8`、PR #2、H1支持・H2保留・H3支持）は受入済みとして扱う。下記の旧「受入待ち」は提出時点の履歴であり開始条件ではない。外部科学レビュー・Owner本人の個別新操作の実施とは区別する。
+
+CODEX_RECEIPT RQ-M03-v1: 開始HEADは承認済み提出HEADと一致、未コミット変更・別worktreeなし。新branch `feat/rq-m03-stability`。固定仕様全文と末尾プロンプトを受領し、MATH-033→034→035を順に実施する。NextはMATH-032だけ。詳細は `evidence/rq_m03/CODEX_RECEIPT.md`。既存483テスト成功。主実験は事前固定commit後に1回のみ。新成果はレビュー待ちで提出する。
+
 ## 最新の受入と実行状態：RQ-M02
 
 2026-11-08のOwner明示指示とNotionのOWNER_ACCEPTANCEを採用する。RQ-M01 / v0.2（科学成果 `cc240b0e32b424bb8881c153f17e56608d5fe51f`、提出HEAD `1dd298db671ad962fb705b5f407a9c1f51a11bb9`）はOwner受入・ユーザー動作確認ともに完了済み。下記の旧「Owner待ち」は提出時点の履歴であり、再確認を開始条件にしない。外部科学レビューや別改善票の完了を意味しない。
