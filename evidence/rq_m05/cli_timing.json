@@ -1,0 +1,8 @@
+{
+  "scope": "External /usr/bin/time -p covering the sole guarded main CLI, interpreter setup and complete child outputs/exit included",
+  "real_seconds": 36.66,
+  "user_seconds": 32.07,
+  "system_seconds": 4.39,
+  "main_attempts": 1,
+  "reruns": 0
+}

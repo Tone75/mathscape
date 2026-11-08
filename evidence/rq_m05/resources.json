@@ -1,0 +1,66 @@
+{
+  "question_id": "RQ-M05",
+  "status": "completed",
+  "started_utc": "2026-11-08T12:12:10.805113+00:00",
+  "source_git_sha": "a8e87b3deb1a5256a200b28ea51301dec8aecb7e",
+  "manifest_sha256": "d02a4b1d2ea1f26d96549e35014903c0c86df32dc8b8507bf81cc2f6dfdc8454",
+  "namespace": 5058613,
+  "single_main_attempt": true,
+  "environment": {
+    "python": "3.12.13",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "plotly": "6.9.0",
+    "os": "Darwin",
+    "os_release": "25.6.0",
+    "architecture": "arm64",
+    "streamlit": "1.67.0",
+    "pytest": "9.2.0"
+  },
+  "R": 10000,
+  "K": 1,
+  "B": 4999,
+  "n": 20,
+  "total_cells": 6,
+  "full_bootstrap_saved": false,
+  "original_samples_saved": true,
+  "max_resample_elements": 1000000,
+  "wall_scope": "module start before heavy imports through outputs, excluding interpreter startup/final resource write; outer guard and time measure full CLI",
+  "active_cell": [
+    "lognormal",
+    2
+  ],
+  "completed_cells": 6,
+  "completed_cell_keys": [
+    [
+      "gamma",
+      0
+    ],
+    [
+      "gamma",
+      1
+    ],
+    [
+      "gamma",
+      2
+    ],
+    [
+      "lognormal",
+      0
+    ],
+    [
+      "lognormal",
+      1
+    ],
+    [
+      "lognormal",
+      2
+    ]
+  ],
+  "incomplete_cells": [],
+  "finished_utc": "2026-11-08T12:12:46.768277+00:00",
+  "process_wall_seconds": 36.56295799999498,
+  "process_peak_rss_bytes": 230817792,
+  "output_bytes_before_resources": 24256706,
+  "output_bytes_total": 24258169
+}

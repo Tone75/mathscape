@@ -1,0 +1,22 @@
+{
+  "question_id": "RQ-M05",
+  "source_git_sha": "a8e87b3deb1a5256a200b28ea51301dec8aecb7e",
+  "started_utc": "2026-11-08T12:12:10.191230+00:00",
+  "planned_child_launches": 1,
+  "command": [
+    "python",
+    "scripts/run_matched_benchmark.py",
+    "--run",
+    "--manifest",
+    "evidence/rq_m05/manifest.json",
+    "--output",
+    "evidence/rq_m05",
+    "--source-commit",
+    "a8e87b3deb1a5256a200b28ea51301dec8aecb7e"
+  ],
+  "soft_termination_seconds": 295.0,
+  "hard_kill_seconds": 298.0,
+  "finish_deadline_seconds": 299.0,
+  "outer_cap_seconds": 300,
+  "scope": "one guarded main attempt; no scientific retry"
+}

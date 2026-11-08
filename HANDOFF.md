@@ -8,6 +8,14 @@ CODEX_RECEIPT RQ-M05-v1：開始HEADは承認済みと一致、working tree clea
 
 母平均0／分散1／歪度2のガンマと対数正規、n20／α.05／K1／B4999、seed0／1／2、R10000を固定。K1の端点SD／S／Ase／ApopはNA。主実験1回、指定別namespaceスモーク1回、事前固定・入力照合後に実行する。通常pytest・保存監査・UIから主実験を起動しない。旧実験証拠・既存PR／main／タグ／Releaseは保持し、新成果は別stacked PRのレビュー待ちとして提出する。
 
+事前固定 `a8e87b3deb1a5256a200b28ea51301dec8aecb7e`、manifest SHA256 `d02a4b1d2ea1f26d96549e35014903c0c86df32dc8b8507bf81cc2f6dfdc8454`。指定smoke1回後、主1回で6セル・60,000原標本完了、再実行0／無効・欠測0。H1／H2とも実用差仮説不支持かつ、この固定条件・両指標の±1pp内の実用的同等性支持。ΔC99%区間[−0.796871,+0.390204]pp、ΔT[−0.420947,+0.814281]pp。BCa被覆G91.3767%／L91.1733%で、名目95%達成や普遍的な前三モーメント十分性へ拡張しない。
+
+主CLI外側36.66秒、内部36.562958秒、Peak RSS230,817,792 bytes。独立実装が保存原標本・端点から全180,000レコード／18 seed／6 pooled／12分布差／24方法対応差と両仮説・全seedを再計算し不一致0。実bootstrap過程の完全復元監査ではない。数理・runner・監査・guard等16固定sourceは不変。
+
+保存専用ビューを実装し全862 pytest成功（20.64秒、旧732＋新130）・pip check成功・新AppTest11件。実ブラウザで両分布／全方法／seed・ID／Lab・モード保持と復元、固定α／B／K、NA、21状態147表示数値、3種類の実ダウンロード一致、旧4 Labと旧保存ビュー代表操作を確認した。確認用サーバー停止済み。参照は `evidence/rq_m05/REPORT.md`／`validation.json`／`browser/`。
+
+再開入口は `mathscape/matched_moments.py`／`matched_ui.py`、`scripts/run_matched_guarded.py`／`run_matched_benchmark.py`／`audit_matched.py`。新成果はレビュー待ちで040〜043 In Progress、Nextは040だけ。新成果のOwner受入・外部科学レビュー・Owner本人の個別新操作・別ブラウザ／モバイルは未実施。既存別改善票・MATH-005本格再開試験へ完了範囲を広げない。
+
 ## 最新の受入と実行状態：RQ-M04
 
 2026-11-08のOwner明示承認とNotionの最新記録に従い、RQ-M03（提出HEAD `9b4a0fa1b3bea7751069deaaf0f3669125930403`、科学成果 `568c689a71d67bca393fa5000d7b855e7c609e45`、PR #3、H1／H2／H3支持）は受入済み、MATH-032〜035はDone。下記の旧受入待ちは提出時点の履歴であり開始条件ではない。外部科学レビュー・Owner本人の新機能個別操作・PR mergeとは区別する。

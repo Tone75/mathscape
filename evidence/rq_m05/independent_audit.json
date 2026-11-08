@@ -1,0 +1,255 @@
+{
+  "question_id": "RQ-M05",
+  "status": "passed",
+  "mismatch_count": 0,
+  "mismatches": [],
+  "audit_implementation": "independent saved-input reconstruction; no primary core or runner imports; gzip records checked one at a time",
+  "original_samples": 60000,
+  "source_panels_sha256": {
+    "gamma_seed0.npz": "a794e6d72b45528d465eba650d63881c7aa321a36bfec1f4fd5b99f0f696b62d",
+    "gamma_seed1.npz": "05c0e66cd742b81128dbbe77b3e8d2c474684d2534bc2cb3a584388c00a717fa",
+    "gamma_seed2.npz": "59397f4a6cde5e5222edd5e5eb7307ea5419b9bc91b812473ab16aa9c9dea14c",
+    "lognormal_seed0.npz": "0593f22c99e9f00a7501f8838208f5a981b5696684e333e7e530b3bc85bb9101",
+    "lognormal_seed1.npz": "8f491aa83e1377cd6c7c59ef2c371182cc4c5c5a79d58bc836b377781400106a",
+    "lognormal_seed2.npz": "6c7e6c8300b25c2a16a69015f86df252278d7a3291a9e17982f34a9dfc0f8aac"
+  },
+  "table_counts": {
+    "original_metrics.csv.gz": {
+      "reconstructed": 180000,
+      "saved": 180000
+    },
+    "summary.csv": {
+      "reconstructed": 18,
+      "saved": 18
+    },
+    "pooled_summary.csv": {
+      "reconstructed": 6,
+      "saved": 6
+    },
+    "population_contrasts.csv": {
+      "reconstructed": 12,
+      "saved": 12
+    },
+    "paired_method_contrasts.csv": {
+      "reconstructed": 24,
+      "saved": 24
+    }
+  },
+  "hypotheses": {
+    "question_id": "RQ-M05",
+    "confirmatory_quantities": 2,
+    "decision_confidence": 0.99,
+    "margin": 0.01,
+    "target_method": "bca",
+    "B": 4999,
+    "independent_originals_per_population": 30000,
+    "seed_direction_gate": false,
+    "quantities": {
+      "H1": {
+        "N1": 30000,
+        "N0": 30000,
+        "finite_count1": 30000,
+        "finite_count0": 30000,
+        "mean1": 0.9117333333333333,
+        "mean0": 0.9137666666666666,
+        "variance1": 0.08047834483371667,
+        "variance0": 0.07879977221462937,
+        "difference": -0.0020333333333333314,
+        "df": 59991.337202933755,
+        "low": -0.0079687105687801,
+        "high": 0.003902043902113436,
+        "se": 0.0023041854457222406,
+        "valid": true,
+        "status": "not_supported",
+        "direction": "within_margin",
+        "equivalence_supported": true,
+        "metric": "C",
+        "margin": 0.01,
+        "group1": "lognormal",
+        "group0": "gamma",
+        "independent_groups": true,
+        "conditional_welch": {
+          "N1": 30000,
+          "N0": 30000,
+          "finite_count1": 30000,
+          "finite_count0": 30000,
+          "mean1": 0.9117333333333333,
+          "mean0": 0.9137666666666666,
+          "variance1": 0.08047834483371667,
+          "variance0": 0.07879977221462937,
+          "difference": -0.0020333333333333314,
+          "df": 59991.337202933755,
+          "low": -0.0079687105687801,
+          "high": 0.003902043902113436,
+          "se": 0.0023041854457222406,
+          "valid": true
+        }
+      },
+      "H2": {
+        "N1": 30000,
+        "N0": 30000,
+        "finite_count1": 30000,
+        "finite_count0": 30000,
+        "mean1": 0.032933333333333335,
+        "mean0": 0.030966666666666667,
+        "variance1": 0.08718496838783514,
+        "variance0": 0.08527724146360431,
+        "difference": 0.0019666666666666686,
+        "df": 59990.65945744327,
+        "low": -0.004209474922134597,
+        "high": 0.008142808255467935,
+        "se": 0.0023976530875798765,
+        "valid": true,
+        "status": "not_supported",
+        "direction": "within_margin",
+        "equivalence_supported": true,
+        "metric": "T",
+        "margin": 0.01,
+        "group1": "lognormal",
+        "group0": "gamma",
+        "independent_groups": true,
+        "conditional_welch": {
+          "N1": 30000,
+          "N0": 30000,
+          "finite_count1": 30000,
+          "finite_count0": 30000,
+          "mean1": 0.032933333333333335,
+          "mean0": 0.030966666666666667,
+          "variance1": 0.08718496838783514,
+          "variance0": 0.08527724146360431,
+          "difference": 0.0019666666666666686,
+          "df": 59990.65945744327,
+          "low": -0.004209474922134597,
+          "high": 0.008142808255467935,
+          "se": 0.0023976530875798765,
+          "valid": true
+        }
+      }
+    },
+    "seed_details": [
+      {
+        "master_seed": 0,
+        "H1": {
+          "N1": 10000,
+          "N0": 10000,
+          "finite_count1": 10000,
+          "finite_count0": 10000,
+          "mean1": 0.9062,
+          "mean0": 0.9101,
+          "variance1": 0.08501006100610062,
+          "variance0": 0.08182617261726173,
+          "difference": -0.0039000000000000146,
+          "df": 19990.719464212445,
+          "low": -0.014422131775975587,
+          "high": 0.006622131775975558,
+          "se": 0.004084559139287401,
+          "valid": true
+        },
+        "H2": {
+          "N1": 10000,
+          "N0": 10000,
+          "finite_count1": 10000,
+          "finite_count0": 10000,
+          "mean1": 0.0358,
+          "mean0": 0.0331,
+          "variance1": 0.0925276127612761,
+          "variance0": 0.0888132713271327,
+          "difference": 0.002700000000000001,
+          "df": 19989.613580407797,
+          "low": -0.008269994621294558,
+          "high": 0.01366999462129456,
+          "se": 0.0042584138371981745,
+          "valid": true
+        }
+      },
+      {
+        "master_seed": 1,
+        "H1": {
+          "N1": 10000,
+          "N0": 10000,
+          "finite_count1": 10000,
+          "finite_count0": 10000,
+          "mean1": 0.9166,
+          "mean0": 0.9177,
+          "variance1": 0.07645208520852083,
+          "variance0": 0.07553426342634263,
+          "difference": -0.0010999999999999899,
+          "df": 19997.27074689932,
+          "low": -0.011142939007466738,
+          "high": 0.008942939007466759,
+          "se": 0.0038985426589286344,
+          "valid": true
+        },
+        "H2": {
+          "N1": 10000,
+          "N0": 10000,
+          "finite_count1": 10000,
+          "finite_count0": 10000,
+          "mean1": 0.0318,
+          "mean0": 0.0311,
+          "variance1": 0.08239699969996996,
+          "variance0": 0.08134092409240924,
+          "difference": 0.0007000000000000027,
+          "df": 19997.16812137962,
+          "low": -0.009723970513700922,
+          "high": 0.011123970513700928,
+          "se": 0.004046454297188827,
+          "valid": true
+        }
+      },
+      {
+        "master_seed": 2,
+        "H1": {
+          "N1": 10000,
+          "N0": 10000,
+          "finite_count1": 10000,
+          "finite_count0": 10000,
+          "mean1": 0.9124,
+          "mean0": 0.9135,
+          "variance1": 0.07993423342334233,
+          "variance0": 0.07902565256525654,
+          "difference": -0.0010999999999999899,
+          "df": 19997.346682252057,
+          "low": -0.011370753484709267,
+          "high": 0.009170753484709287,
+          "se": 0.003986977376266372,
+          "valid": true
+        },
+        "H2": {
+          "N1": 10000,
+          "N0": 10000,
+          "finite_count1": 10000,
+          "finite_count0": 10000,
+          "mean1": 0.0312,
+          "mean0": 0.0287,
+          "variance1": 0.08663522352235223,
+          "variance0": 0.08568487848784881,
+          "difference": 0.0024999999999999988,
+          "df": 19997.391775249685,
+          "low": -0.008193663296627145,
+          "high": 0.013193663296627143,
+          "se": 0.004151145649217828,
+          "valid": true
+        }
+      }
+    ],
+    "hypotheses": {
+      "H1": {
+        "status": "not_supported",
+        "direction": "within_margin",
+        "equivalence_supported": true
+      },
+      "H2": {
+        "status": "not_supported",
+        "direction": "within_margin",
+        "equivalence_supported": true
+      }
+    },
+    "both_metrics_equivalent": true
+  },
+  "limitations": [
+    "Bootstrap draws, rank counts and interpolation cannot be reconstructed without saved bootstrap arrays; shared percentile/BCa resampling is a frozen-source/reference-test responsibility.",
+    "All saved originals/endpoint diagnostics, hashes, t/a/q/tau/rank-lattice consistency, 180000 records, summaries, contrasts and decisions are independently checked.",
+    "K1 stability SD/S/Ase/Apop are not estimated, including t. This is an internal audit, not external scientific review."
+  ]
+}
