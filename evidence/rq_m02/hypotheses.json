@@ -1,0 +1,185 @@
+{
+  "question_id": "RQ-M02",
+  "decision_confidence": 0.99,
+  "pooled_outer_replicates": 6000,
+  "normal_t_reference_resolved": true,
+  "all_cells_complete_and_valid": true,
+  "normal_t_checks": [
+    {
+      "n": 5,
+      "master_seed": 0,
+      "cover_count": 1916,
+      "invalid_count": 0,
+      "band_low": 1860,
+      "band_high": 1935,
+      "passed": true
+    },
+    {
+      "n": 5,
+      "master_seed": 1,
+      "cover_count": 1904,
+      "invalid_count": 0,
+      "band_low": 1860,
+      "band_high": 1935,
+      "passed": true
+    },
+    {
+      "n": 5,
+      "master_seed": 2,
+      "cover_count": 1899,
+      "invalid_count": 0,
+      "band_low": 1860,
+      "band_high": 1935,
+      "passed": true
+    },
+    {
+      "n": 20,
+      "master_seed": 0,
+      "cover_count": 1909,
+      "invalid_count": 0,
+      "band_low": 1860,
+      "band_high": 1935,
+      "passed": true
+    },
+    {
+      "n": 20,
+      "master_seed": 1,
+      "cover_count": 1882,
+      "invalid_count": 0,
+      "band_low": 1860,
+      "band_high": 1935,
+      "passed": true
+    },
+    {
+      "n": 20,
+      "master_seed": 2,
+      "cover_count": 1898,
+      "invalid_count": 0,
+      "band_low": 1860,
+      "band_high": 1935,
+      "passed": true
+    },
+    {
+      "n": 100,
+      "master_seed": 0,
+      "cover_count": 1908,
+      "invalid_count": 0,
+      "band_low": 1860,
+      "band_high": 1935,
+      "passed": true
+    },
+    {
+      "n": 100,
+      "master_seed": 1,
+      "cover_count": 1912,
+      "invalid_count": 0,
+      "band_low": 1860,
+      "band_high": 1935,
+      "passed": true
+    },
+    {
+      "n": 100,
+      "master_seed": 2,
+      "cover_count": 1900,
+      "invalid_count": 0,
+      "band_low": 1860,
+      "band_high": 1935,
+      "passed": true
+    }
+  ],
+  "quantities": {
+    "H1_width": {
+      "estimate": -0.8389347522076752,
+      "decision_low": -0.8556314548574343,
+      "decision_high": -0.8222380495579161,
+      "threshold": 0.0,
+      "direction": "less",
+      "seed_points": [
+        -0.8366973916503536,
+        -0.817170329768137,
+        -0.8629365352045351
+      ],
+      "criterion_status": "supported"
+    },
+    "H1_coverage": {
+      "estimate": -0.098,
+      "decision_low": -0.10788766981277016,
+      "decision_high": -0.08811233018722985,
+      "threshold": -0.02,
+      "direction": "less",
+      "seed_points": [
+        -0.1075,
+        -0.093,
+        -0.0935
+      ],
+      "criterion_status": "supported"
+    },
+    "H2_improvement": {
+      "estimate": 0.010333333333333333,
+      "decision_low": 0.004301756587615606,
+      "decision_high": 0.01636491007905106,
+      "threshold": 0.01,
+      "direction": "greater",
+      "seed_points": [
+        0.005,
+        0.0095,
+        0.0165
+      ],
+      "criterion_status": "inconclusive"
+    },
+    "H2_level": {
+      "estimate": 0.9103333333333333,
+      "decision_low": 0.9003737838685721,
+      "decision_high": 0.9193863788119243,
+      "threshold": 0.96,
+      "direction": "less",
+      "seed_points": [
+        0.903,
+        0.912,
+        0.916
+      ],
+      "criterion_status": "supported"
+    },
+    "H3_level": {
+      "estimate": 0.8023333333333333,
+      "decision_low": 0.7887595052205335,
+      "decision_high": 0.81523924989824,
+      "threshold": 0.93,
+      "direction": "less",
+      "seed_points": [
+        0.797,
+        0.796,
+        0.814
+      ],
+      "criterion_status": "supported"
+    }
+  },
+  "hypotheses": {
+    "H1": {
+      "quantities": [
+        "H1_width",
+        "H1_coverage"
+      ],
+      "criterion_status": "supported",
+      "final_status": "supported",
+      "gate_note": "normal t reference resolved and all cells valid"
+    },
+    "H2": {
+      "quantities": [
+        "H2_improvement",
+        "H2_level"
+      ],
+      "criterion_status": "inconclusive",
+      "final_status": "inconclusive",
+      "gate_note": "normal t reference resolved and all cells valid"
+    },
+    "H3": {
+      "quantities": [
+        "H3_level"
+      ],
+      "criterion_status": "supported",
+      "final_status": "supported",
+      "gate_note": "normal t reference resolved and all cells valid"
+    }
+  }
+}

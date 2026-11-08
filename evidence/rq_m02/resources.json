@@ -1,0 +1,129 @@
+{
+  "question_id": "RQ-M02",
+  "status": "completed",
+  "started_utc": "2026-11-08T07:03:49.423668+00:00",
+  "source_git_sha": "2496eb06d77593e8ea2f19834de3b7aed2675a07",
+  "manifest_sha256": "cd73e65b711422fc1a1d17052a0ebfa0b1639869ab5839d612bd3a2171049ec8",
+  "namespace": 5058610,
+  "single_main_attempt": true,
+  "environment": {
+    "python": "3.12.13",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "plotly": "6.9.0",
+    "os": "Darwin",
+    "os_release": "25.6.0",
+    "architecture": "arm64"
+  },
+  "completed_cells": 18,
+  "total_cells": 18,
+  "raw_samples_saved": false,
+  "bootstrap_arrays_saved": false,
+  "wall_scope": "module start before heavy imports through computation/output, excluding interpreter startup and final resources write; outer tool separately measures full CLI",
+  "max_resample_elements": 1000000,
+  "R": 2000,
+  "B_boot": 999,
+  "active_cell": [
+    "centered_exponential",
+    100,
+    2
+  ],
+  "completed_cell_keys": [
+    [
+      "normal",
+      5,
+      0
+    ],
+    [
+      "normal",
+      5,
+      1
+    ],
+    [
+      "normal",
+      5,
+      2
+    ],
+    [
+      "normal",
+      20,
+      0
+    ],
+    [
+      "normal",
+      20,
+      1
+    ],
+    [
+      "normal",
+      20,
+      2
+    ],
+    [
+      "normal",
+      100,
+      0
+    ],
+    [
+      "normal",
+      100,
+      1
+    ],
+    [
+      "normal",
+      100,
+      2
+    ],
+    [
+      "centered_exponential",
+      5,
+      0
+    ],
+    [
+      "centered_exponential",
+      5,
+      1
+    ],
+    [
+      "centered_exponential",
+      5,
+      2
+    ],
+    [
+      "centered_exponential",
+      20,
+      0
+    ],
+    [
+      "centered_exponential",
+      20,
+      1
+    ],
+    [
+      "centered_exponential",
+      20,
+      2
+    ],
+    [
+      "centered_exponential",
+      100,
+      0
+    ],
+    [
+      "centered_exponential",
+      100,
+      1
+    ],
+    [
+      "centered_exponential",
+      100,
+      2
+    ]
+  ],
+  "incomplete_cells": [],
+  "finished_utc": "2026-11-08T07:04:03.456392+00:00",
+  "process_wall_seconds": 14.543387582991272,
+  "process_peak_rss_bytes": 258998272,
+  "output_bytes_before_resources": 7855529,
+  "output_bytes_total": 7857705
+}

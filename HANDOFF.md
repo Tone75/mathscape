@@ -1,4 +1,24 @@
-# MATHSCAPE v0.2 / RQ-M01 — minimal handoff
+# MATHSCAPE — minimal handoff
+
+## 最新の受入と実行状態：RQ-M02
+
+2026-11-08のOwner明示指示とNotionのOWNER_ACCEPTANCEを採用する。RQ-M01 / v0.2（科学成果 `cc240b0e32b424bb8881c153f17e56608d5fe51f`、提出HEAD `1dd298db671ad962fb705b5f407a9c1f51a11bb9`）はOwner受入・ユーザー動作確認ともに完了済み。下記の旧「Owner待ち」は提出時点の履歴であり、再確認を開始条件にしない。外部科学レビューや別改善票の完了を意味しない。
+
+CODEX_RECEIPT RQ-M02-v1: 固定仕様全文と末尾プロンプトを受領。開始HEADは承認済み提出HEADと一致し、未コミット変更・別worktreeなし。ローカルAGENTS.mdなし。新ブランチ `feat/rq-m02-bootstrap` でMATH-029→030→031を進める。NextはMATH-028のみ。PR #1未mergeのため、承認済み `feat/inference-lab-v0.2` をbaseにしたstacked PRで新差分を分離する。main・旧PR・タグ・Release・RQ-M01証拠は変更しない。
+
+新成果は `evidence/rq_m02/`。数理・UI・固定実験・検証・科学レポートを実装済み、新成果はレビュー待ちでありOwner受入を代行しない。旧RQ-M01の固定実験は再実行せず、ソースと証拠を保全した。
+
+事前固定commit `2496eb06d77593e8ea2f19834de3b7aed2675a07`、manifest SHA256 `cd73e65b711422fc1a1d17052a0ebfa0b1639869ab5839d612bd3a2171049ec8`。別namespaceのスモーク1回36標本組（R2/B99）後、主実験1回を実施し再実行0。18生成セル・36,000標本組・54手法行、無効0。H1支持、H2保留、H3支持。H2は改善差の99%区間が事前閾値1ポイントをまたぐ。
+
+全pytest483件成功（既存362＋数理78＋実行器27＋UI16）、実ブラウザで3条件・α/方法/モード/Labの保持、未適用表示、保存CSVとの108セル照合、旧4 Lab代表操作を確認した。独立監査は保存端点からの再計算で、追加の原標本・再標本生成なし。主CLI外側wall14.62秒、Peak RSS258,998,272 bytes。詳しい結果・全条件表・再現手順・停止規約は `evidence/rq_m02/REPORT.md`、操作証拠は `browser/validation.json`。
+
+再開時は `mathscape/bootstrap.py`、`mathscape/bootstrap_ui.py`、`scripts/run_bootstrap_benchmark.py` と対応テストを入口とする。通常の `python -m pytest -q` は主実験を起動しない。主実験を再実行する必要はなく、不支持・保留を理由に追加実験しない。コード不具合修正時の最大1回再実行も旧結果・理由・修正版を残す別attemptと累計wall≤600秒が必要。
+
+提出先は [stacked PR #2](https://github.com/Tone75/mathscape/pull/2)、実装・科学成果commitは `6a651c0995cbdd7a2de77d903c09cb23dbe369a8`。baseは `feat/inference-lab-v0.2`。最新の提出HEADは `gh pr view 2 --repo Tone75/mathscape --json headRefOid` で確認できる。この提出参照は科学成果固定後の文書commitで追記している。
+
+Notion親子票・Home・固定仕様への成果参照に、受領・固定成果SHA・PR・483テスト・主実験1回・資源・画面検証・新成果レビュー待ちを同期済み。PENDING_NOTION_SYNCなし。次の単一RQは有限B_bootによるBCa尾部端点の安定性を候補として提案しただけで、今回は実行していない。旧改善票MATH-006/011/027、MATH-005本格再開試験、外部科学レビューは未完了のまま保持する。
+
+## 以下はRQ-M01提出時点の履歴
 
 CODEX_RECEIPT: 2026-11-08。MATH-021を受領し、MATH-024→025→026の実装・固定検証・成果提出を行う。基準はv0.1.1 / bc3c6adb963ecd501cf3c53bd647dfb42dd8d8ec。開始時のローカル・origin/mainは一致し、未コミット変更なし、既存216テスト成功。ローカルAGENTS.mdは存在せず会話の指示を適用。
 

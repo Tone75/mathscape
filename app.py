@@ -21,7 +21,20 @@ LABS = ["Probability Explorer", "Chaos Explorer", "Fractal Explorer", "Inference
 def inference_lab():
     from mathscape.inference_ui import render_inference_lab
 
-    render_inference_lab()
+    modes = ["t推論の探索", "信頼区間の方法比較"]
+    st.session_state.setdefault("inference_mode", modes[0])
+    st.session_state.setdefault("inference_mode_widget", st.session_state.inference_mode)
+
+    def remember_mode():
+        st.session_state.inference_mode = st.session_state.inference_mode_widget
+
+    mode = st.sidebar.radio("推論モード", modes, key="inference_mode_widget", on_change=remember_mode)
+    if mode == modes[0]:
+        render_inference_lab()
+    else:
+        from mathscape.bootstrap_ui import render_bootstrap_comparison
+
+        render_bootstrap_comparison()
 
 
 def chart(fig, x_title, y_title, height=410):
