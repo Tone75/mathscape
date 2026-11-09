@@ -1,5 +1,11 @@
 # MATHSCAPE — minimal handoff
 
+## 最新の受入と実行状態：RQ-M08
+
+Owner受入済みM07 HEAD `39bcdc367320b6da513df72d2fa43bfdb7f060f4`、PR #7、048〜051 Doneを採用。M07の限定H1/H2支持と旧結論・実ブラウザ等の未検証を保持し、再承認を開始条件にしない。開始tree clean・別worktreeなし、新branch `feat/rq-m08-budget-allocation`。固定仕様全文・末尾プロンプト・052〜055・Home・AGENTS有無・READMEを確認し、CODEX_RECEIPTを残した。開始時全1139pytest成功45.00秒、pip check成功。
+
+052受領→053事前固定→054主1回／独立監査→055保存UI／検証／新PR。Next052のみ。60保存原標本×R20×共通120新系列を3配分P30=4×30/P60=2×60/P120=1×120で共有。T=mean_j√V、主d/L/Uは原標本N30／分布、99.5%区間計6本。平均差±.0025と分散比(.8,1.25)を別判定し、後者を±25%／SD比と呼ばない。新規原標本・旧端点混入・結果選別なし。通常テスト／UI／監査は主を起動せず、旧証拠を保全する。詳細は `evidence/rq_m08/SPEC.md`／`CODEX_RECEIPT.md`。新成果は別stacked PRへレビュー待ちで提出する。
+
 ## 最新の受入と実行状態：RQ-M07
 
 Owner承認済みM06の受入HEAD `e2feae23397d014f6aa3363773da9913da85fcf7`、PR #6、044〜047 Doneを採用。有限K30の結論とM05以前を保持し、実ブラウザ等の旧未検証を検証済みに変えない。旧レビュー待ちは開始条件ではない。開始tree clean・別worktreeなし、新branch `feat/rq-m07-finite-k`。仕様全文・末尾プロンプト・048〜051／Home・AGENTS有無・READMEを確認し、CODEX_RECEIPTを記録した。

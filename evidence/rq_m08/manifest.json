@@ -1,0 +1,972 @@
+{
+  "schema_version": 1,
+  "question_id": "RQ-M08",
+  "created_utc": "2026-11-09T10:41:15.600240+00:00",
+  "design": {
+    "distributions": [
+      "gamma",
+      "lognormal"
+    ],
+    "n": 20,
+    "master_seeds": [
+      0,
+      1,
+      2
+    ],
+    "originals_per_cell": 10,
+    "R": 20,
+    "streams_per_budget": 120,
+    "allocations": [
+      {
+        "allocation": "P30",
+        "J": 4,
+        "K": 30
+      },
+      {
+        "allocation": "P60",
+        "J": 2,
+        "K": 60
+      },
+      {
+        "allocation": "P120",
+        "J": 1,
+        "K": 120
+      }
+    ],
+    "B": 4999,
+    "alpha": 0.05,
+    "outer_ids": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "methods": [
+      "t",
+      "percentile",
+      "bca"
+    ],
+    "input_accepted_head": "39bcdc367320b6da513df72d2fa43bfdb7f060f4",
+    "source_question": "RQ-M07"
+  },
+  "inputs": {
+    "schema_version": 1,
+    "question_id": "RQ-M08",
+    "accepted_head": "39bcdc367320b6da513df72d2fa43bfdb7f060f4",
+    "source_question_id": "RQ-M07",
+    "source_files_sha256": {
+      "evidence/rq_m07/manifest.json": "25ffd0b68050fed1f755463a4dc929a86447bb0b5c3e491002edd01378d976ab",
+      "evidence/rq_m07/panels/gamma_seed0.npz": "f457f268d8f86d722672c2560c6b13245c2baab0702aeb299c39262d22539323",
+      "evidence/rq_m07/panels/gamma_seed1.npz": "6d43f7f36fc128c87258902dd8fe64e5bc37077eef86e4c07bf99e8447b07b1a",
+      "evidence/rq_m07/panels/gamma_seed2.npz": "dcd5c4d86f59da98ff374211102f99ff8187c0c586d059abce44ab757e2c40cb",
+      "evidence/rq_m07/panels/lognormal_seed0.npz": "5d9ceb1331c37f936d1062e50ba1132389e13f5ea3fe4f81fb67dca1bdaead13",
+      "evidence/rq_m07/panels/lognormal_seed1.npz": "42b25b02387d5487f59d0792c940b67d6b47db824fb550b84103e1f72103d57d",
+      "evidence/rq_m07/panels/lognormal_seed2.npz": "573cf94d2901994ff30868af42c33adbf11f197ce5afae708f39448a077e34d5"
+    },
+    "m06_accepted_head": "e2feae23397d014f6aa3363773da9913da85fcf7",
+    "m06_files_sha256": {
+      "evidence/rq_m06/manifest.json": "1fa89bbb0079e73ee7b3fcb993ca0fa0a336adc8ed8e6964ab8667a264077f58",
+      "evidence/rq_m06/panels/gamma_seed0.npz": "097a29a81376f9719b5165a7b9792b890623edec4a5e87e25a35f8cc020f65f4",
+      "evidence/rq_m06/panels/gamma_seed1.npz": "1618f0638794884e32125d38b7924a758d72512900736b6c00e396b47cd9acc7",
+      "evidence/rq_m06/panels/gamma_seed2.npz": "55b41f1c9c556cff750faf3d7e4733a86a5400bbd76bc76bef058cad7d6b2b3c",
+      "evidence/rq_m06/panels/lognormal_seed0.npz": "d1bc11665ce4ad1f9b03bdd9ea751ca7334948508a3ecea5abf61c08b5a1601a",
+      "evidence/rq_m06/panels/lognormal_seed1.npz": "85d627da3f463da0c486ab6def9a5e5abebc662a08172df393a1e8eabecb00af",
+      "evidence/rq_m06/panels/lognormal_seed2.npz": "b6a7af8a1ca2ddc6dc3f714afd0941023fce39dffab6ff3f090ff26d1e35d504"
+    },
+    "m05_accepted_head": "dc2501c3099f5c25227d9eee00d227c2f0b02f81",
+    "m05_files_sha256": {
+      "evidence/rq_m05/manifest.json": "d02a4b1d2ea1f26d96549e35014903c0c86df32dc8b8507bf81cc2f6dfdc8454",
+      "evidence/rq_m05/panels/gamma_seed0.npz": "a794e6d72b45528d465eba650d63881c7aa321a36bfec1f4fd5b99f0f696b62d",
+      "evidence/rq_m05/panels/gamma_seed1.npz": "05c0e66cd742b81128dbbe77b3e8d2c474684d2534bc2cb3a584388c00a717fa",
+      "evidence/rq_m05/panels/gamma_seed2.npz": "59397f4a6cde5e5222edd5e5eb7307ea5419b9bc91b812473ab16aa9c9dea14c",
+      "evidence/rq_m05/panels/lognormal_seed0.npz": "0593f22c99e9f00a7501f8838208f5a981b5696684e333e7e530b3bc85bb9101",
+      "evidence/rq_m05/panels/lognormal_seed1.npz": "8f491aa83e1377cd6c7c59ef2c371182cc4c5c5a79d58bc836b377781400106a",
+      "evidence/rq_m05/panels/lognormal_seed2.npz": "6c7e6c8300b25c2a16a69015f86df252278d7a3291a9e17982f34a9dfc0f8aac"
+    },
+    "n": 20,
+    "originals_per_cell": 10,
+    "selected_originals": 60,
+    "selection_rule": "same exact M07 gamma/lognormal x seeds0,1,2 x saved outer IDs0..9, no endpoint reuse or outcome selection",
+    "sample_hash_contract": "SHA256 little-endian float64 C-order bytes",
+    "selections": [
+      {
+        "distribution": "gamma",
+        "master_seed": 0,
+        "source_path": "evidence/rq_m07/panels/gamma_seed0.npz",
+        "m06_source_path": "evidence/rq_m06/panels/gamma_seed0.npz",
+        "m05_source_path": "evidence/rq_m05/panels/gamma_seed0.npz",
+        "outer_ids": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "sample_sha256": [
+          "cfd609b63189516de31eb72a968c2097a6ce97ac1ce456772f955cf3de5a74df",
+          "369e770cacffeff7a6615e1e754171c3e589422e98c97b8683def4ecbd668ef6",
+          "e22e7f15fdb45fdbd6868561f9d8da2b04d52848e6ba306e7fa21a097435b049",
+          "4c1e37f8ebb1ea9a5f3cb59ffb8a316cc9e6ad0ecc6d4840c20d8d0a3b2a90e1",
+          "94975eb266f3870ce06a4fd5a8fbb2a4ea369e4904e996760dcaa02bb05069b6",
+          "1bb04c6966723b54348c80142fcc2bec8aba00b05307d8b5db0f1780100040ec",
+          "6597f9fd62275d3766eef28b4490703401d6881545174c5a36970d90e02458a7",
+          "f92eb32276e8200cd0afd7f22bf8ef7715b2f76991cee1144be799c77bc10c46",
+          "3fe077ebfa57637e1750c4c36d08c077b4b1a55c27a7d55c8462c8eebdaf5eae",
+          "fd928b57ba2745fc65ff29d860af8a1c237940841342e67b10eb7f284a773416"
+        ],
+        "selected_samples_sha256": "e5bcbcd6b133b8c3d27a475442787662206a7c3946c47e19182462b47e0cc1e0"
+      },
+      {
+        "distribution": "gamma",
+        "master_seed": 1,
+        "source_path": "evidence/rq_m07/panels/gamma_seed1.npz",
+        "m06_source_path": "evidence/rq_m06/panels/gamma_seed1.npz",
+        "m05_source_path": "evidence/rq_m05/panels/gamma_seed1.npz",
+        "outer_ids": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "sample_sha256": [
+          "d569cab86a403643f927c5b21de31ec4d84ed88da7a58f802b89ea7d4a601958",
+          "66a0ed5035791ddcc60c6f1cb2dab2c3b025e1fbbb57562f82d84fc147712cdd",
+          "9512d913860569085bfed96e87e2cc860bdc04a9045e0102c548ba50e67a8b54",
+          "8dd54abf399ede9edb25b1f3daa1d7875e6aa6abb039941038f438744996ff0a",
+          "3da6e003bce6f12aa78697f0009b84294e0cce5c9613ac8a587d56679a0febc1",
+          "c3809682c7692329045c9832182b6809be42831ef9b2cecc93533a6e1abab502",
+          "3f9a178147f31b804c6ead19e2c7a538e50209790d74f0d0d6b8069143efeee8",
+          "1d1ba74f6a71c7dad1b1beab44025516c0761bbdb0a2f187ee75086fa4696bd7",
+          "208cc440713e9a6b02c7e63172429fed4fde32b702656c6b67ac01596a84f429",
+          "a32d6e72ce40cb2d6daebfe9cb82dc922551d1924c372be3efc1ebbacc14e15d"
+        ],
+        "selected_samples_sha256": "52aa37a0a9cadb3f0ad4a43546e906a56fa1d8fe304bc37ddfe24f2eaeadc358"
+      },
+      {
+        "distribution": "gamma",
+        "master_seed": 2,
+        "source_path": "evidence/rq_m07/panels/gamma_seed2.npz",
+        "m06_source_path": "evidence/rq_m06/panels/gamma_seed2.npz",
+        "m05_source_path": "evidence/rq_m05/panels/gamma_seed2.npz",
+        "outer_ids": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "sample_sha256": [
+          "211303aea004ef00a31a6859ef5dde798af2959f53e2de369e4c9d3250b6cf83",
+          "5085290f3c57b311d449c98304cad79c8fb7594b5ea86da7dee3deee8ff8500d",
+          "2cb3865c67b518625743df22f112a3605ab289312e8f98b459524fa8547faea4",
+          "9229e1fac2702c97e5875a16f95c3c1e1d38dc43d478443be4e4672767a7d2f4",
+          "2dffd698b4f9226663612e7b19be9cce4b05ff50c7fadb1c7d2d408b6a517acc",
+          "906d120278fd095f5aad096751a8845eef318e08dec2dcaf20e19cffcd9f1345",
+          "7fb253c6dd3ad3be8cde7b969f4b6b70190eb6d38d7a48c21d281f6f19ce0b8b",
+          "4e661dfe35b4a38d162018d4cbd6bda8c6caba846a762ddd64c41c447f16e988",
+          "d2e858f52364e8f362a251a508929f3f9d7d715665142b4d092afc5e65a96379",
+          "42010f1a078bf2225eabba2890b48b908e0f8a35cf78e7178f7f834ecfbdd502"
+        ],
+        "selected_samples_sha256": "abaeaff04ab10eb3b126e4e95364107990dc50439e6babe0aa1d050dbdf131b4"
+      },
+      {
+        "distribution": "lognormal",
+        "master_seed": 0,
+        "source_path": "evidence/rq_m07/panels/lognormal_seed0.npz",
+        "m06_source_path": "evidence/rq_m06/panels/lognormal_seed0.npz",
+        "m05_source_path": "evidence/rq_m05/panels/lognormal_seed0.npz",
+        "outer_ids": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "sample_sha256": [
+          "ead8723e9cd563116de28eef9f35eb1b73b5706090e1e654b3f12553e373b117",
+          "29bc96cceb8156be92c7f26e74a05fda7a3af3a2007ad166eac832ced7dc8b68",
+          "14430daac4f3890cb9b52f51d44b45f8020ef68a07422124364831d3a56235dc",
+          "6681569b28d2ad66f7720339d2f955ea245091ce0bcda986582ff95ddf18b366",
+          "e7eb8caba650b123d3da8c3cdea96b274ad3236dd58abd7e3a14ca1bcc46fc10",
+          "f449b419eb512788bb29a3b73f3a4d8b589affea24fedd34a509a3e17acad84e",
+          "75ba1fd2b8d792da7eea8756e9616798d79c2a67c4b3cc9da81c7d9d2581c848",
+          "e0a127eecfce829a72693e42bb436ff210e1bb4b338acbde22e151f76ef0a205",
+          "44a5535a075728c84d77f75479ef283af742d7f3d63e4a609fd5e1cb181dffe9",
+          "9ecdacb7f358e6da60979da4ee2f40b51247e7907c2eff5185d7a9d7fabbb59a"
+        ],
+        "selected_samples_sha256": "5e9f2316d804ca637b394fcc2482468d9201fb21741c30004bc05d2bb7c03d8c"
+      },
+      {
+        "distribution": "lognormal",
+        "master_seed": 1,
+        "source_path": "evidence/rq_m07/panels/lognormal_seed1.npz",
+        "m06_source_path": "evidence/rq_m06/panels/lognormal_seed1.npz",
+        "m05_source_path": "evidence/rq_m05/panels/lognormal_seed1.npz",
+        "outer_ids": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "sample_sha256": [
+          "69f53e9e47c0f991e57097b1573c368bef708db7c9d464a01b2c16d4a32db34c",
+          "35bfacdd95f523db4e08991d9c052de73a646e8f8d4f0a20fc9000d8cc42941f",
+          "e1d1769d8bb98a97afca70df0aa5ed6689b16f43a1b6c83e4a47957641ac0464",
+          "a9911b4dea86a6df5a132b8e6b83ea441f5b0300075a9a1048bf456aff3dd0d1",
+          "7f0b6df75ce58fb664661e6429ba33dd285b7f3c8bac5af5a6f36c1111091915",
+          "8c896cb823790ad7a40bd20a55f02b5b8152b7d71b08935666a18147309c4e34",
+          "8b4dba857310d4d80f042627ca96f0e0970f465366524bea5db3ab5c0447687c",
+          "5acf8521f65f41c6ac76ebe019d061bd0a021e49734a58a37d172dc81b7e2696",
+          "3de5a22beb589f8529af7522d98fd0d075e347599077725c8421a321696dea2c",
+          "3ec9c641f3ee1e812983b5c0686a25ebd9fc360482d32170d6a2d47f06ffd303"
+        ],
+        "selected_samples_sha256": "f8e87b3725d9af1f90b41f27f7319df2d0866715644ba5727d9e25f3d4370cf2"
+      },
+      {
+        "distribution": "lognormal",
+        "master_seed": 2,
+        "source_path": "evidence/rq_m07/panels/lognormal_seed2.npz",
+        "m06_source_path": "evidence/rq_m06/panels/lognormal_seed2.npz",
+        "m05_source_path": "evidence/rq_m05/panels/lognormal_seed2.npz",
+        "outer_ids": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "sample_sha256": [
+          "205ed727a89cb2dcf368a4494e45b36cbf68582f3252324d0e64749505b30c9a",
+          "fc04b85ddf5d7e018d3fc004f3c5510464a33297931e172a67dd86d2509ced7f",
+          "d521f48758753c72214ae30268fbb6272b81801dce1bf2089560a52f01926b17",
+          "bb5abff97141cf1d1896fb95d5a30ea7d14036118549e4cacbd48d6c021aea6b",
+          "5d1cf589e4e14dd5fcc1418bd653da3ebf60af9a48c28df3ead175247ef4e78d",
+          "865c3ac10daf80457e43a65130ca97f89cc704ac2c1f82c02e9b2c75448a3f7e",
+          "324b235c4baccf25ac18004dc158eb1608534908f54539634e6f1cd96d2c9438",
+          "0f4f6cc88f957def4387d1cc4baaaa672f2e9b376dea21d59f9ce0ed4a3421c4",
+          "bc2333a8f220737b3de9080fa7ed6950134e68354fb1b77ac9313c2ab1485286",
+          "8156fe244f7f0e1a83df48115eb4e4a659cbf9445a9bc7675b26791c24fee976"
+        ],
+        "selected_samples_sha256": "95ea95550fc0ab37cb9ddb6e64cf1ec0a6fbfd2f493801952ccf0fdd7c29807b"
+      }
+    ]
+  },
+  "totals": {
+    "original_samples": 60,
+    "originals_per_population": 30,
+    "input_cells": 6,
+    "budget_repeats": 1200,
+    "inner_streams": 144000,
+    "bootstrap_samples": 719856000,
+    "logical_resampling_indices": 14397120000,
+    "logical_intervals": 432000,
+    "group_rows": 25200,
+    "budget_rows": 10800,
+    "original_allocation_rows": 540,
+    "original_comparison_rows": 180,
+    "seed_summary_rows": 54,
+    "pooled_summary_rows": 18
+  },
+  "input_contract": "accepted M07 G/L seed0,1,2 outer0..9 exact rawbytes/hash/IDs, M06/M05 lineage verified; no selection by outcomes, new originals, standardization or old endpoints",
+  "disclosure": "M07 aggregate/decomposition known at design; reused60 originals and new namespace streams are not an independent-original replication; no update/retest of accepted earlier RQs",
+  "randomness": {
+    "generator": "Generator(PCG64(SeedSequence(...)))",
+    "entropy": "saved master_seed",
+    "main_namespace": 5058616,
+    "smoke_namespace": 1397567544,
+    "distribution_ids": {
+      "gamma": 1,
+      "lognormal": 2
+    },
+    "spawn_key": [
+      "namespace",
+      "distribution_id",
+      "n",
+      "outer_id",
+      "purpose_id",
+      "budget_repeat_id",
+      "stream_id"
+    ],
+    "purpose_ids": {
+      "bootstrap": 1
+    },
+    "budget_repeat_ids": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "stream_ids": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      100,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119
+    ],
+    "outer_ids": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "native_indices_dtype": "int64",
+    "stored_indices_dtype": "uint8",
+    "excluded_from_key": [
+      "B",
+      "J",
+      "K",
+      "allocation",
+      "method",
+      "execution_order",
+      "batch_size"
+    ],
+    "sharing": "one new120-stream set per original/budget repeat; contiguous nonoverlapping groups4x30/2x60/1x120 share all120 streams; same means for percentile/BCa; t/a/se once original"
+  },
+  "inference": "unchanged accepted ddof1,linear quantile,half-tie z0,jackknife a and q/tau validity; no truth/population input, clipping,fallback,adaptiveB or warning exclusions",
+  "metrics": {
+    "V": "(sample_var(lower)+sample_var(upper))/(2*sample_SE^2),ddof1",
+    "A": "sqrt(V)",
+    "T": "mean_j(sqrt(V_j)), never sqrt(mean_j(V_j))",
+    "M": "mean_r(T)",
+    "Q": "sample_var_r(T),ddof1",
+    "allocation_aliases": "Vse=Vbar=mean_j(Vgroup);Ase=T=mean_j(sqrt(Vgroup));Vse generally differs from T^2 forJ>1;lower_sd/upper_sd/S average groupSD/S,not pooledendpointSD",
+    "d": "mean_r(T_P120-T_P30)",
+    "L": "Q_P120-.8*Q_P30",
+    "U": "Q_P120-1.25*Q_P30",
+    "Q_over_R": "descriptive conditional variance estimate for meanM only, not primaryQ",
+    "decomposition": "T_P120-T_P30=Jgap+Pgap;Jgap=sqrt(mean4V30)-mean4sqrtV30;Pgap=sqrtV120-sqrt(mean4V30);no M07 first-group Rgap",
+    "ss_identity": "119*var120=29*sum4(var30)+30*sum4((mean30-mean120)^2), and119*var120=59*sum2(var60)+60*sum2((mean60-mean120)^2),both endpoints",
+    "interpretation": "equal resampling work not equal wall; finiteK120 not truth; no absolute bias/RMSE/calibration/optimalallocation claim; Jgap nonnegative is algebra not new hypothesis",
+    "t_control": "computed once and broadcast; A/T/M/Q/d/L/U zero only if all required logical slots valid; count one independent interval per original, not R*streams/allocations; ratios/comparisonSE0 NA; oldK1NA unchanged",
+    "summaries": "N10/seed,N30/pop original-level mean/SD/MCSE/t99.5 intervals and linear p05/25/50/75/95; R/J/K never increaseN; conditional_ references explicit",
+    "ratios": "mean_individual_Q120_Q30 versus ratio_mean_Q120_over_mean_Q30 distinct descriptive references; zero denominatorNA includingt; H2 uses meanL/meanU and positive finite meanQ30"
+  },
+  "confirmation": {
+    "H1": "BCa P120-P30 mean d per population t99.5 df29; strict inside(-.0025,.0025) support,lo>.0025 orhi<-.0025 not_supported,otherwisehold",
+    "H2": "positive finite meanQ30 required; meanL99.5low>0 AND meanU99.5high<0 support; meanLhigh<=0 OR meanUlow>=0 not_supported; elsehold; bothcomparisonsdefinedrequired",
+    "joint": "bothpopulation support=>support;anynot_supported=>not_supported;elsehold; H1&H2 both support needed for simultaneous mean/variance-equivalence wording",
+    "intervals": 6,
+    "confidence": 0.995,
+    "seed_gate": false,
+    "P60": "descriptive only",
+    "units": "H1 Ase units not percentagepoints; H2 multiplicative variance ratio(.8,1.25),not +/-25% orSD ratio",
+    "completeness": "allR20*120 required peroriginal/method; anymissing/invalid/nonfinite/nonpositiveSE => primaryNA keepN30; primarySE0=>hold; unrelatedmethod invalid doesnotpoison BCa; conditional never decides",
+    "approximation": "original-level approximate t on IID originals selectedbyID; reusedsamples/finiteR,K/non-normalN30 limitations; not conditional inner-randomness-onlyCI; sixnominal99.5 intervals imply approximate union noncoverage<=3%,no exactguarantee"
+  },
+  "numeric_tolerances": {
+    "numeric_rtol": 2e-10,
+    "numeric_atol": 2e-12,
+    "identity_rtol": 2e-12,
+    "identity_atol": 2e-12,
+    "identity_rule": "abs(residual)<=atol+rtol*scale;SSscale=max(abs(lhs),abs(rhs));normalized=residual/max(1,scale)",
+    "provenance": "inheritedM07 sameidentity comparisons,deterministicfixtureslockedbeforemain;no outcome-based relaxation"
+  },
+  "storage": {
+    "panel_axes": [
+      "original",
+      "budget_repeat",
+      "method",
+      "stream"
+    ],
+    "original_count_symbol": "O; R means20 budget repeats, J onlyallocation4/2/1",
+    "diagnostics": "float64lowerupperz0aqtau,boolvalid/tailwarning/observed_streams(O,R,stream);uint8reason/U96dictionary;samplefloat64/hashS64/outeruint16/budget_repeat&streamuint8",
+    "panel_metadata": [
+      "O",
+      "R",
+      "streams_per_budget",
+      "B",
+      "n",
+      "alpha",
+      "namespace",
+      "input_accepted_head",
+      "methods",
+      "budget_repeat_id",
+      "stream_id",
+      "observed_original_count",
+      "completed_original_count",
+      "observed_stream_count"
+    ],
+    "tables": {
+      "group_metrics.csv.gz": 25200,
+      "budget_metrics.csv.gz": 10800,
+      "decomposition_metrics.csv.gz": 3600,
+      "original_allocation_metrics.csv": 540,
+      "original_comparison_metrics.csv": 180,
+      "summary.csv": 54,
+      "pooled_summary.csv": 18,
+      "decomposition_summary.csv": 24
+    },
+    "table_contract": {
+      "group_fields": [
+        "lower_mean",
+        "upper_mean",
+        "lower_var",
+        "upper_var",
+        "V",
+        "A"
+      ],
+      "allocation_fields": [
+        "T",
+        "Vbar",
+        "lower_sd",
+        "upper_sd",
+        "S",
+        "Ase",
+        "Apop",
+        "Vse",
+        "C",
+        "Mbelow",
+        "Mabove",
+        "miss_T",
+        "mean_width",
+        "warning_rate"
+      ],
+      "decomposition_fields": [
+        "Vbar30",
+        "T30",
+        "T60",
+        "T120",
+        "Jgap",
+        "Pgap",
+        "delta",
+        "residual",
+        "normalized_residual",
+        "abs_normalized_residual",
+        "ss30_lower_residual",
+        "ss30_lower_scale",
+        "ss30_lower_normalized_residual",
+        "ss30_lower_abs_normalized_residual",
+        "ss30_upper_residual",
+        "ss30_upper_scale",
+        "ss30_upper_normalized_residual",
+        "ss30_upper_abs_normalized_residual",
+        "ss60_lower_residual",
+        "ss60_lower_scale",
+        "ss60_lower_normalized_residual",
+        "ss60_lower_abs_normalized_residual",
+        "ss60_upper_residual",
+        "ss60_upper_scale",
+        "ss60_upper_normalized_residual",
+        "ss60_upper_abs_normalized_residual"
+      ],
+      "summary_fields": [
+        "M",
+        "Q",
+        "Q_over_R",
+        "T",
+        "Vbar",
+        "lower_sd",
+        "upper_sd",
+        "S",
+        "Ase",
+        "Apop",
+        "Vse",
+        "C",
+        "Mbelow",
+        "Mabove",
+        "miss_T",
+        "mean_width",
+        "warning_rate"
+      ],
+      "group_order": "P30groups0..3:0..29/30..59/60..89/90..119;P60groups0..1:0..59/60..119;P120group0:0..119",
+      "counts": "corestrict total_streams/valid_streams/invalid_streams;all120requiredpermethod;effective t1peroriginal and1perbudget;allocationintervalcounts reference same120sharedstreamset,never add3allocationsasgeneration",
+      "coverage_name": "miss_T=Mbelow-Mabove, distinct from budget estimatorT",
+      "original_comparison_fields": "d,L,U,Q30,Q120,M30,M120,ratio_Q120_Q30,meanJ/P/delta,maxabsresiduals,complete/observedcounts;noRgap"
+    },
+    "selected_streams": [
+      {
+        "distribution": "gamma",
+        "master_seed": 0,
+        "outer_id": 0,
+        "budget_repeat_id": 0,
+        "stream_id": 0
+      },
+      {
+        "distribution": "gamma",
+        "master_seed": 0,
+        "outer_id": 0,
+        "budget_repeat_id": 0,
+        "stream_id": 29
+      },
+      {
+        "distribution": "gamma",
+        "master_seed": 0,
+        "outer_id": 0,
+        "budget_repeat_id": 0,
+        "stream_id": 30
+      },
+      {
+        "distribution": "gamma",
+        "master_seed": 0,
+        "outer_id": 0,
+        "budget_repeat_id": 0,
+        "stream_id": 59
+      },
+      {
+        "distribution": "gamma",
+        "master_seed": 0,
+        "outer_id": 0,
+        "budget_repeat_id": 0,
+        "stream_id": 60
+      },
+      {
+        "distribution": "gamma",
+        "master_seed": 0,
+        "outer_id": 0,
+        "budget_repeat_id": 0,
+        "stream_id": 119
+      },
+      {
+        "distribution": "gamma",
+        "master_seed": 1,
+        "outer_id": 0,
+        "budget_repeat_id": 0,
+        "stream_id": 0
+      },
+      {
+        "distribution": "gamma",
+        "master_seed": 1,
+        "outer_id": 0,
+        "budget_repeat_id": 0,
+        "stream_id": 29
+      },
+      {
+        "distribution": "gamma",
+        "master_seed": 1,
+        "outer_id": 0,
+        "budget_repeat_id": 0,
+        "stream_id": 30
+      },
+      {
+        "distribution": "gamma",
+        "master_seed": 1,
+        "outer_id": 0,
+        "budget_repeat_id": 0,
+        "stream_id": 59
+      },
+      {
+        "distribution": "gamma",
+        "master_seed": 1,
+        "outer_id": 0,
+        "budget_repeat_id": 0,
+        "stream_id": 60
+      },
+      {
+        "distribution": "gamma",
+        "master_seed": 1,
+        "outer_id": 0,
+        "budget_repeat_id": 0,
+        "stream_id": 119
+      },
+      {
+        "distribution": "gamma",
+        "master_seed": 2,
+        "outer_id": 0,
+        "budget_repeat_id": 0,
+        "stream_id": 0
+      },
+      {
+        "distribution": "gamma",
+        "master_seed": 2,
+        "outer_id": 0,
+        "budget_repeat_id": 0,
+        "stream_id": 29
+      },
+      {
+        "distribution": "gamma",
+        "master_seed": 2,
+        "outer_id": 0,
+        "budget_repeat_id": 0,
+        "stream_id": 30
+      },
+      {
+        "distribution": "gamma",
+        "master_seed": 2,
+        "outer_id": 0,
+        "budget_repeat_id": 0,
+        "stream_id": 59
+      },
+      {
+        "distribution": "gamma",
+        "master_seed": 2,
+        "outer_id": 0,
+        "budget_repeat_id": 0,
+        "stream_id": 60
+      },
+      {
+        "distribution": "gamma",
+        "master_seed": 2,
+        "outer_id": 0,
+        "budget_repeat_id": 0,
+        "stream_id": 119
+      },
+      {
+        "distribution": "lognormal",
+        "master_seed": 0,
+        "outer_id": 0,
+        "budget_repeat_id": 0,
+        "stream_id": 0
+      },
+      {
+        "distribution": "lognormal",
+        "master_seed": 0,
+        "outer_id": 0,
+        "budget_repeat_id": 0,
+        "stream_id": 29
+      },
+      {
+        "distribution": "lognormal",
+        "master_seed": 0,
+        "outer_id": 0,
+        "budget_repeat_id": 0,
+        "stream_id": 30
+      },
+      {
+        "distribution": "lognormal",
+        "master_seed": 0,
+        "outer_id": 0,
+        "budget_repeat_id": 0,
+        "stream_id": 59
+      },
+      {
+        "distribution": "lognormal",
+        "master_seed": 0,
+        "outer_id": 0,
+        "budget_repeat_id": 0,
+        "stream_id": 60
+      },
+      {
+        "distribution": "lognormal",
+        "master_seed": 0,
+        "outer_id": 0,
+        "budget_repeat_id": 0,
+        "stream_id": 119
+      },
+      {
+        "distribution": "lognormal",
+        "master_seed": 1,
+        "outer_id": 0,
+        "budget_repeat_id": 0,
+        "stream_id": 0
+      },
+      {
+        "distribution": "lognormal",
+        "master_seed": 1,
+        "outer_id": 0,
+        "budget_repeat_id": 0,
+        "stream_id": 29
+      },
+      {
+        "distribution": "lognormal",
+        "master_seed": 1,
+        "outer_id": 0,
+        "budget_repeat_id": 0,
+        "stream_id": 30
+      },
+      {
+        "distribution": "lognormal",
+        "master_seed": 1,
+        "outer_id": 0,
+        "budget_repeat_id": 0,
+        "stream_id": 59
+      },
+      {
+        "distribution": "lognormal",
+        "master_seed": 1,
+        "outer_id": 0,
+        "budget_repeat_id": 0,
+        "stream_id": 60
+      },
+      {
+        "distribution": "lognormal",
+        "master_seed": 1,
+        "outer_id": 0,
+        "budget_repeat_id": 0,
+        "stream_id": 119
+      },
+      {
+        "distribution": "lognormal",
+        "master_seed": 2,
+        "outer_id": 0,
+        "budget_repeat_id": 0,
+        "stream_id": 0
+      },
+      {
+        "distribution": "lognormal",
+        "master_seed": 2,
+        "outer_id": 0,
+        "budget_repeat_id": 0,
+        "stream_id": 29
+      },
+      {
+        "distribution": "lognormal",
+        "master_seed": 2,
+        "outer_id": 0,
+        "budget_repeat_id": 0,
+        "stream_id": 30
+      },
+      {
+        "distribution": "lognormal",
+        "master_seed": 2,
+        "outer_id": 0,
+        "budget_repeat_id": 0,
+        "stream_id": 59
+      },
+      {
+        "distribution": "lognormal",
+        "master_seed": 2,
+        "outer_id": 0,
+        "budget_repeat_id": 0,
+        "stream_id": 60
+      },
+      {
+        "distribution": "lognormal",
+        "master_seed": 2,
+        "outer_id": 0,
+        "budget_repeat_id": 0,
+        "stream_id": 119
+      }
+    ],
+    "stream_schema": "exact36indicesuint8(4999,20) reversiblystoredfromnativeint64+meansfloat64(4999),IDs/hash/metadata; other143964 sequences not reconstructed",
+    "estimates": {
+      "raw_endpoint_numeric_bytes": 27648000,
+      "raw_mask_reason_bytes": 1296000,
+      "raw_original_bytes": 9600,
+      "raw_selected_stream_bytes": 5038992,
+      "panel_reserve_bytes": 30408704,
+      "stream_reserve_bytes": 5242880,
+      "csv_reserve_bytes": 5242880,
+      "single_html_reserve_bytes": 5242880,
+      "other_public_reserve_bytes": 4194304,
+      "total_public_reserve_bytes": 50331648
+    },
+    "estimate_caveat": "conservativeplannedupperallocation; prewrite guards assume rawarray sizes+headers,no compression; actualresourceguard stopswithoutscientificresizing"
+  },
+  "policy": {
+    "wall_seconds": 300,
+    "internal_stop_seconds": 294,
+    "peak_rss_bytes": 2147483648,
+    "output_bytes": 52428800,
+    "max_resample_elements": 1000000,
+    "public_overhead_reserve_bytes": 4194304,
+    "cell_cleanup_reserve_bytes": 8388608,
+    "decision_confidence": 0.995,
+    "confirmatory_intervals": 6,
+    "mean_movement_margin": 0.0025,
+    "variance_ratio_low": 0.8,
+    "variance_ratio_high": 1.25
+  },
+  "execution": {
+    "main": "once rootguardedCLIonly;tests/UI/auditneverlaunch",
+    "smoke": "sole6savedouter0/R2/common12/B99 groups4x3/2x6/1x12,144streams14256resamples285120indices separatenamespace,not science",
+    "stop": "worker294,parentTERM295/KILL298/finish299 externalcap300; preserveactiveoriginal partial+observedmask and priorresults,noauto retry/shrink",
+    "correction": "onlyactualcodebug,maxone separatelyauthorized attempt retainingoldsource/results/reason,cumulative mainwall<=600"
+  },
+  "timing": "sole combinedrun instrumentation:cachedcontext+streamgeneration/inference/endpointstorage wall;allocationaggregation/flatten wall peroriginal;remaining setup/guards/summary/output wall; saved_stream_output_seconds is a SUBSET of remaining_setup_guard_summary_output_seconds,never a fourthdisjointphase;not independentlymeasured perallocation timings; fullCLI externaltime includesstartup/exit",
+  "environment": {
+    "python": "3.12.13",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "plotly": "6.9.0",
+    "os": "Darwin",
+    "os_release": "25.6.0",
+    "architecture": "arm64",
+    "streamlit": "1.67.0",
+    "pytest": "9.2.0"
+  },
+  "source_files_sha256": {
+    "mathscape/allocation.py": "69187537b398feafaa58ca0b5672cb87cf7f05ef9ab600c9723c96bf583f0958",
+    "mathscape/finite_k.py": "2e204b4c562055ad13b335a189bbafdd8fdb486a4de80e2e5543060f8f2da877",
+    "mathscape/matched_stability.py": "1ef9f91910d9cec6b690d92179f329d61782f5cc56b27862e595b260637e322c",
+    "mathscape/matched_moments.py": "2c968c674ceb78b8b716a94d5f3165b928162c6c04150ba5d2d2b446f9926135",
+    "mathscape/stability.py": "e27f2bf98378911cb1c0502bb93a5d944fd5dd2978354e6fbd99595d2bc5f070",
+    "mathscape/bootstrap.py": "24d4ffbc8e5b463ee6770a35e1d17beca9ee41a37083d457dbca25abd9f7b6cb",
+    "mathscape/inference.py": "6e26d2a6991ecfca0729e7057f0eda63bf100b0941fc0b397caa2eb13e226708",
+    "scripts/run_allocation_benchmark.py": "fc5f5372511cb987d64a70445be0f2a47f32908bfe8ad7b2db71ed30a74a5359",
+    "scripts/run_allocation_guarded.py": "8afc08b08a0342c00e932736a9a616da36db16248db067c807d5e9c687f2a389",
+    "scripts/audit_allocation.py": "885597883ff40ec63f850c7e7ab480622e0149cd7959d5a1a809f96460c4ee4a",
+    "scripts/run_bootstrap_benchmark.py": "9fdeabae419aecd487ff063775001880643c265207c7c5ea8192b455d72864a3",
+    "scripts/run_stability_benchmark.py": "4be7f9a10f7d328cc914c0aaceaf28d027718a44a2f8afd63a896e848b209488",
+    "tests/test_allocation.py": "dd7954cb216143ead477a2ca7c3fbe77ca07ed48cce55f3ef391a07c0386aa8e",
+    "tests/test_allocation_runner.py": "a4bd8209749f786bae4e0b887790249b070d0b6ee90b36c1d8195761e7aed8dd",
+    "tests/test_allocation_guard.py": "f1234b3c8057b0b4e0610f367e0f3cd4e12374563027c474bba9974695da1936",
+    "tests/test_allocation_audit.py": "ea270c99c59651fa4b802f0e88f6470ee345dfdae9170125843268bc2ff04030",
+    "requirements.txt": "dcb36fe5c1d5413b4918722462d3382f171d839c0e69b45725b57b871b2bce5d",
+    "evidence/rq_m08/SPEC.md": "5e0ee9e5dea3c4bbb8f2cbdcd3f5b59e07302d80550d9fa313b608c435e2dc4c"
+  }
+}
