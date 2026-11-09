@@ -21,7 +21,7 @@ LABS = ["Probability Explorer", "Chaos Explorer", "Fractal Explorer", "Inference
 def inference_lab():
     from mathscape.inference_ui import render_inference_lab
 
-    modes = ["t推論の探索", "信頼区間の方法比較", "再標本化回数と端点の安定性", "分布の形と被覆", "同じ歪度、違う分布", "同じ標本でも端点は揺れる"]
+    modes = ["t推論の探索", "信頼区間の方法比較", "再標本化回数と端点の安定性", "分布の形と被覆", "同じ歪度、違う分布", "同じ標本でも端点は揺れる", "揺れの測り方にも揺れがある"]
     st.session_state.setdefault("inference_mode", modes[0])
     st.session_state.setdefault("inference_mode_widget", st.session_state.inference_mode)
 
@@ -47,10 +47,14 @@ def inference_lab():
         from mathscape.matched_ui import render_matched_view
 
         render_matched_view()
-    else:
+    elif mode == modes[5]:
         from mathscape.matched_stability_ui import render_matched_stability_view
 
         render_matched_stability_view()
+    else:
+        from mathscape.finite_k_ui import render_finite_k_view
+
+        render_finite_k_view()
 
 
 def chart(fig, x_title, y_title, height=410):
