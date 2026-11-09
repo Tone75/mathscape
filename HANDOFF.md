@@ -1,5 +1,13 @@
 # MATHSCAPE — minimal handoff
 
+## 最新の受入と実行状態：RQ-M06
+
+Owner明示承認と最新Notionに従い、RQ-M05（提出HEAD `dc2501c3099f5c25227d9eee00d227c2f0b02f81`、科学成果 `254af9ed19cf3197310bc372c704ecc32c3b9b4e`、事前固定 `a8e87b3deb1a5256a200b28ea51301dec8aecb7e`、PR #5）は受入済み、040〜043 Done。H1/H2実用差不支持・C/Tに限定した±1pp内同等性支持を保持する。旧レビュー待ちは提出時点の履歴であり開始条件ではない。merge・外部科学レビュー・Owner本人の個別新操作とは別。
+
+CODEX_RECEIPT RQ-M06-v1：開始HEADは受入済みと一致、clean／別worktreeなし。新branch `feat/rq-m06-matched-stability`。仕様全文・末尾プロンプト・044〜047・Home、README／HANDOFF、M05入力と受入数理を確認。既存862 pytest成功（20.72秒）。開始した044／045 In Progress、Nextは044だけ。045事前固定→046主1回／独立監査→047保存結果UI／検証／提出の順で実行する。詳細は `evidence/rq_m06/SPEC.md`／`CODEX_RECEIPT.md`。
+
+固定入力はM05のG/L×seed0,1,2×outer0〜199、全1,200原標本。入力hash／IDを事前固定し追加母標本生成なし。新namespaceでK30・B999/4999共有prefix、原標本単位N600/分布。有限K30のAseを比較し、M05 C/Tを再検定・プールしない。旧K1のNAは維持する。主1回・指定別namespace smoke1回のみ、通常pytest・UI・監査は主実験を起動しない。旧証拠／PR／main／タグ／Releaseを保持し、新成果は別stacked PRのレビュー待ちとして提出する。
+
 ## 最新の受入と実行状態：RQ-M05
 
 Owner明示承認と最新Notionに従い、RQ-M04（提出HEAD `fb2216d6fc506dd74779104edad024c61bc9e1e1`、科学成果 `137efab0dc949359a58fc481676d6da6341b0408`、事前固定 `60101c72e6073c7350c9f21900b98afc19cbab00`、PR #4）は受入済み、MATH-036〜039 Done、H1／H2保留を保持する。下記の旧レビュー待ちは提出時点の履歴であり開始条件ではない。merge・外部科学レビュー・Owner本人の個別新操作とは区別する。

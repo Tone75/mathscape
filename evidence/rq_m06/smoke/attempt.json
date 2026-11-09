@@ -1,0 +1,28 @@
+{
+  "question_id": "RQ-M06",
+  "scope": "smoke only; saved originals, no scientific decisions",
+  "R": 2,
+  "K": 2,
+  "B_values": [
+    99
+  ],
+  "namespace": 1397567542,
+  "source_files_sha256": {
+    "mathscape/matched_stability.py": "1ef9f91910d9cec6b690d92179f329d61782f5cc56b27862e595b260637e322c",
+    "mathscape/matched_moments.py": "2c968c674ceb78b8b716a94d5f3165b928162c6c04150ba5d2d2b446f9926135",
+    "mathscape/stability.py": "e27f2bf98378911cb1c0502bb93a5d944fd5dd2978354e6fbd99595d2bc5f070",
+    "mathscape/bootstrap.py": "24d4ffbc8e5b463ee6770a35e1d17beca9ee41a37083d457dbca25abd9f7b6cb",
+    "mathscape/inference.py": "6e26d2a6991ecfca0729e7057f0eda63bf100b0941fc0b397caa2eb13e226708",
+    "scripts/run_matched_stability_benchmark.py": "19e0a3a88447b552883df1565f31549aa40d7098318b033994145261a0bdd456",
+    "scripts/run_matched_stability_guarded.py": "70d142cf6e337145994612e41f7e674153adc2391150e847a2c0b201b80c94d4",
+    "scripts/audit_matched_stability.py": "167ab64a71f3f94a47059532dc8d27fd11a69c1edf6c8dcf94e050577982b549",
+    "scripts/run_bootstrap_benchmark.py": "9fdeabae419aecd487ff063775001880643c265207c7c5ea8192b455d72864a3",
+    "scripts/run_stability_benchmark.py": "4be7f9a10f7d328cc914c0aaceaf28d027718a44a2f8afd63a896e848b209488",
+    "tests/test_matched_stability.py": "074c06cc2f893078723c9ee130e50355bd68b070f5b28fce8787f58fab86c7ab",
+    "tests/test_matched_stability_runner.py": "469ad50bece842a7a7acefd986efee15d58f16900931aa16f702c73b582285b4",
+    "tests/test_matched_stability_guard.py": "7534c6e81ec3f003e6eac8c7c6cf97b7b2d7732dfbf97605447a0a0bfc87a7d5",
+    "tests/test_matched_stability_audit.py": "9d59123e8f29eb5f01d35ffa50268ad2e1f32599a4cca05ef98a5dfc8e15de95",
+    "requirements.txt": "dcb36fe5c1d5413b4918722462d3382f171d839c0e69b45725b57b871b2bce5d",
+    "evidence/rq_m06/SPEC.md": "6df28961ac27c018698f5a240a43e760fcadb7bdd78c61aa46e6b10e6a661bab"
+  }
+}
