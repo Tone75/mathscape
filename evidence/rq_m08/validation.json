@@ -206,8 +206,23 @@
   "artifact_size": {
     "scope": "Conservative full byte sizes of all public new/modified files relative to accepted M07 HEAD, including full README/HANDOFF, compact originals/endpoints,36index/mean streams,compressed/full CSV,one self-contained HTML,code/tests/reports. Ignored local files/virtual environment excluded.",
     "limit_bytes": 52428800,
-    "files": 89,
-    "bytes": 18230058,
-    "MiB": 17.385538
+    "files": 91,
+    "bytes": 18234473,
+    "MiB": 17.389749
+  },
+  "publication": {
+    "repository": "https://github.com/Tone75/mathscape",
+    "PR": "https://github.com/Tone75/mathscape/pull/8",
+    "base_branch": "feat/rq-m07-finite-k",
+    "head_branch": "feat/rq-m08-budget-allocation",
+    "science_sha": "b68026a5f938c10ad10d6f57e0d8f900dcda8348",
+    "preregistration_sha": "697c673f69a68f040d7d072ae3b90f356be8abd6",
+    "submitted_head_resolution": "gh pr view 8 --repo Tone75/mathscape --json headRefOid",
+    "state": "Open; Owner review pending",
+    "Notion_sync": "052-055/Home/fixed spec results, six intervals, source/science SHAs, PR and validation synced; final submitted HEAD recorded separately after documentation push",
+    "new_tags_releases_merges": false,
+    "old_PR_main_tags_releases_preserved": true,
+    "protected_existing_remote_refs_verified": 12,
+    "repository_public_verified": true
   }
 }

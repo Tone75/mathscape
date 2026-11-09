@@ -12,6 +12,8 @@ Owner受入済みM07 HEAD `39bcdc367320b6da513df72d2fa43bfdb7f060f4`、PR #7、0
 
 全1,268 pytest成功（63.83秒、新AppTest15）／pip check成功。実ブラウザで両分布／3配分／全方法・ID／r／Lab／モード往復／固定αを確認、18状態108数値一致、5種類の実ダウンロードとHTML実表示を完了。新旧代表操作の範囲・未検証は `evidence/rq_m08/browser/verification.json`／`validation.json`。旧全操作・別browser／モバイル・Owner個別操作・外部科学レビューは未実施。旧M06/M07未検証は履歴として保持する。取得console error/warning0、対象重複初期値警告なし、確認用2サーバー／2tab終了済み。
 
+提出先は [stacked PR #8](https://github.com/Tone75/mathscape/pull/8)、科学成果SHA `b68026a5f938c10ad10d6f57e0d8f900dcda8348`、事前固定SHA `697c673f69a68f040d7d072ae3b90f356be8abd6`。baseは受入済み `feat/rq-m07-finite-k`。この参照追記は科学成果固定後の文書commitで、最新提出HEADは `gh pr view 8 --repo Tone75/mathscape --json headRefOid` で取得できる。Notion052〜055・Home・固定仕様へ結果／6主区間／SHA／PR／検証範囲／資源／未解決事項を同期済み、PENDING_NOTION_SYNCなし。新成果はOwnerレビュー待ち、052〜055 In Progress・Next052のみ。追加実験・merge・新タグ・Releaseは行わない。
+
 ## 最新の受入と実行状態：RQ-M07
 
 Owner承認済みM06の受入HEAD `e2feae23397d014f6aa3363773da9913da85fcf7`、PR #6、044〜047 Doneを採用。有限K30の結論とM05以前を保持し、実ブラウザ等の旧未検証を検証済みに変えない。旧レビュー待ちは開始条件ではない。開始tree clean・別worktreeなし、新branch `feat/rq-m07-finite-k`。仕様全文・末尾プロンプト・048〜051／Home・AGENTS有無・READMEを確認し、CODEX_RECEIPTを記録した。

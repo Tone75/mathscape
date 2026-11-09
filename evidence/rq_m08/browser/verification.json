@@ -392,5 +392,9 @@
     "Every previous-view control or previous-view actual download",
     "Other browser engines, viewport sizes, mobile, accessibility audit",
     "Owner individual operations or external scientific review"
+  ],
+  "server_log_files": [
+    "server_log.txt",
+    "figure_http.txt"
   ]
 }

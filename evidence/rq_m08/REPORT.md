@@ -460,3 +460,9 @@ python scripts/audit_allocation.py evidence/rq_m08
 M07を既知として設計し、同じ原標本を再利用したこと、N30／R20のノイズと非正規t近似、GのU区間上限が境界に近いことを残す。丸めや新たな事後ゲートで支持を作り直さず、保留相当のseed記述や個別帯外例を隠さない。内部独立監査と外部レビュー、原標本固定内側乱数の再計算と独立母標本の追試を区別する。旧RQの受入済み結論は保持した。
 
 **次の単一RQ候補：** 事前登録した新しい独立原標本の固定コホートで、共有予算P30／P120の平均Mと平均反復分散Qの同等性は再現するか。同じ既知パネルの再抽選や、Gの境界近傍結果を支持へ寄せるための追加N／Rではなく、独立原標本による再現性を対象とする別の事前登録・予算・実施判断が必要である。現時点では新規原標本・実装・実験を行わない。
+
+## 提出記録
+
+提出先は [stacked PR #8](https://github.com/Tone75/mathscape/pull/8)、科学成果SHA `b68026a5f938c10ad10d6f57e0d8f900dcda8348`、事前固定SHA `697c673f69a68f040d7d072ae3b90f356be8abd6`。baseは受入済み `feat/rq-m07-finite-k`。この参照追記は科学成果固定後の文書commitで、最新提出HEADは `gh pr view 8 --repo Tone75/mathscape --json headRefOid` で取得できる。Notion052〜055・Home・固定仕様へ結果／6主区間／SHA／PR／検証範囲／資源／未解決事項を同期済み、PENDING_NOTION_SYNCなし。新成果はOwnerレビュー待ち、052〜055 In Progress・Next052のみ。追加実験・merge・新タグ・Releaseは行わない。
+
+公開成果は50MiB以下（全新規・変更ファイルのfull byte数を保守的に計上、最終値は [validation.json](validation.json)）。18固定ソース・21受入入力・M01〜M07証拠・requirementsを照合し保持。公開候補のtext／圧縮CSV／NPZ文字列の秘密・個人絶対パス・未承認メール走査は検出0、repo内noreply authorのみを使用した。保護対象12 remote refsは開始記録と一致し、PR #8はOpen／非Draft・正しいbase／headを確認した。最終提出HEADはPRとremoteを独立照合する。科学成果commit以降の文書・検証記録追記は実験再実行ではない。新成果のOwner受入・外部科学レビューを代行せず、次RQは提案だけで追加実験せず停止する。

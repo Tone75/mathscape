@@ -93,6 +93,8 @@ python -m pytest -q
 
 保存専用「同じ予算で、どう測る？」は3配分・R20のT分布・M/Q・6主区間と5種類のダウンロードを提供します。全1,268 pytest成功（63.83秒、新AppTest15）、pip check成功。実ブラウザで新旧代表操作・両分布全配分／手法・ID復元／Lab／モード往復／固定αを確認し、18状態108表示数値が保存値に一致。5種類の実ダウンロードとHTML実表示を確認しました。証拠は [検証記録](evidence/rq_m08/validation.json)／[ブラウザ記録](evidence/rq_m08/browser/verification.json)。旧全操作・別ブラウザ／モバイル・Owner本人操作・外部科学レビューは対象外で、M06／M07の過去の未検証を遡って検証済みにしません。確認用サーバーは停止済みです。
 
+提出先は [stacked PR #8](https://github.com/Tone75/mathscape/pull/8)、科学成果SHA `b68026a5f938c10ad10d6f57e0d8f900dcda8348`、事前固定SHA `697c673f69a68f040d7d072ae3b90f356be8abd6`。baseは受入済み `feat/rq-m07-finite-k`。この参照追記は科学成果固定後の文書commitで、最新提出HEADは `gh pr view 8 --repo Tone75/mathscape --json headRefOid` で取得できる。Notion052〜055・Home・固定仕様へ結果／6主区間／SHA／PR／検証範囲／資源／未解決事項を同期済み、PENDING_NOTION_SYNCなし。新成果はOwnerレビュー待ち、052〜055 In Progress・Next052のみ。追加実験・merge・新タグ・Releaseは行わない。
+
 ### RQ-M07：揺れの測り方にも揺れがある
 
 M06保存G/L×seed0／1／2×outer0〜9の60原標本を再利用し、n20／α=.05／B4999を固定します。新namespaceで各原標本J20反復×K120系列を生成し、主K30は各反復の先頭30、分解用は固定4組×30。原標本追加生成・再標準化・結果選別・旧K30の混入はありません。推論単位は各分布N30で、J／K／4組を標本数へ加えません。
