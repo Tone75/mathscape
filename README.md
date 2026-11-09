@@ -1,7 +1,7 @@
 # MATHSCAPE｜数学を触れる実験室
 
 数式やパラメータを動かし、数学的な現象を視覚的・直感的に探索するローカルWebアプリです。
-Inference Labを含む **RQ-M01 / v0.2** はOwner受入・ユーザー動作確認が完了し、**RQ-M02〜RQ-M04** もOwner承認済みです。RQ-M04の承認は外部科学レビュー・Owner本人の新機能個別操作・PR mergeとは区別し、H1／H2保留を保持します。今回のRQ-M05では母平均・母分散・母歪度を揃えたガンマと対数正規のBCa被覆・非被覆方向を比較し、保存結果ビューを追加します。新成果は新PRでレビューに提出し、既存PR #1〜#4、main、公開済みReleaseは保持します。GitHubで公開するのはソースコードであり、インターネット上でホスティングされたアプリではありません。外部Webホスティングや有料APIは利用しません。
+Inference Labを含む **RQ-M01 / v0.2** はOwner受入・ユーザー動作確認が完了し、**RQ-M02〜RQ-M05** もOwner承認済みです。RQ-M05のH1/H2実用差不支持・C/Tに限定した±1pp内同等性支持を保持し、承認と外部科学レビュー・Owner本人の個別新操作・PR mergeを区別します。今回のRQ-M06はM05の保存原標本を固定し、BCa端点の計算上の揺れを調べます。新成果は新PRでレビューに提出し、既存PR #1〜#5、main、公開済みReleaseは保持します。GitHubで公開するのはソースコードであり、インターネット上でホスティングされたアプリではありません。外部Webホスティングや有料APIは利用しません。
 
 v0.1.1ではFractalの中心座標・表示幅とChaosのrの初期値をSession Stateへ集約し、ボタンやプリセット操作時の重複初期値警告を修正しました。ズーム・パン・直接入力・プリセット・手動操作・Lab切り替えの既存動作を維持しています。既存のv0.1.0タグとReleaseは保持しています。
 
@@ -14,7 +14,7 @@ v0.1.1ではFractalの中心座標・表示幅とChaosのrの初期値をSession
 | Fractal Explorer | マンデルブロ反復の発散回数、中心・表示幅・解像度・反復数、ズーム・パン・全体表示への復帰 |
 | Inference Lab | 母集団と1標本、未知分散の1標本両側t推論、反復信頼区間、被覆率・第一種過誤率・検出力、固定実験の標本数比較 |
 
-Inference Lab内の「推論モード」で、従来のt推論探索、RQ-M02の「信頼区間の方法比較」、RQ-M03の「再標本化回数と端点の安定性」、RQ-M04の「分布の形と被覆」、RQ-M05の「同じ歪度、違う分布」を切り替えます。第五のLabは作りません。
+Inference Lab内の「推論モード」で、従来のt推論探索、RQ-M02の「信頼区間の方法比較」、RQ-M03の「再標本化回数と端点の安定性」、RQ-M04の「分布の形と被覆」、RQ-M05の「同じ歪度、違う分布」、RQ-M06の「同じ標本でも端点は揺れる」を切り替えます。第五のLabは作りません。
 
 各Labはサイドバーで切り替えます。数学的な意味、探索のヒント、有限計算の限界を日本語で表示します。計算はUIから独立した `mathscape/` モジュールに分離しています。
 
@@ -79,6 +79,24 @@ python -m pytest -q
 
 ## 数学的モデルと計算の限界
 
+### RQ-M06：同じ標本でも端点は揺れる
+
+M05保存パネルのG/L×seed0／1／2×outer ID0〜199、全1,200原標本をそのまま使います。n20／α.05を固定し、新namespaceの独立bootstrap K30系列でB999／4999の共通prefix、percentile／BCaの共通平均列を用います。原標本の追加生成・標本内標準化・旧K1系列の混入はなく、保存標本の再利用を新しい独立追試とは呼びません。
+
+各原標本内の端点SD（ddof1）から `S=hypot(SD_L,SD_U)/√2`、`Ase=S/(s/√20)`、`Apop=S/(1/√20)` を求めます。bootstrap平均のSDではなく、同じ標本から計算する区間端点の変動です。有限K30のAse・Vse=Ase²を保存し、原標本単位N600/分布で比較します。tは決定的なゼロ変動対照、M05のK1は引き続きNAです。
+
+H1はBCa B4999の平均Ase差L−Gの独立Welch99%区間と±.01帯で判定します。.01は規格化した端点変動の差で、被覆率1ppではありません。H2は各原標本の `D=Ase4999−.75×Ase999` を対応計算し、各分布の平均Dの原標本単位99%区間上限<0が両方成立した場合だけ両分布25%超低減を支持します。境界・局所的な無効／欠測は [固定仕様](evidence/rq_m06/SPEC.md) に従います。
+
+入力hash・全選択ID・数理／乱数／集計／判定／独立監査／guard・環境・保存schema／容量を主前commitで固定。指定18系列ではインデックスと平均列も保存し、全端点集計監査と生成内容の部分監査を分けます。主1回300秒／2GiB／追加公開50MiB／バッチ100万要素以内。通常pytest・保存監査・UIから主実験を起動せず、旧M01〜M05を再実行・上書きしません。M06のC/Tは再利用部分パネルの記述のみでM05の判定を更新せず、安定化を被覆改善や無限Bへの収束と解釈しません。
+
+主実験1回（再実行0）で6セル・保存1,200原標本・新36,000系列を完了。無効／欠測0。**H1の.01超の実用差仮説は不支持、有限K30の平均Ase差について±.01内の限定的同等性を支持**しました。差L−Gは−.0023286315、99% Welch区間[−.0043907952,−.0002664678]、原標本単位N600／分布です。0除外と実用的同等性は両立し、.01はAse単位で被覆率1ppではありません。**H2は両分布で平均25%超低減を支持**し、平均A4999/平均A999はG .457544、L .461710でした。全条件・区間・分母は [REPORT.md](evidence/rq_m06/REPORT.md)／[全12行CSV](evidence/rq_m06/pooled_summary.csv) に保存しています。
+
+保存専用ビューは原標本・全K端点群・共通軸・生SD／S／Ase／Apop・全条件・仮説と4種類のダウンロード用データを提供します。全1,001 pytest成功（27.28秒、既存862＋新139）、新AppTest11件、pip check成功。全保存値の独立再計算と事前指定18系列のインデックス→平均→prefix端点の復元監査は不一致0で、残35,982系列の生成過程を完全監査したとはしません。主CLI外側22.86秒、Peak RSS231,129,088 bytes。公開成果は約13.6MiBで50MiB内です。
+
+**実ブラウザ操作・実ダウンロード・HTMLの実表示は未検証**です。Work設定が `Local browser use is disabled in Work settings` を返しました。AppTestでは両分布／B／k／方法／ID復元・Lab／モード保持、全12行とCSV、ダウンロード用4 payloadを照合し、ローカルHTTP200／health・限定ログを確認しましたが、ブラウザ確認の代替完了とはしません。詳細は [validation.json](evidence/rq_m06/validation.json) と [未実施記録](evidence/rq_m06/browser/unavailable.json)。今回の成果はレビュー待ちで、Ownerの再操作を開始条件にはしません。
+
+提出先は [stacked PR #6](https://github.com/Tone75/mathscape/pull/6)、科学成果SHA `64132bfd2a7a01ea592b4ebfc38e0fbabac73c53`、事前固定SHA `3af12e48bec70381a4fc8d70b9b25c8b1e95c405`。baseは受入済み `feat/rq-m05-matched-moments`。この参照追記は科学成果固定後の文書commitで、最新提出HEADは `gh pr view 6 --repo Tone75/mathscape --json headRefOid` で取得できる。Notion044〜047・Home・固定仕様へ結果／SHA／PR／検証範囲／資源／未解決事項を同期済み、PENDING_NOTION_SYNCなし。新成果はレビュー待ちで044〜047 In Progress、Next044のみを維持する。既存PR／main／タグ／Releaseは保持し、保護対象10 remote refsは開始時と一致。新タグ・Release・mergeなし。
+
 ### RQ-M05：同じ歪度、違う分布
 
 母平均0・母分散1・母歪度2を解析的に揃えたガンマ `Gamma(1,1)−1` と対数正規を比較します。対数正規の定数は丸めず `v=2sinh(asinh(1)/3)`、`t=1+v²`、`s=√log1p(v²)`、`m=√t`、`d=√t v` として `X=(exp(sZ)−m)/d` を生成します。理論値をSciPyのmvskと照合し、原標本の実現モーメントを強制調整しません。推論対象はXの算術平均です。異なる尖度・支持域・尾の形が残るため、尖度単独の因果効果とは呼びません。
@@ -93,7 +111,7 @@ python -m pytest -q
 
 全180,000レコード／18 seed行／6 pooled行／分布差12行／方法対応差24行を保存原標本・端点から独立再計算し不一致0。主CLI外側36.66秒、Peak RSS230,817,792 bytes（220.125MiB）。全862 pytest成功（旧732＋新130、20.64秒）、新AppTest11件、pip check成功。実ブラウザで両分布・全方法・seed／ID・Lab／モード往復・分布別復元・固定α／B／K・NA、旧4 LabとRQ-M02〜04代表操作を確認しました。21画面状態147表示数値と保存データ、3種類の実ダウンロードが一致しました。全条件・再現手順・監査限界は [REPORT.md](evidence/rq_m05/REPORT.md)、[検証記録](evidence/rq_m05/validation.json)と[操作証拠](evidence/rq_m05/browser/)を参照できます。
 
-提出先は [stacked PR #5](https://github.com/Tone75/mathscape/pull/5)、科学成果SHA `254af9ed19cf3197310bc372c704ecc32c3b9b4e`。baseは承認済み `feat/rq-m04-distribution-shape`、最新提出HEADは `gh pr view 5 --repo Tone75/mathscape --json headRefOid` で確認できます。Notion親子票・Home・仕様へ同期済み。新成果はレビュー待ちで040〜043 In Progress、Nextは040のみ。公開変更成果は約24.2MiB、50MiB内です。新成果のOwner受入・外部科学レビュー・Owner本人の個別新操作・別ブラウザ／モバイルは未実施で、新タグ・Release・mergeは行っていません。
+提出先は [stacked PR #5](https://github.com/Tone75/mathscape/pull/5)、科学成果SHA `254af9ed19cf3197310bc372c704ecc32c3b9b4e`、受入対象HEAD `dc2501c3099f5c25227d9eee00d227c2f0b02f81`。baseは承認済み `feat/rq-m04-distribution-shape`。Notion親子票・Home・仕様へ同期済み、040〜043 Done。M05はOwner受入済みですが、外部科学レビュー・Owner本人の個別新操作・別ブラウザ／モバイル・mergeは別状態です。公開変更成果は約24.2MiB、新タグ・Releaseは作成していません。
 
 ### RQ-M04：分布の形と被覆
 

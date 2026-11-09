@@ -1,0 +1,156 @@
+{
+  "question_id": "RQ-M06",
+  "status": "automated_checks_passed_browser_unverified",
+  "accepted_start_head": "dc2501c3099f5c25227d9eee00d227c2f0b02f81",
+  "source_git_sha": "3af12e48bec70381a4fc8d70b9b25c8b1e95c405",
+  "manifest_sha256": "1fa89bbb0079e73ee7b3fcb993ca0fa0a336adc8ed8e6964ab8667a264077f58",
+  "baseline_tests": {
+    "passed": 862,
+    "wall_seconds": 20.72
+  },
+  "pytest": {
+    "command": "python -m pytest -q",
+    "passed": 1001,
+    "failed": 0,
+    "wall_seconds": 27.28,
+    "new_tests": {
+      "mathematics": 70,
+      "runner": 17,
+      "outer_guard": 7,
+      "independent_audit": 34,
+      "AppTest": 11
+    },
+    "full_output": "pytest.txt",
+    "ordinary_tests_launch_main_experiment": false
+  },
+  "pip_check": {
+    "command": "python -m pip check",
+    "status": "passed",
+    "output": "pip_check.txt",
+    "dependencies_added_or_updated": false
+  },
+  "AppTest": {
+    "status": "passed",
+    "new_tests": 11,
+    "targeted_wall_seconds": 3.45,
+    "scope": "Server-side Streamlit testing; not browser rendering or actual downloads",
+    "saved_only_model_and_RNG_and_main_forbidden": true,
+    "G_L_B_k_method_visibility_and_common_axis": true,
+    "population_specific_ID_seed_k_restoration_and_mode_Lab_roundtrips": true,
+    "sample_SHA_and_M05_input_match": true,
+    "fixed_alpha_and_K1_NA_preserved": true,
+    "all12_pooled_rows_equal_CSV": true,
+    "selected_metrics_and_diagnostics_equal_saved_values": true,
+    "H1_H2_errorbars_margin_and_ratios_equal_JSON": true,
+    "download_payload_bytes_checked": {
+      "pooled_CSV": "exact source bytes",
+      "self_contained_HTML": "exact source bytes",
+      "sample_CSV": "all20 values and sample hash",
+      "endpoint_CSV": "all180 logical rows endpoints; t repeated references"
+    },
+    "actual_browser_downloads": false,
+    "duplicate_widget_default_warning": "No target warning captured across new AppTests; not a browser log result"
+  },
+  "independent_saved_audit": {
+    "status": "passed",
+    "mismatch_count": 0,
+    "original_samples": 1200,
+    "logical_endpoint_records": 216000,
+    "original_metric_rows": 7200,
+    "seed_rows": 36,
+    "pooled_rows": 12,
+    "population_contrast_rows": 24,
+    "paired_B_rows": 24,
+    "paired_method_rows": 48,
+    "confirmatory_intervals": 3,
+    "reconstructed_saved_index_mean_streams": 18,
+    "other_bootstrap_streams_not_fully_reconstructed": 35982,
+    "output": "independent_audit.json",
+    "external_scientific_review": false
+  },
+  "browser": {
+    "status": "not_performed",
+    "reason": "Local browser use is disabled in Work settings",
+    "settings_changed": false,
+    "actual_downloads": false,
+    "screenshot_proof": false,
+    "evidence": "browser/unavailable.json",
+    "local_HTTP_200_health_ok": true,
+    "owned_loopback_servers_stopped": true,
+    "log_scope": "Startup/HTTP/shutdown only; no browser WebSocket session established. No target default warning or traceback in that limited log.",
+    "AppTest_and_payload_checks_replace_browser_checks": false
+  },
+  "static_figure": {
+    "status": "passed",
+    "scope": "BCa four conditions and H1 source data/errorbars/band match CSV/JSON; inline Plotly and no external script/stylesheets; browser rendering not tested",
+    "evidence": "browser/static_figure_check.json"
+  },
+  "fixed_experiment": {
+    "main_attempts": 1,
+    "reruns": 0,
+    "specified_smokes": 1,
+    "completed_cells": 6,
+    "reused_originals": 1200,
+    "new_original_samples_generated": 0,
+    "independent_originals_per_population": 600,
+    "new_inner_streams": 36000,
+    "K": 30,
+    "B": [
+      999,
+      4999
+    ],
+    "invalid": 0,
+    "missing": 0,
+    "source_files_unchanged": 16,
+    "M05_input_files_unchanged": 7,
+    "old_evidence_unchanged": true,
+    "CLI_wall_seconds": 22.86,
+    "worker_wall_seconds": 22.73885133303702,
+    "peak_RSS_bytes": 231129088,
+    "resample_batch_elements_cap": 1000000,
+    "resource_limits_met": true
+  },
+  "hypotheses": {
+    "H1": "not_supported",
+    "H1_equivalence_supported": true,
+    "H1_units": "Ase, not coverage percentage points",
+    "H2": "supported",
+    "H2_gamma": "supported",
+    "H2_lognormal": "supported",
+    "N_per_population": 600,
+    "scope": "Finite-K30 endpoint variability measured on a fixed reused M05 subset; not independent replication, ideal conditional SD equality, coverage improvement or infinite-B truth. M05 C/T decisions unchanged.",
+    "detail": "hypotheses.json"
+  },
+  "submission_state": "Review pending; not Owner accepted. MATH-044 through047 remain In Progress, only044 Next. Prior PRs/main/tags/releases unchanged.",
+  "not_performed": [
+    "Real-browser new and old Lab operations, CSV/HTML downloads, standalone HTML rendering",
+    "RQ-M06 Owner acceptance or Owner individual new-feature operations",
+    "External scientific review",
+    "Full generation reconstruction of other35982 bootstrap streams",
+    "Other browsers/mobile devices",
+    "Unrelated tickets/full MATH-005 restart trial",
+    "Next research question execution"
+  ],
+  "artifact_size": {
+    "scope": "Conservative full sizes of all public new/modified files relative to accepted M05 HEAD, including full README/HANDOFF, compact saved originals/endpoints, 18 saved index/mean streams, CSV, self-contained HTML, reports/tests. Ignored local logs/private absolute path list/virtual environment excluded.",
+    "limit_bytes": 52428800,
+    "files": 65,
+    "bytes": 14198162,
+    "MiB": 13.540422
+  },
+  "publication": {
+    "repository": "https://github.com/Tone75/mathscape",
+    "visibility": "PUBLIC",
+    "PR": "https://github.com/Tone75/mathscape/pull/6",
+    "base": "feat/rq-m05-matched-moments",
+    "head_branch": "feat/rq-m06-matched-stability",
+    "preregistration_sha": "3af12e48bec70381a4fc8d70b9b25c8b1e95c405",
+    "science_sha": "64132bfd2a7a01ea592b4ebfc38e0fbabac73c53",
+    "submitted_head": "Resolve through PR #6 headRefOid / Notion final submission record to avoid self-reference",
+    "status": "Open, non-draft, review pending",
+    "notion_sync": "MATH-044 through047, Project Home, fixed specification synchronized; final submitted HEAD recorded after docs commit",
+    "task_status": "In Progress, Next only044, not Owner accepted",
+    "protected_remote_refs_unchanged": 10,
+    "new_tag_or_release_or_merge": false
+  }
+}

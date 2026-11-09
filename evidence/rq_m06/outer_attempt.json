@@ -1,0 +1,22 @@
+{
+  "question_id": "RQ-M06",
+  "source_git_sha": "3af12e48bec70381a4fc8d70b9b25c8b1e95c405",
+  "started_utc": "2026-11-09T02:27:47.986862+00:00",
+  "planned_child_launches": 1,
+  "command": [
+    "python",
+    "scripts/run_matched_stability_benchmark.py",
+    "--run",
+    "--manifest",
+    "evidence/rq_m06/manifest.json",
+    "--output",
+    "evidence/rq_m06",
+    "--source-commit",
+    "3af12e48bec70381a4fc8d70b9b25c8b1e95c405"
+  ],
+  "soft_termination_seconds": 295.0,
+  "hard_kill_seconds": 298.0,
+  "finish_deadline_seconds": 299.0,
+  "outer_cap_seconds": 300,
+  "scope": "one guarded main attempt; no scientific retry"
+}

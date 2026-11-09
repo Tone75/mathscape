@@ -1,0 +1,12 @@
+{
+  "streamlit_root_status": 200,
+  "streamlit_health": "ok",
+  "overview_status": 200,
+  "scope": "Loopback HTTP only, not browser rendering or WebSocket UI interaction",
+  "server_started": true,
+  "owned_servers_stopped": true,
+  "ports_no_longer_listening": [
+    8559,
+    8560
+  ]
+}
