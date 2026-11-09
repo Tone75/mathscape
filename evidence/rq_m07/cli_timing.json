@@ -1,0 +1,8 @@
+{
+  "real": 53.06,
+  "user": 52.11,
+  "sys": 0.63,
+  "scope": "Sole full guarded main CLI, interpreter and child setup/output/exit included; external /usr/bin/time -p",
+  "main_attempts": 1,
+  "reruns": 0
+}

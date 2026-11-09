@@ -1,5 +1,19 @@
 # MATHSCAPE — minimal handoff
 
+## 最新の受入と実行状態：RQ-M07
+
+Owner承認済みM06の受入HEAD `e2feae23397d014f6aa3363773da9913da85fcf7`、PR #6、044〜047 Doneを採用。有限K30の結論とM05以前を保持し、実ブラウザ等の旧未検証を検証済みに変えない。旧レビュー待ちは開始条件ではない。開始tree clean・別worktreeなし、新branch `feat/rq-m07-finite-k`。仕様全文・末尾プロンプト・048〜051／Home・AGENTS有無・READMEを確認し、CODEX_RECEIPTを記録した。
+
+048受領→049事前固定→050主1回／独立監査→051保存結果UI／検証／新PR。Nextは048のみ。M06保存G/L×3seed×outer0..9の60原標本、B4999・J20・K120と先頭K30、原標本単位N30／分布。J/P/R三項と端点平方和を照合し、K120真値・絶対偏り補正を主張しない。通常テスト・UI・保存監査は主を起動せず、旧証拠は保全する。詳細は `evidence/rq_m07/SPEC.md`／`CODEX_RECEIPT.md`。新成果はレビュー待ちとして別stacked PRへ提出する。
+
+事前固定 `12b4aa79bb47e196006538d7c0cf0d073ccb3c37`、manifest SHA256 `25ffd0b68050fed1f755463a4dc929a86447bb0b5c3e491002edd01378d976ab`。指定smoke1回・主1回・再実行0、原標本追加生成0／無効・欠測0。各N30/df29、H1はG/Lとも平均d区間が厳密に±.0025内で支持、H2は両平均W区間上限<0で支持。主外側53.06秒／RSS255,574,016 bytes。全432,000論理区間・全表・4主区間と指定24系列の独立復元で不一致0、残143,976生成過程は完全復元していない。K120真値化・絶対偏り・被覆改善・Jgapを新仮説の支持とする説明はしない。
+
+保存UI・検証は `mathscape/finite_k_ui.py` と `tests/test_finite_k_app.py`、数理／guard／監査は `finite_k.py`／`scripts/run_finite_k_guarded.py`／`run_finite_k_benchmark.py`／`audit_finite_k.py` が入口。実ブラウザ可否は今回もWork設定disabled、実操作・実ダウンロード・HTML実表示は未検証。HTTP／health／限定ログ・HTML静的値とは区別し、旧M06未検証も保持する。確認用2サーバーは停止済み。通常pytest／保存UI／監査は主を起動しない。新成果はレビュー待ち、Next048のみ、追加実験なし。
+
+全1,139 pytest成功（40.94秒）、新AppTest17件、pip check成功。保存UIの全12/36/24表・4主区間・原標本／状態保持・5 payloadを照合。実ブラウザ・実ダウンロード・HTML実表示は未検証のまま。詳細は `evidence/rq_m07/REPORT.md`／`validation.json`、次の候補は同じ再標本化予算でJ/K配分が平均Ase測定の再現性をどう変えるかの1件のみで未実行。17固定source・旧入力14ファイル・旧証拠を保持し、追加実験せずレビュー待ちで停止する。
+
+提出先は [stacked PR #7](https://github.com/Tone75/mathscape/pull/7)、科学成果SHA `2532a8cc28911b1f320d4414621386fdd61f9955`、事前固定SHA `12b4aa79bb47e196006538d7c0cf0d073ccb3c37`。baseは受入済み `feat/rq-m06-matched-stability`。この参照追記は科学成果固定後の文書commitで、最新提出HEADは `gh pr view 7 --repo Tone75/mathscape --json headRefOid` で取得できる。Notion048〜051・Home・固定仕様へ結果／SHA／PR／検証範囲／資源／未解決事項を同期済み、PENDING_NOTION_SYNCなし。親票への一時HTTP502は未保存を再読確認し、その不足分だけ再送して解消した。新成果はレビュー待ちで048〜051 In Progress、Next048のみ。保護対象11 remote refsと旧証拠は開始時と一致、既存PR／main／タグ／Releaseを保持し、新規merge・タグ・Releaseは作成していない。
+
 ## 最新の受入と実行状態：RQ-M06
 
 Owner明示承認と最新Notionに従い、RQ-M05（提出HEAD `dc2501c3099f5c25227d9eee00d227c2f0b02f81`、科学成果 `254af9ed19cf3197310bc372c704ecc32c3b9b4e`、事前固定 `a8e87b3deb1a5256a200b28ea51301dec8aecb7e`、PR #5）は受入済み、040〜043 Done。H1/H2実用差不支持・C/Tに限定した±1pp内同等性支持を保持する。旧レビュー待ちは提出時点の履歴であり開始条件ではない。merge・外部科学レビュー・Owner本人の個別新操作とは別。

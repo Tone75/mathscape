@@ -1,0 +1,22 @@
+{
+  "question_id": "RQ-M07",
+  "status": "not_performed",
+  "reason": "Local browser use is disabled in Work settings",
+  "availability_call": "cua.getBrowser(loopback Streamlit URL)",
+  "settings_changed": false,
+  "bypass_attempted": false,
+  "actual_browser_operations": false,
+  "actual_downloads": false,
+  "HTML_rendering": false,
+  "screenshots": [],
+  "M06_previous_unverified_items_remain_unverified": true,
+  "unverified": [
+    "G/L, K, method, replicate and per-population ID restoration in a browser",
+    "Lab/mode sample hash retention in a browser",
+    "Displayed values and fixed alpha in a browser",
+    "Actual CSV/JSON/HTML/sample/endpoints downloads",
+    "Self-contained HTML rendering",
+    "Representative old four Labs and M02-M06 operations in a real browser"
+  ],
+  "alternative_scope": "AppTest, payload bytes, static HTML values and loopback HTTP checks separately recorded; not a substitute for real browser verification"
+}

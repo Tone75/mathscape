@@ -1,0 +1,186 @@
+{
+  "question_id": "RQ-M07",
+  "status": "automated_checks_passed_browser_unverified",
+  "accepted_start_head": "e2feae23397d014f6aa3363773da9913da85fcf7",
+  "preregistration_sha": "12b4aa79bb47e196006538d7c0cf0d073ccb3c37",
+  "manifest_sha256": "25ffd0b68050fed1f755463a4dc929a86447bb0b5c3e491002edd01378d976ab",
+  "baseline_tests": {
+    "passed": 1001,
+    "wall_seconds": 28.69
+  },
+  "preregistration_tests": {
+    "passed": 121,
+    "wall_seconds": 5.87
+  },
+  "pytest": {
+    "command": "python -m pytest -q",
+    "passed": 1139,
+    "failed": 0,
+    "wall_seconds": 40.94,
+    "new_tests_total": 138,
+    "new_tests": {
+      "mathematics": 68,
+      "runner": 12,
+      "outer_guard": 7,
+      "independent_audit": 34,
+      "AppTest": 17
+    },
+    "output": "pytest.txt",
+    "tests_launch_main": false
+  },
+  "pip_check": {
+    "status": "passed",
+    "output": "pip_check.txt",
+    "dependency_additions_or_updates": false
+  },
+  "saved_UI": {
+    "entry": "render_finite_k_view",
+    "scope": "AppTest server-side display and download payload checks, not real browser rendering or actual downloads",
+    "model_inference_RNG_main_forbidden": true,
+    "per_population_ID_seed_replicate_restoration": true,
+    "K_method_Lab_mode_original_hash_retention": true,
+    "fixed_B_alpha_J_and_free_alpha_independence": true,
+    "old_K1_NA_preserved": true,
+    "all12_pooled_rows_and4_main_intervals_match_saved_values": true,
+    "download_payload_bytes_checked": [
+      "pooled_CSV",
+      "hypotheses_JSON",
+      "self_contained_HTML",
+      "original_CSV",
+      "all_endpoint_CSV"
+    ],
+    "actual_downloads": false
+  },
+  "independent_saved_audit": {
+    "status": "passed",
+    "mismatch_count": 0,
+    "original_samples": 60,
+    "logical_endpoint_records": 432000,
+    "table_counts": {
+      "original_metrics.csv": {
+        "reconstructed": 180,
+        "saved": 180
+      },
+      "original_K_metrics.csv": {
+        "reconstructed": 360,
+        "saved": 360
+      },
+      "replicate_metrics.csv.gz": {
+        "reconstructed": 3600,
+        "saved": 3600
+      },
+      "group_metrics.csv.gz": {
+        "reconstructed": 14400,
+        "saved": 14400
+      },
+      "K_metrics.csv.gz": {
+        "reconstructed": 7200,
+        "saved": 7200
+      },
+      "summary.csv": {
+        "reconstructed": 36,
+        "saved": 36
+      },
+      "pooled_summary.csv": {
+        "reconstructed": 12,
+        "saved": 12
+      },
+      "decomposition_summary.csv": {
+        "reconstructed": 24,
+        "saved": 24
+      }
+    },
+    "fully_reconstructed_saved_index_mean_streams": 24,
+    "other_generation_sequences_not_reconstructed": 143976,
+    "all_delta_and_SS_identities_checked": true,
+    "output": "independent_audit.json",
+    "external_scientific_review": false
+  },
+  "browser": {
+    "status": "not_performed",
+    "reason": "Local browser use is disabled in Work settings",
+    "settings_changed_or_bypassed": false,
+    "actual_downloads": false,
+    "HTML_rendering": false,
+    "screenshots": false,
+    "evidence": "browser/unavailable.json",
+    "M06_prior_unverified_remains_unverified": true,
+    "loopback_HTTP_200_health_ok": true,
+    "owned_servers_stopped": true,
+    "server_log_scope": "startup/HTTP/shutdown only; no browser WebSocket UI session",
+    "AppTest_or_payloads_replace_browser_checks": false
+  },
+  "static_figure": {
+    "status": "passed",
+    "scope": "BCa four conditions mean A/Q and original-level99% bars match CSV; embedded Plotly and no external script/stylesheet tags. Not HTML rendering.",
+    "evidence": "browser/static_figure_check.json"
+  },
+  "fixed_experiment": {
+    "main_attempts": 1,
+    "reruns": 0,
+    "specified_smokes": 1,
+    "completed_cells": 6,
+    "reused_originals": 60,
+    "independent_originals_per_population": 30,
+    "new_originals_generated": 0,
+    "new_inner_streams": 144000,
+    "J": 20,
+    "K_first": 30,
+    "K_full": 120,
+    "B": 4999,
+    "invalid": 0,
+    "missing": 0,
+    "frozen_source_files_unchanged": 17,
+    "accepted_input_files_verified": 14,
+    "old_evidence_and_requirements_unchanged": true,
+    "CLI_wall_seconds": 53.06,
+    "worker_wall_seconds": 52.967978166998364,
+    "peak_RSS_bytes": 255574016,
+    "batch_elements_cap": 1000000,
+    "limits_met": true
+  },
+  "hypotheses": {
+    "H1": "supported",
+    "H2": "supported",
+    "N_per_population": 30,
+    "df": 29,
+    "confirmatory_intervals": 4,
+    "confidence": 0.99,
+    "detail": "hypotheses.json",
+    "H1_units": "Ase, not percentage points",
+    "H2_units": "repeated-measurement variance Q, not SD",
+    "scope": "Finite J20/K30-first/K120 on reused saved originals. K120 is not truth; Jgap is algebra, not absolute bias or a scientific support claim. No M05/M06 retest, ideal-SD or coverage-improvement claim."
+  },
+  "submission_state": "Review pending, MATH-048 through051 In Progress, Next048 only; not Owner accepted",
+  "not_performed": [
+    "Real-browser old/new Lab operations, actual downloads and self-contained HTML rendering",
+    "RQ-M07 Owner acceptance or Owner individual new-feature operations",
+    "External scientific review",
+    "Full generation reconstruction of other143976 bootstrap sequences",
+    "Other browsers/mobile devices",
+    "Unrelated tickets/full MATH-005 restart trial",
+    "Next research question execution"
+  ],
+  "artifact_size": {
+    "scope": "Conservative full byte sizes of all public new/modified files relative to accepted M06 HEAD, including full README/HANDOFF, compact originals/endpoints,24index/mean streams,compressed/full CSV,one self-contained HTML,code/tests/reports. Ignored local files/virtual environment excluded.",
+    "limit_bytes": 52428800,
+    "files": 73,
+    "bytes": 15540367,
+    "MiB": 14.820449
+  },
+  "publication": {
+    "repository": "https://github.com/Tone75/mathscape",
+    "visibility": "PUBLIC",
+    "PR": "https://github.com/Tone75/mathscape/pull/7",
+    "base": "feat/rq-m06-matched-stability",
+    "head_branch": "feat/rq-m07-finite-k",
+    "preregistration_sha": "12b4aa79bb47e196006538d7c0cf0d073ccb3c37",
+    "science_sha": "2532a8cc28911b1f320d4414621386fdd61f9955",
+    "submitted_head": "Resolve PR #7 headRefOid / Notion final submitted-head record to avoid self-reference",
+    "status": "Open, non-draft, review pending",
+    "notion_sync": "048-051/Home/spec synchronized; parent content temporary502 resolved after readback and missing-only retry; final submitted HEAD recorded after documentation commit",
+    "task_status": "In Progress, Next only048; not Owner accepted",
+    "protected_remote_refs_unchanged": 11,
+    "new_tag_or_release_or_merge": false
+  }
+}

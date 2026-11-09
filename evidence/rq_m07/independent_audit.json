@@ -1,0 +1,85 @@
+{
+  "question_id": "RQ-M07",
+  "status": "passed",
+  "mismatches": [],
+  "mismatch_count": 0,
+  "original_samples": 60,
+  "table_counts": {
+    "original_metrics.csv": {
+      "reconstructed": 180,
+      "saved": 180
+    },
+    "original_K_metrics.csv": {
+      "reconstructed": 360,
+      "saved": 360
+    },
+    "replicate_metrics.csv.gz": {
+      "reconstructed": 3600,
+      "saved": 3600
+    },
+    "group_metrics.csv.gz": {
+      "reconstructed": 14400,
+      "saved": 14400
+    },
+    "K_metrics.csv.gz": {
+      "reconstructed": 7200,
+      "saved": 7200
+    },
+    "summary.csv": {
+      "reconstructed": 36,
+      "saved": 36
+    },
+    "pooled_summary.csv": {
+      "reconstructed": 12,
+      "saved": 12
+    },
+    "decomposition_summary.csv": {
+      "reconstructed": 24,
+      "saved": 24
+    }
+  },
+  "fully_reconstructed_streams": 24,
+  "other_generation_sequences_not_reconstructed": 143976,
+  "numeric_tolerances": {
+    "numeric_rtol": 2e-10,
+    "numeric_atol": 2e-12,
+    "identity_rtol": 2e-12,
+    "identity_atol": 2e-12
+  },
+  "saved_file_sha256": {
+    "panels/gamma_seed0.npz": "f457f268d8f86d722672c2560c6b13245c2baab0702aeb299c39262d22539323",
+    "panels/gamma_seed1.npz": "6d43f7f36fc128c87258902dd8fe64e5bc37077eef86e4c07bf99e8447b07b1a",
+    "panels/gamma_seed2.npz": "dcd5c4d86f59da98ff374211102f99ff8187c0c586d059abce44ab757e2c40cb",
+    "panels/lognormal_seed0.npz": "5d9ceb1331c37f936d1062e50ba1132389e13f5ea3fe4f81fb67dca1bdaead13",
+    "panels/lognormal_seed1.npz": "42b25b02387d5487f59d0792c940b67d6b47db824fb550b84103e1f72103d57d",
+    "panels/lognormal_seed2.npz": "573cf94d2901994ff30868af42c33adbf11f197ce5afae708f39448a077e34d5",
+    "streams/gamma_seed0_outer0_replicate0_inner0.npz": "032ba8e178141b951204e039d3050cbc6a46ae76b49863bc5acb122b8bcf61b8",
+    "streams/gamma_seed0_outer0_replicate0_inner29.npz": "dd201bf46557d0ebcc14560f0fc3dfe06e78d02f4c4fd48db35bb36d42caae89",
+    "streams/gamma_seed0_outer0_replicate0_inner30.npz": "85924d0ed6f3266dc75a7f3847e7abd554878e3709f563538177f3eee960f212",
+    "streams/gamma_seed0_outer0_replicate0_inner119.npz": "e68039caca4b3c7d18123b998836aac279ac3d6e5751ef51c69bd8ab99232e67",
+    "streams/gamma_seed1_outer0_replicate0_inner0.npz": "e110f25a7e099fe2c5e37dcfe7a4e01744babe0b978224021315cb550cef3e9e",
+    "streams/gamma_seed1_outer0_replicate0_inner29.npz": "5cfcdd2e0127af7ed7be0a8808b777ada0642eebda030a7250b9aa783b732733",
+    "streams/gamma_seed1_outer0_replicate0_inner30.npz": "b6e2f8fa4fd8adc0db1f638f3d96a81ad9fbd6ba6a757cce4e7f030d1d12849c",
+    "streams/gamma_seed1_outer0_replicate0_inner119.npz": "c85d597ab927231bf75712b62c4b37e47f8a5cc33f916efc247a12f8f701b957",
+    "streams/gamma_seed2_outer0_replicate0_inner0.npz": "cd2651b1d011f498a67782dc061b95ae0b8a5ab7e8bb44e8102010ea2fb8dff1",
+    "streams/gamma_seed2_outer0_replicate0_inner29.npz": "7ee712fafaa24aa0ec82891c15de8f8227df5445dee645b9ea13817884106150",
+    "streams/gamma_seed2_outer0_replicate0_inner30.npz": "ee4b63b86e92add06b40ceb25f861ad6f494df0ee9bea8c35984dda4f7164ddd",
+    "streams/gamma_seed2_outer0_replicate0_inner119.npz": "c468b1be5caddf26e4e1f4b65bdf33c8439eb57029b9d82467598b7ab303050f",
+    "streams/lognormal_seed0_outer0_replicate0_inner0.npz": "2ce0449f25200d43737fc1f7308cb694067c0f6a687bbe2f023cfe08d85b9990",
+    "streams/lognormal_seed0_outer0_replicate0_inner29.npz": "89094a3a9d967dba75fa20952d61d6fd1e6ca8e18c797e3699a5727b68436b72",
+    "streams/lognormal_seed0_outer0_replicate0_inner30.npz": "5c68fa76012437f231347336731989ed3af0ce081dc99b7107f7702c6f485d6b",
+    "streams/lognormal_seed0_outer0_replicate0_inner119.npz": "951ffd290389c086466ffe5d50e20fb94dd8ca67e8e9225d54918ddb60259ad3",
+    "streams/lognormal_seed1_outer0_replicate0_inner0.npz": "8a6cb4409b89e3f6684c20b688dfa75490cd704f29b8826a58c1e56efbbaf373",
+    "streams/lognormal_seed1_outer0_replicate0_inner29.npz": "ebfdba68bf6c228a5d178c3f934dc40d8f64ad5c65f003f01344c7c97f4cba35",
+    "streams/lognormal_seed1_outer0_replicate0_inner30.npz": "dee6fd3d269d255659d4425f8b12b344ae115f3cc18faadc4a8c55e9195cc62d",
+    "streams/lognormal_seed1_outer0_replicate0_inner119.npz": "d0b6ae0596134c4b98992c7a6ce7c143dd5723ebc3e1547d229b23de070a4c27",
+    "streams/lognormal_seed2_outer0_replicate0_inner0.npz": "6c3058c32163da39beae59ba989913f7ab5ca8639c285f8d6bb4f7aee1311f69",
+    "streams/lognormal_seed2_outer0_replicate0_inner29.npz": "41a57b5e42e2c110be2a35a0caa1e458e7d51cf055320132509acfc17a069116",
+    "streams/lognormal_seed2_outer0_replicate0_inner30.npz": "32613fa98b9f83d96aff6b0cb956f93e451ca912491e6ae126344b25e0f35240",
+    "streams/lognormal_seed2_outer0_replicate0_inner119.npz": "1d1abbf067109fe4f548ef4b1f98cf40a9b47df30d326c7043b9197cc3ccdc38"
+  },
+  "limitations": [
+    "Only24 designated saved-index streams reconstruct bootstrap sampling, means and intervals; remaining143976 sequences are not reconstructed.",
+    "All saved endpoint metrics, identities, summaries and four original-level confirmation intervals independently reconstructed; seed/RNG metadata does not prove unrecorded streams."
+  ]
+}

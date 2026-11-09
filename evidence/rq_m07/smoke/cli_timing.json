@@ -1,0 +1,6 @@
+{
+  "real": 0.77,
+  "user": 0.57,
+  "sys": 0.17,
+  "scope": "Sole separately namespaced smoke full CLI measured by /usr/bin/time -p"
+}

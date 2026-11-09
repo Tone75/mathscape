@@ -1,0 +1,33 @@
+{
+  "question_id": "RQ-M07",
+  "source_git_sha": "12b4aa79bb47e196006538d7c0cf0d073ccb3c37",
+  "started_utc": "2026-11-09T05:22:17.224471+00:00",
+  "planned_child_launches": 1,
+  "command": [
+    "python",
+    "scripts/run_finite_k_benchmark.py",
+    "--run",
+    "--manifest",
+    "evidence/rq_m07/manifest.json",
+    "--output",
+    "evidence/rq_m07",
+    "--source-commit",
+    "12b4aa79bb47e196006538d7c0cf0d073ccb3c37"
+  ],
+  "soft_termination_seconds": 295.0,
+  "hard_kill_seconds": 298.0,
+  "finish_deadline_seconds": 299.0,
+  "outer_cap_seconds": 300,
+  "scope": "one guarded main attempt; no scientific retry",
+  "status": "completed",
+  "child_launches": 1,
+  "termination_sent": false,
+  "kill_sent": false,
+  "interrupted": false,
+  "child_exit_code": 0,
+  "supervised_wall_seconds": 53.040573708945885,
+  "exit_code": 0,
+  "launcher_wall_seconds": 53.040613833931275,
+  "finished_utc": "2026-11-09T05:23:10.250765+00:00",
+  "wall_scope": "module entry before imports through child completion; interpreter startup/final record write measured by external time"
+}
