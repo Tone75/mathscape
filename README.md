@@ -95,6 +95,8 @@ J/P/R三項と両端点の平方和を全件照合し、保存全値・全表・
 
 保存専用ビューは先頭30／全120の端点、20反復のAse、4組とJ/P/R、H1／H2、全12条件を表示し、CSV／JSON／原標本／全端点／自己完結HTMLの5ダウンロード用データを提供します。全1,139 pytest成功（40.94秒、旧1,001＋新138）・新AppTest17件・pip check成功。全12 pooled／36 seed／24分解表・4主区間と表示値、5 payloadのbytes／全7,200端点行を検証しました。公開成果は約14.9MiBで50MiB内です。新成果はレビュー待ちとして提出します。
 
+提出先は [stacked PR #7](https://github.com/Tone75/mathscape/pull/7)、科学成果SHA `2532a8cc28911b1f320d4414621386fdd61f9955`、事前固定SHA `12b4aa79bb47e196006538d7c0cf0d073ccb3c37`。baseは受入済み `feat/rq-m06-matched-stability`。この参照追記は科学成果固定後の文書commitで、最新提出HEADは `gh pr view 7 --repo Tone75/mathscape --json headRefOid` で取得できる。Notion048〜051・Home・固定仕様へ結果／SHA／PR／検証範囲／資源／未解決事項を同期済み、PENDING_NOTION_SYNCなし。親票への一時HTTP502は未保存を再読確認し、その不足分だけ再送して解消した。新成果はレビュー待ちで048〜051 In Progress、Next048のみ。保護対象11 remote refsと旧証拠は開始時と一致、既存PR／main／タグ／Releaseを保持し、新規merge・タグ・Releaseは作成していない。
+
 ### RQ-M06：同じ標本でも端点は揺れる
 
 M05保存パネルのG/L×seed0／1／2×outer ID0〜199、全1,200原標本をそのまま使います。n20／α.05を固定し、新namespaceの独立bootstrap K30系列でB999／4999の共通prefix、percentile／BCaの共通平均列を用います。原標本の追加生成・標本内標準化・旧K1系列の混入はなく、保存標本の再利用を新しい独立追試とは呼びません。

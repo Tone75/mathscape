@@ -12,6 +12,8 @@ Owner承認済みM06の受入HEAD `e2feae23397d014f6aa3363773da9913da85fcf7`、P
 
 全1,139 pytest成功（40.94秒）、新AppTest17件、pip check成功。保存UIの全12/36/24表・4主区間・原標本／状態保持・5 payloadを照合。実ブラウザ・実ダウンロード・HTML実表示は未検証のまま。詳細は `evidence/rq_m07/REPORT.md`／`validation.json`、次の候補は同じ再標本化予算でJ/K配分が平均Ase測定の再現性をどう変えるかの1件のみで未実行。17固定source・旧入力14ファイル・旧証拠を保持し、追加実験せずレビュー待ちで停止する。
 
+提出先は [stacked PR #7](https://github.com/Tone75/mathscape/pull/7)、科学成果SHA `2532a8cc28911b1f320d4414621386fdd61f9955`、事前固定SHA `12b4aa79bb47e196006538d7c0cf0d073ccb3c37`。baseは受入済み `feat/rq-m06-matched-stability`。この参照追記は科学成果固定後の文書commitで、最新提出HEADは `gh pr view 7 --repo Tone75/mathscape --json headRefOid` で取得できる。Notion048〜051・Home・固定仕様へ結果／SHA／PR／検証範囲／資源／未解決事項を同期済み、PENDING_NOTION_SYNCなし。親票への一時HTTP502は未保存を再読確認し、その不足分だけ再送して解消した。新成果はレビュー待ちで048〜051 In Progress、Next048のみ。保護対象11 remote refsと旧証拠は開始時と一致、既存PR／main／タグ／Releaseを保持し、新規merge・タグ・Releaseは作成していない。
+
 ## 最新の受入と実行状態：RQ-M06
 
 Owner明示承認と最新Notionに従い、RQ-M05（提出HEAD `dc2501c3099f5c25227d9eee00d227c2f0b02f81`、科学成果 `254af9ed19cf3197310bc372c704ecc32c3b9b4e`、事前固定 `a8e87b3deb1a5256a200b28ea51301dec8aecb7e`、PR #5）は受入済み、040〜043 Done。H1/H2実用差不支持・C/Tに限定した±1pp内同等性支持を保持する。旧レビュー待ちは提出時点の履歴であり開始条件ではない。merge・外部科学レビュー・Owner本人の個別新操作とは別。

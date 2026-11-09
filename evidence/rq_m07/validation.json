@@ -165,7 +165,22 @@
     "scope": "Conservative full byte sizes of all public new/modified files relative to accepted M06 HEAD, including full README/HANDOFF, compact originals/endpoints,24index/mean streams,compressed/full CSV,one self-contained HTML,code/tests/reports. Ignored local files/virtual environment excluded.",
     "limit_bytes": 52428800,
     "files": 73,
-    "bytes": 15536427,
-    "MiB": 14.816691
+    "bytes": 15540367,
+    "MiB": 14.820449
+  },
+  "publication": {
+    "repository": "https://github.com/Tone75/mathscape",
+    "visibility": "PUBLIC",
+    "PR": "https://github.com/Tone75/mathscape/pull/7",
+    "base": "feat/rq-m06-matched-stability",
+    "head_branch": "feat/rq-m07-finite-k",
+    "preregistration_sha": "12b4aa79bb47e196006538d7c0cf0d073ccb3c37",
+    "science_sha": "2532a8cc28911b1f320d4414621386fdd61f9955",
+    "submitted_head": "Resolve PR #7 headRefOid / Notion final submitted-head record to avoid self-reference",
+    "status": "Open, non-draft, review pending",
+    "notion_sync": "048-051/Home/spec synchronized; parent content temporary502 resolved after readback and missing-only retry; final submitted HEAD recorded after documentation commit",
+    "task_status": "In Progress, Next only048; not Owner accepted",
+    "protected_remote_refs_unchanged": 11,
+    "new_tag_or_release_or_merge": false
   }
 }

@@ -4,7 +4,7 @@
 
 ここでKは端点変動を**測る回数**で、Bは1回のbootstrapに使う再標本数、Jはその測定全体の反復数である。**K120も有限の測定であり、真値・無限Kの正解・絶対偏りの基準ではない。** .0025はAse単位で被覆率0.25ppではなく、H2の50%は反復**分散**の低減で、SDの50%低減ではない。
 
-新成果はOwnerレビュー待ち。受入・外部科学レビュー・Owner本人操作・PR mergeを実施済みとは扱わない。保存UI・最終検証・科学成果SHA／提出SHA／新PRは統合作業後の提出記録に追記する。
+新成果はOwnerレビュー待ち。受入・外部科学レビュー・Owner本人操作・PR mergeを実施済みとは扱わない。保存UI・最終検証・科学成果SHA／新PRは後述の統合提出記録、最新提出HEADはPR／Notionに記録する。
 
 ## 単一RQ・受入・事前固定
 
@@ -430,6 +430,12 @@ worker294秒soft stop、親TERM295秒／必要時kill298秒／終了目標299秒
 Streamlitの実起動とroot HTTP200／health ok、図のHTTP200を確認し、所有する2サーバーは停止・非LISTENを確認した。ブラウザWebSocketセッションがない起動／HTTP／停止に限ったログで、例外・対象重複初期値警告はない。画面操作後のログ確認ではない。自己完結HTMLの静的ソースで外部script／stylesheetタグ0・Plotly埋込と、BCa4条件のA/Q・99%誤差棒が保存CSVと一致することを確認したが、HTML実表示は未実施。
 
 別担当の読み取りレビューでREPORT表示値750個を保存CSV／JSONへ照合し、丸めの範囲で一致した。これは内部レビューであり外部科学レビューではない。詳細は [validation.json](validation.json)、[HTTP記録](browser/local_http.json)、[限定サーバーログ](browser/server_log.txt)、[HTML静的照合](browser/static_figure_check.json)。保守的な公開成果は約14.9MiB／50MiB内、正確な全変更byteはvalidation参照。科学成果／新PRは後続の提出記録へ固定する。新成果Owner受入・Owner本人操作・外部科学レビュー・別ブラウザ／モバイルは未実施であり、048〜051をDoneにしない。
+
+## 統合提出記録
+
+提出先は [stacked PR #7](https://github.com/Tone75/mathscape/pull/7)、科学成果SHA `2532a8cc28911b1f320d4414621386fdd61f9955`、事前固定SHA `12b4aa79bb47e196006538d7c0cf0d073ccb3c37`。baseは受入済み `feat/rq-m06-matched-stability`。この参照追記は科学成果固定後の文書commitで、最新提出HEADは `gh pr view 7 --repo Tone75/mathscape --json headRefOid` で取得できる。Notion048〜051・Home・固定仕様へ結果／SHA／PR／検証範囲／資源／未解決事項を同期済み、PENDING_NOTION_SYNCなし。親票への一時HTTP502は未保存を再読確認し、その不足分だけ再送して解消した。新成果はレビュー待ちで048〜051 In Progress、Next048のみ。保護対象11 remote refsと旧証拠は開始時と一致、既存PR／main／タグ／Releaseを保持し、新規merge・タグ・Releaseは作成していない。
+
+最終公開成果は50MiB以内（正確な全変更ファイル数・byteはvalidation.json）。自己参照を避け、最終提出HEADはPRとNotionへ記録する。ブラウザ未検証と新成果の受入待ちは明示したまま提出し、追加実験・次RQを実行しない。
 
 ## 保存結果の安全な検証と再現手順
 
