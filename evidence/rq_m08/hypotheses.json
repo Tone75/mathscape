@@ -1,0 +1,462 @@
+{
+  "question_id": "RQ-M08",
+  "confirmatory_intervals": 6,
+  "decision_confidence": 0.995,
+  "independent_originals_per_population": 30,
+  "target_method": "bca",
+  "B": 4999,
+  "R": 20,
+  "allocations": [
+    {
+      "allocation": "P30",
+      "J": 4,
+      "K": 30
+    },
+    {
+      "allocation": "P60",
+      "J": 2,
+      "K": 60
+    },
+    {
+      "allocation": "P120",
+      "J": 1,
+      "K": 120
+    }
+  ],
+  "primary_comparison": "P120-P30",
+  "P60": "descriptive only",
+  "seed_direction_gate": false,
+  "H1_margin": 0.0025,
+  "H1_units": "Ase units,not percentagepoints",
+  "H2_variance_ratio_band": [
+    0.8,
+    1.25
+  ],
+  "quantities": {
+    "H1_gamma": {
+      "N": 30,
+      "finite_count": 30,
+      "mean": 0.00029818353127380516,
+      "sd": 0.0001501614560410431,
+      "mcse": 2.7415605580499898e-05,
+      "low": 0.00021489363998189858,
+      "high": 0.0003814734225657117,
+      "df": 29,
+      "valid": true,
+      "reason": "",
+      "field": "d",
+      "population": "gamma",
+      "conditional_interval": {
+        "N": 30,
+        "finite_count": 30,
+        "mean": 0.00029818353127380516,
+        "sd": 0.0001501614560410431,
+        "mcse": 2.7415605580499898e-05,
+        "low": 0.00021489363998189858,
+        "high": 0.0003814734225657117,
+        "df": 29,
+        "valid": true,
+        "reason": ""
+      },
+      "status": "supported"
+    },
+    "H2_L_gamma": {
+      "N": 30,
+      "finite_count": 30,
+      "mean": 2.1768655963512044e-06,
+      "sd": 1.426984829791171e-06,
+      "mcse": 2.6053059349809815e-07,
+      "low": 1.3853614748406837e-06,
+      "high": 2.968369717861725e-06,
+      "df": 29,
+      "valid": true,
+      "reason": "",
+      "field": "L",
+      "population": "gamma",
+      "conditional_interval": {
+        "N": 30,
+        "finite_count": 30,
+        "mean": 2.1768655963512044e-06,
+        "sd": 1.426984829791171e-06,
+        "mcse": 2.6053059349809815e-07,
+        "low": 1.3853614748406837e-06,
+        "high": 2.968369717861725e-06,
+        "df": 29,
+        "valid": true,
+        "reason": ""
+      }
+    },
+    "H2_U_gamma": {
+      "N": 30,
+      "finite_count": 30,
+      "mean": -3.676968996981258e-06,
+      "sd": 6.56189464070554e-06,
+      "mcse": 1.1980325715622271e-06,
+      "low": -7.316647951239168e-06,
+      "high": -3.729004272334764e-08,
+      "df": 29,
+      "valid": true,
+      "reason": "",
+      "field": "U",
+      "population": "gamma",
+      "conditional_interval": {
+        "N": 30,
+        "finite_count": 30,
+        "mean": -3.676968996981258e-06,
+        "sd": 6.56189464070554e-06,
+        "mcse": 1.1980325715622271e-06,
+        "low": -7.316647951239168e-06,
+        "high": -3.729004272334764e-08,
+        "df": 29,
+        "valid": true,
+        "reason": ""
+      }
+    },
+    "H1_lognormal": {
+      "N": 30,
+      "finite_count": 30,
+      "mean": 0.00024997082413897063,
+      "sd": 0.00011289141561112347,
+      "mcse": 2.0611058292967726e-05,
+      "low": 0.00018735346558412344,
+      "high": 0.0003125881826938178,
+      "df": 29,
+      "valid": true,
+      "reason": "",
+      "field": "d",
+      "population": "lognormal",
+      "conditional_interval": {
+        "N": 30,
+        "finite_count": 30,
+        "mean": 0.00024997082413897063,
+        "sd": 0.00011289141561112347,
+        "mcse": 2.0611058292967726e-05,
+        "low": 0.00018735346558412344,
+        "high": 0.0003125881826938178,
+        "df": 29,
+        "valid": true,
+        "reason": ""
+      },
+      "status": "supported"
+    },
+    "H2_L_lognormal": {
+      "N": 30,
+      "finite_count": 30,
+      "mean": 1.9183182621058587e-06,
+      "sd": 1.1284104451496575e-06,
+      "mcse": 2.0601861831097113e-07,
+      "low": 1.292424069367888e-06,
+      "high": 2.5442124548438293e-06,
+      "df": 29,
+      "valid": true,
+      "reason": "",
+      "field": "L",
+      "population": "lognormal",
+      "conditional_interval": {
+        "N": 30,
+        "finite_count": 30,
+        "mean": 1.9183182621058587e-06,
+        "sd": 1.1284104451496575e-06,
+        "mcse": 2.0601861831097113e-07,
+        "low": 1.292424069367888e-06,
+        "high": 2.5442124548438293e-06,
+        "df": 29,
+        "valid": true,
+        "reason": ""
+      }
+    },
+    "H2_U_lognormal": {
+      "N": 30,
+      "finite_count": 30,
+      "mean": -2.131408436509937e-06,
+      "sd": 1.6507857059875846e-06,
+      "mcse": 3.0139085625883035e-07,
+      "low": -3.047047946294382e-06,
+      "high": -1.2157689267254918e-06,
+      "df": 29,
+      "valid": true,
+      "reason": "",
+      "field": "U",
+      "population": "lognormal",
+      "conditional_interval": {
+        "N": 30,
+        "finite_count": 30,
+        "mean": -2.131408436509937e-06,
+        "sd": 1.6507857059875846e-06,
+        "mcse": 3.0139085625883035e-07,
+        "low": -3.047047946294382e-06,
+        "high": -1.2157689267254918e-06,
+        "df": 29,
+        "valid": true,
+        "reason": ""
+      }
+    }
+  },
+  "population_decisions": {
+    "gamma": {
+      "H1": {
+        "status": "supported",
+        "reason": ""
+      },
+      "H2": {
+        "status": "supported",
+        "reason": "",
+        "mean_Q30": 1.3008521318516584e-05,
+        "lower_interval": "H2_L_gamma",
+        "upper_interval": "H2_U_gamma"
+      }
+    },
+    "lognormal": {
+      "H1": {
+        "status": "supported",
+        "reason": ""
+      },
+      "H2": {
+        "status": "supported",
+        "reason": "",
+        "mean_Q30": 8.999392663590656e-06,
+        "lower_interval": "H2_L_lognormal",
+        "upper_interval": "H2_U_lognormal"
+      }
+    }
+  },
+  "seed_details": [
+    {
+      "master_seed": 0,
+      "H1_gamma": {
+        "N": 10,
+        "finite_count": 10,
+        "mean": 0.00021699798758962637,
+        "sd": 0.0001156146259391217,
+        "mcse": 3.656055487960081e-05,
+        "low": 8.210188320858833e-05,
+        "high": 0.00035189409197066443,
+        "df": 9,
+        "valid": true,
+        "reason": ""
+      },
+      "H2_L_gamma": {
+        "N": 10,
+        "finite_count": 10,
+        "mean": 1.6071278688839004e-06,
+        "sd": 1.0195373616688977e-06,
+        "mcse": 3.2240602225125645e-07,
+        "low": 4.1755849353103855e-07,
+        "high": 2.7966972442367622e-06,
+        "df": 9,
+        "valid": true,
+        "reason": ""
+      },
+      "H2_U_gamma": {
+        "N": 10,
+        "finite_count": 10,
+        "mean": -2.3562442515349344e-06,
+        "sd": 1.629945115003415e-06,
+        "mcse": 5.154339024475879e-07,
+        "low": -4.2580213371144066e-06,
+        "high": -4.544671659554621e-07,
+        "df": 9,
+        "valid": true,
+        "reason": ""
+      },
+      "H1_lognormal": {
+        "N": 10,
+        "finite_count": 10,
+        "mean": 0.0002715706875069901,
+        "sd": 0.00012560372352668665,
+        "mcse": 3.971938489424067e-05,
+        "low": 0.00012501956681725356,
+        "high": 0.0004181218081967266,
+        "df": 9,
+        "valid": true,
+        "reason": ""
+      },
+      "H2_L_lognormal": {
+        "N": 10,
+        "finite_count": 10,
+        "mean": 2.0419131254125812e-06,
+        "sd": 1.5536616468611744e-06,
+        "mcse": 4.913109517329505e-07,
+        "low": 2.291415838763149e-07,
+        "high": 3.854684666948848e-06,
+        "df": 9,
+        "valid": true,
+        "reason": ""
+      },
+      "H2_U_lognormal": {
+        "N": 10,
+        "finite_count": 10,
+        "mean": -2.287406771735146e-06,
+        "sd": 1.2870429013735098e-06,
+        "mcse": 4.0699870146917444e-07,
+        "low": -3.7890945742626152e-06,
+        "high": -7.857189692076764e-07,
+        "df": 9,
+        "valid": true,
+        "reason": ""
+      }
+    },
+    {
+      "master_seed": 1,
+      "H1_gamma": {
+        "N": 10,
+        "finite_count": 10,
+        "mean": 0.00037220305296260185,
+        "sd": 0.00014357492789667501,
+        "mcse": 4.5402378704794124e-05,
+        "low": 0.00020468360373436853,
+        "high": 0.0005397225021908352,
+        "df": 9,
+        "valid": true,
+        "reason": ""
+      },
+      "H2_L_gamma": {
+        "N": 10,
+        "finite_count": 10,
+        "mean": 2.9534540592238654e-06,
+        "sd": 1.6882422826645618e-06,
+        "mcse": 5.338690855421814e-07,
+        "low": 9.836573718850288e-07,
+        "high": 4.923250746562702e-06,
+        "df": 9,
+        "valid": true,
+        "reason": ""
+      },
+      "H2_U_gamma": {
+        "N": 10,
+        "finite_count": 10,
+        "mean": -6.749044649022312e-06,
+        "sd": 1.0932933060648877e-05,
+        "mcse": 3.4572969977806246e-06,
+        "low": -1.9505303360759805e-05,
+        "high": 6.007214062715181e-06,
+        "df": 9,
+        "valid": true,
+        "reason": ""
+      },
+      "H1_lognormal": {
+        "N": 10,
+        "finite_count": 10,
+        "mean": 0.00024145155442118586,
+        "sd": 0.00011829974039891621,
+        "mcse": 3.740966262672114e-05,
+        "low": 0.00010342252911858379,
+        "high": 0.00037948057972378793,
+        "df": 9,
+        "valid": true,
+        "reason": ""
+      },
+      "H2_L_lognormal": {
+        "N": 10,
+        "finite_count": 10,
+        "mean": 2.2840603046215188e-06,
+        "sd": 9.007993271755661e-07,
+        "mcse": 2.8485775886219996e-07,
+        "low": 1.2330313445915925e-06,
+        "high": 3.335089264651445e-06,
+        "df": 9,
+        "valid": true,
+        "reason": ""
+      },
+      "H2_U_lognormal": {
+        "N": 10,
+        "finite_count": 10,
+        "mean": -2.7916590530107115e-06,
+        "sd": 2.1354727234690356e-06,
+        "mcse": 6.752957687325057e-07,
+        "low": -5.283272454585213e-06,
+        "high": -3.000456514362103e-07,
+        "df": 9,
+        "valid": true,
+        "reason": ""
+      }
+    },
+    {
+      "master_seed": 2,
+      "H1_gamma": {
+        "N": 10,
+        "finite_count": 10,
+        "mean": 0.0003053495532691871,
+        "sd": 0.00015876872383392872,
+        "mcse": 5.0207078851347566e-05,
+        "low": 0.00012010238260391692,
+        "high": 0.0004905967239344572,
+        "df": 9,
+        "valid": true,
+        "reason": ""
+      },
+      "H2_L_gamma": {
+        "N": 10,
+        "finite_count": 10,
+        "mean": 1.9700148609458473e-06,
+        "sd": 1.2623144546951257e-06,
+        "mcse": 3.9917888001900257e-07,
+        "low": 4.971795595376109e-07,
+        "high": 3.4428501623540834e-06,
+        "df": 9,
+        "valid": true,
+        "reason": ""
+      },
+      "H2_U_gamma": {
+        "N": 10,
+        "finite_count": 10,
+        "mean": -1.92561809038653e-06,
+        "sd": 8.519085035397072e-07,
+        "mcse": 2.6939712292510906e-07,
+        "low": -2.919602523438265e-06,
+        "high": -9.316336573347952e-07,
+        "df": 9,
+        "valid": true,
+        "reason": ""
+      },
+      "H1_lognormal": {
+        "N": 10,
+        "finite_count": 10,
+        "mean": 0.00023689023048873575,
+        "sd": 0.0001024951080236433,
+        "mcse": 3.24117990379712e-05,
+        "low": 0.000117301634511411,
+        "high": 0.0003564788264660605,
+        "df": 9,
+        "valid": true,
+        "reason": ""
+      },
+      "H2_L_lognormal": {
+        "N": 10,
+        "finite_count": 10,
+        "mean": 1.4289813562834752e-06,
+        "sd": 6.67775992802064e-07,
+        "mcse": 2.1116931040347273e-07,
+        "low": 6.498378932789635e-07,
+        "high": 2.208124819287987e-06,
+        "df": 9,
+        "valid": true,
+        "reason": ""
+      },
+      "H2_U_lognormal": {
+        "N": 10,
+        "finite_count": 10,
+        "mean": -1.3151594847839513e-06,
+        "sd": 1.1456155181107035e-06,
+        "mcse": 3.6227543600637006e-07,
+        "low": -2.6518335366722725e-06,
+        "high": 2.151456710437006e-08,
+        "df": 9,
+        "valid": true,
+        "reason": ""
+      }
+    }
+  ],
+  "hypotheses": {
+    "H1": {
+      "status": "supported",
+      "gamma": "supported",
+      "lognormal": "supported"
+    },
+    "H2": {
+      "status": "supported",
+      "gamma": "supported",
+      "lognormal": "supported"
+    }
+  }
+}

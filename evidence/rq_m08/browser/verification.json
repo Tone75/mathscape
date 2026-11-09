@@ -1,0 +1,396 @@
+{
+  "status": "passed",
+  "scope": "Actual IAB browser representative operations and 5 completed download events; not exhaustive or Owner individual operations",
+  "settings_changed_or_bypassed": false,
+  "display_states": 18,
+  "display_metrics_checked": 108,
+  "display_metric_rounding": ".6g exact agreement with saved budget CSV",
+  "captures": [
+    {
+      "label": "G0 outer0 r0 P30 BCa",
+      "distribution": "gamma",
+      "master_seed": 0,
+      "outer_id": 0,
+      "r": 0,
+      "allocation": "P30",
+      "method": "bca",
+      "sample_sha256": "cfd609b63189516de31eb72a968c2097a6ce97ac1ce456772f955cf3de5a74df",
+      "metrics": {
+        "lower_sd": "0.00657128",
+        "upper_sd": "0.0104525",
+        "S": "0.00874915",
+        "se": "0.200476",
+        "T": "0.0436419",
+        "Vbar": "0.00193065"
+      }
+    },
+    {
+      "label": "G0 outer0 r0 P60 BCa",
+      "distribution": "gamma",
+      "master_seed": 0,
+      "outer_id": 0,
+      "r": 0,
+      "allocation": "P60",
+      "method": "bca",
+      "sample_sha256": "cfd609b63189516de31eb72a968c2097a6ce97ac1ce456772f955cf3de5a74df",
+      "metrics": {
+        "lower_sd": "0.00681346",
+        "upper_sd": "0.0106453",
+        "S": "0.00894746",
+        "se": "0.200476",
+        "T": "0.0446311",
+        "Vbar": "0.00200631"
+      }
+    },
+    {
+      "label": "G0 outer0 r0 P120 BCa",
+      "distribution": "gamma",
+      "master_seed": 0,
+      "outer_id": 0,
+      "r": 0,
+      "allocation": "P120",
+      "method": "bca",
+      "sample_sha256": "cfd609b63189516de31eb72a968c2097a6ce97ac1ce456772f955cf3de5a74df",
+      "metrics": {
+        "lower_sd": "0.00681044",
+        "upper_sd": "0.0107",
+        "S": "0.00896859",
+        "se": "0.200476",
+        "T": "0.0447365",
+        "Vbar": "0.00200135"
+      }
+    },
+    {
+      "label": "G0 outer0 r19 P120 BCa",
+      "distribution": "gamma",
+      "master_seed": 0,
+      "outer_id": 0,
+      "r": 19,
+      "allocation": "P120",
+      "method": "bca",
+      "sample_sha256": "cfd609b63189516de31eb72a968c2097a6ce97ac1ce456772f955cf3de5a74df",
+      "metrics": {
+        "lower_sd": "0.00775462",
+        "upper_sd": "0.0108007",
+        "S": "0.00940181",
+        "se": "0.200476",
+        "T": "0.0468975",
+        "Vbar": "0.00219937"
+      }
+    },
+    {
+      "label": "G0 outer0 r19 P120 percentile",
+      "distribution": "gamma",
+      "master_seed": 0,
+      "outer_id": 0,
+      "r": 19,
+      "allocation": "P120",
+      "method": "percentile",
+      "sample_sha256": "cfd609b63189516de31eb72a968c2097a6ce97ac1ce456772f955cf3de5a74df",
+      "metrics": {
+        "lower_sd": "0.0059844",
+        "upper_sd": "0.00726379",
+        "S": "0.00665491",
+        "se": "0.200476",
+        "T": "0.0331956",
+        "Vbar": "0.00110195"
+      }
+    },
+    {
+      "label": "G0 outer0 r19 P120 t",
+      "distribution": "gamma",
+      "master_seed": 0,
+      "outer_id": 0,
+      "r": 19,
+      "allocation": "P120",
+      "method": "t",
+      "sample_sha256": "cfd609b63189516de31eb72a968c2097a6ce97ac1ce456772f955cf3de5a74df",
+      "metrics": {
+        "lower_sd": "0",
+        "upper_sd": "0",
+        "S": "0",
+        "se": "0.200476",
+        "T": "0",
+        "Vbar": "0"
+      }
+    },
+    {
+      "label": "G2 outer9 r19 P120 t",
+      "distribution": "gamma",
+      "master_seed": 2,
+      "outer_id": 9,
+      "r": 19,
+      "allocation": "P120",
+      "method": "t",
+      "sample_sha256": "42010f1a078bf2225eabba2890b48b908e0f8a35cf78e7178f7f834ecfbdd502",
+      "metrics": {
+        "lower_sd": "0",
+        "upper_sd": "0",
+        "S": "0",
+        "se": "0.156938",
+        "T": "0",
+        "Vbar": "0"
+      }
+    },
+    {
+      "label": "L default independent original0/0 r0",
+      "distribution": "lognormal",
+      "master_seed": 0,
+      "outer_id": 0,
+      "r": 0,
+      "allocation": "P120",
+      "method": "t",
+      "sample_sha256": "ead8723e9cd563116de28eef9f35eb1b73b5706090e1e654b3f12553e373b117",
+      "metrics": {
+        "lower_sd": "0",
+        "upper_sd": "0",
+        "S": "0",
+        "se": "0.194869",
+        "T": "0",
+        "Vbar": "0"
+      }
+    },
+    {
+      "label": "L0 outer0 r0 P30 BCa",
+      "distribution": "lognormal",
+      "master_seed": 0,
+      "outer_id": 0,
+      "r": 0,
+      "allocation": "P30",
+      "method": "bca",
+      "sample_sha256": "ead8723e9cd563116de28eef9f35eb1b73b5706090e1e654b3f12553e373b117",
+      "metrics": {
+        "lower_sd": "0.00684288",
+        "upper_sd": "0.0133523",
+        "S": "0.0106147",
+        "se": "0.194869",
+        "T": "0.0544711",
+        "Vbar": "0.00302812"
+      }
+    },
+    {
+      "label": "L0 outer0 r0 P60 BCa",
+      "distribution": "lognormal",
+      "master_seed": 0,
+      "outer_id": 0,
+      "r": 0,
+      "allocation": "P60",
+      "method": "bca",
+      "sample_sha256": "ead8723e9cd563116de28eef9f35eb1b73b5706090e1e654b3f12553e373b117",
+      "metrics": {
+        "lower_sd": "0.00682825",
+        "upper_sd": "0.013423",
+        "S": "0.010649",
+        "se": "0.194869",
+        "T": "0.054647",
+        "Vbar": "0.00301962"
+      }
+    },
+    {
+      "label": "L0 outer0 r0 P120 percentile",
+      "distribution": "lognormal",
+      "master_seed": 0,
+      "outer_id": 0,
+      "r": 0,
+      "allocation": "P120",
+      "method": "percentile",
+      "sample_sha256": "ead8723e9cd563116de28eef9f35eb1b73b5706090e1e654b3f12553e373b117",
+      "metrics": {
+        "lower_sd": "0.00685887",
+        "upper_sd": "0.00876299",
+        "S": "0.00786874",
+        "se": "0.194869",
+        "T": "0.0403796",
+        "Vbar": "0.00163051"
+      }
+    },
+    {
+      "label": "L0 outer0 r0 P120 t",
+      "distribution": "lognormal",
+      "master_seed": 0,
+      "outer_id": 0,
+      "r": 0,
+      "allocation": "P120",
+      "method": "t",
+      "sample_sha256": "ead8723e9cd563116de28eef9f35eb1b73b5706090e1e654b3f12553e373b117",
+      "metrics": {
+        "lower_sd": "0",
+        "upper_sd": "0",
+        "S": "0",
+        "se": "0.194869",
+        "T": "0",
+        "Vbar": "0"
+      }
+    },
+    {
+      "label": "L1 outer8 r7 P120 BCa",
+      "distribution": "lognormal",
+      "master_seed": 1,
+      "outer_id": 8,
+      "r": 7,
+      "allocation": "P120",
+      "method": "bca",
+      "sample_sha256": "3de5a22beb589f8529af7522d98fd0d075e347599077725c8421a321696dea2c",
+      "metrics": {
+        "lower_sd": "0.00602589",
+        "upper_sd": "0.0173071",
+        "S": "0.0129586",
+        "se": "0.218536",
+        "T": "0.0592971",
+        "Vbar": "0.00351615"
+      }
+    },
+    {
+      "label": "G2 outer9 r19 restored",
+      "distribution": "gamma",
+      "master_seed": 2,
+      "outer_id": 9,
+      "r": 19,
+      "allocation": "P120",
+      "method": "bca",
+      "sample_sha256": "42010f1a078bf2225eabba2890b48b908e0f8a35cf78e7178f7f834ecfbdd502",
+      "metrics": {
+        "lower_sd": "0.00549551",
+        "upper_sd": "0.00945453",
+        "S": "0.00773268",
+        "se": "0.156938",
+        "T": "0.0492722",
+        "Vbar": "0.00242775"
+      }
+    },
+    {
+      "label": "L1 outer8 r7 restored",
+      "distribution": "lognormal",
+      "master_seed": 1,
+      "outer_id": 8,
+      "r": 7,
+      "allocation": "P120",
+      "method": "bca",
+      "sample_sha256": "3de5a22beb589f8529af7522d98fd0d075e347599077725c8421a321696dea2c",
+      "metrics": {
+        "lower_sd": "0.00602589",
+        "upper_sd": "0.0173071",
+        "S": "0.0129586",
+        "se": "0.218536",
+        "T": "0.0592971",
+        "Vbar": "0.00351615"
+      }
+    },
+    {
+      "label": "L1 outer8 r7 after free-alpha/mode return fixed0.05",
+      "distribution": "lognormal",
+      "master_seed": 1,
+      "outer_id": 8,
+      "r": 7,
+      "allocation": "P120",
+      "method": "bca",
+      "sample_sha256": "3de5a22beb589f8529af7522d98fd0d075e347599077725c8421a321696dea2c",
+      "metrics": {
+        "lower_sd": "0.00602589",
+        "upper_sd": "0.0173071",
+        "S": "0.0129586",
+        "se": "0.218536",
+        "T": "0.0592971",
+        "Vbar": "0.00351615"
+      }
+    },
+    {
+      "label": "L1 outer8 r7 after Lab roundtrip",
+      "distribution": "lognormal",
+      "master_seed": 1,
+      "outer_id": 8,
+      "r": 7,
+      "allocation": "P120",
+      "method": "bca",
+      "sample_sha256": "3de5a22beb589f8529af7522d98fd0d075e347599077725c8421a321696dea2c",
+      "metrics": {
+        "lower_sd": "0.00602589",
+        "upper_sd": "0.0173071",
+        "S": "0.0129586",
+        "se": "0.218536",
+        "T": "0.0592971",
+        "Vbar": "0.00351615"
+      }
+    },
+    {
+      "label": "L1 outer8 r7 after all previous modes",
+      "distribution": "lognormal",
+      "master_seed": 1,
+      "outer_id": 8,
+      "r": 7,
+      "allocation": "P120",
+      "method": "bca",
+      "sample_sha256": "3de5a22beb589f8529af7522d98fd0d075e347599077725c8421a321696dea2c",
+      "metrics": {
+        "lower_sd": "0.00602589",
+        "upper_sd": "0.0173071",
+        "S": "0.0129586",
+        "se": "0.218536",
+        "T": "0.0592971",
+        "Vbar": "0.00351615"
+      }
+    }
+  ],
+  "actual_downloads": true,
+  "downloads": [
+    {
+      "key": "pooled",
+      "bytes": 92323,
+      "sha256": "4822a8461f1a1c0f7badb995b51cb8a5226e0b30b650167491762492738694d0",
+      "exact_saved_bytes": true
+    },
+    {
+      "key": "hypotheses",
+      "bytes": 11963,
+      "sha256": "f72a3ef292cef3999df3e4d55e3587e6368da80b8474be732216c605ef459930",
+      "exact_saved_bytes": true
+    },
+    {
+      "key": "html",
+      "bytes": 4861030,
+      "sha256": "0d7256adaa0bb8cd2ce6f7b1c2174393ada6144314884aba96086a659161c3f2",
+      "exact_saved_bytes": true
+    },
+    {
+      "key": "sample",
+      "rows": 20,
+      "bytes": 2628,
+      "sha256": "3dff0a2a17a16e003800573c12356741c7f834070868b2008805dfdfa504ce26",
+      "all_saved_values_equal": true
+    },
+    {
+      "key": "endpoints",
+      "rows": 7200,
+      "bytes": 1614517,
+      "sha256": "d067b3bd04475c153c13e15fc7e2943486d42c25ec24bebd51a32c33b687a0d9",
+      "all_saved_values_equal": true
+    }
+  ],
+  "HTML_rendering": true,
+  "HTML_scope": "Actual loopback view of byte-identical saved/downloaded self-contained BCa6-condition M/Q overview; screenshot overview.jpg. Static data checks separately match CSV.",
+  "old_Lab_operations": [
+    "Probability normal→gamma",
+    "Chaos preset r3.2",
+    "Fractal zoomin/panright/reset",
+    "Inference free-alpha0.01 change without execution",
+    "RQ-M02 initial comparison form; saved RQ-M03/M04/M05/M06/M07 representative views"
+  ],
+  "state_retention": [
+    "all3 allocations and methods",
+    "R selection changes inner budget only",
+    "distribution-specific master seed/ID/r restoration",
+    "Lab/mode/all previous views roundtrips",
+    "free-alpha independence, fixed .05/B4999/R20",
+    "M05 K1 NA text remains"
+  ],
+  "browser_logs_errors_or_warnings": 0,
+  "target_duplicate_initialization_warning_seen": false,
+  "owned_browser_tabs_closed": true,
+  "owned_servers_stopped": true,
+  "M06_M07_historical_unverified_records_unchanged": true,
+  "not_performed": [
+    "Every previous-view control or previous-view actual download",
+    "Other browser engines, viewport sizes, mobile, accessibility audit",
+    "Owner individual operations or external scientific review"
+  ]
+}

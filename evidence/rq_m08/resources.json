@@ -1,0 +1,102 @@
+{
+  "question_id": "RQ-M08",
+  "status": "completed",
+  "started_utc": "2026-11-09T10:42:10.689799+00:00",
+  "source_git_sha": "697c673f69a68f040d7d072ae3b90f356be8abd6",
+  "manifest_sha256": "ee870c8f1c13ada089c0556b72baacdaceb3c2bed13b35eca8d9acb69e3420d9",
+  "namespace": 5058616,
+  "single_main_attempt": true,
+  "environment": {
+    "python": "3.12.13",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "plotly": "6.9.0",
+    "os": "Darwin",
+    "os_release": "25.6.0",
+    "architecture": "arm64",
+    "streamlit": "1.67.0",
+    "pytest": "9.2.0"
+  },
+  "originals_per_cell": 10,
+  "R": 20,
+  "streams_per_budget": 120,
+  "B": 4999,
+  "n": 20,
+  "allocations": [
+    {
+      "allocation": "P30",
+      "J": 4,
+      "K": 30
+    },
+    {
+      "allocation": "P60",
+      "J": 2,
+      "K": 60
+    },
+    {
+      "allocation": "P120",
+      "J": 1,
+      "K": 120
+    }
+  ],
+  "total_cells": 6,
+  "mother_samples_generated": 0,
+  "planned_audit_streams": 36,
+  "all_other_bootstrap_arrays_saved": false,
+  "max_resample_elements": 1000000,
+  "main_attempts": 1,
+  "reruns": 0,
+  "planned_originals": 60,
+  "planned_inner_streams": 144000,
+  "planned_logical_intervals": 432000,
+  "endpoint_generation_inference_seconds": 54.56333860254381,
+  "allocation_aggregation_flatten_seconds": 0.8541662534698844,
+  "saved_stream_output_seconds": 0.11552145821042359,
+  "timing_scope": "One combined run sharing120 streams across all3allocations. Endpoint generation/inference includes cachedcontext once/original and endpointrecord storage; aggregation/flatten measured once/original; remaining_setup_guard_summary_output_seconds includes imports/preflight/guards/summary/alloutputs. saved_stream_output_seconds is a SUBSET of that remaining phase,not a fourthdisjointphase; not perallocation benchmark.",
+  "wall_scope": "module start before heavy imports through outputs excluding interpreter startup/finalresourcewrite; externalguard/time includes fullCLI",
+  "active_cell": [
+    "lognormal",
+    2
+  ],
+  "completed_cells": 6,
+  "completed_cell_keys": [
+    [
+      "gamma",
+      0
+    ],
+    [
+      "gamma",
+      1
+    ],
+    [
+      "gamma",
+      2
+    ],
+    [
+      "lognormal",
+      0
+    ],
+    [
+      "lognormal",
+      1
+    ],
+    [
+      "lognormal",
+      2
+    ]
+  ],
+  "incomplete_cells": [],
+  "completed_originals": 60,
+  "observed_inner_streams": 144000,
+  "observed_logical_intervals": 432000,
+  "observed_invalid_logical_intervals": 0,
+  "bootstrap_samples": 719856000,
+  "logical_resampling_indices": 14397120000,
+  "saved_audit_streams": 36,
+  "finished_utc": "2026-11-09T10:43:07.689357+00:00",
+  "process_wall_seconds": 58.48703179100994,
+  "process_peak_rss_bytes": 254918656,
+  "output_bytes_before_resources": 17288278,
+  "output_bytes_total": 17291134,
+  "remaining_setup_guard_summary_output_seconds": 3.0695269349962473
+}

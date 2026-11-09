@@ -1,0 +1,213 @@
+{
+  "question_id": "RQ-M08",
+  "status": "automated_and_representative_browser_checks_passed",
+  "accepted_start_head": "39bcdc367320b6da513df72d2fa43bfdb7f060f4",
+  "preregistration_sha": "697c673f69a68f040d7d072ae3b90f356be8abd6",
+  "manifest_sha256": "ee870c8f1c13ada089c0556b72baacdaceb3c2bed13b35eca8d9acb69e3420d9",
+  "baseline_tests": {
+    "passed": 1139,
+    "wall_seconds": 45.0
+  },
+  "preregistration_tests": {
+    "passed": 114,
+    "wall_seconds": 10.34
+  },
+  "pytest": {
+    "command": "python -m pytest -q",
+    "passed": 1268,
+    "failed": 0,
+    "wall_seconds": 63.83,
+    "new_tests_total": 129,
+    "new_tests": {
+      "mathematics": 60,
+      "runner_and_guard": 19,
+      "independent_audit": 35,
+      "AppTest": 15
+    },
+    "output": "pytest.txt",
+    "tests_launch_main": false
+  },
+  "pip_check": {
+    "status": "passed",
+    "output": "pip_check.txt",
+    "dependency_additions_or_updates": false
+  },
+  "saved_UI": {
+    "entry": "render_allocation_view",
+    "scope": "AppTest server-side display and download payload checks, not real browser rendering or actual downloads",
+    "model_inference_RNG_main_forbidden": true,
+    "per_population_ID_seed_budget_repeat_restoration": true,
+    "allocation_method_R_Lab_mode_original_hash_retention": true,
+    "B4999_alpha005_R20_fixed": true,
+    "old_K1_NA_preserved": true,
+    "all18_pooled_rows_54_seed_rows_24_decompositions_and6_main_intervals_match_saved_values": true,
+    "download_payload_bytes_checked": [
+      "pooled_CSV",
+      "hypotheses_JSON",
+      "self_contained_HTML",
+      "original_CSV",
+      "all_endpoint_CSV"
+    ],
+    "actual_downloads": true
+  },
+  "independent_saved_audit": {
+    "status": "passed",
+    "mismatch_count": 0,
+    "original_samples": 60,
+    "logical_endpoint_records": 432000,
+    "table_counts": {
+      "original_allocation_metrics.csv": {
+        "reconstructed": 540,
+        "saved": 540
+      },
+      "original_comparison_metrics.csv": {
+        "reconstructed": 180,
+        "saved": 180
+      },
+      "budget_metrics.csv.gz": {
+        "reconstructed": 10800,
+        "saved": 10800
+      },
+      "group_metrics.csv.gz": {
+        "reconstructed": 25200,
+        "saved": 25200
+      },
+      "decomposition_metrics.csv.gz": {
+        "reconstructed": 3600,
+        "saved": 3600
+      },
+      "summary.csv": {
+        "reconstructed": 54,
+        "saved": 54
+      },
+      "pooled_summary.csv": {
+        "reconstructed": 18,
+        "saved": 18
+      },
+      "decomposition_summary.csv": {
+        "reconstructed": 24,
+        "saved": 24
+      }
+    },
+    "fully_reconstructed_saved_index_mean_streams": 36,
+    "other_generation_sequences_not_reconstructed": 143964,
+    "all_delta_and_SS_identities_checked": true,
+    "output": "independent_audit.json",
+    "external_scientific_review": false
+  },
+  "browser": {
+    "status": "passed_representative_scope",
+    "evidence": "browser/verification.json",
+    "settings_changed_or_bypassed": false,
+    "display_states": 18,
+    "display_metrics_checked": 108,
+    "actual_downloads": true,
+    "download_count": 5,
+    "HTML_rendering": true,
+    "screenshots": true,
+    "M06_M07_prior_unverified_remains_unverified": true,
+    "loopback_HTTP_200_health_ok": true,
+    "owned_servers_stopped": true,
+    "owned_browser_tabs_closed": true,
+    "server_log_scope": "startup/representative real browser sessions/HTTP/shutdown; all captured browser console warning/error logs empty",
+    "AppTest_or_payloads_replace_browser_checks": false
+  },
+  "static_figure": {
+    "status": "passed",
+    "scope": "BCa six conditions mean M/Q and original-level99.5% bars match CSV; embedded Plotly and no external script/stylesheet tags. Not HTML rendering.",
+    "evidence": "browser/static_figure_check.json"
+  },
+  "fixed_experiment": {
+    "main_attempts": 1,
+    "reruns": 0,
+    "specified_smokes": 1,
+    "completed_cells": 6,
+    "reused_originals": 60,
+    "independent_originals_per_population": 30,
+    "new_originals_generated": 0,
+    "new_inner_streams": 144000,
+    "R": 20,
+    "allocations": {
+      "P30": {
+        "J": 4,
+        "K": 30
+      },
+      "P60": {
+        "J": 2,
+        "K": 60
+      },
+      "P120": {
+        "J": 1,
+        "K": 120
+      }
+    },
+    "B": 4999,
+    "invalid": 0,
+    "missing": 0,
+    "frozen_source_files_unchanged": 18,
+    "accepted_input_files_verified": 21,
+    "old_evidence_and_requirements_unchanged": true,
+    "CLI_wall_seconds": 58.6,
+    "worker_wall_seconds": 58.48703179100994,
+    "peak_RSS_bytes": 254918656,
+    "batch_elements_cap": 1000000,
+    "limits_met": true
+  },
+  "hypotheses": {
+    "H1": "supported",
+    "H2": "supported",
+    "population_decisions": {
+      "gamma": {
+        "H1": {
+          "status": "supported",
+          "reason": ""
+        },
+        "H2": {
+          "status": "supported",
+          "reason": "",
+          "mean_Q30": 1.3008521318516584e-05,
+          "lower_interval": "H2_L_gamma",
+          "upper_interval": "H2_U_gamma"
+        }
+      },
+      "lognormal": {
+        "H1": {
+          "status": "supported",
+          "reason": ""
+        },
+        "H2": {
+          "status": "supported",
+          "reason": "",
+          "mean_Q30": 8.999392663590656e-06,
+          "lower_interval": "H2_L_lognormal",
+          "upper_interval": "H2_U_lognormal"
+        }
+      }
+    },
+    "N_per_population": 30,
+    "df": 29,
+    "confirmatory_intervals": 6,
+    "confidence": 0.995,
+    "detail": "hypotheses.json",
+    "H1_units": "Ase, not percentage points",
+    "H2_units": "ratio of population mean repeated-budget variances Q, multiplicative band(.8,1.25), not SD, not mean individual ratios, not plus/minus25percent",
+    "scope": "Finite R20 and group K/J on reused saved originals. P120 is not truth; no absolute bias, universal optimal allocation, RMSE or coverage-improvement claim. No M05/M06/M07 retest."
+  },
+  "submission_state": "Owner review pending, MATH-052 through055 In Progress, Next052 only; not Owner accepted",
+  "not_performed": [
+    "Every control and actual download in each previous view, other viewport sizes and accessibility audits",
+    "RQ-M08 Owner acceptance or Owner individual new-feature operations",
+    "External scientific review",
+    "Full generation reconstruction of other143964 bootstrap sequences",
+    "Other browsers/mobile devices",
+    "Unrelated tickets/full MATH-005 restart trial",
+    "Next research question execution"
+  ],
+  "artifact_size": {
+    "scope": "Conservative full byte sizes of all public new/modified files relative to accepted M07 HEAD, including full README/HANDOFF, compact originals/endpoints,36index/mean streams,compressed/full CSV,one self-contained HTML,code/tests/reports. Ignored local files/virtual environment excluded.",
+    "limit_bytes": 52428800,
+    "files": 89,
+    "bytes": 18230058,
+    "MiB": 17.385538
+  }
+}
