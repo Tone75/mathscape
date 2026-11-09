@@ -1,0 +1,28 @@
+{
+  "question_id": "RQ-M07",
+  "scope": "smoke only; savedouter0/J2/K8/B99, no scientific decisions",
+  "R": 1,
+  "J": 2,
+  "K": 8,
+  "B": 99,
+  "namespace": 1397567543,
+  "source_files_sha256": {
+    "mathscape/finite_k.py": "2e204b4c562055ad13b335a189bbafdd8fdb486a4de80e2e5543060f8f2da877",
+    "mathscape/matched_stability.py": "1ef9f91910d9cec6b690d92179f329d61782f5cc56b27862e595b260637e322c",
+    "mathscape/matched_moments.py": "2c968c674ceb78b8b716a94d5f3165b928162c6c04150ba5d2d2b446f9926135",
+    "mathscape/stability.py": "e27f2bf98378911cb1c0502bb93a5d944fd5dd2978354e6fbd99595d2bc5f070",
+    "mathscape/bootstrap.py": "24d4ffbc8e5b463ee6770a35e1d17beca9ee41a37083d457dbca25abd9f7b6cb",
+    "mathscape/inference.py": "6e26d2a6991ecfca0729e7057f0eda63bf100b0941fc0b397caa2eb13e226708",
+    "scripts/run_finite_k_benchmark.py": "6aed78b6423a5e87229cda986c01d666a7a9e5b639f339b79617f58cbe7c1fe0",
+    "scripts/run_finite_k_guarded.py": "4572209020fc9182b72b1d0e3e1b782565458b422c3dd69357cc32933cabb4d1",
+    "scripts/audit_finite_k.py": "28af89b97445ca95632cab4acc3b9516e5d2f8f0a9154696ac4a07eadc0b3df6",
+    "scripts/run_bootstrap_benchmark.py": "9fdeabae419aecd487ff063775001880643c265207c7c5ea8192b455d72864a3",
+    "scripts/run_stability_benchmark.py": "4be7f9a10f7d328cc914c0aaceaf28d027718a44a2f8afd63a896e848b209488",
+    "tests/test_finite_k.py": "1b49a48a438165c974c2d396ec79d4bad106a334474e62867dd54c0ceadf94e5",
+    "tests/test_finite_k_runner.py": "308d8aed6f2324d8054916d148da06ac7985729ee9940b30e61da2999160d8e8",
+    "tests/test_finite_k_guard.py": "3a1b9dcbdd554d44687ca2e96948f2919defd1209df0f84796a3023398fc0d38",
+    "tests/test_finite_k_audit.py": "f22f517c6c4c1103317f548316bd0b96399a9cb7cc4ea8f864ab46b969982c9b",
+    "requirements.txt": "dcb36fe5c1d5413b4918722462d3382f171d839c0e69b45725b57b871b2bce5d",
+    "evidence/rq_m07/SPEC.md": "38e162f881582dddeaf8c41d6101d256c9daa78ea453875f68303c33bcf52a10"
+  }
+}

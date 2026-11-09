@@ -1,5 +1,11 @@
 # MATHSCAPE — minimal handoff
 
+## 最新の受入と実行状態：RQ-M07
+
+Owner承認済みM06の受入HEAD `e2feae23397d014f6aa3363773da9913da85fcf7`、PR #6、044〜047 Doneを採用。有限K30の結論とM05以前を保持し、実ブラウザ等の旧未検証を検証済みに変えない。旧レビュー待ちは開始条件ではない。開始tree clean・別worktreeなし、新branch `feat/rq-m07-finite-k`。仕様全文・末尾プロンプト・048〜051／Home・AGENTS有無・READMEを確認し、CODEX_RECEIPTを記録した。
+
+048受領→049事前固定→050主1回／独立監査→051保存結果UI／検証／新PR。Nextは048のみ。M06保存G/L×3seed×outer0..9の60原標本、B4999・J20・K120と先頭K30、原標本単位N30／分布。J/P/R三項と端点平方和を照合し、K120真値・絶対偏り補正を主張しない。通常テスト・UI・保存監査は主を起動せず、旧証拠は保全する。詳細は `evidence/rq_m07/SPEC.md`／`CODEX_RECEIPT.md`。新成果はレビュー待ちとして別stacked PRへ提出する。
+
 ## 最新の受入と実行状態：RQ-M06
 
 Owner明示承認と最新Notionに従い、RQ-M05（提出HEAD `dc2501c3099f5c25227d9eee00d227c2f0b02f81`、科学成果 `254af9ed19cf3197310bc372c704ecc32c3b9b4e`、事前固定 `a8e87b3deb1a5256a200b28ea51301dec8aecb7e`、PR #5）は受入済み、040〜043 Done。H1/H2実用差不支持・C/Tに限定した±1pp内同等性支持を保持する。旧レビュー待ちは提出時点の履歴であり開始条件ではない。merge・外部科学レビュー・Owner本人の個別新操作とは別。
