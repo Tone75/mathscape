@@ -1,0 +1,83 @@
+{
+  "question_id": "RQ-M08",
+  "scope": "smokeonly:savedouter0/R2/common12/B99 allocation4x3/2x6/1x12,noscientificdecisions",
+  "originals_per_cell": 1,
+  "R": 2,
+  "streams_per_budget": 12,
+  "B": 99,
+  "namespace": 1397567544,
+  "source_files_sha256": {
+    "mathscape/allocation.py": "69187537b398feafaa58ca0b5672cb87cf7f05ef9ab600c9723c96bf583f0958",
+    "mathscape/finite_k.py": "2e204b4c562055ad13b335a189bbafdd8fdb486a4de80e2e5543060f8f2da877",
+    "mathscape/matched_stability.py": "1ef9f91910d9cec6b690d92179f329d61782f5cc56b27862e595b260637e322c",
+    "mathscape/matched_moments.py": "2c968c674ceb78b8b716a94d5f3165b928162c6c04150ba5d2d2b446f9926135",
+    "mathscape/stability.py": "e27f2bf98378911cb1c0502bb93a5d944fd5dd2978354e6fbd99595d2bc5f070",
+    "mathscape/bootstrap.py": "24d4ffbc8e5b463ee6770a35e1d17beca9ee41a37083d457dbca25abd9f7b6cb",
+    "mathscape/inference.py": "6e26d2a6991ecfca0729e7057f0eda63bf100b0941fc0b397caa2eb13e226708",
+    "scripts/run_allocation_benchmark.py": "fc5f5372511cb987d64a70445be0f2a47f32908bfe8ad7b2db71ed30a74a5359",
+    "scripts/run_allocation_guarded.py": "8afc08b08a0342c00e932736a9a616da36db16248db067c807d5e9c687f2a389",
+    "scripts/audit_allocation.py": "885597883ff40ec63f850c7e7ab480622e0149cd7959d5a1a809f96460c4ee4a",
+    "scripts/run_bootstrap_benchmark.py": "9fdeabae419aecd487ff063775001880643c265207c7c5ea8192b455d72864a3",
+    "scripts/run_stability_benchmark.py": "4be7f9a10f7d328cc914c0aaceaf28d027718a44a2f8afd63a896e848b209488",
+    "tests/test_allocation.py": "dd7954cb216143ead477a2ca7c3fbe77ca07ed48cce55f3ef391a07c0386aa8e",
+    "tests/test_allocation_runner.py": "a4bd8209749f786bae4e0b887790249b070d0b6ee90b36c1d8195761e7aed8dd",
+    "tests/test_allocation_guard.py": "f1234b3c8057b0b4e0610f367e0f3cd4e12374563027c474bba9974695da1936",
+    "tests/test_allocation_audit.py": "ea270c99c59651fa4b802f0e88f6470ee345dfdae9170125843268bc2ff04030",
+    "requirements.txt": "dcb36fe5c1d5413b4918722462d3382f171d839c0e69b45725b57b871b2bce5d",
+    "evidence/rq_m08/SPEC.md": "5e0ee9e5dea3c4bbb8f2cbdcd3f5b59e07302d80550d9fa313b608c435e2dc4c"
+  },
+  "environment": {
+    "python": "3.12.13",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "plotly": "6.9.0",
+    "os": "Darwin",
+    "os_release": "25.6.0",
+    "architecture": "arm64",
+    "streamlit": "1.67.0",
+    "pytest": "9.2.0"
+  },
+  "status": "completed",
+  "completed_cells": 6,
+  "cells": [
+    {
+      "distribution": "gamma",
+      "master_seed": 0,
+      "valid_entries": 72
+    },
+    {
+      "distribution": "gamma",
+      "master_seed": 1,
+      "valid_entries": 72
+    },
+    {
+      "distribution": "gamma",
+      "master_seed": 2,
+      "valid_entries": 72
+    },
+    {
+      "distribution": "lognormal",
+      "master_seed": 0,
+      "valid_entries": 72
+    },
+    {
+      "distribution": "lognormal",
+      "master_seed": 1,
+      "valid_entries": 72
+    },
+    {
+      "distribution": "lognormal",
+      "master_seed": 2,
+      "valid_entries": 72
+    }
+  ],
+  "mother_samples_generated": 0,
+  "saved_originals_used": 6,
+  "inner_streams": 144,
+  "bootstrap_samples": 14256,
+  "logical_resampling_indices": 285120,
+  "process_wall_seconds": 1.2884320829762146,
+  "process_peak_rss_bytes": 143671296,
+  "output_bytes_before_resources": 2114,
+  "output_bytes_total": 5425
+}

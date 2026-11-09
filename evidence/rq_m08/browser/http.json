@@ -1,0 +1,23 @@
+{
+  "scope": "Actual loopback HTTP access, separate from browser UI evidence",
+  "responses": [
+    {
+      "url": "http://127.0.0.1:8559/_stcore/health",
+      "status": 200,
+      "bytes": 2,
+      "sha256": "2689367b205c16ce32ed4200942b8b8b1e262dfc70d9bc9fbc77c49699a4f1df"
+    },
+    {
+      "url": "http://127.0.0.1:8559/",
+      "status": 200,
+      "bytes": 7863,
+      "sha256": "ddc07668cbe37c6e6e003786a0df9ffb0cbd320deada94e5fa56197c62400351"
+    },
+    {
+      "url": "http://127.0.0.1:8560/overview.html",
+      "status": 200,
+      "bytes": 4861030,
+      "sha256": "0d7256adaa0bb8cd2ce6f7b1c2174393ada6144314884aba96086a659161c3f2"
+    }
+  ]
+}

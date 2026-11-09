@@ -1,5 +1,19 @@
 # MATHSCAPE — minimal handoff
 
+## 最新の受入と実行状態：RQ-M08
+
+Owner受入済みM07 HEAD `39bcdc367320b6da513df72d2fa43bfdb7f060f4`、PR #7、048〜051 Doneを採用。M07の限定H1/H2支持と旧結論・実ブラウザ等の未検証を保持し、再承認を開始条件にしない。開始tree clean・別worktreeなし、新branch `feat/rq-m08-budget-allocation`。固定仕様全文・末尾プロンプト・052〜055・Home・AGENTS有無・READMEを確認し、CODEX_RECEIPTを残した。開始時全1139pytest成功45.00秒、pip check成功。
+
+052受領→053事前固定→054主1回／独立監査→055保存UI／検証／新PR。Next052のみ。60保存原標本×R20×共通120新系列を3配分P30=4×30/P60=2×60/P120=1×120で共有。T=mean_j√V、主d/L/Uは原標本N30／分布、99.5%区間計6本。平均差±.0025と分散比(.8,1.25)を別判定し、後者を±25%／SD比と呼ばない。新規原標本・旧端点混入・結果選別なし。通常テスト／UI／監査は主を起動せず、旧証拠を保全する。詳細は `evidence/rq_m08/SPEC.md`／`CODEX_RECEIPT.md`。新成果は別stacked PRへレビュー待ちで提出する。
+
+事前固定 `697c673f69a68f040d7d072ae3b90f356be8abd6`、manifest SHA256 `ee870c8f1c13ada089c0556b72baacdaceb3c2bed13b35eca8d9acb69e3420d9`。指定smoke1回／主1回／再実行0／原標本追加生成0。主外側58.60秒／RSS254,918,656 bytes、無効・欠測0、H1/H2は両分布支持。GのH2 U上限−3.7290042723e−8は近接境界で、正確な保存数値を判定に使う。全18条件・全6主区間・平方和とJgap+Pgap、指定36系列の独立復元で不一致0。残143,964系列の生成過程完全監査ではなく、外部科学レビューでもない。
+
+再開入口は `mathscape/allocation.py`／`allocation_ui.py`、`scripts/run_allocation_guarded.py`／`run_allocation_benchmark.py`／`audit_allocation.py`。詳細は `evidence/rq_m08/REPORT.md`。数理／runner／監査の18事前固定ファイルと21旧入力を保持し、通常テスト／保存UI／監査は主を起動しない。新成果はレビュー待ち、052〜055 In Progress・Next052のみ。旧受入と実ブラウザ等の未検証状態を保持し、追加実験しない。
+
+全1,268 pytest成功（63.83秒、新AppTest15）／pip check成功。実ブラウザで両分布／3配分／全方法・ID／r／Lab／モード往復／固定αを確認、18状態108数値一致、5種類の実ダウンロードとHTML実表示を完了。新旧代表操作の範囲・未検証は `evidence/rq_m08/browser/verification.json`／`validation.json`。旧全操作・別browser／モバイル・Owner個別操作・外部科学レビューは未実施。旧M06/M07未検証は履歴として保持する。取得console error/warning0、対象重複初期値警告なし、確認用2サーバー／2tab終了済み。
+
+提出先は [stacked PR #8](https://github.com/Tone75/mathscape/pull/8)、科学成果SHA `b68026a5f938c10ad10d6f57e0d8f900dcda8348`、事前固定SHA `697c673f69a68f040d7d072ae3b90f356be8abd6`。baseは受入済み `feat/rq-m07-finite-k`。この参照追記は科学成果固定後の文書commitで、最新提出HEADは `gh pr view 8 --repo Tone75/mathscape --json headRefOid` で取得できる。Notion052〜055・Home・固定仕様へ結果／6主区間／SHA／PR／検証範囲／資源／未解決事項を同期済み、PENDING_NOTION_SYNCなし。新成果はOwnerレビュー待ち、052〜055 In Progress・Next052のみ。追加実験・merge・新タグ・Releaseは行わない。
+
 ## 最新の受入と実行状態：RQ-M07
 
 Owner承認済みM06の受入HEAD `e2feae23397d014f6aa3363773da9913da85fcf7`、PR #6、044〜047 Doneを採用。有限K30の結論とM05以前を保持し、実ブラウザ等の旧未検証を検証済みに変えない。旧レビュー待ちは開始条件ではない。開始tree clean・別worktreeなし、新branch `feat/rq-m07-finite-k`。仕様全文・末尾プロンプト・048〜051／Home・AGENTS有無・READMEを確認し、CODEX_RECEIPTを記録した。

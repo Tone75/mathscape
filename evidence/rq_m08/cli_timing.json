@@ -1,0 +1,6 @@
+{
+  "real": 58.6,
+  "user": 56.01,
+  "sys": 1.27,
+  "scope": "external /usr/bin/time -p, full guarded main CLI, one execution"
+}

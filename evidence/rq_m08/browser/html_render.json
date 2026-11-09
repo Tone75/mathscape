@@ -1,0 +1,7 @@
+{
+  "scope": "Actual browser rendering of self-contained saved HTML; downloaded HTML compared separately by bytes",
+  "url": "http://127.0.0.1:8560/overview.html",
+  "snapshot": "- toolbar:\n  - button \"Download plot as a PNG\":\n  - button \"Zoom\":\n  - button \"Pan\":\n  - button \"Box Select\":\n  - button \"Lasso Select\":\n  - button \"Zoom in\":\n  - button \"Zoom out\":\n  - button \"Autoscale\":\n  - button \"Reset axes\":",
+  "main_browser_logs": [],
+  "html_browser_logs": []
+}
