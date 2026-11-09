@@ -14,6 +14,8 @@ CODEX_RECEIPT RQ-M06-v1：開始HEADは受入済みと一致、clean／別worktr
 
 再開入口は `mathscape/matched_stability.py`／`matched_stability_ui.py`、`scripts/run_matched_stability_guarded.py`／`run_matched_stability_benchmark.py`／`audit_matched_stability.py`。次の単一RQ候補は固定原標本・固定Bでの有限KがAse測定精度とsqrtの偏りに与える影響。別の事前固定が必要な提案のみで、未実行のまま停止する。
 
+提出先は [stacked PR #6](https://github.com/Tone75/mathscape/pull/6)、科学成果SHA `64132bfd2a7a01ea592b4ebfc38e0fbabac73c53`、事前固定SHA `3af12e48bec70381a4fc8d70b9b25c8b1e95c405`。baseは受入済み `feat/rq-m05-matched-moments`。この参照追記は科学成果固定後の文書commitで、最新提出HEADは `gh pr view 6 --repo Tone75/mathscape --json headRefOid` で取得できる。Notion044〜047・Home・固定仕様へ結果／SHA／PR／検証範囲／資源／未解決事項を同期済み、PENDING_NOTION_SYNCなし。新成果はレビュー待ちで044〜047 In Progress、Next044のみを維持する。既存PR／main／タグ／Releaseは保持し、保護対象10 remote refsは開始時と一致。新タグ・Release・mergeなし。
+
 ## 最新の受入と実行状態：RQ-M05
 
 Owner明示承認と最新Notionに従い、RQ-M04（提出HEAD `fb2216d6fc506dd74779104edad024c61bc9e1e1`、科学成果 `137efab0dc949359a58fc481676d6da6341b0408`、事前固定 `60101c72e6073c7350c9f21900b98afc19cbab00`、PR #4）は受入済み、MATH-036〜039 Done、H1／H2保留を保持する。下記の旧レビュー待ちは提出時点の履歴であり開始条件ではない。merge・外部科学レビュー・Owner本人の個別新操作とは区別する。

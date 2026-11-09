@@ -135,7 +135,22 @@
     "scope": "Conservative full sizes of all public new/modified files relative to accepted M05 HEAD, including full README/HANDOFF, compact saved originals/endpoints, 18 saved index/mean streams, CSV, self-contained HTML, reports/tests. Ignored local logs/private absolute path list/virtual environment excluded.",
     "limit_bytes": 52428800,
     "files": 65,
-    "bytes": 14194669,
-    "MiB": 13.537091
+    "bytes": 14198162,
+    "MiB": 13.540422
+  },
+  "publication": {
+    "repository": "https://github.com/Tone75/mathscape",
+    "visibility": "PUBLIC",
+    "PR": "https://github.com/Tone75/mathscape/pull/6",
+    "base": "feat/rq-m05-matched-moments",
+    "head_branch": "feat/rq-m06-matched-stability",
+    "preregistration_sha": "3af12e48bec70381a4fc8d70b9b25c8b1e95c405",
+    "science_sha": "64132bfd2a7a01ea592b4ebfc38e0fbabac73c53",
+    "submitted_head": "Resolve through PR #6 headRefOid / Notion final submission record to avoid self-reference",
+    "status": "Open, non-draft, review pending",
+    "notion_sync": "MATH-044 through047, Project Home, fixed specification synchronized; final submitted HEAD recorded after docs commit",
+    "task_status": "In Progress, Next only044, not Owner accepted",
+    "protected_remote_refs_unchanged": 10,
+    "new_tag_or_release_or_merge": false
   }
 }

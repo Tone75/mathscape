@@ -369,6 +369,12 @@ BCa被覆の点推定はGで92.1889%→92.4333%、Lで91.3667%→91.4222%。こ�
 
 検証詳細は [validation.json](validation.json)、[pytest出力](pytest.txt)、[pip check](pip_check.txt)、[HTTP](browser/local_http.json)、[起動ログ](browser/server_log.txt)、[HTML静的照合](browser/static_figure_check.json)。保守的な全変更公開成果は約13.6MiB／50MiB以内（正確な最終byteはvalidation参照）。科学成果SHA／新PRは後続の提出記録で固定する。新成果のOwner受入・Owner本人の個別新操作・外部科学レビュー・別ブラウザ／モバイルは未実施であり、044〜047をDoneにしない。
 
+## 統合提出記録
+
+提出先は [stacked PR #6](https://github.com/Tone75/mathscape/pull/6)、科学成果SHA `64132bfd2a7a01ea592b4ebfc38e0fbabac73c53`、事前固定SHA `3af12e48bec70381a4fc8d70b9b25c8b1e95c405`。baseは受入済み `feat/rq-m05-matched-moments`。この参照追記は科学成果固定後の文書commitで、最新提出HEADは `gh pr view 6 --repo Tone75/mathscape --json headRefOid` で取得できる。Notion044〜047・Home・固定仕様へ結果／SHA／PR／検証範囲／資源／未解決事項を同期済み、PENDING_NOTION_SYNCなし。新成果はレビュー待ちで044〜047 In Progress、Next044のみを維持する。既存PR／main／タグ／Releaseは保持し、保護対象10 remote refsは開始時と一致。新タグ・Release・mergeなし。
+
+公開成果は50MiB内。厳密な全変更ファイル数・byteはvalidation.jsonに記録する。提出と受入は別で、実ブラウザ未検証を残したままレビューへ提出する。自己参照を避けるため最終提出HEADはPR・Notionに記録する。
+
 ## 保存結果の安全な検証・再現手順
 
 通常テスト／保存監査は主実験を起動しない。`--output`なしの監査は結果JSONを標準出力へ表示し、既存監査ファイルを変更しない。

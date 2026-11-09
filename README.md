@@ -95,6 +95,8 @@ H1はBCa B4999の平均Ase差L−Gの独立Welch99%区間と±.01帯で判定し
 
 **実ブラウザ操作・実ダウンロード・HTMLの実表示は未検証**です。Work設定が `Local browser use is disabled in Work settings` を返しました。AppTestでは両分布／B／k／方法／ID復元・Lab／モード保持、全12行とCSV、ダウンロード用4 payloadを照合し、ローカルHTTP200／health・限定ログを確認しましたが、ブラウザ確認の代替完了とはしません。詳細は [validation.json](evidence/rq_m06/validation.json) と [未実施記録](evidence/rq_m06/browser/unavailable.json)。今回の成果はレビュー待ちで、Ownerの再操作を開始条件にはしません。
 
+提出先は [stacked PR #6](https://github.com/Tone75/mathscape/pull/6)、科学成果SHA `64132bfd2a7a01ea592b4ebfc38e0fbabac73c53`、事前固定SHA `3af12e48bec70381a4fc8d70b9b25c8b1e95c405`。baseは受入済み `feat/rq-m05-matched-moments`。この参照追記は科学成果固定後の文書commitで、最新提出HEADは `gh pr view 6 --repo Tone75/mathscape --json headRefOid` で取得できる。Notion044〜047・Home・固定仕様へ結果／SHA／PR／検証範囲／資源／未解決事項を同期済み、PENDING_NOTION_SYNCなし。新成果はレビュー待ちで044〜047 In Progress、Next044のみを維持する。既存PR／main／タグ／Releaseは保持し、保護対象10 remote refsは開始時と一致。新タグ・Release・mergeなし。
+
 ### RQ-M05：同じ歪度、違う分布
 
 母平均0・母分散1・母歪度2を解析的に揃えたガンマ `Gamma(1,1)−1` と対数正規を比較します。対数正規の定数は丸めず `v=2sinh(asinh(1)/3)`、`t=1+v²`、`s=√log1p(v²)`、`m=√t`、`d=√t v` として `X=(exp(sZ)−m)/d` を生成します。理論値をSciPyのmvskと照合し、原標本の実現モーメントを強制調整しません。推論対象はXの算術平均です。異なる尖度・支持域・尾の形が残るため、尖度単独の因果効果とは呼びません。
