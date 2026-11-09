@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "scope": "Static HTML source/data check only; no browser rendering or download verification",
+  "file": "figures/overview.html",
+  "sha256": "5a36c3a3f33ceab1bed2805e1a8704b4c1069bfdb34005b4a1e2882ee31ea8fd",
+  "external_script_or_stylesheet_tags": 0,
+  "inline_plotly_bundle": true,
+  "plot_traces": 3,
+  "BCa_conditions_checked": 4,
+  "H1_estimate_errorbars_and_margin_checked": true,
+  "contains_all_12_conditions": false,
+  "contains_H2": false,
+  "browser_rendering": "not_performed; Local browser use is disabled in Work settings"
+}

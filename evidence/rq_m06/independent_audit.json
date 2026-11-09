@@ -1,0 +1,400 @@
+{
+  "question_id": "RQ-M06",
+  "status": "passed",
+  "mismatch_count": 0,
+  "mismatches": [],
+  "audit_implementation": "independent saved-input/endpoint/selected-index-array reconstruction; no primary model or runner imports, no RNG",
+  "source_panels_sha256": {
+    "gamma_seed0.npz": "097a29a81376f9719b5165a7b9792b890623edec4a5e87e25a35f8cc020f65f4",
+    "gamma_seed1.npz": "1618f0638794884e32125d38b7924a758d72512900736b6c00e396b47cd9acc7",
+    "gamma_seed2.npz": "55b41f1c9c556cff750faf3d7e4733a86a5400bbd76bc76bef058cad7d6b2b3c",
+    "lognormal_seed0.npz": "d1bc11665ce4ad1f9b03bdd9ea751ca7334948508a3ecea5abf61c08b5a1601a",
+    "lognormal_seed1.npz": "85d627da3f463da0c486ab6def9a5e5abebc662a08172df393a1e8eabecb00af",
+    "lognormal_seed2.npz": "b6a7af8a1ca2ddc6dc3f714afd0941023fce39dffab6ff3f090ff26d1e35d504"
+  },
+  "source_streams_sha256": {
+    "gamma_seed0_outer0_inner0.npz": "ed431c08b915d2a0114fb336375d9e3c2e7fc4e532cf2bbdf5edbceae3011797",
+    "gamma_seed0_outer0_inner1.npz": "bc39701ada52ce7dbea53802ffc9313ea7cfda5aaa0fd980c250c32e7c2fcc78",
+    "gamma_seed0_outer0_inner29.npz": "833958e4f787c5de590609f74ad2985ce3ae71b0888032b92b49d2a45789483a",
+    "gamma_seed1_outer0_inner0.npz": "d153e05b5c3af7f4713f40c25f4fd6a51cfbb091ce757b33960e29493e880bf6",
+    "gamma_seed1_outer0_inner1.npz": "39de96dd5e981d8aebc5e457c68bc642de6a9baa45ccfdcf0301aa38cfe5a588",
+    "gamma_seed1_outer0_inner29.npz": "c1f0919ca02e3afbb3d8083070896f39e739bcd1e315d591032936c303a1dec9",
+    "gamma_seed2_outer0_inner0.npz": "c23d49520100acc4a0469d0ca58e27898c678f78cb516583c961e4d0d1f1461d",
+    "gamma_seed2_outer0_inner1.npz": "a0b25e56574656914ecec8a4d5e02965699db07fc096d6cdae2bd968cf15c06d",
+    "gamma_seed2_outer0_inner29.npz": "edef3915a4e0ee807b0005011ea7934b208028f59c85de51d17a60e04f33ad04",
+    "lognormal_seed0_outer0_inner0.npz": "a27f432c61b0023dbb8d2ef2c546dd82cf83d5664b7526f5a14b022fbe874f79",
+    "lognormal_seed0_outer0_inner1.npz": "cde5cafe52fd933637a6495e2c204f227f016a46a6f0c5783f29657f069235eb",
+    "lognormal_seed0_outer0_inner29.npz": "cd6c1b38e96e5e6cdee056f46f156edb23d977aa50b889387f2e987aed6a1510",
+    "lognormal_seed1_outer0_inner0.npz": "8f216dd0aab1716e4e692544d31209ac17f6606c562591e5d0c89cb1fe865406",
+    "lognormal_seed1_outer0_inner1.npz": "3abc93ee2c5cc9cfb2d372c5d4101d3238875fd12c7c25415463572e4de0fd0c",
+    "lognormal_seed1_outer0_inner29.npz": "06905a38a1d759bf88b3ebf10a447d9a9536f45e3cf2e35008c24aa823da865c",
+    "lognormal_seed2_outer0_inner0.npz": "6911b3ec287f7718bf77fd24045f5d1a2974520dda1156574a06ee96f4485b74",
+    "lognormal_seed2_outer0_inner1.npz": "c3dedf300085975b4cf8a58ecf01f305acd834d0ee7018c506c2b54450ad401a",
+    "lognormal_seed2_outer0_inner29.npz": "f9e93088c1479169b2bbf8505eb36e477f26178e80a2dda1d6409613155fa331"
+  },
+  "table_counts": {
+    "original_metrics.csv": {
+      "reconstructed": 7200,
+      "saved": 7200
+    },
+    "summary.csv": {
+      "reconstructed": 36,
+      "saved": 36
+    },
+    "pooled_summary.csv": {
+      "reconstructed": 12,
+      "saved": 12
+    },
+    "population_contrasts.csv": {
+      "reconstructed": 24,
+      "saved": 24
+    },
+    "paired_B_summary.csv": {
+      "reconstructed": 24,
+      "saved": 24
+    },
+    "paired_method_summary.csv": {
+      "reconstructed": 48,
+      "saved": 48
+    }
+  },
+  "original_samples": 1200,
+  "fully_reconstructed_streams": 18,
+  "total_inner_streams": 36000,
+  "hypotheses": {
+    "question_id": "RQ-M06",
+    "confirmatory_intervals": 3,
+    "decision_confidence": 0.99,
+    "independent_originals_per_population": 600,
+    "target_method": "bca",
+    "seed_direction_gate": false,
+    "quantities": {
+      "H1": {
+        "N1": 600,
+        "N0": 600,
+        "finite_count1": 600,
+        "finite_count0": 600,
+        "mean1": 0.0541172218567896,
+        "mean0": 0.05644585336158334,
+        "variance1": 0.000198650888793323,
+        "variance0": 0.00018468250947841744,
+        "difference": -0.002328631504793739,
+        "df": 1196.4113828097202,
+        "low": -0.004390795188782548,
+        "high": -0.00026646782080492993,
+        "se": 0.0007993053215884199,
+        "valid": true,
+        "status": "not_supported",
+        "direction": "within_margin",
+        "equivalence_supported": true,
+        "metric": "Ase",
+        "margin": 0.01,
+        "units": "sample-SE-normalized endpoint variability, not percentage points",
+        "group1": "lognormal",
+        "group0": "gamma",
+        "independent_groups": true,
+        "conditional_welch": {
+          "N1": 600,
+          "N0": 600,
+          "finite_count1": 600,
+          "finite_count0": 600,
+          "mean1": 0.0541172218567896,
+          "mean0": 0.05644585336158334,
+          "variance1": 0.000198650888793323,
+          "variance0": 0.00018468250947841744,
+          "difference": -0.002328631504793739,
+          "df": 1196.4113828097202,
+          "low": -0.004390795188782548,
+          "high": -0.00026646782080492993,
+          "se": 0.0007993053215884199,
+          "valid": true
+        }
+      },
+      "H2_gamma": {
+        "N": 600,
+        "finite_count": 600,
+        "mean": -0.03607941851928846,
+        "sd": 0.014388452193587654,
+        "mcse": 0.000587406101045318,
+        "low": -0.03759731225013533,
+        "high": -0.03456152478844159,
+        "df": 599,
+        "valid": true,
+        "status": "supported",
+        "conditional_interval": {
+          "N": 600,
+          "finite_count": 600,
+          "mean": -0.03607941851928846,
+          "sd": 0.014388452193587654,
+          "mcse": 0.000587406101045318,
+          "low": -0.03759731225013533,
+          "high": -0.03456152478844159,
+          "df": 599,
+          "valid": true
+        },
+        "mean_Ase_999": 0.12336702917449574,
+        "mean_Ase_4999": 0.05644585336158334,
+        "ratio_mean_Ase_4999_over_999": 0.4575440759114321
+      },
+      "H2_lognormal": {
+        "N": 600,
+        "finite_count": 600,
+        "mean": -0.03379050351836257,
+        "sd": 0.011650250203256777,
+        "mcse": 0.0004756194728955852,
+        "low": -0.03501953368146808,
+        "high": -0.03256147335525705,
+        "df": 599,
+        "valid": true,
+        "status": "supported",
+        "conditional_interval": {
+          "N": 600,
+          "finite_count": 600,
+          "mean": -0.03379050351836257,
+          "sd": 0.011650250203256777,
+          "mcse": 0.0004756194728955852,
+          "low": -0.03501953368146808,
+          "high": -0.03256147335525705,
+          "df": 599,
+          "valid": true
+        },
+        "mean_Ase_999": 0.1172103005002029,
+        "mean_Ase_4999": 0.0541172218567896,
+        "ratio_mean_Ase_4999_over_999": 0.46171046081991673
+      }
+    },
+    "seed_details": [
+      {
+        "master_seed": 0,
+        "H1": {
+          "N1": 200,
+          "N0": 200,
+          "finite_count1": 200,
+          "finite_count0": 200,
+          "mean1": 0.05428675855500252,
+          "mean0": 0.05693104392687687,
+          "variance1": 0.00022577865269473817,
+          "variance0": 0.00020311249606539167,
+          "difference": -0.002644285371874347,
+          "df": 396.8915058429181,
+          "low": -0.006434542409774651,
+          "high": 0.0011459716660259574,
+          "se": 0.0014643960337970903,
+          "valid": true
+        },
+        "H2_gamma": {
+          "N": 200,
+          "finite_count": 200,
+          "mean": -0.03572252130327058,
+          "sd": 0.01234929368394311,
+          "mcse": 0.0008732269306780373,
+          "low": -0.03799357516416891,
+          "high": -0.033451467442372256,
+          "df": 199,
+          "valid": true,
+          "status": "supported",
+          "conditional_interval": {
+            "N": 200,
+            "finite_count": 200,
+            "mean": -0.03572252130327058,
+            "sd": 0.01234929368394311,
+            "mcse": 0.0008732269306780373,
+            "low": -0.03799357516416891,
+            "high": -0.033451467442372256,
+            "df": 199,
+            "valid": true
+          },
+          "mean_Ase_999": 0.12353808697352994,
+          "mean_Ase_4999": 0.05693104392687687,
+          "ratio_mean_Ase_4999_over_999": 0.46083799192288993
+        },
+        "H2_lognormal": {
+          "N": 200,
+          "finite_count": 200,
+          "mean": -0.03277509231990031,
+          "sd": 0.01137876426247321,
+          "mcse": 0.0008046001371517951,
+          "low": -0.034867664346439925,
+          "high": -0.030682520293360698,
+          "df": 199,
+          "valid": true,
+          "status": "supported",
+          "conditional_interval": {
+            "N": 200,
+            "finite_count": 200,
+            "mean": -0.03277509231990031,
+            "sd": 0.01137876426247321,
+            "mcse": 0.0008046001371517951,
+            "low": -0.034867664346439925,
+            "high": -0.030682520293360698,
+            "df": 199,
+            "valid": true
+          },
+          "mean_Ase_999": 0.11608246783320379,
+          "mean_Ase_4999": 0.05428675855500252,
+          "ratio_mean_Ase_4999_over_999": 0.46765682680872966
+        }
+      },
+      {
+        "master_seed": 1,
+        "H1": {
+          "N1": 200,
+          "N0": 200,
+          "finite_count1": 200,
+          "finite_count0": 200,
+          "mean1": 0.05463205071603747,
+          "mean0": 0.05801801007264006,
+          "variance1": 0.00022119661216362868,
+          "variance0": 0.00019305518534267917,
+          "difference": -0.0033859593566025956,
+          "df": 396.17170245983095,
+          "low": -0.007111001004494872,
+          "high": 0.00033908229128968084,
+          "se": 0.0014391869188995357,
+          "valid": true
+        },
+        "H2_gamma": {
+          "N": 200,
+          "finite_count": 200,
+          "mean": -0.03704408248655975,
+          "sd": 0.015558616110562645,
+          "mcse": 0.0011001602957657114,
+          "low": -0.03990533561507438,
+          "high": -0.03418282935804512,
+          "df": 199,
+          "valid": true,
+          "status": "supported",
+          "conditional_interval": {
+            "N": 200,
+            "finite_count": 200,
+            "mean": -0.03704408248655975,
+            "sd": 0.015558616110562645,
+            "mcse": 0.0011001602957657114,
+            "low": -0.03990533561507438,
+            "high": -0.03418282935804512,
+            "df": 199,
+            "valid": true
+          },
+          "mean_Ase_999": 0.12674945674559976,
+          "mean_Ase_4999": 0.05801801007264006,
+          "ratio_mean_Ase_4999_over_999": 0.45773774154384467
+        },
+        "H2_lognormal": {
+          "N": 200,
+          "finite_count": 200,
+          "mean": -0.034669179779410246,
+          "sd": 0.012225043920192346,
+          "mcse": 0.0008644411456271381,
+          "low": -0.036917383920081356,
+          "high": -0.032420975638739136,
+          "df": 199,
+          "valid": true,
+          "status": "supported",
+          "conditional_interval": {
+            "N": 200,
+            "finite_count": 200,
+            "mean": -0.034669179779410246,
+            "sd": 0.012225043920192346,
+            "mcse": 0.0008644411456271381,
+            "low": -0.036917383920081356,
+            "high": -0.032420975638739136,
+            "df": 199,
+            "valid": true
+          },
+          "mean_Ase_999": 0.11906830732726363,
+          "mean_Ase_4999": 0.05463205071603747,
+          "ratio_mean_Ase_4999_over_999": 0.4588294899152237
+        }
+      },
+      {
+        "master_seed": 2,
+        "H1": {
+          "N1": 200,
+          "N0": 200,
+          "finite_count1": 200,
+          "finite_count0": 200,
+          "mean1": 0.053432856299328806,
+          "mean0": 0.05438850608523309,
+          "variance1": 0.00015020791531591282,
+          "variance0": 0.000152761315037742,
+          "difference": -0.000955649785904282,
+          "df": 397.9717321491314,
+          "low": -0.0041412310592069505,
+          "high": 0.002229931487398387,
+          "se": 0.001230790864350347,
+          "valid": true
+        },
+        "H2_gamma": {
+          "N": 200,
+          "finite_count": 200,
+          "mean": -0.03547165176803506,
+          "sd": 0.015071604215584167,
+          "mcse": 0.0010657233544199322,
+          "low": -0.03824334266953485,
+          "high": -0.03269996086653527,
+          "df": 199,
+          "valid": true,
+          "status": "supported",
+          "conditional_interval": {
+            "N": 200,
+            "finite_count": 200,
+            "mean": -0.03547165176803506,
+            "sd": 0.015071604215584167,
+            "mcse": 0.0010657233544199322,
+            "low": -0.03824334266953485,
+            "high": -0.03269996086653527,
+            "df": 199,
+            "valid": true
+          },
+          "mean_Ase_999": 0.1198135438043575,
+          "mean_Ase_4999": 0.05438850608523309,
+          "ratio_mean_Ase_4999_over_999": 0.4539428879095973
+        },
+        "H2_lognormal": {
+          "N": 200,
+          "finite_count": 200,
+          "mean": -0.03392723845577716,
+          "sd": 0.01130442988336823,
+          "mcse": 0.0007993439027977528,
+          "low": -0.0360061402771225,
+          "high": -0.03184833663443182,
+          "df": 199,
+          "valid": true,
+          "status": "supported",
+          "conditional_interval": {
+            "N": 200,
+            "finite_count": 200,
+            "mean": -0.03392723845577716,
+            "sd": 0.01130442988336823,
+            "mcse": 0.0007993439027977528,
+            "low": -0.0360061402771225,
+            "high": -0.03184833663443182,
+            "df": 199,
+            "valid": true
+          },
+          "mean_Ase_999": 0.11648012634014128,
+          "mean_Ase_4999": 0.053432856299328806,
+          "ratio_mean_Ase_4999_over_999": 0.45872938138215963
+        }
+      }
+    ],
+    "hypotheses": {
+      "H1": {
+        "status": "not_supported",
+        "direction": "within_margin",
+        "equivalence_supported": true
+      },
+      "H2": {
+        "status": "supported",
+        "gamma": "supported",
+        "lognormal": "supported"
+      }
+    }
+  },
+  "limitations": [
+    "All 1200 selected originals, 216000 logical endpoint records, original metrics, summaries/contrasts/decisions are checked.",
+    "Exactly 18 predesignated saved index/mean streams additionally permit direct prefix/rank/linear-quantile reconstruction without RNG generation.",
+    "Other 35982 bootstrap generation sequences cannot be reconstructed from saved diagnostics; frozen-source/reference tests cover that logic.",
+    "Reused M05 originals are not a new independent replication. This internal audit is not external scientific review."
+  ]
+}

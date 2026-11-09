@@ -1,0 +1,27 @@
+{
+  "status": "not_performed",
+  "reason": "Local browser use is disabled in Work settings",
+  "attempted_tools": [
+    "cua.createBrowserTab(iab, loopback Streamlit URL)",
+    "cua.listTabs(browser=iab)"
+  ],
+  "observations": [
+    "Initial tab creation did not produce a bound tab",
+    "Tab inventory returned the disabled-setting error"
+  ],
+  "settings_changed": false,
+  "browser_visual_checks": false,
+  "browser_interaction_checks": false,
+  "actual_browser_downloads": false,
+  "screenshots": [],
+  "unverified": [
+    "G/L and B/k/method controls in a real browser",
+    "per-population ID/hash restoration and Lab/mode round trips in a real browser",
+    "fixed alpha and K1 NA browser presentation",
+    "displayed CSV numerical comparison in a real browser",
+    "actual CSV and HTML downloads",
+    "old four Lab representative browser operations",
+    "standalone HTML rendering"
+  ],
+  "alternative_scope": "AppTest, saved-only payload/CSV checks, local HTTP and server log verification are separately recorded; they do not replace browser evidence."
+}

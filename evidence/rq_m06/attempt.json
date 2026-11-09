@@ -1,0 +1,9 @@
+{
+  "question_id": "RQ-M06",
+  "status": "started",
+  "started_utc": "2026-11-09T02:27:48.990112+00:00",
+  "source_git_sha": "3af12e48bec70381a4fc8d70b9b25c8b1e95c405",
+  "manifest_sha256": "1fa89bbb0079e73ee7b3fcb993ca0fa0a336adc8ed8e6964ab8667a264077f58",
+  "namespace": 5058614,
+  "single_main_attempt": true
+}

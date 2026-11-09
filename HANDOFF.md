@@ -8,6 +8,12 @@ CODEX_RECEIPT RQ-M06-v1：開始HEADは受入済みと一致、clean／別worktr
 
 固定入力はM05のG/L×seed0,1,2×outer0〜199、全1,200原標本。入力hash／IDを事前固定し追加母標本生成なし。新namespaceでK30・B999/4999共有prefix、原標本単位N600/分布。有限K30のAseを比較し、M05 C/Tを再検定・プールしない。旧K1のNAは維持する。主1回・指定別namespace smoke1回のみ、通常pytest・UI・監査は主実験を起動しない。旧証拠／PR／main／タグ／Releaseを保持し、新成果は別stacked PRのレビュー待ちとして提出する。
 
+事前固定 `3af12e48bec70381a4fc8d70b9b25c8b1e95c405`、manifest SHA256 `1fa89bbb0079e73ee7b3fcb993ca0fa0a336adc8ed8e6964ab8667a264077f58`。指定smoke1回／主1回、再実行0・母標本生成0・無効／欠測0。H1は.01超の実用差不支持かつ固定条件の平均Aseの±.01内同等性支持、99%区間[−.0043907952,−.0002664678]。H2は両分布25%超平均低減支持、平均比G .457544／L .461710。原標本単位N600／分布、有限K30の測定量に限定し、M05 C/Tは更新しない。主外側22.86秒／RSS231,129,088 bytes。全集計と指定18系列の生成内容の独立復元で不一致0、他35,982系列の完全生成監査ではない。
+
+保存結果ビューを追加、全1,001 pytest成功（27.28秒）／新AppTest11／pip check成功。原標本保持・全12CSV値・4 payloadはAppTestで確認。実ブラウザ／実ダウンロード／HTML実表示はWork設定で利用不可のため未検証。HTTP200・healthと限定起動ログを確認し、確認用サーバーは停止済み。詳細・全条件・再現手順・残課題は `evidence/rq_m06/REPORT.md`／`validation.json`。新成果はレビュー待ち、044〜047 In Progress、Next044のみを維持し、Doneを代行しない。通常pytest／UI／監査から主実験を起動せず、追加実験しない。
+
+再開入口は `mathscape/matched_stability.py`／`matched_stability_ui.py`、`scripts/run_matched_stability_guarded.py`／`run_matched_stability_benchmark.py`／`audit_matched_stability.py`。次の単一RQ候補は固定原標本・固定Bでの有限KがAse測定精度とsqrtの偏りに与える影響。別の事前固定が必要な提案のみで、未実行のまま停止する。
+
 ## 最新の受入と実行状態：RQ-M05
 
 Owner明示承認と最新Notionに従い、RQ-M04（提出HEAD `fb2216d6fc506dd74779104edad024c61bc9e1e1`、科学成果 `137efab0dc949359a58fc481676d6da6341b0408`、事前固定 `60101c72e6073c7350c9f21900b98afc19cbab00`、PR #4）は受入済み、MATH-036〜039 Done、H1／H2保留を保持する。下記の旧レビュー待ちは提出時点の履歴であり開始条件ではない。merge・外部科学レビュー・Owner本人の個別新操作とは区別する。
