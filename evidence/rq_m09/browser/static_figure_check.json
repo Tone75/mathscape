@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "scope": "Static HTML source/data check, not browser rendering or actual download",
+  "file": "figures/overview.html",
+  "sha256": "f00d6affbd8490532fbd1815b31bc0b531408477033b9b1059538fec43b6a754",
+  "external_script_or_stylesheet_tags": 0,
+  "inline_Plotly_bundle": true,
+  "BCa_conditions": 6,
+  "metrics": [
+    "mean_M",
+    "mean_Q"
+  ],
+  "all_mean_and_errorbar_values_match_saved_CSV": true,
+  "all18_conditions_or_hypothesis_intervals_in_figure": false,
+  "browser_rendering": "performed separately for M09 and M08 reference; html_render.json and overview.jpg/m08_reference_overview.jpg"
+}

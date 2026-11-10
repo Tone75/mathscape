@@ -1,0 +1,15 @@
+{
+  "scope": "Fresh server HTTP after UI startup fix, separate from actual browser interaction",
+  "responses": [
+    {
+      "url": "http://127.0.0.1:8559/_stcore/health",
+      "status": 200,
+      "bytes": 2
+    },
+    {
+      "url": "http://127.0.0.1:8559/",
+      "status": 200,
+      "bytes": 7863
+    }
+  ]
+}

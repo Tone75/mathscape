@@ -1,0 +1,44 @@
+2026-11-10 22:53:17.175 Uvicorn server started on 127.0.0.1:8559
+
+  You can now view your Streamlit app in your browser.
+
+  URL: http://127.0.0.1:8559
+
+  For better performance, install the Watchdog module:
+
+  $ xcode-select --install
+  $ pip install watchdog
+            
+2026-11-10 22:54:32.831 Uncaught app execution
+Traceback (most recent call last):
+  File "<project>/.venv/lib/python3.12/site-packages/streamlit/runtime/scriptrunner/exec_code.py", line 136, in exec_func_with_error_handling
+    result = func()
+             ^^^^^^
+  File "<project>/.venv/lib/python3.12/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 936, in code_to_exec
+    exec(code, module.__dict__)  # noqa: S102
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<project>/app.py", line 231, in <module>
+    {LABS[0]: probability_lab, LABS[1]: chaos_lab, LABS[2]: fractal_lab,
+  File "<project>/app.py", line 45, in inference_lab
+    render_shape_view()
+  File "<project>/mathscape/shape_ui.py", line 220, in render_shape_view
+    _population(state["distribution"])
+  File "<project>/mathscape/shape_ui.py", line 105, in _population
+    figure = go.Figure(go.Scatter(x=x, y=y, name="真の母集団PDF", line=dict(color="#46DCC0", width=3)))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<project>/.venv/lib/python3.12/site-packages/plotly/graph_objs/_figure.py", line 72, in __init__
+    super().__init__(data, layout, frames, skip_invalid, **kwargs)
+  File "<project>/.venv/lib/python3.12/site-packages/plotly/basedatatypes.py", line 532, in __init__
+    data = self._data_validator.validate_coerce(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<project>/.venv/lib/python3.12/site-packages/_plotly_utils/basevalidators.py", line 2689, in validate_coerce
+    v = to_scalar_or_list(res)
+        ^^^^^^^^^^^^^^^^^^^^^^
+  File "<project>/.venv/lib/python3.12/site-packages/_plotly_utils/basevalidators.py", line 54, in to_scalar_or_list
+    return [to_scalar_or_list(e) for e in v]
+            ^^^^^^^^^^^^^^^^^^^^
+  File "<project>/.venv/lib/python3.12/site-packages/_plotly_utils/basevalidators.py", line 59, in to_scalar_or_list
+    elif pd and isinstance(v, (pd.Series, pd.Index)):
+                               ^^^^^^^^^
+AttributeError: partially initialized module 'pandas' has no attribute 'Series' (most likely due to a circular import). Did you mean: 'tseries'?
+  Stopping...

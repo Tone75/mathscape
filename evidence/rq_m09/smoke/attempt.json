@@ -1,0 +1,31 @@
+{
+  "question_id": "RQ-M09",
+  "scope": "smokeonly:M08savedouter0/R2/common12/B99 allocation4x3/2x6/1x12,noM09originalgeneration,noscientificdecisions",
+  "originals_per_cell": 1,
+  "R": 2,
+  "streams_per_budget": 12,
+  "B": 99,
+  "namespace": 1397567545,
+  "source_files_sha256": {
+    "mathscape/replication.py": "9ab8e94af082e2b74458773bcbe8f2914129ccd841426498b3bfc6483eb3cf4f",
+    "mathscape/allocation.py": "69187537b398feafaa58ca0b5672cb87cf7f05ef9ab600c9723c96bf583f0958",
+    "mathscape/finite_k.py": "2e204b4c562055ad13b335a189bbafdd8fdb486a4de80e2e5543060f8f2da877",
+    "mathscape/matched_stability.py": "1ef9f91910d9cec6b690d92179f329d61782f5cc56b27862e595b260637e322c",
+    "mathscape/matched_moments.py": "2c968c674ceb78b8b716a94d5f3165b928162c6c04150ba5d2d2b446f9926135",
+    "mathscape/stability.py": "e27f2bf98378911cb1c0502bb93a5d944fd5dd2978354e6fbd99595d2bc5f070",
+    "mathscape/bootstrap.py": "24d4ffbc8e5b463ee6770a35e1d17beca9ee41a37083d457dbca25abd9f7b6cb",
+    "mathscape/inference.py": "6e26d2a6991ecfca0729e7057f0eda63bf100b0941fc0b397caa2eb13e226708",
+    "scripts/run_allocation_benchmark.py": "fc5f5372511cb987d64a70445be0f2a47f32908bfe8ad7b2db71ed30a74a5359",
+    "scripts/run_replication_benchmark.py": "b526000ce59944af019e7b214c0036ee2929d6d608a299fd6d271c3bc77aecfb",
+    "scripts/run_replication_guarded.py": "0deb874ec7124077640460316d5a6be2019b795729a4205facfd8819d04619e4",
+    "scripts/audit_replication.py": "afe5acfded2dac690a8fdd338f8d1e863e358c814dc76f9f0d0327969563e646",
+    "scripts/run_bootstrap_benchmark.py": "9fdeabae419aecd487ff063775001880643c265207c7c5ea8192b455d72864a3",
+    "scripts/run_stability_benchmark.py": "4be7f9a10f7d328cc914c0aaceaf28d027718a44a2f8afd63a896e848b209488",
+    "tests/test_replication.py": "96cfdadede0a68dd778c1c1663312c287a5fc5e2f5adcd09c6666421fbe7329d",
+    "tests/test_replication_runner.py": "c6b917d5b8a41fc08979d06d349dc4d9a41d4fbe96f16e550bb16d0baed237fb",
+    "tests/test_replication_guard.py": "071ea4275b6ca539102f67219457007c1b665badf8355a0774bd7963aeadc8fb",
+    "tests/test_replication_audit.py": "aa2272c86aa137810b05834ec3df8858cf460cf6c78ba1ee9d6b0e4a336d4ae7",
+    "requirements.txt": "dcb36fe5c1d5413b4918722462d3382f171d839c0e69b45725b57b871b2bce5d",
+    "evidence/rq_m09/SPEC.md": "655aa699c11984fb266ea5bb6e52144ae4d88a983f4f1483d0619248e3aa8266"
+  }
+}

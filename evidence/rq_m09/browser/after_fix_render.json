@@ -1,0 +1,6 @@
+{
+  "scope": "Fresh browser/server session after eager pandas initialization; two rapid M03/M04/M05 switching cycles and M08/M09 representative controls/state restoration",
+  "visible_exceptions": 0,
+  "browser_logs": [],
+  "screenshot": "comparison_after_startup_fix.jpg"
+}

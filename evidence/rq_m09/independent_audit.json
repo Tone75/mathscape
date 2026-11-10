@@ -1,0 +1,110 @@
+{
+  "question_id": "RQ-M09",
+  "status": "passed",
+  "mismatch_count": 0,
+  "mismatches": [],
+  "original_samples": 60,
+  "table_counts": {
+    "original_allocation_metrics.csv": {
+      "reconstructed": 540,
+      "saved": 540
+    },
+    "original_comparison_metrics.csv": {
+      "reconstructed": 180,
+      "saved": 180
+    },
+    "budget_metrics.csv.gz": {
+      "reconstructed": 10800,
+      "saved": 10800
+    },
+    "group_metrics.csv.gz": {
+      "reconstructed": 25200,
+      "saved": 25200
+    },
+    "decomposition_metrics.csv.gz": {
+      "reconstructed": 3600,
+      "saved": 3600
+    },
+    "summary.csv": {
+      "reconstructed": 54,
+      "saved": 54
+    },
+    "pooled_summary.csv": {
+      "reconstructed": 18,
+      "saved": 18
+    },
+    "decomposition_summary.csv": {
+      "reconstructed": 24,
+      "saved": 24
+    }
+  },
+  "original_cohort": {
+    "new_original_samples": 60,
+    "unique_sample_hashes": 60,
+    "raw_transform_bytes_verified": true,
+    "receipt_sha256": "03a3d39e7d7a4ddfcc31fce216a173e88b64ad31b9ff06704f6c40df22c85607"
+  },
+  "fully_reconstructed_streams": 36,
+  "other_generation_sequences_not_reconstructed": 143964,
+  "numeric_tolerances": {
+    "numeric_rtol": 2e-10,
+    "numeric_atol": 2e-12,
+    "identity_rtol": 2e-12,
+    "identity_atol": 2e-12
+  },
+  "saved_file_sha256": {
+    "panels/gamma_seed0.npz": "c851fba4b647be4c3b280d76aee409a806f22af0f37faf0ab32f18a23ea9c15b",
+    "panels/gamma_seed1.npz": "29df96769fcb7040e442a9829d9dffadcfa9ce8df00c71e843869fd9b9445741",
+    "panels/gamma_seed2.npz": "2b9194e08fa714156de0709aa07ec3ed7c5ef19039b91e9f739487898e274a47",
+    "panels/lognormal_seed0.npz": "6f21a43108cbdc8e3d6ee5caa2629633163870bf58d347a9b9cdd41a618083b4",
+    "panels/lognormal_seed1.npz": "bd1ca51681d37d7fddb3938fbcd8304d49eecfc09245ecb2e57892ea962069b9",
+    "panels/lognormal_seed2.npz": "a02b03deac000313506e339da4f964d21c33b6a3d7238611567b92fbd93474fa",
+    "originals/gamma_seed0.npz": "98cc27ec9fdd0ea4f3d5df3c40f1c1e91a244883e1111bacb1e27aaa1e504e94",
+    "originals/gamma_seed1.npz": "472138f3b52d746141a6c6a21e1de8226dfb6ef620a3d4ac9d5b254650b2f444",
+    "originals/gamma_seed2.npz": "5cca99c9d4072c2866877c93df499125bf267bcd5026be5eb92d0664f6b03bd7",
+    "originals/lognormal_seed0.npz": "a704ef167331dadf9579c56e08dd06d17342d400647b8dbc9751cdbe1abf9adf",
+    "originals/lognormal_seed1.npz": "012313df20eeed13e29215c8e1de8184a3095a08ca8864dacb349add6f2d5457",
+    "originals/lognormal_seed2.npz": "bb76ed3f8af31e16fd217819f8fb5ca2c9016f0040ae2625b6c0b1157eb440a2",
+    "streams/gamma_seed0_outer0_repeat0_stream0.npz": "f77cd5ff7dd3673cd25e3f3d6c41609d1bd74ab10c3bad4fe7be983990f8d8a2",
+    "streams/gamma_seed0_outer0_repeat0_stream29.npz": "a907efb86f904eb4d6a7795bd7cc46d807fb736401352e39451ee411e9fc8001",
+    "streams/gamma_seed0_outer0_repeat0_stream30.npz": "23a61fd2b75ecfc95086dcd3d22543c5c1faa86d2c3260fe6103ad8c2e292fd0",
+    "streams/gamma_seed0_outer0_repeat0_stream59.npz": "4d6ef86fc1bef01f3be4a6b7d6ee229409eee411682bd34de43cbd9a79890346",
+    "streams/gamma_seed0_outer0_repeat0_stream60.npz": "3cb1f8c2d5499fb54f787f304912c352a5f9f5f543ff6f1af36055ff4e807a21",
+    "streams/gamma_seed0_outer0_repeat0_stream119.npz": "54845156012f90313928c0dae7e076d2c94beb5340dac2fb39aa88c01503d76e",
+    "streams/gamma_seed1_outer0_repeat0_stream0.npz": "471e9de7fef29aefc871999d8306b1407f0c96d0b1f68bf6819d612b70aea0a3",
+    "streams/gamma_seed1_outer0_repeat0_stream29.npz": "7b0357e59b61dc3cfaf32d16f137773ac2a3155e33bd09bae6089bc20323620c",
+    "streams/gamma_seed1_outer0_repeat0_stream30.npz": "50c61c1c4263d8da2c99fc091356feaf6f3924f256ab3ac3db0b1b078daf4710",
+    "streams/gamma_seed1_outer0_repeat0_stream59.npz": "451bcb0e1650f6d8425abfa59f6dc24d9149e80d0fcc67c0cec993e05060ddae",
+    "streams/gamma_seed1_outer0_repeat0_stream60.npz": "5817e88c66700ca0f9a6f5316291dcb761d567172dccc3fe490ef406dd344b80",
+    "streams/gamma_seed1_outer0_repeat0_stream119.npz": "1fbab28d0ad37288dd914c53904ce19d1881a04b7775d386df0670e3b7ae4a7f",
+    "streams/gamma_seed2_outer0_repeat0_stream0.npz": "63ba77909f41441fb93cd8667cf3c80242055f5dae6aa2606001b33a421fe218",
+    "streams/gamma_seed2_outer0_repeat0_stream29.npz": "f636b6ca69c2c61a1f3b72ec449b106016134dfa71a67fe0ff329327d4982980",
+    "streams/gamma_seed2_outer0_repeat0_stream30.npz": "be7a49ea0a87bc6c4fb60d2664fdb84b91e58f76cc0b5059f8938a79d239b7ee",
+    "streams/gamma_seed2_outer0_repeat0_stream59.npz": "9f571db9e87ba25534ef55f60fca24a7fa30b4c4d22abf982eee3fd6dfc1b5dc",
+    "streams/gamma_seed2_outer0_repeat0_stream60.npz": "044efcdaba9b1ea15e6ab7c7bef6db1571335d107c98edea32952603ba8635a7",
+    "streams/gamma_seed2_outer0_repeat0_stream119.npz": "c26cf0891e295714028c5affcd89116ff636604ee5a68716f416aeca2538fe2a",
+    "streams/lognormal_seed0_outer0_repeat0_stream0.npz": "ff7d34748d4366fa437324eade38b1cc257fded73b7262ddce3bb1b12f695503",
+    "streams/lognormal_seed0_outer0_repeat0_stream29.npz": "6818d838179cca7630c21408940caebf361df7772747417a82bbf10839697509",
+    "streams/lognormal_seed0_outer0_repeat0_stream30.npz": "9f31b835f78819b0c0abd63e974a9bdb6635c0c2bbe6a9c4c4a3c7fe18430f64",
+    "streams/lognormal_seed0_outer0_repeat0_stream59.npz": "d235d882961001ccab0463005a958f1050e49c636e0e958febb758c0c7419bc6",
+    "streams/lognormal_seed0_outer0_repeat0_stream60.npz": "fb572e9fb42513e9f27a51652841f1a55f22b30c9370537836e4526f241d5c67",
+    "streams/lognormal_seed0_outer0_repeat0_stream119.npz": "25be4fc513d8b788adbaa3f9523828e78ad2260b34daf0d529a6581a192b3b31",
+    "streams/lognormal_seed1_outer0_repeat0_stream0.npz": "2ad0903b5c39f3ce47ae146489ba9fcc5b29008dd92bcc19c27cc6fe6b939842",
+    "streams/lognormal_seed1_outer0_repeat0_stream29.npz": "5b95e33a0f61c9d93e4a6cfb8e131f61d57181ea2d826ed69a8707dc67508ed8",
+    "streams/lognormal_seed1_outer0_repeat0_stream30.npz": "d1366ed4f18e99bc1a314ab2e93bd4bd53e52e329d6b4d3f592c45ebeaf5f85f",
+    "streams/lognormal_seed1_outer0_repeat0_stream59.npz": "e2c47bd6590f626c24ccdc1d4fdbcd4aefec6e896ede8d84fb85efb8b8d48a2c",
+    "streams/lognormal_seed1_outer0_repeat0_stream60.npz": "1ab9774b98068a19d66174698763feb0428b6e42f8a55ce6cad080e3428b5369",
+    "streams/lognormal_seed1_outer0_repeat0_stream119.npz": "6fc15b8359ee912a8fe4637fdb8719a8c1e650b45b101df4a21832fa1cca7e36",
+    "streams/lognormal_seed2_outer0_repeat0_stream0.npz": "9c9e04951655f02d66d4d360cd658d90f4dcecbeb57b5a5b8eb56d2b35fdb724",
+    "streams/lognormal_seed2_outer0_repeat0_stream29.npz": "8ef4b867dddb547a6e83556194d6f2b2933b7d2a869d151a2bb565e76a70d11b",
+    "streams/lognormal_seed2_outer0_repeat0_stream30.npz": "5b33e7680a9c08ef78b1bb29e3d1fef063ca0247a9af1de823094fc4cf5b2460",
+    "streams/lognormal_seed2_outer0_repeat0_stream59.npz": "ca2416bb09e3d5ed993c05f9de239a8d7acedf23710a17aaf977dc6f5d644847",
+    "streams/lognormal_seed2_outer0_repeat0_stream60.npz": "c8d50d8d1b8cac663ca18619008ed11dfffbc588f1117cb4f38f35d1fd7c3f13",
+    "streams/lognormal_seed2_outer0_repeat0_stream119.npz": "974d8211c28b38385c48b3b54322ef271d8cbec1d378922b19e6f1f8eb554096"
+  },
+  "limitations": [
+    "Only36 predesignated stored-index streams reconstruct sampling/means/inference; remaining143964 generation sequences are not reconstructed.",
+    "All saved raw observations analytically transformed without PRNG replay; key separation/no exact old matches are implementation checks, not statistical independence proof.",
+    "All saved endpoint reductions, algebra, original-unit summaries and six main99.5% intervals independently reconstructed; M08 reference never pooled or used for decisions; not external scientific review."
+  ]
+}

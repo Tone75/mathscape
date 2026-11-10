@@ -1,0 +1,7 @@
+{
+  "real": 0.88,
+  "user": 0.51,
+  "sys": 0.17,
+  "scope": "external /usr/bin/time -p, full specified smoke CLI, one execution; uses accepted M08 originals only",
+  "M09_originals_generated": 0
+}

@@ -1,0 +1,284 @@
+{
+  "question_id": "RQ-M09",
+  "status": "automated_and_representative_browser_checks_passed",
+  "accepted_start_head": "85382fd3ae8966dcf197d4006de21ea6edf9ef9f",
+  "preregistration_sha": "9f3e5d6245e5c22a636795baaf9eb8297452d8ba",
+  "manifest_sha256": "ba9a89ac106b124ffca32ff6867935448302c9f921637bbd17c2f9b4a2339173",
+  "baseline_tests": {
+    "passed": 1268,
+    "wall_seconds": 62.52
+  },
+  "preregistration_tests": {
+    "passed": 115,
+    "wall_seconds": 8.27
+  },
+  "pytest": {
+    "command": "python -m pytest -q",
+    "passed": 1396,
+    "failed": 0,
+    "wall_seconds": 91.55,
+    "new_tests_total": 128,
+    "new_tests": {
+      "generation_and_core": 33,
+      "runner_and_guard": 32,
+      "independent_audit": 50,
+      "AppTest": 13
+    },
+    "output": "pytest.txt",
+    "tests_launch_main": false
+  },
+  "pip_check": {
+    "status": "passed",
+    "output": "pip_check.txt",
+    "dependency_additions_or_updates": false
+  },
+  "saved_UI": {
+    "entry": "render_allocation_view",
+    "scope": "AppTest server-side display and download payload checks, not real browser rendering or actual downloads",
+    "model_inference_RNG_main_forbidden": true,
+    "per_population_ID_seed_budget_repeat_restoration": true,
+    "allocation_method_R_Lab_mode_original_hash_retention": true,
+    "B4999_alpha005_R20_fixed": true,
+    "old_K1_NA_preserved": true,
+    "M08_M09_each18_pooled_rows_54_seed_rows_24_decompositions_and6_main_intervals_match_saved_values": true,
+    "cohort_population_specific_ID_state_and_hashes": true,
+    "new_mode_or_Lab_added": false,
+    "existing_Streamlit_pandas_required_dependency_preinitialized_before_widgets": true,
+    "download_payload_bytes_checked": [
+      "pooled_CSV",
+      "hypotheses_JSON",
+      "self_contained_HTML",
+      "original_CSV",
+      "all_endpoint_CSV"
+    ],
+    "actual_downloads": true
+  },
+  "independent_saved_audit": {
+    "status": "passed",
+    "mismatch_count": 0,
+    "original_samples": 60,
+    "logical_endpoint_records": 432000,
+    "table_counts": {
+      "original_allocation_metrics.csv": {
+        "reconstructed": 540,
+        "saved": 540
+      },
+      "original_comparison_metrics.csv": {
+        "reconstructed": 180,
+        "saved": 180
+      },
+      "budget_metrics.csv.gz": {
+        "reconstructed": 10800,
+        "saved": 10800
+      },
+      "group_metrics.csv.gz": {
+        "reconstructed": 25200,
+        "saved": 25200
+      },
+      "decomposition_metrics.csv.gz": {
+        "reconstructed": 3600,
+        "saved": 3600
+      },
+      "summary.csv": {
+        "reconstructed": 54,
+        "saved": 54
+      },
+      "pooled_summary.csv": {
+        "reconstructed": 18,
+        "saved": 18
+      },
+      "decomposition_summary.csv": {
+        "reconstructed": 24,
+        "saved": 24
+      }
+    },
+    "fully_reconstructed_saved_index_mean_streams": 36,
+    "other_generation_sequences_not_reconstructed": 143964,
+    "all60_raw_to_X_transform_bytes_checked": true,
+    "original_PRNG_outputs_replayed": false,
+    "statistical_independence_proved_by_hash": false,
+    "all_delta_and_SS_identities_checked": true,
+    "output": "independent_audit.json",
+    "external_scientific_review": false
+  },
+  "browser": {
+    "status": "passed_representative_scope",
+    "evidence": "browser/verification.json",
+    "settings_changed_or_bypassed": false,
+    "display_states": 35,
+    "display_metrics_checked": 210,
+    "actual_downloads": true,
+    "download_count": 5,
+    "HTML_rendering": true,
+    "screenshots": true,
+    "M06_M07_prior_unverified_remains_unverified": true,
+    "loopback_HTTP_200_health_ok": true,
+    "owned_servers_stopped": true,
+    "owned_browser_tabs_closed": true,
+    "server_log_scope": "Initial old-M04 lazy-import exception retained; after existing-required-pandas eager import, fresh server rapid navigation and M08/M09 checks passed with no server exception. All captured browser console warning/error logs empty",
+    "initial_server_exception_count": 1,
+    "after_startup_fix_server_exception_count": 0,
+    "runtime_issue": "browser/runtime_issue.json",
+    "completed_display_states": 35,
+    "display_metrics": 210,
+    "comparison_intervals": 12,
+    "comparison_bounds": 24,
+    "transitional_frames_retained_not_counted": 5,
+    "after_fix_representative_frames": 8,
+    "owned_server_sessions": 3,
+    "AppTest_or_payloads_replace_browser_checks": false
+  },
+  "static_figure": {
+    "status": "passed",
+    "scope": "BCa six conditions mean M/Q and original-level99.5% bars match CSV; embedded Plotly and no external script/stylesheet tags. Not HTML rendering.",
+    "evidence": "browser/static_figure_check.json"
+  },
+  "fixed_experiment": {
+    "main_attempts": 1,
+    "reruns": 0,
+    "specified_smokes": 1,
+    "completed_cells": 6,
+    "new_originals": 60,
+    "independent_originals_per_population": 30,
+    "new_originals_generated": 60,
+    "new_inner_streams": 144000,
+    "R": 20,
+    "allocations": {
+      "P30": {
+        "J": 4,
+        "K": 30
+      },
+      "P60": {
+        "J": 2,
+        "K": 60
+      },
+      "P120": {
+        "J": 1,
+        "K": 120
+      }
+    },
+    "B": 4999,
+    "invalid": 0,
+    "missing": 0,
+    "frozen_source_files_unchanged": 20,
+    "accepted_M08_reference_files_verified": 9,
+    "original_raw_files_verified": 6,
+    "original_receipt_sha256": "03a3d39e7d7a4ddfcc31fce216a173e88b64ad31b9ff06704f6c40df22c85607",
+    "new_original_hashes_preregistered": false,
+    "raw_transform_bytes_audited": true,
+    "original_receipt_readback_before_inner_streams": true,
+    "old_evidence_and_requirements_unchanged": true,
+    "M09_original_receipt_sha256": "03a3d39e7d7a4ddfcc31fce216a173e88b64ad31b9ff06704f6c40df22c85607",
+    "CLI_wall_seconds": 55.73,
+    "worker_wall_seconds": 55.61704933398869,
+    "peak_RSS_bytes": 225722368,
+    "batch_elements_cap": 1000000,
+    "limits_met": true
+  },
+  "hypotheses": {
+    "H1": "supported",
+    "H2": "supported",
+    "population_decisions": {
+      "gamma": {
+        "H1": {
+          "status": "supported",
+          "reason": ""
+        },
+        "H2": {
+          "status": "supported",
+          "reason": "",
+          "mean_Q30": 1.385969570769045e-05,
+          "lower_interval": "H2_L_gamma",
+          "upper_interval": "H2_U_gamma"
+        }
+      },
+      "lognormal": {
+        "H1": {
+          "status": "supported",
+          "reason": ""
+        },
+        "H2": {
+          "status": "supported",
+          "reason": "",
+          "mean_Q30": 1.4383244653579848e-05,
+          "lower_interval": "H2_L_lognormal",
+          "upper_interval": "H2_U_lognormal"
+        }
+      }
+    },
+    "M08_reference_decisions": {
+      "H1": {
+        "status": "supported",
+        "gamma": "supported",
+        "lognormal": "supported"
+      },
+      "H2": {
+        "status": "supported",
+        "gamma": "supported",
+        "lognormal": "supported"
+      }
+    },
+    "M08_pooled_or_retested": false,
+    "old_new_ID_paired_comparison": false,
+    "N_per_population": 30,
+    "df": 29,
+    "confirmatory_intervals": 6,
+    "confidence": 0.995,
+    "detail": "hypotheses.json",
+    "H1_units": "Ase, not percentage points",
+    "H2_units": "ratio of population mean repeated-budget variances Q, multiplicative band(.8,1.25), not SD, not mean individual ratios, not plus/minus25percent",
+    "scope": "Finite R20 and group K/J on one newly generated cohort, decided alone without pooling or old/new ID pairing. P120 is not truth; no absolute bias, universal optimal allocation, RMSE or coverage-improvement claim. M08 known results excluded from new decisions; old M08 near-boundary G_U and prior conclusions retained. No M05/M06/M07/M08 retest."
+  },
+  "submission_state": "Owner review pending, MATH-056 through059 In Progress, Next056 only; not Owner accepted",
+  "not_performed": [
+    "Every control and actual download in each previous view, other viewport sizes and accessibility audits",
+    "RQ-M09 Owner acceptance or Owner individual new-feature operations",
+    "External scientific review",
+    "Full generation reconstruction of other143964 bootstrap sequences",
+    "Other browsers/mobile devices",
+    "Unrelated tickets/full MATH-005 restart trial",
+    "Next research question execution"
+  ],
+  "artifact_size": {
+    "scope": "Conservative full byte sizes of all public new/modified files relative to accepted M08 HEAD, including full README/HANDOFF, new raw/transformed originals/endpoints,36index/mean streams,compressed/full CSV,one self-contained HTML,code/tests/reports. Ignored local files/virtual environment excluded.",
+    "limit_bytes": 52428800,
+    "files": 106,
+    "bytes": 20899759,
+    "MiB": 19.931563
+  },
+  "publication": {
+    "repository": "https://github.com/Tone75/mathscape",
+    "repository_is_public": true,
+    "PR": "https://github.com/Tone75/mathscape/pull/9",
+    "PR_number": 9,
+    "state": "OPEN",
+    "draft": false,
+    "base_branch": "feat/rq-m08-budget-allocation",
+    "head_branch": "feat/rq-m09-independent-cohort",
+    "accepted_M08_base_SHA": "85382fd3ae8966dcf197d4006de21ea6edf9ef9f",
+    "preregistration_SHA": "9f3e5d6245e5c22a636795baaf9eb8297452d8ba",
+    "scientific_result_SHA": "de49a3a59aebb474ede35b320e82956ba45cc1dc",
+    "submitted_HEAD_command": "gh pr view 9 --repo Tone75/mathscape --json headRefOid",
+    "science_and_submission_docs_commits_distinguished": true,
+    "notion_sync": {
+      "pages": [
+        "MATH-056",
+        "MATH-057",
+        "MATH-058",
+        "MATH-059",
+        "Project Home",
+        "RQ-M09-v1 specification"
+      ],
+      "result_SHA_PR_validation_resources_synced": true,
+      "PENDING_NOTION_SYNC": false,
+      "task_state": "In Progress, Owner review pending",
+      "Next": "MATH-056 only",
+      "Owner_acceptance_or_Done_delegated": false,
+      "final_submission_SHA_recording": "Append final submission SHA to all six Notion pages after this documentation commit; retrieve it with PR headRefOid."
+    },
+    "protected_remote_heads_and_tags": 13,
+    "existing_PR_refs_unchanged": 16,
+    "new_tags_releases_merges": false,
+    "new_research_experiments": false
+  }
+}

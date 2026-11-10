@@ -1,5 +1,8 @@
 """MATHSCAPE's local, offline-capable Streamlit interface."""
 
+# Streamlit already requires pandas. Finish its import before widgets can rerun
+# the script while Plotly checks pandas types through sys.modules.
+import pandas  # noqa: F401
 import numpy as np
 import plotly.graph_objects as go
 import streamlit as st

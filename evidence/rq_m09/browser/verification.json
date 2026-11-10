@@ -1,0 +1,854 @@
+{
+  "status": "passed",
+  "scope": "Actual IAB browser representative operations; stable completed frames compared with saved values; 5 actual M09 download events. Not exhaustive or Owner individual operations.",
+  "settings_changed_or_bypassed": false,
+  "display_states": 35,
+  "display_metrics_checked": 210,
+  "display_metric_rounding": ".6g exact agreement with selected-cohort saved budget CSV",
+  "comparison_intervals_checked": 12,
+  "comparison_bounds_checked": 24,
+  "comparison_format": "+.9g exact saved JSON bounds",
+  "captures": [
+    {
+      "label": "M08 G0 outer0 r0 P30 BCa baseline",
+      "phase": "before_startup_fix",
+      "cohort": "M08",
+      "distribution": "gamma",
+      "master_seed": 0,
+      "outer_id": 0,
+      "r": 0,
+      "allocation": "P30",
+      "method": "bca",
+      "sample_sha256": "cfd609b63189516de31eb72a968c2097a6ce97ac1ce456772f955cf3de5a74df",
+      "metrics": {
+        "lower_sd": "0.00657128",
+        "upper_sd": "0.0104525",
+        "S": "0.00874915",
+        "se": "0.200476",
+        "T": "0.0436419",
+        "Vbar": "0.00193065"
+      },
+      "both_cohort_24_bounds_match_saved_JSON": true
+    },
+    {
+      "label": "M09 G0 outer0 r0 P30 BCa settled",
+      "phase": "before_startup_fix",
+      "cohort": "M09",
+      "distribution": "gamma",
+      "master_seed": 0,
+      "outer_id": 0,
+      "r": 0,
+      "allocation": "P30",
+      "method": "bca",
+      "sample_sha256": "f55048bc91ff4085657167e8fa5336b18f1bbe41255285fc975ae196c8d5a180",
+      "metrics": {
+        "lower_sd": "0.003578",
+        "upper_sd": "0.0309285",
+        "S": "0.0220165",
+        "se": "0.211693",
+        "T": "0.104002",
+        "Vbar": "0.0109028"
+      },
+      "both_cohort_24_bounds_match_saved_JSON": true
+    },
+    {
+      "label": "M09 G0/0 P60 BCa",
+      "phase": "before_startup_fix",
+      "cohort": "M09",
+      "distribution": "gamma",
+      "master_seed": 0,
+      "outer_id": 0,
+      "r": 0,
+      "allocation": "P60",
+      "method": "bca",
+      "sample_sha256": "f55048bc91ff4085657167e8fa5336b18f1bbe41255285fc975ae196c8d5a180",
+      "metrics": {
+        "lower_sd": "0.00363583",
+        "upper_sd": "0.0310063",
+        "S": "0.0220752",
+        "se": "0.211693",
+        "T": "0.10428",
+        "Vbar": "0.0108743"
+      },
+      "both_cohort_24_bounds_match_saved_JSON": true
+    },
+    {
+      "label": "M09 G0/0 P120 BCa",
+      "phase": "before_startup_fix",
+      "cohort": "M09",
+      "distribution": "gamma",
+      "master_seed": 0,
+      "outer_id": 0,
+      "r": 0,
+      "allocation": "P120",
+      "method": "bca",
+      "sample_sha256": "f55048bc91ff4085657167e8fa5336b18f1bbe41255285fc975ae196c8d5a180",
+      "metrics": {
+        "lower_sd": "0.0036245",
+        "upper_sd": "0.0308829",
+        "S": "0.0219874",
+        "se": "0.211693",
+        "T": "0.103865",
+        "Vbar": "0.0107879"
+      },
+      "both_cohort_24_bounds_match_saved_JSON": true
+    },
+    {
+      "label": "M09 G0/0 r19 P120 BCa",
+      "phase": "before_startup_fix",
+      "cohort": "M09",
+      "distribution": "gamma",
+      "master_seed": 0,
+      "outer_id": 0,
+      "r": 19,
+      "allocation": "P120",
+      "method": "bca",
+      "sample_sha256": "f55048bc91ff4085657167e8fa5336b18f1bbe41255285fc975ae196c8d5a180",
+      "metrics": {
+        "lower_sd": "0.00396473",
+        "upper_sd": "0.0357258",
+        "S": "0.0254171",
+        "se": "0.211693",
+        "T": "0.120066",
+        "Vbar": "0.0144158"
+      },
+      "both_cohort_24_bounds_match_saved_JSON": true
+    },
+    {
+      "label": "M09 G0/0 r19 P120 percentile",
+      "phase": "before_startup_fix",
+      "cohort": "M09",
+      "distribution": "gamma",
+      "master_seed": 0,
+      "outer_id": 0,
+      "r": 19,
+      "allocation": "P120",
+      "method": "percentile",
+      "sample_sha256": "f55048bc91ff4085657167e8fa5336b18f1bbe41255285fc975ae196c8d5a180",
+      "metrics": {
+        "lower_sd": "0.00364747",
+        "upper_sd": "0.0108606",
+        "S": "0.00810113",
+        "se": "0.211693",
+        "T": "0.0382683",
+        "Vbar": "0.00146446"
+      },
+      "both_cohort_24_bounds_match_saved_JSON": true
+    },
+    {
+      "label": "M09 G0/0 r19 P120 t",
+      "phase": "before_startup_fix",
+      "cohort": "M09",
+      "distribution": "gamma",
+      "master_seed": 0,
+      "outer_id": 0,
+      "r": 19,
+      "allocation": "P120",
+      "method": "t",
+      "sample_sha256": "f55048bc91ff4085657167e8fa5336b18f1bbe41255285fc975ae196c8d5a180",
+      "metrics": {
+        "lower_sd": "0",
+        "upper_sd": "0",
+        "S": "0",
+        "se": "0.211693",
+        "T": "0",
+        "Vbar": "0"
+      },
+      "both_cohort_24_bounds_match_saved_JSON": true
+    },
+    {
+      "label": "M09 G2 outer9 r19 t",
+      "phase": "before_startup_fix",
+      "cohort": "M09",
+      "distribution": "gamma",
+      "master_seed": 2,
+      "outer_id": 0,
+      "r": 19,
+      "allocation": "P120",
+      "method": "t",
+      "sample_sha256": "df5a311d35c0dcc064847d8987e72a00ad8a5e1f15e9fdd91cadd9358c4046d1",
+      "metrics": {
+        "lower_sd": "0",
+        "upper_sd": "0",
+        "S": "0",
+        "se": "0.187984",
+        "T": "0",
+        "Vbar": "0"
+      },
+      "both_cohort_24_bounds_match_saved_JSON": true
+    },
+    {
+      "label": "M09 L0 outer0 r0 t",
+      "phase": "before_startup_fix",
+      "cohort": "M09",
+      "distribution": "lognormal",
+      "master_seed": 0,
+      "outer_id": 0,
+      "r": 0,
+      "allocation": "P120",
+      "method": "t",
+      "sample_sha256": "3ed76eaf4515b8721d05d70acd96f8778bd0434b160b90145d87b168bd605a75",
+      "metrics": {
+        "lower_sd": "0",
+        "upper_sd": "0",
+        "S": "0",
+        "se": "0.175025",
+        "T": "0",
+        "Vbar": "0"
+      },
+      "both_cohort_24_bounds_match_saved_JSON": true
+    },
+    {
+      "label": "M09 L0 outer0 r0 P30 BCa",
+      "phase": "before_startup_fix",
+      "cohort": "M09",
+      "distribution": "lognormal",
+      "master_seed": 0,
+      "outer_id": 0,
+      "r": 0,
+      "allocation": "P30",
+      "method": "bca",
+      "sample_sha256": "3ed76eaf4515b8721d05d70acd96f8778bd0434b160b90145d87b168bd605a75",
+      "metrics": {
+        "lower_sd": "0.00683947",
+        "upper_sd": "0.00979146",
+        "S": "0.00847098",
+        "se": "0.175025",
+        "T": "0.0483986",
+        "Vbar": "0.00234818"
+      },
+      "both_cohort_24_bounds_match_saved_JSON": true
+    },
+    {
+      "label": "M09 L0 outer0 r0 P60 BCa",
+      "phase": "before_startup_fix",
+      "cohort": "M09",
+      "distribution": "lognormal",
+      "master_seed": 0,
+      "outer_id": 0,
+      "r": 0,
+      "allocation": "P60",
+      "method": "bca",
+      "sample_sha256": "3ed76eaf4515b8721d05d70acd96f8778bd0434b160b90145d87b168bd605a75",
+      "metrics": {
+        "lower_sd": "0.00684921",
+        "upper_sd": "0.00982066",
+        "S": "0.0084741",
+        "se": "0.175025",
+        "T": "0.0484164",
+        "Vbar": "0.00234834"
+      },
+      "both_cohort_24_bounds_match_saved_JSON": true
+    },
+    {
+      "label": "M09 L0 outer0 r0 P120 percentile",
+      "phase": "before_startup_fix",
+      "cohort": "M09",
+      "distribution": "lognormal",
+      "master_seed": 0,
+      "outer_id": 0,
+      "r": 0,
+      "allocation": "P120",
+      "method": "percentile",
+      "sample_sha256": "3ed76eaf4515b8721d05d70acd96f8778bd0434b160b90145d87b168bd605a75",
+      "metrics": {
+        "lower_sd": "0.00607018",
+        "upper_sd": "0.00655199",
+        "S": "0.00631568",
+        "se": "0.175025",
+        "T": "0.0360844",
+        "Vbar": "0.00130208"
+      },
+      "both_cohort_24_bounds_match_saved_JSON": true
+    },
+    {
+      "label": "M09 L0 outer0 r0 P120 t",
+      "phase": "before_startup_fix",
+      "cohort": "M09",
+      "distribution": "lognormal",
+      "master_seed": 0,
+      "outer_id": 0,
+      "r": 0,
+      "allocation": "P120",
+      "method": "t",
+      "sample_sha256": "3ed76eaf4515b8721d05d70acd96f8778bd0434b160b90145d87b168bd605a75",
+      "metrics": {
+        "lower_sd": "0",
+        "upper_sd": "0",
+        "S": "0",
+        "se": "0.175025",
+        "T": "0",
+        "Vbar": "0"
+      },
+      "both_cohort_24_bounds_match_saved_JSON": true
+    },
+    {
+      "label": "M09 L1 outer8 entered and applied",
+      "phase": "before_startup_fix",
+      "cohort": "M09",
+      "distribution": "lognormal",
+      "master_seed": 1,
+      "outer_id": 8,
+      "r": 0,
+      "allocation": "P120",
+      "method": "bca",
+      "sample_sha256": "22b875b83db9fd22bee6ec017fbbd016459f6164836aa1e20cbc0686185b7c9a",
+      "metrics": {
+        "lower_sd": "0.0046482",
+        "upper_sd": "0.010172",
+        "S": "0.0079081",
+        "se": "0.144188",
+        "T": "0.0548456",
+        "Vbar": "0.00300804"
+      },
+      "both_cohort_24_bounds_match_saved_JSON": true
+    },
+    {
+      "label": "M09 L1 outer8 r7 P120 BCa",
+      "phase": "before_startup_fix",
+      "cohort": "M09",
+      "distribution": "lognormal",
+      "master_seed": 1,
+      "outer_id": 8,
+      "r": 7,
+      "allocation": "P120",
+      "method": "bca",
+      "sample_sha256": "22b875b83db9fd22bee6ec017fbbd016459f6164836aa1e20cbc0686185b7c9a",
+      "metrics": {
+        "lower_sd": "0.00442675",
+        "upper_sd": "0.0107004",
+        "S": "0.00818827",
+        "se": "0.144188",
+        "T": "0.0567887",
+        "Vbar": "0.00322495"
+      },
+      "both_cohort_24_bounds_match_saved_JSON": true
+    },
+    {
+      "label": "M08 L2 outer6 r3 P30 percentile",
+      "phase": "before_startup_fix",
+      "cohort": "M08",
+      "distribution": "lognormal",
+      "master_seed": 2,
+      "outer_id": 6,
+      "r": 3,
+      "allocation": "P30",
+      "method": "percentile",
+      "sample_sha256": "324b235c4baccf25ac18004dc158eb1608534908f54539634e6f1cd96d2c9438",
+      "metrics": {
+        "lower_sd": "0.00441459",
+        "upper_sd": "0.00639058",
+        "S": "0.00550286",
+        "se": "0.157372",
+        "T": "0.0349672",
+        "Vbar": "0.00122727"
+      },
+      "both_cohort_24_bounds_match_saved_JSON": true
+    },
+    {
+      "label": "M08 L2 outer6 r3 P60 t",
+      "phase": "before_startup_fix",
+      "cohort": "M08",
+      "distribution": "lognormal",
+      "master_seed": 2,
+      "outer_id": 6,
+      "r": 3,
+      "allocation": "P60",
+      "method": "t",
+      "sample_sha256": "324b235c4baccf25ac18004dc158eb1608534908f54539634e6f1cd96d2c9438",
+      "metrics": {
+        "lower_sd": "0",
+        "upper_sd": "0",
+        "S": "0",
+        "se": "0.157372",
+        "T": "0",
+        "Vbar": "0"
+      },
+      "both_cohort_24_bounds_match_saved_JSON": true
+    },
+    {
+      "label": "M08 L2 outer6 r3 P120 BCa",
+      "phase": "before_startup_fix",
+      "cohort": "M08",
+      "distribution": "lognormal",
+      "master_seed": 2,
+      "outer_id": 6,
+      "r": 3,
+      "allocation": "P120",
+      "method": "bca",
+      "sample_sha256": "324b235c4baccf25ac18004dc158eb1608534908f54539634e6f1cd96d2c9438",
+      "metrics": {
+        "lower_sd": "0.00555345",
+        "upper_sd": "0.0110731",
+        "S": "0.00875943",
+        "se": "0.157372",
+        "T": "0.0556605",
+        "Vbar": "0.00309809"
+      },
+      "both_cohort_24_bounds_match_saved_JSON": true
+    },
+    {
+      "label": "M08 G1 outer4 r11 BCa",
+      "phase": "before_startup_fix",
+      "cohort": "M08",
+      "distribution": "gamma",
+      "master_seed": 1,
+      "outer_id": 4,
+      "r": 11,
+      "allocation": "P120",
+      "method": "bca",
+      "sample_sha256": "3da6e003bce6f12aa78697f0009b84294e0cce5c9613ac8a587d56679a0febc1",
+      "metrics": {
+        "lower_sd": "0.00822342",
+        "upper_sd": "0.0239883",
+        "S": "0.0179313",
+        "se": "0.273825",
+        "T": "0.0654845",
+        "Vbar": "0.00428822"
+      },
+      "both_cohort_24_bounds_match_saved_JSON": true
+    },
+    {
+      "label": "M09 G2 outer9 r19 applied and settled",
+      "phase": "before_startup_fix",
+      "cohort": "M09",
+      "distribution": "gamma",
+      "master_seed": 2,
+      "outer_id": 9,
+      "r": 19,
+      "allocation": "P120",
+      "method": "bca",
+      "sample_sha256": "dc52daef511d970f9f7d05388b8591d76a2c3d7e629c083f93607e10f4ade459",
+      "metrics": {
+        "lower_sd": "0.00536606",
+        "upper_sd": "0.0123709",
+        "S": "0.00953502",
+        "se": "0.168333",
+        "T": "0.0566437",
+        "Vbar": "0.00320851"
+      },
+      "both_cohort_24_bounds_match_saved_JSON": true
+    },
+    {
+      "label": "M09 L1 outer8 r7 restored",
+      "phase": "before_startup_fix",
+      "cohort": "M09",
+      "distribution": "lognormal",
+      "master_seed": 1,
+      "outer_id": 8,
+      "r": 7,
+      "allocation": "P120",
+      "method": "bca",
+      "sample_sha256": "22b875b83db9fd22bee6ec017fbbd016459f6164836aa1e20cbc0686185b7c9a",
+      "metrics": {
+        "lower_sd": "0.00442675",
+        "upper_sd": "0.0107004",
+        "S": "0.00818827",
+        "se": "0.144188",
+        "T": "0.0567887",
+        "Vbar": "0.00322495"
+      },
+      "both_cohort_24_bounds_match_saved_JSON": true
+    },
+    {
+      "label": "M08 L2 outer6 r3 restored",
+      "phase": "before_startup_fix",
+      "cohort": "M08",
+      "distribution": "lognormal",
+      "master_seed": 2,
+      "outer_id": 6,
+      "r": 3,
+      "allocation": "P120",
+      "method": "bca",
+      "sample_sha256": "324b235c4baccf25ac18004dc158eb1608534908f54539634e6f1cd96d2c9438",
+      "metrics": {
+        "lower_sd": "0.00555345",
+        "upper_sd": "0.0110731",
+        "S": "0.00875943",
+        "se": "0.157372",
+        "T": "0.0556605",
+        "Vbar": "0.00309809"
+      },
+      "both_cohort_24_bounds_match_saved_JSON": true
+    },
+    {
+      "label": "M09 L1 outer8 r7 restored after old cohort",
+      "phase": "before_startup_fix",
+      "cohort": "M09",
+      "distribution": "lognormal",
+      "master_seed": 1,
+      "outer_id": 8,
+      "r": 7,
+      "allocation": "P120",
+      "method": "bca",
+      "sample_sha256": "22b875b83db9fd22bee6ec017fbbd016459f6164836aa1e20cbc0686185b7c9a",
+      "metrics": {
+        "lower_sd": "0.00442675",
+        "upper_sd": "0.0107004",
+        "S": "0.00818827",
+        "se": "0.144188",
+        "T": "0.0567887",
+        "Vbar": "0.00322495"
+      },
+      "both_cohort_24_bounds_match_saved_JSON": true
+    },
+    {
+      "label": "M09 L1 outer8 r7 after Lab return",
+      "phase": "before_startup_fix",
+      "cohort": "M09",
+      "distribution": "lognormal",
+      "master_seed": 1,
+      "outer_id": 8,
+      "r": 7,
+      "allocation": "P120",
+      "method": "bca",
+      "sample_sha256": "22b875b83db9fd22bee6ec017fbbd016459f6164836aa1e20cbc0686185b7c9a",
+      "metrics": {
+        "lower_sd": "0.00442675",
+        "upper_sd": "0.0107004",
+        "S": "0.00818827",
+        "se": "0.144188",
+        "T": "0.0567887",
+        "Vbar": "0.00322495"
+      },
+      "both_cohort_24_bounds_match_saved_JSON": true
+    },
+    {
+      "label": "M09 L1 outer8 r7 after mode return fixedalpha.05",
+      "phase": "before_startup_fix",
+      "cohort": "M09",
+      "distribution": "lognormal",
+      "master_seed": 1,
+      "outer_id": 8,
+      "r": 7,
+      "allocation": "P120",
+      "method": "bca",
+      "sample_sha256": "22b875b83db9fd22bee6ec017fbbd016459f6164836aa1e20cbc0686185b7c9a",
+      "metrics": {
+        "lower_sd": "0.00442675",
+        "upper_sd": "0.0107004",
+        "S": "0.00818827",
+        "se": "0.144188",
+        "T": "0.0567887",
+        "Vbar": "0.00322495"
+      },
+      "both_cohort_24_bounds_match_saved_JSON": true
+    },
+    {
+      "label": "M08 G1 outer4 r11 restored after new cohort",
+      "phase": "before_startup_fix",
+      "cohort": "M08",
+      "distribution": "gamma",
+      "master_seed": 1,
+      "outer_id": 4,
+      "r": 11,
+      "allocation": "P120",
+      "method": "bca",
+      "sample_sha256": "3da6e003bce6f12aa78697f0009b84294e0cce5c9613ac8a587d56679a0febc1",
+      "metrics": {
+        "lower_sd": "0.00822342",
+        "upper_sd": "0.0239883",
+        "S": "0.0179313",
+        "se": "0.273825",
+        "T": "0.0654845",
+        "Vbar": "0.00428822"
+      },
+      "both_cohort_24_bounds_match_saved_JSON": true
+    },
+    {
+      "label": "M09 L1 outer8 r7 final restored",
+      "phase": "before_startup_fix",
+      "cohort": "M09",
+      "distribution": "lognormal",
+      "master_seed": 1,
+      "outer_id": 8,
+      "r": 7,
+      "allocation": "P120",
+      "method": "bca",
+      "sample_sha256": "22b875b83db9fd22bee6ec017fbbd016459f6164836aa1e20cbc0686185b7c9a",
+      "metrics": {
+        "lower_sd": "0.00442675",
+        "upper_sd": "0.0107004",
+        "S": "0.00818827",
+        "se": "0.144188",
+        "T": "0.0567887",
+        "Vbar": "0.00322495"
+      },
+      "both_cohort_24_bounds_match_saved_JSON": true
+    },
+    {
+      "label": "Post-fix M08 G0 initial",
+      "phase": "after_startup_fix",
+      "cohort": "M08",
+      "distribution": "gamma",
+      "master_seed": 0,
+      "outer_id": 0,
+      "r": 0,
+      "allocation": "P30",
+      "method": "bca",
+      "sample_sha256": "cfd609b63189516de31eb72a968c2097a6ce97ac1ce456772f955cf3de5a74df",
+      "metrics": {
+        "lower_sd": "0.00657128",
+        "upper_sd": "0.0104525",
+        "S": "0.00874915",
+        "se": "0.200476",
+        "T": "0.0436419",
+        "Vbar": "0.00193065"
+      },
+      "both_cohort_24_bounds_match_saved_JSON": true
+    },
+    {
+      "label": "Post-fix M09 G0 initial",
+      "phase": "after_startup_fix",
+      "cohort": "M09",
+      "distribution": "gamma",
+      "master_seed": 0,
+      "outer_id": 0,
+      "r": 0,
+      "allocation": "P30",
+      "method": "bca",
+      "sample_sha256": "f55048bc91ff4085657167e8fa5336b18f1bbe41255285fc975ae196c8d5a180",
+      "metrics": {
+        "lower_sd": "0.003578",
+        "upper_sd": "0.0309285",
+        "S": "0.0220165",
+        "se": "0.211693",
+        "T": "0.104002",
+        "Vbar": "0.0109028"
+      },
+      "both_cohort_24_bounds_match_saved_JSON": true
+    },
+    {
+      "label": "Post-fix M09 G0 P60 BCa",
+      "phase": "after_startup_fix",
+      "cohort": "M09",
+      "distribution": "gamma",
+      "master_seed": 0,
+      "outer_id": 0,
+      "r": 0,
+      "allocation": "P60",
+      "method": "bca",
+      "sample_sha256": "f55048bc91ff4085657167e8fa5336b18f1bbe41255285fc975ae196c8d5a180",
+      "metrics": {
+        "lower_sd": "0.00363583",
+        "upper_sd": "0.0310063",
+        "S": "0.0220752",
+        "se": "0.211693",
+        "T": "0.10428",
+        "Vbar": "0.0108743"
+      },
+      "both_cohort_24_bounds_match_saved_JSON": true
+    },
+    {
+      "label": "Post-fix M09 G0 P120 percentile",
+      "phase": "after_startup_fix",
+      "cohort": "M09",
+      "distribution": "gamma",
+      "master_seed": 0,
+      "outer_id": 0,
+      "r": 0,
+      "allocation": "P120",
+      "method": "percentile",
+      "sample_sha256": "f55048bc91ff4085657167e8fa5336b18f1bbe41255285fc975ae196c8d5a180",
+      "metrics": {
+        "lower_sd": "0.00376173",
+        "upper_sd": "0.0113619",
+        "S": "0.00846298",
+        "se": "0.211693",
+        "T": "0.0399776",
+        "Vbar": "0.00159821"
+      },
+      "both_cohort_24_bounds_match_saved_JSON": true
+    },
+    {
+      "label": "Post-fix M09 G0 P120 t",
+      "phase": "after_startup_fix",
+      "cohort": "M09",
+      "distribution": "gamma",
+      "master_seed": 0,
+      "outer_id": 0,
+      "r": 0,
+      "allocation": "P120",
+      "method": "t",
+      "sample_sha256": "f55048bc91ff4085657167e8fa5336b18f1bbe41255285fc975ae196c8d5a180",
+      "metrics": {
+        "lower_sd": "0",
+        "upper_sd": "0",
+        "S": "0",
+        "se": "0.211693",
+        "T": "0",
+        "Vbar": "0"
+      },
+      "both_cohort_24_bounds_match_saved_JSON": true
+    },
+    {
+      "label": "Post-fix M09 L0 P30 BCa",
+      "phase": "after_startup_fix",
+      "cohort": "M09",
+      "distribution": "lognormal",
+      "master_seed": 0,
+      "outer_id": 0,
+      "r": 0,
+      "allocation": "P30",
+      "method": "bca",
+      "sample_sha256": "3ed76eaf4515b8721d05d70acd96f8778bd0434b160b90145d87b168bd605a75",
+      "metrics": {
+        "lower_sd": "0.00683947",
+        "upper_sd": "0.00979146",
+        "S": "0.00847098",
+        "se": "0.175025",
+        "T": "0.0483986",
+        "Vbar": "0.00234818"
+      },
+      "both_cohort_24_bounds_match_saved_JSON": true
+    },
+    {
+      "label": "Post-fix M08 G0 restored",
+      "phase": "after_startup_fix",
+      "cohort": "M08",
+      "distribution": "gamma",
+      "master_seed": 0,
+      "outer_id": 0,
+      "r": 0,
+      "allocation": "P30",
+      "method": "bca",
+      "sample_sha256": "cfd609b63189516de31eb72a968c2097a6ce97ac1ce456772f955cf3de5a74df",
+      "metrics": {
+        "lower_sd": "0.00657128",
+        "upper_sd": "0.0104525",
+        "S": "0.00874915",
+        "se": "0.200476",
+        "T": "0.0436419",
+        "Vbar": "0.00193065"
+      },
+      "both_cohort_24_bounds_match_saved_JSON": true
+    },
+    {
+      "label": "Post-fix M09 G0 after Lab return",
+      "phase": "after_startup_fix",
+      "cohort": "M09",
+      "distribution": "gamma",
+      "master_seed": 0,
+      "outer_id": 0,
+      "r": 0,
+      "allocation": "P30",
+      "method": "bca",
+      "sample_sha256": "f55048bc91ff4085657167e8fa5336b18f1bbe41255285fc975ae196c8d5a180",
+      "metrics": {
+        "lower_sd": "0.003578",
+        "upper_sd": "0.0309285",
+        "S": "0.0220165",
+        "se": "0.211693",
+        "T": "0.104002",
+        "Vbar": "0.0109028"
+      },
+      "both_cohort_24_bounds_match_saved_JSON": true
+    }
+  ],
+  "transitional_frames": [
+    {
+      "label": "M09 G0 outer0 r0 P30 BCa independent original",
+      "metric_count": 4,
+      "status": "incremental rendering frame retained in observations.json, not counted as completed numerical verification"
+    },
+    {
+      "label": "M08 L0 outer0 r0 restored as separate cohort",
+      "metric_count": 6,
+      "metric_values_already_matched": true,
+      "comparison_lines": 4,
+      "status": "incremental render with incomplete cohort comparison/detail section; retained in observations.json, not counted as completed verification"
+    },
+    {
+      "label": "M09 G2 outer0 r19 restored before applied ID9",
+      "metric_count": 5,
+      "status": "incremental rendering frame retained in observations.json, not counted as completed numerical verification"
+    },
+    {
+      "label": "Post-fix M08 L0 P30 BCa",
+      "metric_count": 6,
+      "metric_values_already_matched": true,
+      "comparison_lines": 4,
+      "status": "incremental render with incomplete cohort comparison/detail section; retained in observations.json, not counted as completed verification"
+    },
+    {
+      "label": "Post-fix M09 G0 restored",
+      "metric_count": 6,
+      "metric_values_already_matched": true,
+      "comparison_lines": 0,
+      "status": "incremental render with incomplete cohort comparison/detail section; retained in observations.json, not counted as completed verification"
+    }
+  ],
+  "actual_downloads": true,
+  "downloads": [
+    {
+      "key": "pooled",
+      "bytes": 93504,
+      "sha256": "9190fb1b8ef021065df340c416bb38abece721a0505d81ee4f7e7ca90acca504",
+      "exact_saved_bytes": true
+    },
+    {
+      "key": "hypotheses",
+      "bytes": 12044,
+      "sha256": "80f5869d005f91766b424dacd59961ef527168d28071235bfc1b527e2907e7f1",
+      "exact_saved_bytes": true
+    },
+    {
+      "key": "html",
+      "bytes": 4861263,
+      "sha256": "f00d6affbd8490532fbd1815b31bc0b531408477033b9b1059538fec43b6a754",
+      "exact_saved_bytes": true
+    },
+    {
+      "key": "sample",
+      "cohort": "M09",
+      "rows": 20,
+      "bytes": 4723,
+      "sha256": "ee9f8f5071b12fcd916c2c99ec3d835434c99df86f0cb7f4419b34d7abb10bfa",
+      "all_saved_values_equal": true
+    },
+    {
+      "key": "endpoints",
+      "cohort": "M09",
+      "rows": 7200,
+      "bytes": 1707921,
+      "sha256": "e27f0da138ab780dd6efb24c2f799c9d9643362562d467f28e70b6c5567166a7",
+      "all_saved_values_equal": true
+    }
+  ],
+  "HTML_rendering": true,
+  "HTML_scope": "Actual loopback views of M09 self-contained BCa6-condition M/Q overview and accepted M08 reference HTML; only M09 HTML downloaded this run; original files unchanged.",
+  "old_Lab_operations": [
+    "Probability normal→beta",
+    "Chaos r2.5 preset",
+    "Fractal zoomin/panright/reset",
+    "Inference free alpha .01 and .1 without model execution",
+    "RQ-M02 comparison form and saved M03–M07 representative views"
+  ],
+  "state_retention": [
+    "M08/M09 each gamma/lognormal seed/ID/r restoration",
+    "all3 allocations and methods in both cohorts, representative combinations, not exhaustive Cartesian UI operations",
+    "Lab/mode roundtrips and fixed .05/B4999/R20 despite free alpha changes",
+    "old M05 K1 NA text remains"
+  ],
+  "server_log_files": [
+    "server_log.txt",
+    "figure_http.txt"
+  ],
+  "browser_logs_errors_or_warnings": 0,
+  "initial_server_exception_count": 1,
+  "after_startup_fix_server_exception_count": 0,
+  "initial_runtime_issue": "runtime_issue.json",
+  "after_fix_representative_frames": 8,
+  "owned_server_sessions": 3,
+  "owned_browser_tab_sessions": 3,
+  "target_duplicate_initialization_warning_seen": false,
+  "owned_browser_tabs_closed": true,
+  "owned_servers_stopped": true,
+  "prior_RQ_historical_verification_records_unchanged": true,
+  "not_performed": [
+    "Every previous-view control or actual download",
+    "All cohort/population/method/allocation Cartesian combinations in real browser",
+    "Other browser engines, viewports, mobile, accessibility audit",
+    "Owner individual operations or external scientific review"
+  ]
+}
