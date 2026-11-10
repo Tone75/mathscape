@@ -6,6 +6,12 @@ Owner受入済みM08 HEAD `85382fd3ae8966dcf197d4006de21ea6edf9ef9f`、科学成
 
 056受領→057全ID／生成規則／6・7要素キー／数理／監査／guard事前commit→058新60原標本をraw/x/キー/hash保存・読み戻し後に主1回／独立監査→059既存同一予算保存UIのコホート切替／検証／新PR。Next056のみ。主前はM09原標本を生成・閲覧せず、未生成hash固定と表現しない。新旧pool／対応比較・結果後再抽選なし。新成果はレビュー待ち、保留を非同等やM08の誤りと断定しない。詳細は `evidence/rq_m09/SPEC.md`／`CODEX_RECEIPT.md`。旧証拠・既存PR/main/タグ/Releaseを保持する。
 
+事前固定 `9f3e5d6245e5c22a636795baaf9eb8297452d8ba`、manifest SHA256 `ba9a89ac106b124ffca32ff6867935448302c9f921637bbd17c2f9b4a2339173`。事前commit後に全60新原標本raw/x/キー/hashを保存・読み戻し確認し、主1回・smoke1回・再実行0。主55.73秒／RSS225,722,368 bytes、無効・欠測0。M09単独H1/H2とも両分布支持、M08の限定支持と近境界G_Uを保持し旧新pool／対応比較なし。全原標本変換・全表・主6区間・指定36系列の独立監査は不一致0、残143,964系列の生成過程完全監査ではない。
+
+保存入口は既存 `mathscape/allocation_ui.py`（コホート切替、8モード維持）。数理／生成は `mathscape/replication.py`、実行入口は `scripts/run_replication_guarded.py`／`run_replication_benchmark.py`、読み取り監査は `python scripts/audit_replication.py evidence/rq_m09`。主を通常テスト／保存UI／監査から起動しない。20固定ソースと9旧参照・旧全証拠を保持し、追加実験なし。
+
+全1,396 pytest成功91.55秒・新AppTest13／pip check成功。実ブラウザ35完了フレーム210指標・旧新12区間一致、5実ダウンロードとraw/x20行・7200端点一致、旧新HTML実表示。旧M04初回のpandas部分初期化参照をapp入口の既存必須依存importで修正、新規サーバー再検証で再発0。元ログを保持し、依存追加／更新・設定回避・数理変更・主再実行なし。検証範囲と未検証は `evidence/rq_m09/validation.json`／`browser/verification.json`／`runtime_issue.json`。確認用3プロセス／3tab終了済み。056〜059 In Progress・Next056のみ、新成果はOwnerレビュー待ちでDoneを代行しない。
+
 ## 最新の受入と実行状態：RQ-M08
 
 この節はM08提出時点の履歴。M08はOwner受入済み・052〜055 Done／Next=falseで、現在のNextは上記M09親票056のみ。旧レビュー待ちは開始条件ではない。

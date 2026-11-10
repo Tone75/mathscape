@@ -1,0 +1,22 @@
+{
+  "question_id": "RQ-M09",
+  "source_git_sha": "9f3e5d6245e5c22a636795baaf9eb8297452d8ba",
+  "started_utc": "2026-11-10T13:47:27.037413+00:00",
+  "planned_child_launches": 1,
+  "command": [
+    "python",
+    "scripts/run_replication_benchmark.py",
+    "--run",
+    "--manifest",
+    "evidence/rq_m09/manifest.json",
+    "--output",
+    "evidence/rq_m09",
+    "--source-commit",
+    "9f3e5d6245e5c22a636795baaf9eb8297452d8ba"
+  ],
+  "soft_termination_seconds": 295.0,
+  "hard_kill_seconds": 298.0,
+  "finish_deadline_seconds": 299.0,
+  "outer_cap_seconds": 300,
+  "scope": "one guarded main attempt; no scientific retry"
+}

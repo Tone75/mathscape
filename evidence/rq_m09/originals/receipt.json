@@ -1,0 +1,1512 @@
+{
+  "schema_version": 1,
+  "question_id": "RQ-M09",
+  "source_git_sha": "9f3e5d6245e5c22a636795baaf9eb8297452d8ba",
+  "cohort_role": "new_M09_main_originals",
+  "namespace": 5058617,
+  "hash_recording_phase": "after generation inside the verified main attempt, never preregistered before creation",
+  "original_samples": 60,
+  "records": [
+    {
+      "distribution": "gamma",
+      "master_seed": 0,
+      "outer_id": 0,
+      "n": 20,
+      "namespace": 5058617,
+      "entropy": 0,
+      "spawn_key": [
+        5058617,
+        1,
+        20,
+        0,
+        0,
+        0
+      ],
+      "raw_kind": "gamma_y",
+      "constants": {
+        "shape": 1.0,
+        "scale": 1.0
+      },
+      "sample_sha256": "f55048bc91ff4085657167e8fa5336b18f1bbe41255285fc975ae196c8d5a180",
+      "raw_sha256": "26eacc3851e125e588757d18abba3595d18e8d9362c87406f11a23f6a3f3be0a"
+    },
+    {
+      "distribution": "gamma",
+      "master_seed": 0,
+      "outer_id": 1,
+      "n": 20,
+      "namespace": 5058617,
+      "entropy": 0,
+      "spawn_key": [
+        5058617,
+        1,
+        20,
+        1,
+        0,
+        0
+      ],
+      "raw_kind": "gamma_y",
+      "constants": {
+        "shape": 1.0,
+        "scale": 1.0
+      },
+      "sample_sha256": "d12e79bbd79194359ed1c91bcb723993fc9faf1369a0c196fbe6f5383fdbad7c",
+      "raw_sha256": "e4112599376e401e5de7008089a293c5a2eca59068b306c79455d17b55276259"
+    },
+    {
+      "distribution": "gamma",
+      "master_seed": 0,
+      "outer_id": 2,
+      "n": 20,
+      "namespace": 5058617,
+      "entropy": 0,
+      "spawn_key": [
+        5058617,
+        1,
+        20,
+        2,
+        0,
+        0
+      ],
+      "raw_kind": "gamma_y",
+      "constants": {
+        "shape": 1.0,
+        "scale": 1.0
+      },
+      "sample_sha256": "f8d4bbcecc794811a4c359b00a8a9c2430f74aff28818300c1cf4acb872a9bdc",
+      "raw_sha256": "c3ede0de5959bda2967fe34f0c0e7fb525780bc87247010541f5a45747a1561e"
+    },
+    {
+      "distribution": "gamma",
+      "master_seed": 0,
+      "outer_id": 3,
+      "n": 20,
+      "namespace": 5058617,
+      "entropy": 0,
+      "spawn_key": [
+        5058617,
+        1,
+        20,
+        3,
+        0,
+        0
+      ],
+      "raw_kind": "gamma_y",
+      "constants": {
+        "shape": 1.0,
+        "scale": 1.0
+      },
+      "sample_sha256": "40162eb834d025aec3820212d00a7ec12a2c34f0183ef5cb682cb99c7e4ba419",
+      "raw_sha256": "46da7329098229d745eccee9563c9bd5662014ce67d483ee71625ccf22693843"
+    },
+    {
+      "distribution": "gamma",
+      "master_seed": 0,
+      "outer_id": 4,
+      "n": 20,
+      "namespace": 5058617,
+      "entropy": 0,
+      "spawn_key": [
+        5058617,
+        1,
+        20,
+        4,
+        0,
+        0
+      ],
+      "raw_kind": "gamma_y",
+      "constants": {
+        "shape": 1.0,
+        "scale": 1.0
+      },
+      "sample_sha256": "361f65334acdb392d2cea6b68534a6ca7af24d147487aff4223eb2aeeb7ddb76",
+      "raw_sha256": "bea52e179129aaf9916e095f5d8568998bf0486ea0a154f3f3cd1f2999283659"
+    },
+    {
+      "distribution": "gamma",
+      "master_seed": 0,
+      "outer_id": 5,
+      "n": 20,
+      "namespace": 5058617,
+      "entropy": 0,
+      "spawn_key": [
+        5058617,
+        1,
+        20,
+        5,
+        0,
+        0
+      ],
+      "raw_kind": "gamma_y",
+      "constants": {
+        "shape": 1.0,
+        "scale": 1.0
+      },
+      "sample_sha256": "a9ad9f8cc67580901a0d9443433e0a5ddd4eb03c9031a301dcf2d871a6e3051d",
+      "raw_sha256": "f1ca7d11a50f7363cbfba63a718ff235c81057f176b771cc60e18ad226accbb2"
+    },
+    {
+      "distribution": "gamma",
+      "master_seed": 0,
+      "outer_id": 6,
+      "n": 20,
+      "namespace": 5058617,
+      "entropy": 0,
+      "spawn_key": [
+        5058617,
+        1,
+        20,
+        6,
+        0,
+        0
+      ],
+      "raw_kind": "gamma_y",
+      "constants": {
+        "shape": 1.0,
+        "scale": 1.0
+      },
+      "sample_sha256": "acb7df500fd19bf6d915bece58bf96fc08abf27a10453df8515da99fafc2997f",
+      "raw_sha256": "29f36f6b89797fe7c489fba796070829f883df656ec5754b311bebb4f6ca2980"
+    },
+    {
+      "distribution": "gamma",
+      "master_seed": 0,
+      "outer_id": 7,
+      "n": 20,
+      "namespace": 5058617,
+      "entropy": 0,
+      "spawn_key": [
+        5058617,
+        1,
+        20,
+        7,
+        0,
+        0
+      ],
+      "raw_kind": "gamma_y",
+      "constants": {
+        "shape": 1.0,
+        "scale": 1.0
+      },
+      "sample_sha256": "141d4b0808270fdee9dd1c43c88c8641ece2eeb66c0321bfcdbcb77d29a8871b",
+      "raw_sha256": "0ab47ca71bf3e19942bb38c5ee0a27726a2a7e232e7d790db5d719fb4266957b"
+    },
+    {
+      "distribution": "gamma",
+      "master_seed": 0,
+      "outer_id": 8,
+      "n": 20,
+      "namespace": 5058617,
+      "entropy": 0,
+      "spawn_key": [
+        5058617,
+        1,
+        20,
+        8,
+        0,
+        0
+      ],
+      "raw_kind": "gamma_y",
+      "constants": {
+        "shape": 1.0,
+        "scale": 1.0
+      },
+      "sample_sha256": "9c250d3542d77cf62d7984b7a5838660e3878dd73d51f3525c510ff9be1bcd87",
+      "raw_sha256": "a241837ab0b9325cef91fb1ead4c8e72ea9ac097e0c58428215ed94c9c73ea86"
+    },
+    {
+      "distribution": "gamma",
+      "master_seed": 0,
+      "outer_id": 9,
+      "n": 20,
+      "namespace": 5058617,
+      "entropy": 0,
+      "spawn_key": [
+        5058617,
+        1,
+        20,
+        9,
+        0,
+        0
+      ],
+      "raw_kind": "gamma_y",
+      "constants": {
+        "shape": 1.0,
+        "scale": 1.0
+      },
+      "sample_sha256": "c8fdfa8247f7fc23bdaecdecafb5397f548db2c729029185a0834bc0fa3d1c50",
+      "raw_sha256": "13bec6fa37481d913e3794d31fa485f7e0d8f73c943532ac3ebbc91c12d53bb8"
+    },
+    {
+      "distribution": "gamma",
+      "master_seed": 1,
+      "outer_id": 0,
+      "n": 20,
+      "namespace": 5058617,
+      "entropy": 1,
+      "spawn_key": [
+        5058617,
+        1,
+        20,
+        0,
+        0,
+        0
+      ],
+      "raw_kind": "gamma_y",
+      "constants": {
+        "shape": 1.0,
+        "scale": 1.0
+      },
+      "sample_sha256": "a8236b95965faf39b408b933bf6d47693bbbebf6568cd0054e6b0455bf2483a5",
+      "raw_sha256": "0b2624da6ced1474ea1a57ca9066c465b61df5ef9c62cda552a981c386d91461"
+    },
+    {
+      "distribution": "gamma",
+      "master_seed": 1,
+      "outer_id": 1,
+      "n": 20,
+      "namespace": 5058617,
+      "entropy": 1,
+      "spawn_key": [
+        5058617,
+        1,
+        20,
+        1,
+        0,
+        0
+      ],
+      "raw_kind": "gamma_y",
+      "constants": {
+        "shape": 1.0,
+        "scale": 1.0
+      },
+      "sample_sha256": "95c2c45326ae07301aa1cf1e6515e6d612691630fda94f92627dd09843d88120",
+      "raw_sha256": "105523bd9827067c8528194f18a42d0d13a48ff256e01afdd3234b08766176bc"
+    },
+    {
+      "distribution": "gamma",
+      "master_seed": 1,
+      "outer_id": 2,
+      "n": 20,
+      "namespace": 5058617,
+      "entropy": 1,
+      "spawn_key": [
+        5058617,
+        1,
+        20,
+        2,
+        0,
+        0
+      ],
+      "raw_kind": "gamma_y",
+      "constants": {
+        "shape": 1.0,
+        "scale": 1.0
+      },
+      "sample_sha256": "82d90d83edcb5db4d06c98858736de6dfa3c24c6ef11e30ebadd7aad958ed962",
+      "raw_sha256": "fbd8fffaa9b91ed76cbf46e47917a2bb5659fa56a83b95fa449f5931b547fff4"
+    },
+    {
+      "distribution": "gamma",
+      "master_seed": 1,
+      "outer_id": 3,
+      "n": 20,
+      "namespace": 5058617,
+      "entropy": 1,
+      "spawn_key": [
+        5058617,
+        1,
+        20,
+        3,
+        0,
+        0
+      ],
+      "raw_kind": "gamma_y",
+      "constants": {
+        "shape": 1.0,
+        "scale": 1.0
+      },
+      "sample_sha256": "85f2c68a70bbd7731ef6012681554d30398f73a6fac40a5fa270f10806fbbeb2",
+      "raw_sha256": "e5a28a11ff79e4a6742b4fb07f8f9af26b5207e57d54cb220a28fe630b173d97"
+    },
+    {
+      "distribution": "gamma",
+      "master_seed": 1,
+      "outer_id": 4,
+      "n": 20,
+      "namespace": 5058617,
+      "entropy": 1,
+      "spawn_key": [
+        5058617,
+        1,
+        20,
+        4,
+        0,
+        0
+      ],
+      "raw_kind": "gamma_y",
+      "constants": {
+        "shape": 1.0,
+        "scale": 1.0
+      },
+      "sample_sha256": "87cf0ac01fef6be6c2e85a0135cc3c4b2d832fd277297c4dd52f24f45d078932",
+      "raw_sha256": "3fc7864c8bef6f7d3e42da8bc28bb1e54e566df364156d421dea160c346f65dc"
+    },
+    {
+      "distribution": "gamma",
+      "master_seed": 1,
+      "outer_id": 5,
+      "n": 20,
+      "namespace": 5058617,
+      "entropy": 1,
+      "spawn_key": [
+        5058617,
+        1,
+        20,
+        5,
+        0,
+        0
+      ],
+      "raw_kind": "gamma_y",
+      "constants": {
+        "shape": 1.0,
+        "scale": 1.0
+      },
+      "sample_sha256": "f7070077884fcd03e8102fca47d40c4d3d097ff32ce1927522c5c132a81505b0",
+      "raw_sha256": "3695511794c4602367927b6ce05475e1b89715d8fec236d4deca34a4b7900933"
+    },
+    {
+      "distribution": "gamma",
+      "master_seed": 1,
+      "outer_id": 6,
+      "n": 20,
+      "namespace": 5058617,
+      "entropy": 1,
+      "spawn_key": [
+        5058617,
+        1,
+        20,
+        6,
+        0,
+        0
+      ],
+      "raw_kind": "gamma_y",
+      "constants": {
+        "shape": 1.0,
+        "scale": 1.0
+      },
+      "sample_sha256": "e6657d648c7d1a8a905b4620a04ab9051584322550c485092558f71358cffb91",
+      "raw_sha256": "b4f8b2543486f9ed6fbed7f3e93f2633d21df9e2b39a7b8973b443c001fee44f"
+    },
+    {
+      "distribution": "gamma",
+      "master_seed": 1,
+      "outer_id": 7,
+      "n": 20,
+      "namespace": 5058617,
+      "entropy": 1,
+      "spawn_key": [
+        5058617,
+        1,
+        20,
+        7,
+        0,
+        0
+      ],
+      "raw_kind": "gamma_y",
+      "constants": {
+        "shape": 1.0,
+        "scale": 1.0
+      },
+      "sample_sha256": "8d5da7e3362588e11124e4eeaffe8acca39a17150cd96bd731f3455b8a3d911c",
+      "raw_sha256": "a06e7a5683369a4567db07f640b4410ce1a00c8e9ac861c007dd596e84a59959"
+    },
+    {
+      "distribution": "gamma",
+      "master_seed": 1,
+      "outer_id": 8,
+      "n": 20,
+      "namespace": 5058617,
+      "entropy": 1,
+      "spawn_key": [
+        5058617,
+        1,
+        20,
+        8,
+        0,
+        0
+      ],
+      "raw_kind": "gamma_y",
+      "constants": {
+        "shape": 1.0,
+        "scale": 1.0
+      },
+      "sample_sha256": "31a59e7b6f8ccea5e0cc8d231eb5ea60670145b37fa63ac834bc76751c865cf6",
+      "raw_sha256": "f700b4c3b2670d896f07f5da0de3c2643cf69e6b685dc3843f79bc6977c12081"
+    },
+    {
+      "distribution": "gamma",
+      "master_seed": 1,
+      "outer_id": 9,
+      "n": 20,
+      "namespace": 5058617,
+      "entropy": 1,
+      "spawn_key": [
+        5058617,
+        1,
+        20,
+        9,
+        0,
+        0
+      ],
+      "raw_kind": "gamma_y",
+      "constants": {
+        "shape": 1.0,
+        "scale": 1.0
+      },
+      "sample_sha256": "c925e59c708ecb0e233575743f49e7d35801f4fdb31ff44263de0486d0492a08",
+      "raw_sha256": "482b4dd9e7eec4f11fdb5de25b9ee45a1f2e5b9ab2fdb6e1eba47fac78735b0d"
+    },
+    {
+      "distribution": "gamma",
+      "master_seed": 2,
+      "outer_id": 0,
+      "n": 20,
+      "namespace": 5058617,
+      "entropy": 2,
+      "spawn_key": [
+        5058617,
+        1,
+        20,
+        0,
+        0,
+        0
+      ],
+      "raw_kind": "gamma_y",
+      "constants": {
+        "shape": 1.0,
+        "scale": 1.0
+      },
+      "sample_sha256": "df5a311d35c0dcc064847d8987e72a00ad8a5e1f15e9fdd91cadd9358c4046d1",
+      "raw_sha256": "51883f39b0d4a0bafcc69236f5bc9ac5c8daa861f78128c0ba2ca4fcf05b0848"
+    },
+    {
+      "distribution": "gamma",
+      "master_seed": 2,
+      "outer_id": 1,
+      "n": 20,
+      "namespace": 5058617,
+      "entropy": 2,
+      "spawn_key": [
+        5058617,
+        1,
+        20,
+        1,
+        0,
+        0
+      ],
+      "raw_kind": "gamma_y",
+      "constants": {
+        "shape": 1.0,
+        "scale": 1.0
+      },
+      "sample_sha256": "f18c10be2afcb927ebfcb73ad1d3b0858f7b3e146cddfb9379064f42d73f4925",
+      "raw_sha256": "2b0c27fb565cfa7c33d9fa9a1c3748d34902e8497124062a0b9d5575df752a7d"
+    },
+    {
+      "distribution": "gamma",
+      "master_seed": 2,
+      "outer_id": 2,
+      "n": 20,
+      "namespace": 5058617,
+      "entropy": 2,
+      "spawn_key": [
+        5058617,
+        1,
+        20,
+        2,
+        0,
+        0
+      ],
+      "raw_kind": "gamma_y",
+      "constants": {
+        "shape": 1.0,
+        "scale": 1.0
+      },
+      "sample_sha256": "820bb14cb9d852a55e1cb8c53746d8dec0fdf26da2149b0541ecea5c291cc51d",
+      "raw_sha256": "519ff4ee46f0c5ba4ba2a5dc33178c94a9e22b721de43b78571fb8d0f8f980fc"
+    },
+    {
+      "distribution": "gamma",
+      "master_seed": 2,
+      "outer_id": 3,
+      "n": 20,
+      "namespace": 5058617,
+      "entropy": 2,
+      "spawn_key": [
+        5058617,
+        1,
+        20,
+        3,
+        0,
+        0
+      ],
+      "raw_kind": "gamma_y",
+      "constants": {
+        "shape": 1.0,
+        "scale": 1.0
+      },
+      "sample_sha256": "80f172fdc1fc060a482f8529c98fd66a271d7244597262803752958e686b1f52",
+      "raw_sha256": "995e6e337a37e9a52fe7de7592d95e3cc3e6923ddd9a263f509f21f4212d6f2e"
+    },
+    {
+      "distribution": "gamma",
+      "master_seed": 2,
+      "outer_id": 4,
+      "n": 20,
+      "namespace": 5058617,
+      "entropy": 2,
+      "spawn_key": [
+        5058617,
+        1,
+        20,
+        4,
+        0,
+        0
+      ],
+      "raw_kind": "gamma_y",
+      "constants": {
+        "shape": 1.0,
+        "scale": 1.0
+      },
+      "sample_sha256": "da35044173e070da66d54b783742e875a5a5839bd90ae44dcefeaa8592fac277",
+      "raw_sha256": "f034fa84243473cac116792c499943c967c877221f96a44314e4796eac4a3c09"
+    },
+    {
+      "distribution": "gamma",
+      "master_seed": 2,
+      "outer_id": 5,
+      "n": 20,
+      "namespace": 5058617,
+      "entropy": 2,
+      "spawn_key": [
+        5058617,
+        1,
+        20,
+        5,
+        0,
+        0
+      ],
+      "raw_kind": "gamma_y",
+      "constants": {
+        "shape": 1.0,
+        "scale": 1.0
+      },
+      "sample_sha256": "48e731e9ec31987aff6a584ebeec1a2b4cc762aa61ca95a87c92020d9fbd079e",
+      "raw_sha256": "04d1c4f65c8e9eeaefb5c1a2a23a3d1573f4565adc3ded269b2078947d944fc7"
+    },
+    {
+      "distribution": "gamma",
+      "master_seed": 2,
+      "outer_id": 6,
+      "n": 20,
+      "namespace": 5058617,
+      "entropy": 2,
+      "spawn_key": [
+        5058617,
+        1,
+        20,
+        6,
+        0,
+        0
+      ],
+      "raw_kind": "gamma_y",
+      "constants": {
+        "shape": 1.0,
+        "scale": 1.0
+      },
+      "sample_sha256": "ba5374bfb3e455541fea073e82a2b8d7c42c81b0fdb66c1ef4a11ab43852f4c8",
+      "raw_sha256": "dfd40586136fbed8799b727f35e13bdd2660a525e84ce4e66637cba72aad2188"
+    },
+    {
+      "distribution": "gamma",
+      "master_seed": 2,
+      "outer_id": 7,
+      "n": 20,
+      "namespace": 5058617,
+      "entropy": 2,
+      "spawn_key": [
+        5058617,
+        1,
+        20,
+        7,
+        0,
+        0
+      ],
+      "raw_kind": "gamma_y",
+      "constants": {
+        "shape": 1.0,
+        "scale": 1.0
+      },
+      "sample_sha256": "d9801385601cf6c308c7e78d7aadb018f5b6279a7740384cdf2699706a55df7f",
+      "raw_sha256": "250131c5cbfa7f3d80a6e4db582344697df546a436161144c215900c744ddf33"
+    },
+    {
+      "distribution": "gamma",
+      "master_seed": 2,
+      "outer_id": 8,
+      "n": 20,
+      "namespace": 5058617,
+      "entropy": 2,
+      "spawn_key": [
+        5058617,
+        1,
+        20,
+        8,
+        0,
+        0
+      ],
+      "raw_kind": "gamma_y",
+      "constants": {
+        "shape": 1.0,
+        "scale": 1.0
+      },
+      "sample_sha256": "bacfa4ded3ae5151513a69e80b6ae5e64e51d4e92eb4d56d486f27581bbdde2b",
+      "raw_sha256": "ad5b3089071c0b3c695f721eb8954777ec6765c666023439538329dc4d0a8aa3"
+    },
+    {
+      "distribution": "gamma",
+      "master_seed": 2,
+      "outer_id": 9,
+      "n": 20,
+      "namespace": 5058617,
+      "entropy": 2,
+      "spawn_key": [
+        5058617,
+        1,
+        20,
+        9,
+        0,
+        0
+      ],
+      "raw_kind": "gamma_y",
+      "constants": {
+        "shape": 1.0,
+        "scale": 1.0
+      },
+      "sample_sha256": "dc52daef511d970f9f7d05388b8591d76a2c3d7e629c083f93607e10f4ade459",
+      "raw_sha256": "450c424dc5111bc2f31b647ee96c9aef8a3d004a8b21a39abe23f6ea2cfb0949"
+    },
+    {
+      "distribution": "lognormal",
+      "master_seed": 0,
+      "outer_id": 0,
+      "n": 20,
+      "namespace": 5058617,
+      "entropy": 0,
+      "spawn_key": [
+        5058617,
+        2,
+        20,
+        0,
+        0,
+        0
+      ],
+      "raw_kind": "normal_z",
+      "constants": {
+        "v": 0.5960716379833215,
+        "t": 1.3553013976081199,
+        "s": 0.5513835899408821,
+        "m": 1.1641741268419084,
+        "d": 0.6939311786844594
+      },
+      "sample_sha256": "3ed76eaf4515b8721d05d70acd96f8778bd0434b160b90145d87b168bd605a75",
+      "raw_sha256": "a9f7ee1ba25eb557594f286b7650fbabfef3351570482df3c15686228ce029f3"
+    },
+    {
+      "distribution": "lognormal",
+      "master_seed": 0,
+      "outer_id": 1,
+      "n": 20,
+      "namespace": 5058617,
+      "entropy": 0,
+      "spawn_key": [
+        5058617,
+        2,
+        20,
+        1,
+        0,
+        0
+      ],
+      "raw_kind": "normal_z",
+      "constants": {
+        "v": 0.5960716379833215,
+        "t": 1.3553013976081199,
+        "s": 0.5513835899408821,
+        "m": 1.1641741268419084,
+        "d": 0.6939311786844594
+      },
+      "sample_sha256": "f8f802d2dbd321f3b8c482a571bc21d7e393c201580d4b3bc35a844eca7088b0",
+      "raw_sha256": "eaa5ab6cd9252c6c214fc2e5773870a7184d38c9d73f84a9e3a14f7a95969c9a"
+    },
+    {
+      "distribution": "lognormal",
+      "master_seed": 0,
+      "outer_id": 2,
+      "n": 20,
+      "namespace": 5058617,
+      "entropy": 0,
+      "spawn_key": [
+        5058617,
+        2,
+        20,
+        2,
+        0,
+        0
+      ],
+      "raw_kind": "normal_z",
+      "constants": {
+        "v": 0.5960716379833215,
+        "t": 1.3553013976081199,
+        "s": 0.5513835899408821,
+        "m": 1.1641741268419084,
+        "d": 0.6939311786844594
+      },
+      "sample_sha256": "fa6e29531f9ab167e8ae7019b38b1f8d76bdcccc2ebee1bc5af460442d39a02c",
+      "raw_sha256": "66144a67eeb284bb74d7d112816c2a0423bcadfabccfa7d869da01ee4a208a1c"
+    },
+    {
+      "distribution": "lognormal",
+      "master_seed": 0,
+      "outer_id": 3,
+      "n": 20,
+      "namespace": 5058617,
+      "entropy": 0,
+      "spawn_key": [
+        5058617,
+        2,
+        20,
+        3,
+        0,
+        0
+      ],
+      "raw_kind": "normal_z",
+      "constants": {
+        "v": 0.5960716379833215,
+        "t": 1.3553013976081199,
+        "s": 0.5513835899408821,
+        "m": 1.1641741268419084,
+        "d": 0.6939311786844594
+      },
+      "sample_sha256": "11ce0cf92737d16f2376e27c657d625fe6b64abbba2128bdd8b0c8234af6ba26",
+      "raw_sha256": "427e24f7c3df3d29286c0c32ce3ac0a555e479046a9f163fc6a71a2655bd27de"
+    },
+    {
+      "distribution": "lognormal",
+      "master_seed": 0,
+      "outer_id": 4,
+      "n": 20,
+      "namespace": 5058617,
+      "entropy": 0,
+      "spawn_key": [
+        5058617,
+        2,
+        20,
+        4,
+        0,
+        0
+      ],
+      "raw_kind": "normal_z",
+      "constants": {
+        "v": 0.5960716379833215,
+        "t": 1.3553013976081199,
+        "s": 0.5513835899408821,
+        "m": 1.1641741268419084,
+        "d": 0.6939311786844594
+      },
+      "sample_sha256": "ea237a0a24f062d334164d2437ef2b1d09c16d1b74e1ca6b60081cd7f5b9f520",
+      "raw_sha256": "8d4bf4fa4b60985460c53e88e88e8d807a5de7802d9d2e0ee341d2c304559324"
+    },
+    {
+      "distribution": "lognormal",
+      "master_seed": 0,
+      "outer_id": 5,
+      "n": 20,
+      "namespace": 5058617,
+      "entropy": 0,
+      "spawn_key": [
+        5058617,
+        2,
+        20,
+        5,
+        0,
+        0
+      ],
+      "raw_kind": "normal_z",
+      "constants": {
+        "v": 0.5960716379833215,
+        "t": 1.3553013976081199,
+        "s": 0.5513835899408821,
+        "m": 1.1641741268419084,
+        "d": 0.6939311786844594
+      },
+      "sample_sha256": "a7b297968dd7d445d206a415fd086e71c0fadf020d37c95df8557046347d67d8",
+      "raw_sha256": "bd96d53f61dad9d00ad0aaa49fd10f15e6e41e6cd3dd89ce7d8b5d0842defcba"
+    },
+    {
+      "distribution": "lognormal",
+      "master_seed": 0,
+      "outer_id": 6,
+      "n": 20,
+      "namespace": 5058617,
+      "entropy": 0,
+      "spawn_key": [
+        5058617,
+        2,
+        20,
+        6,
+        0,
+        0
+      ],
+      "raw_kind": "normal_z",
+      "constants": {
+        "v": 0.5960716379833215,
+        "t": 1.3553013976081199,
+        "s": 0.5513835899408821,
+        "m": 1.1641741268419084,
+        "d": 0.6939311786844594
+      },
+      "sample_sha256": "e2249b3a3f76a95f893b91e4b6708aa5afea5014d6ab0e9ac8d080508f8b05fb",
+      "raw_sha256": "d41d35ccc9d6aecbaf8b14ed9a2d2f18cd881b79f6523243e95074e72e641e45"
+    },
+    {
+      "distribution": "lognormal",
+      "master_seed": 0,
+      "outer_id": 7,
+      "n": 20,
+      "namespace": 5058617,
+      "entropy": 0,
+      "spawn_key": [
+        5058617,
+        2,
+        20,
+        7,
+        0,
+        0
+      ],
+      "raw_kind": "normal_z",
+      "constants": {
+        "v": 0.5960716379833215,
+        "t": 1.3553013976081199,
+        "s": 0.5513835899408821,
+        "m": 1.1641741268419084,
+        "d": 0.6939311786844594
+      },
+      "sample_sha256": "b1481295255953d7cdcc3b9ee63120e8783ed9c56f64b386be564b1c13ca52ea",
+      "raw_sha256": "e828c04f02e74f44eb77bdfcb3cdeb6e1d8a9f755ec8753f642ccaf52943e869"
+    },
+    {
+      "distribution": "lognormal",
+      "master_seed": 0,
+      "outer_id": 8,
+      "n": 20,
+      "namespace": 5058617,
+      "entropy": 0,
+      "spawn_key": [
+        5058617,
+        2,
+        20,
+        8,
+        0,
+        0
+      ],
+      "raw_kind": "normal_z",
+      "constants": {
+        "v": 0.5960716379833215,
+        "t": 1.3553013976081199,
+        "s": 0.5513835899408821,
+        "m": 1.1641741268419084,
+        "d": 0.6939311786844594
+      },
+      "sample_sha256": "b41bc6df617538de55b7d686a32c43e11493252be6487e457e201021d1b73d7b",
+      "raw_sha256": "371c8d3d9599dce2a2a831cf364efc25ea6067c96e264f90f843d8847b1d3a85"
+    },
+    {
+      "distribution": "lognormal",
+      "master_seed": 0,
+      "outer_id": 9,
+      "n": 20,
+      "namespace": 5058617,
+      "entropy": 0,
+      "spawn_key": [
+        5058617,
+        2,
+        20,
+        9,
+        0,
+        0
+      ],
+      "raw_kind": "normal_z",
+      "constants": {
+        "v": 0.5960716379833215,
+        "t": 1.3553013976081199,
+        "s": 0.5513835899408821,
+        "m": 1.1641741268419084,
+        "d": 0.6939311786844594
+      },
+      "sample_sha256": "dd3fa1de78396e5b38502c17568dbbd3799978adca934913613c9e7c1348cfec",
+      "raw_sha256": "5286e24a17d58e40e8e6347ab50a45ab67a97c6595ff586d6e087a4eff8e604b"
+    },
+    {
+      "distribution": "lognormal",
+      "master_seed": 1,
+      "outer_id": 0,
+      "n": 20,
+      "namespace": 5058617,
+      "entropy": 1,
+      "spawn_key": [
+        5058617,
+        2,
+        20,
+        0,
+        0,
+        0
+      ],
+      "raw_kind": "normal_z",
+      "constants": {
+        "v": 0.5960716379833215,
+        "t": 1.3553013976081199,
+        "s": 0.5513835899408821,
+        "m": 1.1641741268419084,
+        "d": 0.6939311786844594
+      },
+      "sample_sha256": "50b00f23f5b84d1c8739a19a2aca1c393b3683bd33fcb8bb4bb65b1f3b3dbb78",
+      "raw_sha256": "a7fbf22da2d6ca411f0c0773ae5c80535d73238cf99e5d26e094fa54a1cd9186"
+    },
+    {
+      "distribution": "lognormal",
+      "master_seed": 1,
+      "outer_id": 1,
+      "n": 20,
+      "namespace": 5058617,
+      "entropy": 1,
+      "spawn_key": [
+        5058617,
+        2,
+        20,
+        1,
+        0,
+        0
+      ],
+      "raw_kind": "normal_z",
+      "constants": {
+        "v": 0.5960716379833215,
+        "t": 1.3553013976081199,
+        "s": 0.5513835899408821,
+        "m": 1.1641741268419084,
+        "d": 0.6939311786844594
+      },
+      "sample_sha256": "2fffff8c03f35c200f600a65e4809fd050e0a8e65c3f7f6d461395c78b686e3d",
+      "raw_sha256": "2dd75c525f55c1395230ae6510160e1c48c420ed7a00c59d38a8fac66fa45b07"
+    },
+    {
+      "distribution": "lognormal",
+      "master_seed": 1,
+      "outer_id": 2,
+      "n": 20,
+      "namespace": 5058617,
+      "entropy": 1,
+      "spawn_key": [
+        5058617,
+        2,
+        20,
+        2,
+        0,
+        0
+      ],
+      "raw_kind": "normal_z",
+      "constants": {
+        "v": 0.5960716379833215,
+        "t": 1.3553013976081199,
+        "s": 0.5513835899408821,
+        "m": 1.1641741268419084,
+        "d": 0.6939311786844594
+      },
+      "sample_sha256": "0fa4c41b186661020235b93af9308f0751b01d3b9bba0179101ad5b24b8798a9",
+      "raw_sha256": "8fbb5266d7a7e9a7feb05c812c644149516fcbab8d7e22662f58c53a0dcfaf90"
+    },
+    {
+      "distribution": "lognormal",
+      "master_seed": 1,
+      "outer_id": 3,
+      "n": 20,
+      "namespace": 5058617,
+      "entropy": 1,
+      "spawn_key": [
+        5058617,
+        2,
+        20,
+        3,
+        0,
+        0
+      ],
+      "raw_kind": "normal_z",
+      "constants": {
+        "v": 0.5960716379833215,
+        "t": 1.3553013976081199,
+        "s": 0.5513835899408821,
+        "m": 1.1641741268419084,
+        "d": 0.6939311786844594
+      },
+      "sample_sha256": "cf92ae10459f70e1dbee5a5f30de67ed79761e0bb9eb56c646ab3e83ee9405f7",
+      "raw_sha256": "41b1ff133c0f134e97afb2963e4a190ba78e438cfe1af5f4b8a3d8c3c2ab534c"
+    },
+    {
+      "distribution": "lognormal",
+      "master_seed": 1,
+      "outer_id": 4,
+      "n": 20,
+      "namespace": 5058617,
+      "entropy": 1,
+      "spawn_key": [
+        5058617,
+        2,
+        20,
+        4,
+        0,
+        0
+      ],
+      "raw_kind": "normal_z",
+      "constants": {
+        "v": 0.5960716379833215,
+        "t": 1.3553013976081199,
+        "s": 0.5513835899408821,
+        "m": 1.1641741268419084,
+        "d": 0.6939311786844594
+      },
+      "sample_sha256": "009805569a4d4a91c56f3807d53a5089fafb9bd94eb4504dfec4a58c6c3b7532",
+      "raw_sha256": "37fa2fa38ada412b9fc97fe3dcd0b55b083ccc512c4bbf91e56a6fd124b5dc24"
+    },
+    {
+      "distribution": "lognormal",
+      "master_seed": 1,
+      "outer_id": 5,
+      "n": 20,
+      "namespace": 5058617,
+      "entropy": 1,
+      "spawn_key": [
+        5058617,
+        2,
+        20,
+        5,
+        0,
+        0
+      ],
+      "raw_kind": "normal_z",
+      "constants": {
+        "v": 0.5960716379833215,
+        "t": 1.3553013976081199,
+        "s": 0.5513835899408821,
+        "m": 1.1641741268419084,
+        "d": 0.6939311786844594
+      },
+      "sample_sha256": "bf45dffdbdbb511c4c6d5faefbf8bc24d49e259d2a4e51bb1aa49f5a9a065f66",
+      "raw_sha256": "25266443f0c69e960658debbac509c6701d3081600b21d4f06aee31f27200e9c"
+    },
+    {
+      "distribution": "lognormal",
+      "master_seed": 1,
+      "outer_id": 6,
+      "n": 20,
+      "namespace": 5058617,
+      "entropy": 1,
+      "spawn_key": [
+        5058617,
+        2,
+        20,
+        6,
+        0,
+        0
+      ],
+      "raw_kind": "normal_z",
+      "constants": {
+        "v": 0.5960716379833215,
+        "t": 1.3553013976081199,
+        "s": 0.5513835899408821,
+        "m": 1.1641741268419084,
+        "d": 0.6939311786844594
+      },
+      "sample_sha256": "6476ee3e45b64b6b858b15815fb1793671a31329fb1dc25505fdc3555cf5d5d5",
+      "raw_sha256": "7c27a4e5fdb4af2f74e75513c53f2d430545e2e6d529ed7529f057613034168e"
+    },
+    {
+      "distribution": "lognormal",
+      "master_seed": 1,
+      "outer_id": 7,
+      "n": 20,
+      "namespace": 5058617,
+      "entropy": 1,
+      "spawn_key": [
+        5058617,
+        2,
+        20,
+        7,
+        0,
+        0
+      ],
+      "raw_kind": "normal_z",
+      "constants": {
+        "v": 0.5960716379833215,
+        "t": 1.3553013976081199,
+        "s": 0.5513835899408821,
+        "m": 1.1641741268419084,
+        "d": 0.6939311786844594
+      },
+      "sample_sha256": "e9f09337cb8604c6682bb76be5807a9677eb6a953b0040c20eae61a5576cd974",
+      "raw_sha256": "4eef3b925f9bb9ea9927b7ab1027b27f5a59c3b51496eb8e47bd8a3a61c149ec"
+    },
+    {
+      "distribution": "lognormal",
+      "master_seed": 1,
+      "outer_id": 8,
+      "n": 20,
+      "namespace": 5058617,
+      "entropy": 1,
+      "spawn_key": [
+        5058617,
+        2,
+        20,
+        8,
+        0,
+        0
+      ],
+      "raw_kind": "normal_z",
+      "constants": {
+        "v": 0.5960716379833215,
+        "t": 1.3553013976081199,
+        "s": 0.5513835899408821,
+        "m": 1.1641741268419084,
+        "d": 0.6939311786844594
+      },
+      "sample_sha256": "22b875b83db9fd22bee6ec017fbbd016459f6164836aa1e20cbc0686185b7c9a",
+      "raw_sha256": "ab318e133036a237b26fc24e5cac6f6c68d49b7e108fad118e108ed418410cf1"
+    },
+    {
+      "distribution": "lognormal",
+      "master_seed": 1,
+      "outer_id": 9,
+      "n": 20,
+      "namespace": 5058617,
+      "entropy": 1,
+      "spawn_key": [
+        5058617,
+        2,
+        20,
+        9,
+        0,
+        0
+      ],
+      "raw_kind": "normal_z",
+      "constants": {
+        "v": 0.5960716379833215,
+        "t": 1.3553013976081199,
+        "s": 0.5513835899408821,
+        "m": 1.1641741268419084,
+        "d": 0.6939311786844594
+      },
+      "sample_sha256": "8c96b55f988fb09ea5923969a287bc507d6e9163d70f11a05fb5912db8d99615",
+      "raw_sha256": "a6547b3bf85821ca5c9807b24d717f79a5535c56547718a92b7f8a39d5fa743f"
+    },
+    {
+      "distribution": "lognormal",
+      "master_seed": 2,
+      "outer_id": 0,
+      "n": 20,
+      "namespace": 5058617,
+      "entropy": 2,
+      "spawn_key": [
+        5058617,
+        2,
+        20,
+        0,
+        0,
+        0
+      ],
+      "raw_kind": "normal_z",
+      "constants": {
+        "v": 0.5960716379833215,
+        "t": 1.3553013976081199,
+        "s": 0.5513835899408821,
+        "m": 1.1641741268419084,
+        "d": 0.6939311786844594
+      },
+      "sample_sha256": "4bbafd08445f91af7818ef4f1d5df3fdf669c1ef3798536e724ab71f8a7fde8f",
+      "raw_sha256": "2b67cca336fec26be721d67a592f2b7faa1b92825605c554ba9159c0e92e9ea1"
+    },
+    {
+      "distribution": "lognormal",
+      "master_seed": 2,
+      "outer_id": 1,
+      "n": 20,
+      "namespace": 5058617,
+      "entropy": 2,
+      "spawn_key": [
+        5058617,
+        2,
+        20,
+        1,
+        0,
+        0
+      ],
+      "raw_kind": "normal_z",
+      "constants": {
+        "v": 0.5960716379833215,
+        "t": 1.3553013976081199,
+        "s": 0.5513835899408821,
+        "m": 1.1641741268419084,
+        "d": 0.6939311786844594
+      },
+      "sample_sha256": "82b04ac3eaa4ca24e00417117de63c2e53fceb9db7df9cf68ecf6f18334954d0",
+      "raw_sha256": "90bbe0f24ca0427ff8a0df1cbfe5c653e4229445dea396205996e516422e5528"
+    },
+    {
+      "distribution": "lognormal",
+      "master_seed": 2,
+      "outer_id": 2,
+      "n": 20,
+      "namespace": 5058617,
+      "entropy": 2,
+      "spawn_key": [
+        5058617,
+        2,
+        20,
+        2,
+        0,
+        0
+      ],
+      "raw_kind": "normal_z",
+      "constants": {
+        "v": 0.5960716379833215,
+        "t": 1.3553013976081199,
+        "s": 0.5513835899408821,
+        "m": 1.1641741268419084,
+        "d": 0.6939311786844594
+      },
+      "sample_sha256": "35605121b11ec48a50f16b510e05eba1d3919e0d1f623c818f6c8c3ee1f9c29b",
+      "raw_sha256": "0d67943d1ada0fec2b47c9fe7a031ea305dd04688eac815631fd64f25f64a50b"
+    },
+    {
+      "distribution": "lognormal",
+      "master_seed": 2,
+      "outer_id": 3,
+      "n": 20,
+      "namespace": 5058617,
+      "entropy": 2,
+      "spawn_key": [
+        5058617,
+        2,
+        20,
+        3,
+        0,
+        0
+      ],
+      "raw_kind": "normal_z",
+      "constants": {
+        "v": 0.5960716379833215,
+        "t": 1.3553013976081199,
+        "s": 0.5513835899408821,
+        "m": 1.1641741268419084,
+        "d": 0.6939311786844594
+      },
+      "sample_sha256": "f2cbe8d2b29bc9f0d84977a4b6328874f3d6d0cc18cc260d9d2e41cdef8e0d75",
+      "raw_sha256": "6999f6136da7ddfef189df2aa2d0f4cc16153572f1887734dc109e564d99f5de"
+    },
+    {
+      "distribution": "lognormal",
+      "master_seed": 2,
+      "outer_id": 4,
+      "n": 20,
+      "namespace": 5058617,
+      "entropy": 2,
+      "spawn_key": [
+        5058617,
+        2,
+        20,
+        4,
+        0,
+        0
+      ],
+      "raw_kind": "normal_z",
+      "constants": {
+        "v": 0.5960716379833215,
+        "t": 1.3553013976081199,
+        "s": 0.5513835899408821,
+        "m": 1.1641741268419084,
+        "d": 0.6939311786844594
+      },
+      "sample_sha256": "bc28b407852f9a882024602d350f6cc2b28d226a8c70145f0c81c924187e9e51",
+      "raw_sha256": "690a5c333b47ae38dc47e6f9c855d0ff8af3b54817e43c1d97a3a9389709fe00"
+    },
+    {
+      "distribution": "lognormal",
+      "master_seed": 2,
+      "outer_id": 5,
+      "n": 20,
+      "namespace": 5058617,
+      "entropy": 2,
+      "spawn_key": [
+        5058617,
+        2,
+        20,
+        5,
+        0,
+        0
+      ],
+      "raw_kind": "normal_z",
+      "constants": {
+        "v": 0.5960716379833215,
+        "t": 1.3553013976081199,
+        "s": 0.5513835899408821,
+        "m": 1.1641741268419084,
+        "d": 0.6939311786844594
+      },
+      "sample_sha256": "ad9d0aae75598b8ef64c2a3dec35853535f96b4de7323d72d77f6371f8885d4b",
+      "raw_sha256": "73977dbbc70c0ac6741fc9ca6a74311c0ae6b164ed7276d175940d74d7815cec"
+    },
+    {
+      "distribution": "lognormal",
+      "master_seed": 2,
+      "outer_id": 6,
+      "n": 20,
+      "namespace": 5058617,
+      "entropy": 2,
+      "spawn_key": [
+        5058617,
+        2,
+        20,
+        6,
+        0,
+        0
+      ],
+      "raw_kind": "normal_z",
+      "constants": {
+        "v": 0.5960716379833215,
+        "t": 1.3553013976081199,
+        "s": 0.5513835899408821,
+        "m": 1.1641741268419084,
+        "d": 0.6939311786844594
+      },
+      "sample_sha256": "93ee154974cb51359b67b043282a0b84c1ca390e2463444d30455ffdcc8435e4",
+      "raw_sha256": "00ff1e5902bbb6af28ecafe0311589ed41658ffc6de68a5231b0c651be14821b"
+    },
+    {
+      "distribution": "lognormal",
+      "master_seed": 2,
+      "outer_id": 7,
+      "n": 20,
+      "namespace": 5058617,
+      "entropy": 2,
+      "spawn_key": [
+        5058617,
+        2,
+        20,
+        7,
+        0,
+        0
+      ],
+      "raw_kind": "normal_z",
+      "constants": {
+        "v": 0.5960716379833215,
+        "t": 1.3553013976081199,
+        "s": 0.5513835899408821,
+        "m": 1.1641741268419084,
+        "d": 0.6939311786844594
+      },
+      "sample_sha256": "d1f148543f10ebfcc6d749a63deb984f2be6044d46e46217e08eba0b8010e48c",
+      "raw_sha256": "9621e9285a6d8bfdd213d4aeee30d95537405ed35bfa132a76342725618072b3"
+    },
+    {
+      "distribution": "lognormal",
+      "master_seed": 2,
+      "outer_id": 8,
+      "n": 20,
+      "namespace": 5058617,
+      "entropy": 2,
+      "spawn_key": [
+        5058617,
+        2,
+        20,
+        8,
+        0,
+        0
+      ],
+      "raw_kind": "normal_z",
+      "constants": {
+        "v": 0.5960716379833215,
+        "t": 1.3553013976081199,
+        "s": 0.5513835899408821,
+        "m": 1.1641741268419084,
+        "d": 0.6939311786844594
+      },
+      "sample_sha256": "fd97babecc8b5783186b94fc2aa43439e4b251871cd643e36b2d13a12ad516d2",
+      "raw_sha256": "eed838e18861f6e5b2b6db22f73ac9b60cd01f6918aaacd35266d132ab874960"
+    },
+    {
+      "distribution": "lognormal",
+      "master_seed": 2,
+      "outer_id": 9,
+      "n": 20,
+      "namespace": 5058617,
+      "entropy": 2,
+      "spawn_key": [
+        5058617,
+        2,
+        20,
+        9,
+        0,
+        0
+      ],
+      "raw_kind": "normal_z",
+      "constants": {
+        "v": 0.5960716379833215,
+        "t": 1.3553013976081199,
+        "s": 0.5513835899408821,
+        "m": 1.1641741268419084,
+        "d": 0.6939311786844594
+      },
+      "sample_sha256": "315d03deab9f33e328faf3193de8b559ca417b1f57633876bc04a5ae0e98fc10",
+      "raw_sha256": "501fc51e06ddf7f746bf07d37da7da0c7fb6aff44a443109cd7e3e086acb8265"
+    }
+  ],
+  "isolation_checks": {
+    "original_samples": 60,
+    "unique_new_sample_hashes": 60,
+    "exact_M08_matches": 0,
+    "duplicate_new_samples": 0,
+    "raw_transform_bytes_verified": true,
+    "interpretation": "key separation and no exact sample matches are implementation checks, not a proof of statistical independence"
+  },
+  "M08_reference_accepted_head": "85382fd3ae8966dcf197d4006de21ea6edf9ef9f",
+  "M08_reference_files_sha256": {
+    "evidence/rq_m08/manifest.json": "ee870c8f1c13ada089c0556b72baacdaceb3c2bed13b35eca8d9acb69e3420d9",
+    "evidence/rq_m08/hypotheses.json": "f72a3ef292cef3999df3e4d55e3587e6368da80b8474be732216c605ef459930",
+    "evidence/rq_m08/pooled_summary.csv": "4822a8461f1a1c0f7badb995b51cb8a5226e0b30b650167491762492738694d0",
+    "evidence/rq_m08/panels/gamma_seed0.npz": "ce5735219bbc9911ca8164f9ac8b923a574317b0cbd593f79559d94990fb56ae",
+    "evidence/rq_m08/panels/gamma_seed1.npz": "8a1d209b27b643b5618afa5d151b9309f00348961050ae70a3063741a4137363",
+    "evidence/rq_m08/panels/gamma_seed2.npz": "cb21f7399c13252be24112233f39ee6c537f1057b9ebc315ae4a3914e348fa84",
+    "evidence/rq_m08/panels/lognormal_seed0.npz": "de4bde48c168f47d5fdba9a44b559f3744d398eda16ecb3d75a4bebbd70aa080",
+    "evidence/rq_m08/panels/lognormal_seed1.npz": "d0771f814af8b7c6adc1af2b3053fef87350ec6839f310888c2344e782803f73",
+    "evidence/rq_m08/panels/lognormal_seed2.npz": "a07699037e1b6b90a58f0c3b60240e9f6867f12f159a522d87342908423f7be7"
+  },
+  "original_files_sha256": {
+    "gamma_seed0.npz": "98cc27ec9fdd0ea4f3d5df3c40f1c1e91a244883e1111bacb1e27aaa1e504e94",
+    "gamma_seed1.npz": "472138f3b52d746141a6c6a21e1de8226dfb6ef620a3d4ac9d5b254650b2f444",
+    "gamma_seed2.npz": "5cca99c9d4072c2866877c93df499125bf267bcd5026be5eb92d0664f6b03bd7",
+    "lognormal_seed0.npz": "a704ef167331dadf9579c56e08dd06d17342d400647b8dbc9751cdbe1abf9adf",
+    "lognormal_seed1.npz": "012313df20eeed13e29215c8e1de8184a3095a08ca8864dacb349add6f2d5457",
+    "lognormal_seed2.npz": "bb76ed3f8af31e16fd217819f8fb5ca2c9016f0040ae2625b6c0b1157eb440a2"
+  },
+  "generation_contract_sha256": "9f0039292e041f99482aa0efe5d14f38205a675668e4ef403cefdc9bc8d7f0de",
+  "manifest_sha256": "ba9a89ac106b124ffca32ff6867935448302c9f921637bbd17c2f9b4a2339173",
+  "written_utc": "2026-11-10T13:47:28.394382+00:00"
+}

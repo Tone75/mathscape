@@ -1,0 +1,24 @@
+{
+  "status": "fixed_and_rechecked_in_fresh_server_session",
+  "observed": "One initial server exception in old M04 shape view: partially initialized pandas module lacked Series when Plotly inspected it.",
+  "evidence": "initial_server_log.txt",
+  "cause_inference": "Fast Lab navigation overlapping lazy pandas initialization is a plausible trigger; cancellation as the precise cause is not established by this trace alone.",
+  "source_mechanism": "Installed Plotly6.9.0 to_scalar_or_list reads sys.modules pandas via get_module(should_load=False), then accesses pd.Series/pd.Index without waiting for initialization.",
+  "fix": "Import existing mandatory Streamlit dependency pandas at app entry before any widgets are exposed; no configuration suppression or installed-package changes.",
+  "installed_pandas": "3.1.1",
+  "streamlit_requirement": "pandas<4,>=1.5.3",
+  "numerical_sources_or_fixed_data_changed": false,
+  "main_experiment_rerun": false,
+  "dependencies_added_or_updated": false,
+  "original_error_log_retained": true,
+  "after_fix_server_exceptions": 0,
+  "after_fix_test_results": {
+    "passed": 1396,
+    "failed": 0,
+    "wall_seconds": 91.55
+  },
+  "browser_recheck": "Fresh server and browser; two rapid M03/M04/M05 switching cycles followed by M08/M09 both populations/allocations/methods and Lab restoration; no visible exceptions or console warning/errors. Representative scope, not exhaustive stress proof.",
+  "after_fix_logs": "server_log.txt",
+  "after_fix_render": "after_fix_render.json",
+  "after_fix_screenshot": "comparison_after_startup_fix.jpg"
+}

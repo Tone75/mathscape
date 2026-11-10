@@ -1,0 +1,108 @@
+{
+  "question_id": "RQ-M09",
+  "status": "completed",
+  "started_utc": "2026-11-10T13:47:28.382715+00:00",
+  "source_git_sha": "9f3e5d6245e5c22a636795baaf9eb8297452d8ba",
+  "manifest_sha256": "ba9a89ac106b124ffca32ff6867935448302c9f921637bbd17c2f9b4a2339173",
+  "namespace": 5058617,
+  "single_main_attempt": true,
+  "environment": {
+    "python": "3.12.13",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "plotly": "6.9.0",
+    "os": "Darwin",
+    "os_release": "25.6.0",
+    "architecture": "arm64",
+    "streamlit": "1.67.0",
+    "pytest": "9.2.0"
+  },
+  "originals_per_cell": 10,
+  "R": 20,
+  "streams_per_budget": 120,
+  "B": 4999,
+  "n": 20,
+  "allocations": [
+    {
+      "allocation": "P30",
+      "J": 4,
+      "K": 30
+    },
+    {
+      "allocation": "P60",
+      "J": 2,
+      "K": 60
+    },
+    {
+      "allocation": "P120",
+      "J": 1,
+      "K": 120
+    }
+  ],
+  "total_cells": 6,
+  "mother_samples_generated": 60,
+  "planned_audit_streams": 36,
+  "all_other_bootstrap_arrays_saved": false,
+  "max_resample_elements": 1000000,
+  "main_attempts": 1,
+  "reruns": 0,
+  "planned_originals": 60,
+  "planned_inner_streams": 144000,
+  "planned_logical_intervals": 432000,
+  "endpoint_generation_inference_seconds": 51.94035436678678,
+  "allocation_aggregation_flatten_seconds": 0.8278657088521868,
+  "saved_stream_output_seconds": 0.11971503787208349,
+  "original_generation_seconds": 0.002315457910299301,
+  "original_persistence_seconds": 0.00779524992685765,
+  "original_readback_seconds": 0.006818875088356435,
+  "original_receipt_readback_verified": true,
+  "timing_scope": "One combined run sharing120 streams across all3allocations. Original generation/persistence/readback are separate disjoint phases; cachedcontext/endpoints and aggregation/flatten separate. Remaining includes imports/preflight/guards/summary/allotheroutputs. saved_stream_output_seconds is a SUBSET of remaining,not disjoint; not perallocation benchmark.",
+  "wall_scope": "module start before heavy imports through outputs excluding interpreter startup/finalresourcewrite; externalguard/time includes fullCLI",
+  "original_receipt_sha256": "03a3d39e7d7a4ddfcc31fce216a173e88b64ad31b9ff06704f6c40df22c85607",
+  "originals_persisted": 60,
+  "active_cell": [
+    "lognormal",
+    2
+  ],
+  "completed_cells": 6,
+  "completed_cell_keys": [
+    [
+      "gamma",
+      0
+    ],
+    [
+      "gamma",
+      1
+    ],
+    [
+      "gamma",
+      2
+    ],
+    [
+      "lognormal",
+      0
+    ],
+    [
+      "lognormal",
+      1
+    ],
+    [
+      "lognormal",
+      2
+    ]
+  ],
+  "incomplete_cells": [],
+  "completed_originals": 60,
+  "observed_inner_streams": 144000,
+  "observed_logical_intervals": 432000,
+  "observed_invalid_logical_intervals": 0,
+  "bootstrap_samples": 719856000,
+  "logical_resampling_indices": 14397120000,
+  "saved_audit_streams": 36,
+  "finished_utc": "2026-11-10T13:48:22.671529+00:00",
+  "process_wall_seconds": 55.61704933398869,
+  "process_peak_rss_bytes": 225722368,
+  "output_bytes_before_resources": 17411270,
+  "output_bytes_total": 17414398,
+  "remaining_setup_guard_summary_output_seconds": 2.8318996754242107
+}
