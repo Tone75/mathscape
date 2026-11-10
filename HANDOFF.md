@@ -1,6 +1,14 @@
 # MATHSCAPE — minimal handoff
 
+## 最新の受入と実行状態：RQ-M09
+
+Owner受入済みM08 HEAD `85382fd3ae8966dcf197d4006de21ea6edf9ef9f`、科学成果 `b68026a5f938c10ad10d6f57e0d8f900dcda8348`、事前固定 `697c673f69a68f040d7d072ae3b90f356be8abd6`、PR #8、052〜055 Doneを採用。M08の限定H1/H2支持・G_U近境界性と旧未検証を保持し、下記の旧レビュー待ちは開始条件にしない。開始tree clean・別worktreeなし、新branch `feat/rq-m09-independent-cohort`。仕様全文・末尾プロンプト・056〜059・Home・AGENTS有無・README／HANDOFFを確認し、CODEX_RECEIPTを残した。開始時1268pytest成功62.52秒、pip check成功。
+
+056受領→057全ID／生成規則／6・7要素キー／数理／監査／guard事前commit→058新60原標本をraw/x/キー/hash保存・読み戻し後に主1回／独立監査→059既存同一予算保存UIのコホート切替／検証／新PR。Next056のみ。主前はM09原標本を生成・閲覧せず、未生成hash固定と表現しない。新旧pool／対応比較・結果後再抽選なし。新成果はレビュー待ち、保留を非同等やM08の誤りと断定しない。詳細は `evidence/rq_m09/SPEC.md`／`CODEX_RECEIPT.md`。旧証拠・既存PR/main/タグ/Releaseを保持する。
+
 ## 最新の受入と実行状態：RQ-M08
+
+この節はM08提出時点の履歴。M08はOwner受入済み・052〜055 Done／Next=falseで、現在のNextは上記M09親票056のみ。旧レビュー待ちは開始条件ではない。
 
 Owner受入済みM07 HEAD `39bcdc367320b6da513df72d2fa43bfdb7f060f4`、PR #7、048〜051 Doneを採用。M07の限定H1/H2支持と旧結論・実ブラウザ等の未検証を保持し、再承認を開始条件にしない。開始tree clean・別worktreeなし、新branch `feat/rq-m08-budget-allocation`。固定仕様全文・末尾プロンプト・052〜055・Home・AGENTS有無・READMEを確認し、CODEX_RECEIPTを残した。開始時全1139pytest成功45.00秒、pip check成功。
 
