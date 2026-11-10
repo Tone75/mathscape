@@ -243,7 +243,42 @@
     "scope": "Conservative full byte sizes of all public new/modified files relative to accepted M08 HEAD, including full README/HANDOFF, new raw/transformed originals/endpoints,36index/mean streams,compressed/full CSV,one self-contained HTML,code/tests/reports. Ignored local files/virtual environment excluded.",
     "limit_bytes": 52428800,
     "files": 106,
-    "bytes": 20895790,
-    "MiB": 19.927778
+    "bytes": 20899759,
+    "MiB": 19.931563
+  },
+  "publication": {
+    "repository": "https://github.com/Tone75/mathscape",
+    "repository_is_public": true,
+    "PR": "https://github.com/Tone75/mathscape/pull/9",
+    "PR_number": 9,
+    "state": "OPEN",
+    "draft": false,
+    "base_branch": "feat/rq-m08-budget-allocation",
+    "head_branch": "feat/rq-m09-independent-cohort",
+    "accepted_M08_base_SHA": "85382fd3ae8966dcf197d4006de21ea6edf9ef9f",
+    "preregistration_SHA": "9f3e5d6245e5c22a636795baaf9eb8297452d8ba",
+    "scientific_result_SHA": "de49a3a59aebb474ede35b320e82956ba45cc1dc",
+    "submitted_HEAD_command": "gh pr view 9 --repo Tone75/mathscape --json headRefOid",
+    "science_and_submission_docs_commits_distinguished": true,
+    "notion_sync": {
+      "pages": [
+        "MATH-056",
+        "MATH-057",
+        "MATH-058",
+        "MATH-059",
+        "Project Home",
+        "RQ-M09-v1 specification"
+      ],
+      "result_SHA_PR_validation_resources_synced": true,
+      "PENDING_NOTION_SYNC": false,
+      "task_state": "In Progress, Owner review pending",
+      "Next": "MATH-056 only",
+      "Owner_acceptance_or_Done_delegated": false,
+      "final_submission_SHA_recording": "Append final submission SHA to all six Notion pages after this documentation commit; retrieve it with PR headRefOid."
+    },
+    "protected_remote_heads_and_tags": 13,
+    "existing_PR_refs_unchanged": 16,
+    "new_tags_releases_merges": false,
+    "new_research_experiments": false
   }
 }

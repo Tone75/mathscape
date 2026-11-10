@@ -12,6 +12,8 @@ Owner受入済みM08 HEAD `85382fd3ae8966dcf197d4006de21ea6edf9ef9f`、科学成
 
 全1,396 pytest成功91.55秒・新AppTest13／pip check成功。実ブラウザ35完了フレーム210指標・旧新12区間一致、5実ダウンロードとraw/x20行・7200端点一致、旧新HTML実表示。旧M04初回のpandas部分初期化参照をapp入口の既存必須依存importで修正、新規サーバー再検証で再発0。元ログを保持し、依存追加／更新・設定回避・数理変更・主再実行なし。検証範囲と未検証は `evidence/rq_m09/validation.json`／`browser/verification.json`／`runtime_issue.json`。確認用3プロセス／3tab終了済み。056〜059 In Progress・Next056のみ、新成果はOwnerレビュー待ちでDoneを代行しない。
 
+提出先は [stacked PR #9](https://github.com/Tone75/mathscape/pull/9)、科学成果SHA `de49a3a59aebb474ede35b320e82956ba45cc1dc`、事前固定SHA `9f3e5d6245e5c22a636795baaf9eb8297452d8ba`。baseは受入済み `feat/rq-m08-budget-allocation`。科学成果固定後の文書commitと最終提出HEADを区別し、最新提出HEADは `gh pr view 9 --repo Tone75/mathscape --json headRefOid` で取得できる。Notion056〜059・Home・固定仕様へ主6区間・全18条件への参照・SHA・PR・検証範囲・資源・未解決事項を同期済み、PENDING_NOTION_SYNCなし。新成果はOwnerレビュー待ち、056〜059 In Progress・Next056のみ。旧13 remote heads/tagsと16既存PR refs・旧証拠を保持し、merge・新タグ・Release・追加実験は行わない。
+
 ## 最新の受入と実行状態：RQ-M08
 
 この節はM08提出時点の履歴。M08はOwner受入済み・052〜055 Done／Next=falseで、現在のNextは上記M09親票056のみ。旧レビュー待ちは開始条件ではない。
