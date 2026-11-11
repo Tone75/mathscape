@@ -1,0 +1,464 @@
+{
+  "question_id": "RQ-M10",
+  "cohort": "M10",
+  "reference_only": "M08/M09 not pooled or paired; no n20-vs-n5 effect test",
+  "confirmatory_intervals": 6,
+  "decision_confidence": 0.995,
+  "independent_originals_per_population": 30,
+  "target_method": "bca",
+  "B": 4999,
+  "R": 20,
+  "allocations": [
+    {
+      "allocation": "P30",
+      "J": 4,
+      "K": 30
+    },
+    {
+      "allocation": "P60",
+      "J": 2,
+      "K": 60
+    },
+    {
+      "allocation": "P120",
+      "J": 1,
+      "K": 120
+    }
+  ],
+  "primary_comparison": "P120-P30",
+  "P60": "descriptive only",
+  "seed_direction_gate": false,
+  "H1_margin": 0.0025,
+  "H1_units": "Ase units,not percentagepoints",
+  "H2_variance_ratio_band": [
+    0.8,
+    1.25
+  ],
+  "quantities": {
+    "H1_gamma": {
+      "N": 30,
+      "finite_count": 30,
+      "mean": 0.001319874882002833,
+      "sd": 0.0022613636588354777,
+      "mcse": 0.00041286662888886927,
+      "low": 6.556676405015146e-05,
+      "high": 0.0025741829999555146,
+      "df": 29,
+      "valid": true,
+      "reason": "margin_touched_or_crossed",
+      "field": "d",
+      "population": "gamma",
+      "conditional_interval": {
+        "N": 30,
+        "finite_count": 30,
+        "mean": 0.001319874882002833,
+        "sd": 0.0022613636588354777,
+        "mcse": 0.00041286662888886927,
+        "low": 6.556676405015146e-05,
+        "high": 0.0025741829999555146,
+        "df": 29,
+        "valid": true,
+        "reason": ""
+      },
+      "status": "inconclusive"
+    },
+    "H2_L_gamma": {
+      "N": 30,
+      "finite_count": 30,
+      "mean": 2.118522447449349e-05,
+      "sd": 4.8674810599349554e-05,
+      "mcse": 8.886763915851769e-06,
+      "low": -5.813179712303083e-06,
+      "high": 4.818362866129006e-05,
+      "df": 29,
+      "valid": true,
+      "reason": "",
+      "field": "L",
+      "population": "gamma",
+      "conditional_interval": {
+        "N": 30,
+        "finite_count": 30,
+        "mean": 2.118522447449349e-05,
+        "sd": 4.8674810599349554e-05,
+        "mcse": 8.886763915851769e-06,
+        "low": -5.813179712303083e-06,
+        "high": 4.818362866129006e-05,
+        "df": 29,
+        "valid": true,
+        "reason": ""
+      }
+    },
+    "H2_U_gamma": {
+      "N": 30,
+      "finite_count": 30,
+      "mean": -1.0250238647452686e-05,
+      "sd": 4.3990216460641916e-05,
+      "mcse": 8.03147795500955e-06,
+      "low": -3.465024410499735e-05,
+      "high": 1.4149766810091982e-05,
+      "df": 29,
+      "valid": true,
+      "reason": "",
+      "field": "U",
+      "population": "gamma",
+      "conditional_interval": {
+        "N": 30,
+        "finite_count": 30,
+        "mean": -1.0250238647452686e-05,
+        "sd": 4.3990216460641916e-05,
+        "mcse": 8.03147795500955e-06,
+        "low": -3.465024410499735e-05,
+        "high": 1.4149766810091982e-05,
+        "df": 29,
+        "valid": true,
+        "reason": ""
+      }
+    },
+    "H1_lognormal": {
+      "N": 30,
+      "finite_count": 30,
+      "mean": 0.001377233963870899,
+      "sd": 0.002297476926158251,
+      "mcse": 0.0004194599792681683,
+      "low": 0.00010289493926073784,
+      "high": 0.00265157298848106,
+      "df": 29,
+      "valid": true,
+      "reason": "margin_touched_or_crossed",
+      "field": "d",
+      "population": "lognormal",
+      "conditional_interval": {
+        "N": 30,
+        "finite_count": 30,
+        "mean": 0.001377233963870899,
+        "sd": 0.002297476926158251,
+        "mcse": 0.0004194599792681683,
+        "low": 0.00010289493926073784,
+        "high": 0.00265157298848106,
+        "df": 29,
+        "valid": true,
+        "reason": ""
+      },
+      "status": "inconclusive"
+    },
+    "H2_L_lognormal": {
+      "N": 30,
+      "finite_count": 30,
+      "mean": 2.953139124599404e-05,
+      "sd": 7.14367392147952e-05,
+      "mcse": 1.3042504500852405e-05,
+      "low": -1.0092347097501322e-05,
+      "high": 6.91551295894894e-05,
+      "df": 29,
+      "valid": true,
+      "reason": "",
+      "field": "L",
+      "population": "lognormal",
+      "conditional_interval": {
+        "N": 30,
+        "finite_count": 30,
+        "mean": 2.953139124599404e-05,
+        "sd": 7.14367392147952e-05,
+        "mcse": 1.3042504500852405e-05,
+        "low": -1.0092347097501322e-05,
+        "high": 6.91551295894894e-05,
+        "df": 29,
+        "valid": true,
+        "reason": ""
+      }
+    },
+    "H2_U_lognormal": {
+      "N": 30,
+      "finite_count": 30,
+      "mean": 7.540895900395117e-06,
+      "sd": 5.158739361985106e-05,
+      "mcse": 9.418526389496838e-06,
+      "low": -2.1073027538491805e-05,
+      "high": 3.6154819339282036e-05,
+      "df": 29,
+      "valid": true,
+      "reason": "",
+      "field": "U",
+      "population": "lognormal",
+      "conditional_interval": {
+        "N": 30,
+        "finite_count": 30,
+        "mean": 7.540895900395117e-06,
+        "sd": 5.158739361985106e-05,
+        "mcse": 9.418526389496838e-06,
+        "low": -2.1073027538491805e-05,
+        "high": 3.6154819339282036e-05,
+        "df": 29,
+        "valid": true,
+        "reason": ""
+      }
+    }
+  },
+  "population_decisions": {
+    "gamma": {
+      "H1": {
+        "status": "inconclusive",
+        "reason": "margin_touched_or_crossed"
+      },
+      "H2": {
+        "status": "inconclusive",
+        "reason": "multiplicative_band_touched_or_crossed",
+        "mean_Q30": 6.985658471543593e-05,
+        "lower_interval": "H2_L_gamma",
+        "upper_interval": "H2_U_gamma"
+      }
+    },
+    "lognormal": {
+      "H1": {
+        "status": "inconclusive",
+        "reason": "margin_touched_or_crossed"
+      },
+      "H2": {
+        "status": "inconclusive",
+        "reason": "multiplicative_band_touched_or_crossed",
+        "mean_Q30": 4.886776743466428e-05,
+        "lower_interval": "H2_L_lognormal",
+        "upper_interval": "H2_U_lognormal"
+      }
+    }
+  },
+  "seed_details": [
+    {
+      "master_seed": 0,
+      "H1_gamma": {
+        "N": 10,
+        "finite_count": 10,
+        "mean": 0.0011852640762612342,
+        "sd": 0.0012869243100998714,
+        "mcse": 0.0004069611996156427,
+        "low": -0.0003162853570876174,
+        "high": 0.0026868135096100856,
+        "df": 9,
+        "valid": true,
+        "reason": ""
+      },
+      "H2_L_gamma": {
+        "N": 10,
+        "finite_count": 10,
+        "mean": 2.659401224693998e-05,
+        "sd": 6.100626186246641e-05,
+        "mcse": 1.929187390180597e-05,
+        "low": -4.458648936562899e-05,
+        "high": 9.777451385950894e-05,
+        "df": 9,
+        "valid": true,
+        "reason": ""
+      },
+      "H2_U_gamma": {
+        "N": 10,
+        "finite_count": 10,
+        "mean": 7.321384309669717e-06,
+        "sd": 3.431812142822169e-05,
+        "mcse": 1.0852342873141121e-05,
+        "low": -3.272009705774991e-05,
+        "high": 4.736286567708935e-05,
+        "df": 9,
+        "valid": true,
+        "reason": ""
+      },
+      "H1_lognormal": {
+        "N": 10,
+        "finite_count": 10,
+        "mean": 0.0010833503015544091,
+        "sd": 0.001235109170169936,
+        "mcse": 0.00039057581366974936,
+        "low": -0.00035774258948648966,
+        "high": 0.002524443192595308,
+        "df": 9,
+        "valid": true,
+        "reason": ""
+      },
+      "H2_L_lognormal": {
+        "N": 10,
+        "finite_count": 10,
+        "mean": 8.272946551028015e-06,
+        "sd": 1.3835593862954711e-05,
+        "mcse": 4.3751989387984414e-06,
+        "low": -7.870060432305972e-06,
+        "high": 2.4415953534362e-05,
+        "df": 9,
+        "valid": true,
+        "reason": ""
+      },
+      "H2_U_lognormal": {
+        "N": 10,
+        "finite_count": 10,
+        "mean": -1.3885013608549681e-05,
+        "sd": 2.5811203879985256e-05,
+        "mcse": 8.162219341172877e-06,
+        "low": -4.400084734941345e-05,
+        "high": 1.6230820132314094e-05,
+        "df": 9,
+        "valid": true,
+        "reason": ""
+      }
+    },
+    {
+      "master_seed": 1,
+      "H1_gamma": {
+        "N": 10,
+        "finite_count": 10,
+        "mean": 0.0020513435489350226,
+        "sd": 0.003487172160839681,
+        "mcse": 0.0011027406621384418,
+        "low": -0.002017397200621852,
+        "high": 0.0061200842984918975,
+        "df": 9,
+        "valid": true,
+        "reason": ""
+      },
+      "H2_L_gamma": {
+        "N": 10,
+        "finite_count": 10,
+        "mean": 2.8195694102498897e-05,
+        "sd": 5.7393853997112804e-05,
+        "mcse": 1.8149530232603547e-05,
+        "low": -3.8769945034727056e-05,
+        "high": 9.516133323972484e-05,
+        "df": 9,
+        "valid": true,
+        "reason": ""
+      },
+      "H2_U_gamma": {
+        "N": 10,
+        "finite_count": 10,
+        "mean": -2.760146334506536e-05,
+        "sd": 6.330011558739283e-05,
+        "mcse": 2.0017254140808853e-05,
+        "low": -0.00010145837314560392,
+        "high": 4.6255446455473194e-05,
+        "df": 9,
+        "valid": true,
+        "reason": ""
+      },
+      "H1_lognormal": {
+        "N": 10,
+        "finite_count": 10,
+        "mean": 0.0013709611161694128,
+        "sd": 0.0032120107630070425,
+        "mcse": 0.0010157269880077561,
+        "low": -0.0023767285523312543,
+        "high": 0.00511865078467008,
+        "df": 9,
+        "valid": true,
+        "reason": ""
+      },
+      "H2_L_lognormal": {
+        "N": 10,
+        "finite_count": 10,
+        "mean": 3.33691828053868e-05,
+        "sd": 9.568613033332981e-05,
+        "mcse": 3.0258611234104876e-05,
+        "low": -7.827487710844425e-05,
+        "high": 0.00014501324271921784,
+        "df": 9,
+        "valid": true,
+        "reason": ""
+      },
+      "H2_U_lognormal": {
+        "N": 10,
+        "finite_count": 10,
+        "mean": 1.2633046243800284e-05,
+        "sd": 5.104577231688682e-05,
+        "mcse": 1.6142090544373268e-05,
+        "low": -4.692581817094348e-05,
+        "high": 7.219191065854404e-05,
+        "df": 9,
+        "valid": true,
+        "reason": ""
+      }
+    },
+    {
+      "master_seed": 2,
+      "H1_gamma": {
+        "N": 10,
+        "finite_count": 10,
+        "mean": 0.0007230170208122423,
+        "sd": 0.0012847935299879478,
+        "mcse": 0.00040628738778097597,
+        "low": -0.00077604627435075,
+        "high": 0.0022220803159752347,
+        "df": 9,
+        "valid": true,
+        "reason": ""
+      },
+      "H2_L_gamma": {
+        "N": 10,
+        "finite_count": 10,
+        "mean": 8.765967074041588e-06,
+        "sd": 1.8971077437973075e-05,
+        "mcse": 5.999181437142663e-06,
+        "low": -1.3368987059193339e-05,
+        "high": 3.0900921207276516e-05,
+        "df": 9,
+        "valid": true,
+        "reason": ""
+      },
+      "H2_U_gamma": {
+        "N": 10,
+        "finite_count": 10,
+        "mean": -1.047063690696241e-05,
+        "sd": 1.9317629499281357e-05,
+        "mcse": 6.108770821298711e-06,
+        "low": -3.300993886951369e-05,
+        "high": 1.206866505558887e-05,
+        "df": 9,
+        "valid": true,
+        "reason": ""
+      },
+      "H1_lognormal": {
+        "N": 10,
+        "finite_count": 10,
+        "mean": 0.001677390473888874,
+        "sd": 0.0022292506828889766,
+        "mcse": 0.0007049509633414914,
+        "low": -0.0009236405839708648,
+        "high": 0.004278421531748613,
+        "df": 9,
+        "valid": true,
+        "reason": ""
+      },
+      "H2_L_lognormal": {
+        "N": 10,
+        "finite_count": 10,
+        "mean": 4.6952044381567296e-05,
+        "sd": 7.899817024079755e-05,
+        "mcse": 2.4981414894665255e-05,
+        "low": -4.522094266182784e-05,
+        "high": 0.00013912503142496244,
+        "df": 9,
+        "valid": true,
+        "reason": ""
+      },
+      "H2_U_lognormal": {
+        "N": 10,
+        "finite_count": 10,
+        "mean": 2.3874655065934746e-05,
+        "sd": 6.684276854505295e-05,
+        "mcse": 2.113753937138266e-05,
+        "low": -5.411572901850585e-05,
+        "high": 0.00010186503915037534,
+        "df": 9,
+        "valid": true,
+        "reason": ""
+      }
+    }
+  ],
+  "hypotheses": {
+    "H1": {
+      "status": "inconclusive",
+      "gamma": "inconclusive",
+      "lognormal": "inconclusive"
+    },
+    "H2": {
+      "status": "inconclusive",
+      "gamma": "inconclusive",
+      "lognormal": "inconclusive"
+    }
+  }
+}

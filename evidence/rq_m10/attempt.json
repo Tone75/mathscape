@@ -1,0 +1,9 @@
+{
+  "question_id": "RQ-M10",
+  "status": "started",
+  "started_utc": "2026-11-11T11:30:01.246330+00:00",
+  "source_git_sha": "db057a98efe9d4437f22186fdfbbb04290d7d8a6",
+  "manifest_sha256": "38c777b9d1f35810287b7d6d9aa680592b4668a0f96bd2e425e810e4a47319d4",
+  "namespace": 5058864,
+  "single_main_attempt": true
+}

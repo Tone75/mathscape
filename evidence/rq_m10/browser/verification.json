@@ -1,0 +1,367 @@
+{
+  "status": "passed",
+  "scope": "Actual IAB representative operations and actual download events; all three cohorts and both populations, all M10methods/allocations; not all combinations of old controls or other browsers/devices",
+  "actual_downloads": true,
+  "HTML_rendering": true,
+  "recorded_frames": 52,
+  "completed_saved_comparison_states": 37,
+  "display_metrics_checked": 222,
+  "unique_primary_intervals_checked": 18,
+  "primary_bounds_checked": 36,
+  "cohort_population_ID_restore_groups": 6,
+  "checks": [
+    {
+      "label": "M10_G0_settled",
+      "condition": "M10:gamma:0:0:0:bca:P30",
+      "sample_sha256": "b49e3fa28f384f8fdeb95dacd6f854d38ed088d121db7fa1b0a26e33da5f8b9d",
+      "display_metrics": 6,
+      "primary_interval_rows": 6
+    },
+    {
+      "label": "M10_G0_P60",
+      "condition": "M10:gamma:0:0:0:bca:P60",
+      "sample_sha256": "b49e3fa28f384f8fdeb95dacd6f854d38ed088d121db7fa1b0a26e33da5f8b9d",
+      "display_metrics": 6,
+      "primary_interval_rows": 6
+    },
+    {
+      "label": "M10_G0_P120",
+      "condition": "M10:gamma:0:0:0:bca:P120",
+      "sample_sha256": "b49e3fa28f384f8fdeb95dacd6f854d38ed088d121db7fa1b0a26e33da5f8b9d",
+      "display_metrics": 6,
+      "primary_interval_rows": 6
+    },
+    {
+      "label": "M10_G_percentile_P120",
+      "condition": "M10:gamma:0:0:0:percentile:P120",
+      "sample_sha256": "b49e3fa28f384f8fdeb95dacd6f854d38ed088d121db7fa1b0a26e33da5f8b9d",
+      "display_metrics": 6,
+      "primary_interval_rows": 6
+    },
+    {
+      "label": "M10_G_percentile_P60",
+      "condition": "M10:gamma:0:0:0:percentile:P60",
+      "sample_sha256": "b49e3fa28f384f8fdeb95dacd6f854d38ed088d121db7fa1b0a26e33da5f8b9d",
+      "display_metrics": 6,
+      "primary_interval_rows": 6
+    },
+    {
+      "label": "M10_G_percentile_P30",
+      "condition": "M10:gamma:0:0:0:percentile:P30",
+      "sample_sha256": "b49e3fa28f384f8fdeb95dacd6f854d38ed088d121db7fa1b0a26e33da5f8b9d",
+      "display_metrics": 6,
+      "primary_interval_rows": 6
+    },
+    {
+      "label": "M10_G_t_P30",
+      "condition": "M10:gamma:0:0:0:t:P30",
+      "sample_sha256": "b49e3fa28f384f8fdeb95dacd6f854d38ed088d121db7fa1b0a26e33da5f8b9d",
+      "display_metrics": 6,
+      "primary_interval_rows": 6
+    },
+    {
+      "label": "M10_G_t_P60",
+      "condition": "M10:gamma:0:0:0:t:P60",
+      "sample_sha256": "b49e3fa28f384f8fdeb95dacd6f854d38ed088d121db7fa1b0a26e33da5f8b9d",
+      "display_metrics": 6,
+      "primary_interval_rows": 6
+    },
+    {
+      "label": "M10_G_t_P120",
+      "condition": "M10:gamma:0:0:0:t:P120",
+      "sample_sha256": "b49e3fa28f384f8fdeb95dacd6f854d38ed088d121db7fa1b0a26e33da5f8b9d",
+      "display_metrics": 6,
+      "primary_interval_rows": 6
+    },
+    {
+      "label": "M10_G2_outer9_r19_retained",
+      "condition": "M10:gamma:2:9:19:bca:P120",
+      "sample_sha256": "3f15d328360fe74017e4c21fef554837cda481f229d6fc40ba94954372a526d3",
+      "display_metrics": 6,
+      "primary_interval_rows": 6
+    },
+    {
+      "label": "M10_L0_initial",
+      "condition": "M10:lognormal:0:0:0:bca:P120",
+      "sample_sha256": "23309219e5c38adb5fc46ea5a5aad46ddcd182077a19b3dee328328e59f45a70",
+      "display_metrics": 6,
+      "primary_interval_rows": 6
+    },
+    {
+      "label": "M10_L_bca_P60",
+      "condition": "M10:lognormal:0:0:0:bca:P60",
+      "sample_sha256": "23309219e5c38adb5fc46ea5a5aad46ddcd182077a19b3dee328328e59f45a70",
+      "display_metrics": 6,
+      "primary_interval_rows": 6
+    },
+    {
+      "label": "M10_L_bca_P30",
+      "condition": "M10:lognormal:0:0:0:bca:P30",
+      "sample_sha256": "23309219e5c38adb5fc46ea5a5aad46ddcd182077a19b3dee328328e59f45a70",
+      "display_metrics": 6,
+      "primary_interval_rows": 6
+    },
+    {
+      "label": "M10_L_percentile_P30",
+      "condition": "M10:lognormal:0:0:0:percentile:P30",
+      "sample_sha256": "23309219e5c38adb5fc46ea5a5aad46ddcd182077a19b3dee328328e59f45a70",
+      "display_metrics": 6,
+      "primary_interval_rows": 6
+    },
+    {
+      "label": "M10_L_percentile_P60",
+      "condition": "M10:lognormal:0:0:0:percentile:P60",
+      "sample_sha256": "23309219e5c38adb5fc46ea5a5aad46ddcd182077a19b3dee328328e59f45a70",
+      "display_metrics": 6,
+      "primary_interval_rows": 6
+    },
+    {
+      "label": "M10_L_percentile_P120",
+      "condition": "M10:lognormal:0:0:0:percentile:P120",
+      "sample_sha256": "23309219e5c38adb5fc46ea5a5aad46ddcd182077a19b3dee328328e59f45a70",
+      "display_metrics": 6,
+      "primary_interval_rows": 6
+    },
+    {
+      "label": "M10_L_t_P120",
+      "condition": "M10:lognormal:0:0:0:t:P120",
+      "sample_sha256": "23309219e5c38adb5fc46ea5a5aad46ddcd182077a19b3dee328328e59f45a70",
+      "display_metrics": 6,
+      "primary_interval_rows": 6
+    },
+    {
+      "label": "M10_L_t_P60",
+      "condition": "M10:lognormal:0:0:0:t:P60",
+      "sample_sha256": "23309219e5c38adb5fc46ea5a5aad46ddcd182077a19b3dee328328e59f45a70",
+      "display_metrics": 6,
+      "primary_interval_rows": 6
+    },
+    {
+      "label": "M10_L_t_P30",
+      "condition": "M10:lognormal:0:0:0:t:P30",
+      "sample_sha256": "23309219e5c38adb5fc46ea5a5aad46ddcd182077a19b3dee328328e59f45a70",
+      "display_metrics": 6,
+      "primary_interval_rows": 6
+    },
+    {
+      "label": "M10_L1_outer8_r7_for_download",
+      "condition": "M10:lognormal:1:8:7:bca:P30",
+      "sample_sha256": "ec2299495d9f3e78a282e402c6dcc902544cc762ea6a92e5eb24813b9a9784ee",
+      "display_metrics": 6,
+      "primary_interval_rows": 6
+    },
+    {
+      "label": "M10_after_five_actual_downloads",
+      "condition": "M10:lognormal:1:8:7:bca:P30",
+      "sample_sha256": "ec2299495d9f3e78a282e402c6dcc902544cc762ea6a92e5eb24813b9a9784ee",
+      "display_metrics": 6,
+      "primary_interval_rows": 6
+    },
+    {
+      "label": "M09_L0_kept_n20",
+      "condition": "M09:lognormal:0:0:0:bca:P30",
+      "sample_sha256": "3ed76eaf4515b8721d05d70acd96f8778bd0434b160b90145d87b168bd605a75",
+      "display_metrics": 6,
+      "primary_interval_rows": 4
+    },
+    {
+      "label": "M09_L2_outer6_r3",
+      "condition": "M09:lognormal:2:6:3:percentile:P60",
+      "sample_sha256": "93ee154974cb51359b67b043282a0b84c1ca390e2463444d30455ffdcc8435e4",
+      "display_metrics": 6,
+      "primary_interval_rows": 4
+    },
+    {
+      "label": "M09_G1_outer4_r11",
+      "condition": "M09:gamma:1:4:11:percentile:P60",
+      "sample_sha256": "87cf0ac01fef6be6c2e85a0135cc3c4b2d832fd277297c4dd52f24f45d078932",
+      "display_metrics": 6,
+      "primary_interval_rows": 4
+    },
+    {
+      "label": "M08_G0_kept_n20",
+      "condition": "M08:gamma:0:0:0:percentile:P60",
+      "sample_sha256": "cfd609b63189516de31eb72a968c2097a6ce97ac1ce456772f955cf3de5a74df",
+      "display_metrics": 6,
+      "primary_interval_rows": 4
+    },
+    {
+      "label": "M08_G2_outer5_r17_t",
+      "condition": "M08:gamma:2:5:17:t:P120",
+      "sample_sha256": "906d120278fd095f5aad096751a8845eef318e08dec2dcaf20e19cffcd9f1345",
+      "display_metrics": 6,
+      "primary_interval_rows": 4
+    },
+    {
+      "label": "M08_L1_outer7_r5_bca",
+      "condition": "M08:lognormal:1:7:5:bca:P30",
+      "sample_sha256": "5acf8521f65f41c6ac76ebe019d061bd0a021e49734a58a37d172dc81b7e2696",
+      "display_metrics": 6,
+      "primary_interval_rows": 4
+    },
+    {
+      "label": "M09_L_restore",
+      "condition": "M09:lognormal:2:6:3:bca:P30",
+      "sample_sha256": "93ee154974cb51359b67b043282a0b84c1ca390e2463444d30455ffdcc8435e4",
+      "display_metrics": 6,
+      "primary_interval_rows": 4
+    },
+    {
+      "label": "M09_G_restore_t",
+      "condition": "M09:gamma:1:4:11:t:P120",
+      "sample_sha256": "87cf0ac01fef6be6c2e85a0135cc3c4b2d832fd277297c4dd52f24f45d078932",
+      "display_metrics": 6,
+      "primary_interval_rows": 4
+    },
+    {
+      "label": "M08_G_restore",
+      "condition": "M08:gamma:2:5:17:t:P120",
+      "sample_sha256": "906d120278fd095f5aad096751a8845eef318e08dec2dcaf20e19cffcd9f1345",
+      "display_metrics": 6,
+      "primary_interval_rows": 4
+    },
+    {
+      "label": "M08_L_restore",
+      "condition": "M08:lognormal:1:7:5:t:P120",
+      "sample_sha256": "5acf8521f65f41c6ac76ebe019d061bd0a021e49734a58a37d172dc81b7e2696",
+      "display_metrics": 6,
+      "primary_interval_rows": 4
+    },
+    {
+      "label": "M10_L_restore_after_old_cohorts",
+      "condition": "M10:lognormal:1:8:7:t:P120",
+      "sample_sha256": "ec2299495d9f3e78a282e402c6dcc902544cc762ea6a92e5eb24813b9a9784ee",
+      "display_metrics": 6,
+      "primary_interval_rows": 6
+    },
+    {
+      "label": "M10_G_restore_after_old_cohorts",
+      "condition": "M10:gamma:2:9:19:t:P120",
+      "sample_sha256": "3f15d328360fe74017e4c21fef554837cda481f229d6fc40ba94954372a526d3",
+      "display_metrics": 6,
+      "primary_interval_rows": 6
+    },
+    {
+      "label": "M10_G2_bca_restored",
+      "condition": "M10:gamma:2:9:19:bca:P30",
+      "sample_sha256": "3f15d328360fe74017e4c21fef554837cda481f229d6fc40ba94954372a526d3",
+      "display_metrics": 6,
+      "primary_interval_rows": 6
+    },
+    {
+      "label": "M10_G_after_legacy_Lab_roundtrip",
+      "condition": "M10:gamma:2:9:19:bca:P30",
+      "sample_sha256": "3f15d328360fe74017e4c21fef554837cda481f229d6fc40ba94954372a526d3",
+      "display_metrics": 6,
+      "primary_interval_rows": 6
+    },
+    {
+      "label": "M10_G_after_modes_and_free_alpha",
+      "condition": "M10:gamma:2:9:19:bca:P30",
+      "sample_sha256": "3f15d328360fe74017e4c21fef554837cda481f229d6fc40ba94954372a526d3",
+      "display_metrics": 6,
+      "primary_interval_rows": 6
+    },
+    {
+      "label": "M10_G_valid_warning_saved_example",
+      "condition": "M10:gamma:0:2:0:bca:P30",
+      "sample_sha256": "f3afc0eb7ab593da5ebb795ff361c8048b896b71d78cdf347c314f02f0541f7e",
+      "display_metrics": 6,
+      "primary_interval_rows": 6
+    }
+  ],
+  "download_checks": [
+    {
+      "kind": "pooled",
+      "filename": "rq_m10_pooled_summary.csv",
+      "bytes": 94128,
+      "sha256": "45628f3d20c6152ebf7f83fd9c492ded62794dcac65c007e1c4d1206e3288e10",
+      "actual_download_event": true
+    },
+    {
+      "kind": "hypotheses",
+      "filename": "rq_m10_hypotheses.json",
+      "bytes": 12215,
+      "sha256": "f28209e6ddb3d05d75707ac115ce8a12f7499a59aaa025d49ec1a60cf6e70648",
+      "actual_download_event": true
+    },
+    {
+      "kind": "sample",
+      "filename": "rq_m10_lognormal_seed1_outer8_sample.csv",
+      "bytes": 1356,
+      "sha256": "702e251fc46a5f7536c5571516cdb4500bfdc3ba4221bf3cc465be1fc7c474d7",
+      "actual_download_event": true
+    },
+    {
+      "kind": "endpoints",
+      "filename": "rq_m10_lognormal_seed1_outer8_endpoints.csv",
+      "bytes": 1859169,
+      "sha256": "67f0eae1da913c4cd459dd066c5fe6b0ab50ffc0f0e48a0a6a7870b897e1d173",
+      "actual_download_event": true
+    },
+    {
+      "kind": "html",
+      "filename": "rq_m10_overview.html",
+      "bytes": 4861349,
+      "sha256": "f4db26a83918daf2161c69a537a7913ebc7393b3edf48785b307aebb7c6d021d",
+      "actual_download_event": true
+    }
+  ],
+  "original_CSV_rows": 5,
+  "raw_and_x_bytes_match": true,
+  "sample_sha256": "ec2299495d9f3e78a282e402c6dcc902544cc762ea6a92e5eb24813b9a9784ee",
+  "raw_sha256": "f9c58a91eff16934e39ad97435122701066af00cad0d27da96fdde3606d2556e",
+  "endpoint_CSV_rows": 7200,
+  "endpoint_diagnostics_exact": [
+    "lower",
+    "upper",
+    "valid",
+    "reason",
+    "a",
+    "z0",
+    "q_low",
+    "q_high",
+    "tau_low",
+    "tau_high",
+    "tail_warning",
+    "less_count",
+    "equal_count"
+  ],
+  "t_zero_variation": true,
+  "old_K1_NA_notice_preserved": true,
+  "free_alpha_unapplied_change_keeps_M10_fixed005": true,
+  "warnings_in_valid_saved_intervals_preserved": true,
+  "warning_example": {
+    "distribution": "gamma",
+    "seed": 0,
+    "outer": 2,
+    "repeat": 0,
+    "stream": 40,
+    "valid": true,
+    "tail_warning": true
+  },
+  "server_exceptions": 0,
+  "duplicate_initialization_warnings": 0,
+  "browser_console_warning_or_error": 0,
+  "browser_settings_bypassed": false,
+  "native_app_control_used": false,
+  "owned_server_sessions": 2,
+  "owned_browser_tabs": 2,
+  "owned_servers_stopped": true,
+  "owned_browser_tabs_closed": true,
+  "automation_retargeting": "Initial radio setChecked did not select target; observed state and used visible label click. Tool retargeting, not an application exception.",
+  "not_performed": [
+    "Other browsers/mobile/full old controls and downloads",
+    "Owner individual new operations",
+    "External scientific review"
+  ],
+  "screenshots": [
+    "initial_M10.jpg",
+    "comparison_summary.jpg",
+    "final_comparison.jpg",
+    "overview.jpg",
+    "m09_reference_overview.jpg",
+    "m08_reference_overview.jpg"
+  ],
+  "server_log_scope": "Streamlit application exception/warning counts only. Separate standard-library figure server expected Ctrl+C KeyboardInterrupt and favicon404 retained, not application failures."
+}

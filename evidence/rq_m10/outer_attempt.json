@@ -1,0 +1,22 @@
+{
+  "question_id": "RQ-M10",
+  "source_git_sha": "db057a98efe9d4437f22186fdfbbb04290d7d8a6",
+  "started_utc": "2026-11-11T11:30:00.264315+00:00",
+  "planned_child_launches": 1,
+  "command": [
+    "python",
+    "scripts/run_small_sample_benchmark.py",
+    "--run",
+    "--manifest",
+    "evidence/rq_m10/manifest.json",
+    "--output",
+    "evidence/rq_m10",
+    "--source-commit",
+    "db057a98efe9d4437f22186fdfbbb04290d7d8a6"
+  ],
+  "soft_termination_seconds": 295.0,
+  "hard_kill_seconds": 298.0,
+  "finish_deadline_seconds": 299.0,
+  "outer_cap_seconds": 300,
+  "scope": "one guarded main attempt; no scientific retry"
+}

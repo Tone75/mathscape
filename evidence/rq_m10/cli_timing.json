@@ -1,0 +1,7 @@
+{
+  "command": "/usr/bin/time -p python scripts/run_small_sample_guarded.py --source-commit db057a98efe9d4437f22186fdfbbb04290d7d8a6",
+  "external_cli_wall_seconds": 33.21,
+  "user_seconds": 32.26,
+  "sys_seconds": 0.62,
+  "scope": "sole main CLI, including interpreter startup, original generation/persistence/readback, inner streams and outputs"
+}

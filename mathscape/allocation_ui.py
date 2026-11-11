@@ -1,4 +1,4 @@
-"""Saved-only M08/M09 cohort comparison within the shared-budget explorer."""
+"""Saved-only M08/M09/M10 cohort comparison within the shared-budget explorer."""
 import csv
 import gzip
 import hashlib
@@ -12,7 +12,8 @@ import streamlit as st
 ROOT=Path(__file__).resolve().parents[1]
 EVIDENCE=ROOT/'evidence/rq_m08'
 NEW_EVIDENCE=ROOT/'evidence/rq_m09'
-COHORTS={'M08':'旧パネル M08','M09':'新標本 M09'}
+SMALL_EVIDENCE=ROOT/'evidence/rq_m10'
+COHORTS={'M08':'旧パネル M08','M09':'新標本 M09','M10':'小標本 M10（n5）'}
 M07=ROOT/'evidence/rq_m07'
 M06=ROOT/'evidence/rq_m06'
 M05=ROOT/'evidence/rq_m05'
@@ -34,6 +35,7 @@ def _state():
     state.setdefault('cohort','M08')
     # Migrate an already-open M08 session without changing its selected IDs.
     state.setdefault('cohort_selections',{'M08':state['selections'],'M09':_defaults()})
+    state['cohort_selections'].setdefault('M10',_defaults())
     state['selections']=state['cohort_selections'][state['cohort']]
     return state
 
@@ -80,8 +82,18 @@ def _load(name,evidence=None):
     return _rows(str(path),path.stat().st_mtime_ns)
 
 
+def _value(value):
+    try:return float(value)
+    except (TypeError,ValueError):return float('nan')
+
+
 def _number(value,fmt='.6g'):
-    return format(float(value),fmt) if value is not None and np.isfinite(float(value)) else '未定義'
+    number=_value(value)
+    return format(number,fmt) if np.isfinite(number) else '未定義'
+
+
+def _evidence(cohort):
+    return {'M08':EVIDENCE,'M09':NEW_EVIDENCE,'M10':SMALL_EVIDENCE}[cohort]
 
 
 def _display(rows):
@@ -108,7 +120,7 @@ def _chart(fig,x,y,height=340):
 
 def _intervals(panel,state,selection):
     oi,rep=selection['outer'],selection['r'];mi=list(METHODS).index(state['method']);sample=panel['samples'][oi];j,k=ALLOCATIONS[state['allocation']]
-    fig=go.Figure(go.Scatter(x=sample,y=np.full(20,-7),mode='markers',name='固定した保存原標本',marker=dict(symbol='circle',size=8,color='white',line=dict(color='#080C14',width=1))))
+    fig=go.Figure(go.Scatter(x=sample,y=np.full(len(sample),-7),mode='markers',name='固定した保存原標本',marker=dict(symbol='circle',size=8,color='white',line=dict(color='#080C14',width=1))))
     if panel['valid'][oi,rep,0,0]:
         fig.add_scatter(x=[panel['lower'][oi,rep,0,0],panel['upper'][oi,rep,0,0]],y=[-3,-3],mode='lines+markers',name='t参照（実質1区間）',line=dict(color='#46DCC0',width=3),marker=dict(size=7))
     if state['method']!='t':
@@ -132,13 +144,13 @@ def _measurements(originals,comparisons,budgets,groups,decompositions,state,sele
     method=state['method'];allocation=state['allocation'];rep=selection['r'];selected=[row for row in budgets if row['method']==method]
     current=next(row for row in selected if row['allocation']==allocation and int(row['budget_repeat_id'])==rep)
     st.caption('選択原標本・選択r・選択配分の保存指標。下端点SD・上端点SD・Sは組別量を平均した値です。')
-    for labels,keys in ((('組平均の下端点SD','組平均の上端点SD','組平均のS'),('lower_sd','upper_sd','S')),(('標本SE（s/√20）','予算推定値 T=Ase','平均V=Vbar=Vse'),('se','T','Vbar'))):
+    for labels,keys in ((('組平均の下端点SD','組平均の上端点SD','組平均のS'),('lower_sd','upper_sd','S')),(('標本SE（s/√5）' if state.get('cohort')=='M10' else '標本SE（s/√20）','予算推定値 T=Ase','平均V=Vbar=Vse'),('se','T','Vbar'))):
         for column,label,key in zip(st.columns(3),labels,keys):column.metric(label,_number(current[key]))
     st.latex(r'T_p=\frac1J\sum_{j=1}^{J}\sqrt{V_{pj}},\qquad Q_p=\operatorname{var}_{r}(T_{rp}),\quad \mathrm{ddof}=1')
     fig=go.Figure()
     for name in ALLOCATIONS:
         rows=[row for row in selected if row['allocation']==name]
-        fig.add_scatter(x=[int(row['budget_repeat_id']) for row in rows],y=[float(row['T']) for row in rows],mode='lines+markers',name=name,line=dict(color=COLORS[name],width=4 if name==allocation else 1),marker=dict(size=6))
+        fig.add_scatter(x=[int(row['budget_repeat_id']) for row in rows],y=[_value(row['T']) for row in rows],mode='lines+markers',name=name,line=dict(color=COLORS[name],width=4 if name==allocation else 1),marker=dict(size=6))
     _chart(fig,'予算全体の反復 r（R20、対応する共通120系列）','T：組の平方根を取ってから平均したAse')
     compact=['allocation','method','J','K','M','Q','Q_over_R','complete','complete_repeats','planned_repeats','total_streams','valid_streams','invalid_streams']
     st.dataframe(_display([{key:row[key] for key in compact} for row in originals]),hide_index=True,width='stretch')
@@ -149,12 +161,12 @@ def _measurements(originals,comparisons,budgets,groups,decompositions,state,sele
     group_rows=[row for row in groups if row['method']==method and int(row['budget_repeat_id'])==rep]
     groupfig=go.Figure()
     for name in ALLOCATIONS:
-        rows=[row for row in group_rows if row['allocation']==name];groupfig.add_bar(x=[f'{name} 組{row["group"]}' for row in rows],y=[float(row['A']) for row in rows],name=name,marker_color=COLORS[name])
+        rows=[row for row in group_rows if row['allocation']==name];groupfig.add_bar(x=[f'{name} 組{row["group"]}' for row in rows],y=[_value(row['A']) for row in rows],name=name,marker_color=COLORS[name])
     _chart(groupfig,'4×30／2×60／1×120 の固定7組','各組のA=√V（同じ120系列）',300)
     fields=['allocation','J','K','group','group_start','group_stop','lower_var','upper_var','V','A','complete','total_streams','valid_streams','invalid_streams']
     st.dataframe(_display([{key:row[key] for key in fields} for row in group_rows]),hide_index=True,width='stretch')
     decomp=next(row for row in decompositions if row['method']==method and int(row['budget_repeat_id'])==rep);fig=go.Figure()
-    fig.add_bar(x=['Jgap','Pgap'],y=[float(decomp[key]) for key in ('Jgap','Pgap')],name='符号を保った2項');fig.add_scatter(x=['delta'],y=[float(decomp['delta'])],mode='markers',name='T_P120−T_P30',marker=dict(size=12,color='white'));fig.add_hline(y=0,line_dash='dot')
+    fig.add_bar(x=['Jgap','Pgap'],y=[_value(decomp[key]) for key in ('Jgap','Pgap')],name='符号を保った2項');fig.add_scatter(x=['delta'],y=[_value(decomp['delta'])],mode='markers',name='T_P120−T_P30',marker=dict(size=12,color='white'));fig.add_hline(y=0,line_dash='dot')
     _chart(fig,'選択rの代数的分解（Rgapはありません）','Ase単位の差',280)
     fields=['Vbar30','T30','T60','T120','Jgap','Pgap','delta','residual','normalized_residual','ss30_lower_residual','ss30_upper_residual','ss60_lower_residual','ss60_upper_residual','algebra_ok','reason']
     st.dataframe(_display([{key:decomp[key] for key in fields}]),hide_index=True,width='stretch')
@@ -168,7 +180,7 @@ def _pooled(rows,seed_rows,decompositions,state):
         fig=go.Figure()
         for dist,color in (('gamma','#46DCC0'),('lognormal','#FFB86B')):
             selected=[next(row for row in rows if row['distribution']==dist and row['method']==state['method'] and row['allocation']==name) for name in ALLOCATIONS]
-            means=np.array([float(row[field]) for row in selected]);low=np.array([float(row[field+'_decision_low']) for row in selected]);high=np.array([float(row[field+'_decision_high']) for row in selected])
+            means=np.array([_value(row[field]) for row in selected]);low=np.array([_value(row[field+'_decision_low']) for row in selected]);high=np.array([_value(row[field+'_decision_high']) for row in selected])
             bars=dict(type='data',symmetric=False,array=high-means,arrayminus=means-low) if np.isfinite(np.r_[means,low,high]).all() else None
             fig.add_scatter(x=list(ALLOCATIONS),y=means,mode='lines+markers',name=LABELS[dist],line_color=color,error_y=bars)
         _chart(fig,'同一120系列予算の配分（選択方法、P60は記述のみ）',ylabel)
@@ -178,7 +190,7 @@ def _pooled(rows,seed_rows,decompositions,state):
     st.dataframe(_display([{key:row[key] for key in compact} for row in rows]),hide_index=True,width='stretch')
     st.info('B=4999は1系列の再標本数、Kは1測定の系列数、Jは1予算で平均する測定数、JK=120です。R=20は予算全体の反復、N=30は各分布の独立原標本数です。'
             'M07でJ20と呼んだ役割を今回はRと呼びます。3配分の比較で生成数を3倍に数えず、同一予算は再標本化の仕事量であって同一wall時間の保証ではありません。')
-    origin=('M09は解析的標準化分布から新生成した60原標本の1コホートによる直接追試です。M08とは原標本を共有しません。' if state.get('cohort','M08')=='M09' else '各seed N10、各分布N30、計60原標本はM07/M06/M05保存標本の固定ID再利用です。新しい原標本による独立追試ではありません。')
+    origin=('M10はn5の新60原標本による小標本コホートです。M08/M09のn20とは別々に判定し、標本数による効果を検定しません。' if state.get('cohort')=='M10' else 'M09は解析的標準化分布から新生成した60原標本の1コホートによる直接追試です。M08とは原標本を共有しません。' if state.get('cohort','M08')=='M09' else '各seed N10、各分布N30、計60原標本はM07/M06/M05保存標本の固定ID再利用です。新しい原標本による独立追試ではありません。')
     st.info(origin+
             'R/J/KをNに足しません。有限R/Kノイズを含む原標本間のモデルベース近似区間で、固定60標本を条件とした内側乱数だけの厳密区間ではありません。'
             'N30・非正規な原標本別量・既知結果を見た設計という限界があります。C/方向別ミス/幅/警告は記述値で、M05〜M07の既存判断を更新・再検定しません。')
@@ -208,7 +220,7 @@ def _hypotheses(saved,decompositions,cohort='M08'):
     ratiofig=go.Figure();ratio_rows=[]
     for dist in LABELS:
         row=next(row for row in decompositions if row['distribution']==dist and row['master_seed']=='pooled' and row['method']=='bca')
-        ratio=float(row['ratio_mean_Q120_over_mean_Q30'])
+        ratio=_value(row['ratio_mean_Q120_over_mean_Q30'])
         if np.isfinite(ratio):ratiofig.add_scatter(x=[ratio],y=[LABELS[dist]],name=LABELS[dist],mode='markers',marker=dict(size=10))
         ratio_rows.append(dict(母集団=LABELS[dist],平均Qの比=row['ratio_mean_Q120_over_mean_Q30'],個別比の平均=row['mean_individual_Q120_Q30'],mean_Q30=saved['population_decisions'][dist]['H2']['mean_Q30'],H2=saved['population_decisions'][dist]['H2']['status']))
     ratiofig.add_vrect(x0=.8,x1=1.25,fillcolor='#A8A2FF',opacity=.15,line_width=0,annotation_text='乗法帯 (.8,1.25)');ratiofig.add_vline(x=1,line_dash='dot',line_color='white')
@@ -227,27 +239,31 @@ def _hypotheses(saved,decompositions,cohort='M08'):
 def _sample_csv(sample,state,selection,digest,original_cell=None):
     cohort=state.get('cohort','M08');buffer=io.StringIO();writer=csv.writer(buffer)
     fields=['distribution','master_seed','outer_id','observation_index','X','sample_sha256','source_question']
-    if cohort=='M09':fields+=['cohort','namespace','raw','raw_sha256','raw_kind']
+    if cohort in ('M09','M10'):fields+=['cohort','namespace','raw','raw_sha256','raw_kind']
+    if cohort=='M10':fields+=['n','alpha','sample_t_df','comparison_df']
     writer.writerow(fields)
     for index,value in enumerate(sample):
-        row=[state['distribution'],selection['seed'],selection['outer'],index,float(value),digest,'RQ-M09 new originals' if cohort=='M09' else 'RQ-M07 / RQ-M06 / RQ-M05']
-        if cohort=='M09':
+        row=[state['distribution'],selection['seed'],selection['outer'],index,float(value),digest,'RQ-'+cohort+' new originals' if cohort in ('M09','M10') else 'RQ-M07 / RQ-M06 / RQ-M05']
+        if cohort in ('M09','M10'):
             if original_cell is None:raise ValueError('M09 export requires its persisted raw original')
             oi=selection['outer'];row +=[cohort,int(original_cell['namespace']),float(original_cell['raw'][oi,index]),original_cell['raw_sha256'][oi].decode(),original_cell['raw_kind'].item()]
+        if cohort=='M10':row +=[5,.05,4,29]
         writer.writerow(row)
     return buffer.getvalue().encode()
 
 
 def _endpoint_csv(panel,state,selection,digest):
     buffer=io.StringIO();fields=['distribution','master_seed','outer_id','budget_repeat_id','stream_id','method','B','sample_sha256','lower','upper','valid','reason','a','z0','q_low','q_high','tau_low','tau_high','tail_warning']
-    if state.get('cohort','M08')=='M09':fields+=['cohort','namespace']
+    if state.get('cohort','M08') in ('M09','M10'):fields+=['cohort','namespace']
+    if state.get('cohort')=='M10':fields+=['n','alpha','sample_t_df','comparison_df','less_count','equal_count']
     writer=csv.DictWriter(buffer,fieldnames=fields);writer.writeheader();oi=selection['outer']
     for rep in range(20):
         for mi,method in enumerate(METHODS):
             for stream in range(120):
                 row=dict(distribution=state['distribution'],master_seed=selection['seed'],outer_id=oi,budget_repeat_id=rep,stream_id=stream,method=method,B=4999,sample_sha256=digest,reason=str(panel['reason_labels'][panel['reason_codes'][oi,rep,mi,stream]]))
-                row.update({key:panel[key][oi,rep,mi,stream].item() for key in fields[8:] if key not in ('reason','cohort','namespace')})
-                if 'cohort' in fields:row.update(cohort='M09',namespace=int(panel['namespace']))
+                row.update({key:panel[key][oi,rep,mi,stream].item() for key in fields[8:] if key not in ('reason','cohort','namespace','n','alpha','sample_t_df','comparison_df')})
+                if 'cohort' in fields:row.update(cohort=state['cohort'],namespace=int(panel['namespace']))
+                if state.get('cohort')=='M10':row.update(n=5,alpha=.05,sample_t_df=4,comparison_df=29)
                 writer.writerow(row)
     return buffer.getvalue().encode()
 
@@ -259,34 +275,36 @@ def _file_hash(path,modified):
 
 def _new_original(evidence,path,panel,selection,digest):
     """Validate saved lineage only; never transform, generate or infer on the UI."""
+    cohort=panel['cohort'].item();n=5 if cohort=='M10' else 20;namespace=0x4D3130 if cohort=='M10' else 0x4D3039
     original_path=evidence/'originals'/path.name;cell=_panel(str(original_path),original_path.stat().st_mtime_ns)
     receipt_path=evidence/'originals/receipt.json';receipt_bytes=receipt_path.read_bytes();receipt=json.loads(receipt_bytes)
     receipt_digest=hashlib.sha256(receipt_bytes).hexdigest();oi=selection['outer']
-    if panel['cohort'].item()!='M09' or int(panel['namespace'])!=0x4D3039 or int(cell['namespace'])!=0x4D3039:raise ValueError('new cohort namespace differs')
+    if cohort not in ('M09','M10') or int(panel['namespace'])!=namespace or int(cell['namespace'])!=namespace or int(cell['n'])!=n:raise ValueError('new cohort namespace differs')
     if panel['original_receipt_sha256'].item()!=receipt_digest:raise ValueError('new original receipt hash differs')
     if receipt['original_files_sha256'][path.name]!=_file_hash(str(original_path),original_path.stat().st_mtime_ns):raise ValueError('persisted raw original file differs')
     manifest_path=evidence/'manifest.json';manifest=json.loads(manifest_path.read_bytes());resources=json.loads((evidence/'resources.json').read_bytes())
     if receipt['manifest_sha256']!=_file_hash(str(manifest_path),manifest_path.stat().st_mtime_ns):raise ValueError('preregistered manifest binding differs')
     if receipt['source_git_sha']!=resources['source_git_sha'] or not resources['original_receipt_readback_verified'] or manifest['generation_registry']['sample_hashes_known_before_generation'] is not False:raise ValueError('generation/readback phase differs')
-    if receipt['cohort_role']!='new_M09_main_originals' or receipt['hash_recording_phase']!='after generation inside the verified main attempt, never preregistered before creation':raise ValueError('original generation phase differs')
+    if receipt['cohort_role']!='new_'+cohort+'_main_originals' or receipt['hash_recording_phase']!='after generation inside the verified main attempt, never preregistered before creation':raise ValueError('original generation phase differs')
     sample=cell['samples'][oi];raw=cell['raw'][oi]
-    if sample.tobytes()!=panel['samples'][oi].tobytes() or digest!=cell['sample_sha256'][oi].decode():raise ValueError('new endpoint sample differs from original')
+    if sample.tobytes()!=panel['samples'][oi].tobytes() or digest!=panel['sample_sha256'][oi].decode() or digest!=cell['sample_sha256'][oi].decode():raise ValueError('new endpoint sample differs from original')
     raw_hash=hashlib.sha256(np.asarray(raw,dtype='<f8').tobytes()).hexdigest()
     record=next((item for item in receipt['records'] if item['distribution']==cell['distribution'].item() and item['master_seed']==selection['seed'] and item['outer_id']==oi),None)
-    expected_key=[0x4D3039,1 if cell['distribution'].item()=='gamma' else 2,20,oi,0,0]
+    expected_key=[namespace,1 if cell['distribution'].item()=='gamma' else 2,n,oi,0,0]
     if record is None or record['sample_sha256']!=digest or record['raw_sha256']!=raw_hash or raw_hash!=cell['raw_sha256'][oi].decode():raise ValueError('new original raw/sample hash correspondence differs')
     constants=dict(zip(cell['constant_names'].astype(str),cell['constant_values'].tolist()))
     if record['spawn_key']!=expected_key or cell['original_keys'][oi].tolist()!=expected_key or record['entropy']!=selection['seed'] or record['constants']!=constants:raise ValueError('saved original key/constants differ')
-    for name,expected in receipt['M08_reference_files_sha256'].items():
+    for name,expected in receipt['M09_reference_files_sha256' if cohort=='M10' else 'M08_reference_files_sha256'].items():
         reference_path=ROOT/name
-        if not name.startswith('evidence/rq_m08/') or _file_hash(str(reference_path),reference_path.stat().st_mtime_ns)!=expected:raise ValueError('accepted M08 comparison reference differs')
-    old_path=EVIDENCE/'panels'/path.name
+        if not name.startswith('evidence/rq_m09/' if cohort=='M10' else 'evidence/rq_m08/') or _file_hash(str(reference_path),reference_path.stat().st_mtime_ns)!=expected:raise ValueError('accepted M08 comparison reference differs')
+    old_path=(NEW_EVIDENCE if cohort=='M10' else EVIDENCE)/'panels'/path.name
     if digest==_hashes(str(old_path),old_path.stat().st_mtime_ns)[oi]:raise ValueError('new original equals old M08 original')
     return cell,receipt,record
 
 
 def _cohort_intro(saved):
-    st.subheader('標本を変えても、同じ結論？ · 主BCaのP30対P120')
+    small='M10' in saved
+    st.subheader(('標本が5個でも、同じ結論？' if small else '標本を変えても、同じ結論？')+' · 主BCaのP30対P120')
     status_labels={'supported':'支持','not_supported':'不支持','inconclusive':'保留'}
     for column,(cohort,document) in zip(st.columns(len(saved)),saved.items()):
         with column:
@@ -299,7 +317,10 @@ def _cohort_intro(saved):
                 st.markdown(f'**{LABELS[dist]}**　{text}')
     st.caption('H1はdの区間が厳密に±.0025 Ase単位内。H2はLの下限>0かつUの上限<0で、平均反復分散比の乗法帯(.8,1.25)を確認します。'
                'M08／M09は別々の判定です。旧新のpool・同じIDによる対応比較・新たなコホート間検定を行いません。')
-    if 'M09' in saved:
+    if small:
+        st.write('小標本M10のH1/H2は両分布とも保留です。同じ固定帯で同等性を確認できず、非同等を証明したわけではありません。')
+        st.caption('M10 n5 と M08/M09 n20 は別々のコホートです。pool・ID対応比較・n20対n5の差の検定を行いません。警告のある有効区間も除外しません。')
+    if 'M09' in saved and not small:
         statuses=[saved['M09']['population_decisions'][dist][H]['status'] for dist in LABELS for H in ('H1','H2')]
         if all(status=='supported' for status in statuses):st.write('新コホートM09では、両分布の平均と平均反復分散について、同じ固定基準による同等性の再現を支持しました。')
         elif 'inconclusive' in statuses:st.write('新コホートM09の必要な判断に保留があります。この固定予算では同等性を再確認できず、非同等やM08の誤りとは断定しません。')
@@ -317,17 +338,19 @@ def _cohort_comparison(saved):
             for dist in LABELS:
                 for name in names:
                     row=document['quantities'][name+'_'+dist];label=f'{cohort} · {dist} · {name}'
-                    if row['valid']:fig.add_scatter(x=[row['mean']],y=[label],mode='markers',name=label,marker=dict(color='#FFB86B' if cohort=='M08' else '#46DCC0'),error_x=dict(type='data',symmetric=False,array=[row['high']-row['mean']],arrayminus=[row['mean']-row['low']]))
+                    if row['valid']:fig.add_scatter(x=[row['mean']],y=[label],mode='markers',name=label,marker=dict(color={'M08':'#FFB86B','M09':'#46DCC0','M10':'#A8A2FF'}[cohort]),error_x=dict(type='data',symmetric=False,array=[row['high']-row['mean']],arrayminus=[row['mean']-row['low']]))
                     records.append(dict(cohort=cohort,distribution=dist,quantity=name,N=row['N'],df=row['df'],mean=row['mean'],SD=row['sd'],MCSE=row['mcse'],low995=row['low'],high995=row['high'],valid=row['valid']))
         if names==('H1',):fig.add_vrect(x0=-.0025,x1=.0025,fillcolor='#46DCC0',opacity=.12,line_width=0,annotation_text='共通の許容帯 ±.0025')
         fig.add_vline(x=0,line_dash='dot',line_color='white');_chart(fig,ylabel,'各コホート単独99.5%区間（旧新差の区間ではありません）',340 if names==('H1',) else 470)
     st.dataframe(records,hide_index=True,width='stretch')
-    st.caption('12本を並べた表示です。確認的判断は各コホートで固定した6本ずつ。旧新の平均差や比を新たに検定せず、G/Lも同じIDを対応群とは扱いません。M08の受入判断は更新しません。')
+    st.caption(('18本' if 'M10' in saved else '12本')+'を並べた表示です。確認的判断は各コホートで固定した6本ずつ。旧新の平均差や比を新たに検定せず、G/Lも同じIDを対応群とは扱いません。M08の受入判断は更新しません。')
 
 
 def render_allocation_view():
-    st.header('Inference Lab · 標本を変えても、同じ結論？')
-    st.caption('保存結果専用 · 旧パネルM08／新標本M09。n20・固定α=.05・B4999・R20・各分布N30。P30=J4×K30、P60=J2×K60、P120=J1×K120。操作で生成・推論・実験を実行しません。')
+    state=_state();small=state['cohort']=='M10';n=5 if small else 20
+    st.header('Inference Lab · '+('標本が5個でも、同じ結論？' if small else '標本を変えても、同じ結論？'))
+    if small:st.caption('保存結果専用 · 小標本M10、n5・原標本t df4・配分比較df29・固定α=.05・B4999・R20・各分布N30。P30=J4×K30、P60=J2×K60、P120=J1×K120。生成・推論・実験は実行しません。')
+    else:st.caption('保存結果専用 · 旧パネルM08／新標本M09。n20・固定α=.05・B4999・R20・各分布N30。P30=J4×K30、P60=J2×K60、P120=J1×K120。操作で生成・推論・実験を実行しません。')
     state=_state();selection=state['selections'][state['distribution']]
     for key,value in dict(cohort=state['cohort'],distribution=state['distribution'],allocation=state['allocation'],method=state['method'],**selection).items():st.session_state.setdefault(f'au_{key}',value)
     st.sidebar.selectbox('保存コホート',list(COHORTS),format_func=COHORTS.get,key='au_cohort',on_change=_cohort)
@@ -338,7 +361,7 @@ def render_allocation_view():
     st.sidebar.selectbox('同一予算の配分',list(ALLOCATIONS),format_func=lambda name:f'{name} · J{ALLOCATIONS[name][0]}×K{ALLOCATIONS[name][1]}',key='au_allocation',on_change=_remember)
     st.sidebar.selectbox('同一予算の手法',list(METHODS),format_func=METHODS.get,key='au_method',on_change=_remember)
     st.sidebar.caption('B4999・α=.05・R20固定、JK=120。コホート×分布ごとseed／ID／rを復元し、配分・手法・Lab・モード切替で同じ原標本を保持します。旧新の同じIDは別の原標本です。')
-    selection=state['selections'][state['distribution']];cohort=state['cohort'];evidence=EVIDENCE if cohort=='M08' else NEW_EVIDENCE;original_cell=receipt=record=None
+    selection=state['selections'][state['distribution']];cohort=state['cohort'];evidence=_evidence(cohort);original_cell=receipt=record=None
     try:
         path=evidence/'panels'/f'{state["distribution"]}_seed{selection["seed"]}.npz';panel=_panel(str(path),path.stat().st_mtime_ns)
         names=('original_allocation_metrics.csv','original_comparison_metrics.csv','budget_metrics.csv.gz','group_metrics.csv.gz','decomposition_metrics.csv.gz','summary.csv','decomposition_summary.csv');tables={name:_load(name,evidence)[0] for name in names}
@@ -350,23 +373,36 @@ def render_allocation_view():
                 old=source/'panels'/path.name;hashes.append(_hashes(str(old),old.stat().st_mtime_ns)[selection['outer']])
             if not digest==panel['sample_sha256'][selection['outer']].decode('ascii')==hashes[0]==hashes[1]==hashes[2]:raise ValueError('saved M07/M06/M05 original provenance mismatch')
         else:original_cell,receipt,record=_new_original(evidence,path,panel,selection,digest)
-        if panel['samples'].shape!=(10,20) or panel['lower'].shape!=(10,20,3,120) or not panel['observed_streams'].all():raise ValueError('fixed panel shape/completeness differs')
+        if panel['samples'].shape!=(10,n) or any(panel[key].shape!=(10,20,3,120) for key in ('lower','upper','valid','tail_warning','reason_codes','a','z0','q_low','q_high','tau_low','tau_high')) or not panel['observed_streams'].all():raise ValueError('fixed panel shape/completeness differs')
+        if int(panel['n'])!=n or int(panel['B'])!=4999 or float(panel['alpha'])!=.05 or list(panel['methods'].astype(str))!=list(METHODS):raise ValueError('fixed metadata differs')
+        if small and (panel['less_count'].shape!=panel['lower'].shape or panel['equal_count'].shape!=panel['lower'].shape):raise ValueError('tie diagnostics shape differs')
         if hypotheses['question_id']!='RQ-'+cohort:raise ValueError('selected cohort question differs')
+        diagnostics=_load('diagnostic_summary.csv',evidence)[0] if small else []
         old_rows,_=_rows(str(M05/'pooled_summary.csv'),(M05/'pooled_summary.csv').stat().st_mtime_ns)
-    except (OSError,KeyError,ValueError,IndexError) as error:
+    except (OSError,KeyError,ValueError,IndexError,TypeError) as error:
         st.error(f'{cohort}保存結果／原標本の対応を表示できません：{type(error).__name__}。証拠ファイルを確認してください。');return
-    j,k=ALLOCATIONS[state['allocation']];st.success(f'表示条件：{COHORTS[cohort]} ／ {LABELS[state["distribution"]]} ／ seed={selection["seed"]} ／ 原標本ID={selection["outer"]} ／ r={selection["r"]} ／ {state["allocation"]}=J{j}×K{k} ／ {METHODS[state["method"]]} ／ n20・固定α=.05・B4999・R20')
+    j,k=ALLOCATIONS[state['allocation']];st.success(f'表示条件：{COHORTS[cohort]} ／ {LABELS[state["distribution"]]} ／ seed={selection["seed"]} ／ 原標本ID={selection["outer"]} ／ r={selection["r"]} ／ {state["allocation"]}=J{j}×K{k} ／ {METHODS[state["method"]]} ／ n{n}・固定α=.05・B4999・R20')
     if cohort=='M08':st.caption(f'原標本SHA-256：{digest}。M07・M06・M05保存hashと同じouter IDで一致。M07由来の原標本だけを再利用し、旧端点系列は混ぜません。受入入力HEAD：{panel["input_accepted_head"].item()}')
+    elif small:
+        st.caption('新しいn5の保存原標本を固定しています。同じM08/M09 IDとは別の標本です。原標本のt区間df4、配分比較は独立原標本N30・df29です。')
     else:
         st.caption(f'原標本SHA-256：{digest}。新標本M09の保存raw／receiptと一致。namespace=0x4D3039、原標本キー={record["spawn_key"]}。同じM08 IDの原標本とは別です。')
         st.caption(f'新60原標本の生成・ハッシュ記録は事前固定commit {receipt["source_git_sha"]} の後、検証済み主attempt内。全原標本を保存・読み戻し確認後に内側系列へ進んだ記録です。生成前に新ハッシュを固定したとは表示しません。')
-    saved={cohort:hypotheses};other='M09' if cohort=='M08' else 'M08';other_path=(NEW_EVIDENCE if other=='M09' else EVIDENCE)/'hypotheses.json'
-    try:
-        other_document=json.loads(other_path.read_bytes())
-        if other_document['question_id']!='RQ-'+other:raise ValueError('comparison cohort differs')
-        saved[other]=other_document
-    except (OSError,KeyError,ValueError):st.warning(f'{other}の比較用保存結果は未配置または不整合です。選択中の{cohort}単独の保存結果を表示します。')
+    saved={cohort:hypotheses}
+    for other in (COHORTS if small else ('M08','M09')):
+        if other==cohort:continue
+        try:
+            other_document=json.loads((_evidence(other)/'hypotheses.json').read_bytes())
+            if other_document['question_id']!='RQ-'+other:raise ValueError('comparison cohort differs')
+            saved[other]=other_document
+        except (OSError,KeyError,ValueError):st.warning(f'{other}の比較用保存結果は未配置または不整合です。選択中の{cohort}単独の保存結果を表示します。')
     saved={name:saved[name] for name in COHORTS if name in saved};_cohort_intro(saved)
+    if small:
+        messages=[]
+        for dist in LABELS:
+            diagnostic=next(row for row in diagnostics if row['distribution']==dist and row['master_seed']=='pooled' and row['method']=='bca')
+            messages.append(f'{LABELS[dist]}：無効{diagnostic["invalid_streams"]}・欠測{diagnostic["missing_streams"]}・有効警告{diagnostic["warning_streams"]}系列（警告あり{diagnostic["warning_originals"]}原標本）')
+        st.info(' ／ '.join(messages)+'。警告は除外せず主判定に保持します。保留は非同等の証明ではありません。')
     select=lambda rows:[row for row in rows if row['distribution']==state['distribution'] and int(row['master_seed'])==selection['seed'] and int(row['outer_id'])==selection['outer']]
     st.subheader(f'{cohort}の保存詳細 · 1. 共通120系列をどう分けるか');_intervals(panel,state,selection)
     st.subheader('2. R20回の予算推定値・7組の測定・代数的分解')
@@ -375,22 +411,32 @@ def render_allocation_view():
     with st.expander('旧新コホートの全主区間を同じ軸で比較（記述のみ）'):_cohort_comparison(saved)
     if original_cell is not None:
         with st.expander('新原標本の保存raw・解析定数・生成receipt'):
-            oi=selection['outer'];st.dataframe(dict(observation_index=list(range(20)),raw=original_cell['raw'][oi],X=sample),hide_index=True,width='stretch')
+            if small:
+                st.caption(f'原標本SHA-256：{digest}。保存raw／receiptと一致。namespace=0x4D3130、原標本キー={record["spawn_key"]}。')
+                st.caption(f'新60原標本の生成・ハッシュ記録は事前固定commit {receipt["source_git_sha"]} の後。全原標本を保存・読み戻し確認後に内側系列へ進んだ記録です。')
+            oi=selection['outer'];st.dataframe(dict(observation_index=list(range(n)),raw=original_cell['raw'][oi],X=sample),hide_index=True,width='stretch')
             st.json(dict(raw_kind=record['raw_kind'],constants=record['constants'],entropy=record['entropy'],original_key=record['spawn_key'],raw_sha256=record['raw_sha256'],sample_sha256=record['sample_sha256'],source_git_sha=receipt['source_git_sha']))
             st.caption('Gは保存yからx=y−1、Lは保存zから解析定数によるx=(exp(sz)−m)/d。標本内の平均・SDで再標準化しません。raw→xの独立照合は保存監査で実施済みで、この画面は生成・変換・推論を再実行しません。')
     with st.expander('選択rの端点・z0/a/q/tau診断（警告を含む保存値）'):
         oi,rep=selection['outer'],selection['r'];mi=list(METHODS).index(state['method']);records=[]
         for stream in range(1 if state['method']=='t' else 120):
             row=dict(method=state['method'],budget_repeat_id=rep,stream_id=stream,allocation_group=stream//k,reason=str(panel['reason_labels'][panel['reason_codes'][oi,rep,mi,stream]]))
-            row.update({key:panel[key][oi,rep,mi,stream].item() for key in ('lower','upper','valid','a','z0','q_low','q_high','tau_low','tau_high','tail_warning')});records.append(row)
-        st.dataframe(records,hide_index=True,width='stretch');st.caption('tau=B×min(q,1−q)。tau<10の警告を除外せず、無効理由・NA・計画分母を保持します。')
+            row.update({key:panel[key][oi,rep,mi,stream].item() for key in ('lower','upper','valid','a','z0','q_low','q_high','tau_low','tau_high','tail_warning')+(('less_count','equal_count') if small else ())});records.append(row)
+        st.dataframe(records,hide_index=True,width='stretch');st.caption(('tau_low=B×q_low、tau_high=B×(1−q_high)。' if small else 'tau=B×min(q,1−q)。')+'tau<10の警告を除外せず、無効理由・NA・計画分母を保持します。')
+    if small:
+        with st.expander('M10 方法別の無効・欠測・警告・tie診断（保存24行）'):
+            st.dataframe(_display(diagnostics),hide_index=True,width='stretch')
+            st.caption('論理系列数はtの実質1区間という分母と区別します。less/equalは実際の平均に対する半tie補正 p=(less+.5equal)/B の記録です。65535は未知。q=0/1・tau<10は有効なら警告で、除外や新しい判定ゲートにしません。')
+        for dist in LABELS:
+            row=next(row for row in diagnostics if row['distribution']==dist and row['master_seed']=='pooled' and row['method']=='bca')
+            st.caption(f'{LABELS[dist]} BCa：無効{row["invalid_streams"]}・欠測{row["missing_streams"]}・警告{row["warning_streams"]}系列（警告あり原標本{row["warning_originals"]}）。有効警告と無効は別です。')
     with st.expander('旧M05 K1の安定性NAと既存結論を保持'):
         fields=['distribution','method','K','C','T','lower_sd','upper_sd','S','Ase','Apop'];st.dataframe(_display([{key:row[key] for key in fields} for row in old_rows if row['distribution']==state['distribution']]),hide_index=True,width='stretch')
         st.caption('M05 K1はtを含む安定性がNA。M08/M09のtゼロ変動とは異なります。M06/M07/M08の受入済み判断も更新しません。')
     prefix=f'rq_{cohort.lower()}_{state["distribution"]}_seed{selection["seed"]}_outer{selection["outer"]}'
     st.download_button('同一予算プールCSV（18行）を保存',pooled_bytes,file_name=f'rq_{cohort.lower()}_pooled_summary.csv',mime='text/csv',key='au_summary')
     st.download_button('主比較JSON（6区間・全判定）を保存',hypothesis_bytes,file_name=f'rq_{cohort.lower()}_hypotheses.json',mime='application/json',key='au_hypotheses')
-    st.download_button('固定原標本CSV（20観測）を保存',_sample_csv(sample,state,selection,digest,original_cell),file_name=prefix+'_sample.csv',mime='text/csv',key='au_sample')
+    st.download_button(f'固定原標本CSV（{n}観測）を保存',_sample_csv(sample,state,selection,digest,original_cell),file_name=prefix+'_sample.csv',mime='text/csv',key='au_sample')
     st.download_button('共通120系列の全端点CSV（7200行）を保存',_endpoint_csv(panel,state,selection,digest),file_name=prefix+'_endpoints.csv',mime='text/csv',key='au_endpoints')
     html=evidence/'figures/overview.html'
     if html.exists():st.download_button('自己完結HTML概要を保存',html.read_bytes(),file_name=f'rq_{cohort.lower()}_overview.html',mime='text/html',key='au_html')

@@ -85,6 +85,10 @@ python -m pytest -q
 
 警告と数理的無効を区別し、有効なq=0/1や尾部警告を除外しません。必要BCa無効では原標本主量NA・計画N30を保持し、conditional_完全例を主判定へ使いません。旧M08/M09とのpool・同一ID対応・nの効果検定、n5全列挙は対象外。小さな計算変動を被覆や母平均推定の高精度と解釈しません。詳細と受領は [SPEC.md](evidence/rq_m10/SPEC.md)／[CODEX_RECEIPT.md](evidence/rq_m10/CODEX_RECEIPT.md)。主1回・指定smoke1回、通常pytest／保存UI／独立監査は主を起動しません。
 
+主1回・指定smoke1回・retry0で新n5原標本60／144,000系列を完了。**M10 H1/H2は両分布とも保留**（H1上限はG.002574183／L.002651573で+.0025を超え、H2のL/U4区間は0をまたぐ）。各N30／df29／99.5%区間による固定帯の同等性を確立できず、非同等の証明・nの因果効果とはしない。旧M08/M09 n20の支持は保持。無効・欠測0、BCa警告G16系列／L1系列（各1原標本）、警告除外なし。主外側33.21秒／Peak RSS228,687,872 bytes。全11表・6主区間・全60raw→x・指定36indices→means→端点の独立監査で不一致0、残143,964生成過程完全監査ではない。
+
+全1,515pytest成功128.31秒／新AppTest15／pip check成功。実IABの37保存条件222指標・主18区間、5実download・5行raw/x／7200端点診断・3コホートHTML表示・6組ID復元・旧Lab代表操作を確認。通常pytest／保存UI／監査から主を起動せず、science source22／9旧参照と旧証拠・依存を保持。入口は `mathscape/allocation_ui.py`（新Lab/モードなし）、数理 `mathscape/small_sample.py`、実行 `scripts/run_small_sample_guarded.py`、監査 `python scripts/audit_small_sample.py evidence/rq_m10`。詳細は `evidence/rq_m10/REPORT.md`／`validation.json`／`browser/verification.json`。新成果はレビュー待ち、060〜063 In Progress・Next060のみ。
+
 ### RQ-M09：標本を変えても、同じ結論？
 
 RQ-M09は2026-11-11にOwner受入済み、056〜059 Done／Next=falseです。以下の提出時レビュー待ちは履歴であり、現在の開始条件ではありません。n20のH1/H2両分布支持と旧未検証範囲を保持します。

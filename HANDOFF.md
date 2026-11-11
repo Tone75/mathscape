@@ -8,6 +8,10 @@ M09はOwner受入済み。提出HEAD `1bf925b55a838650ee020fe09f806cf64e8ebc02`�
 
 新n5×60原標本、主0x4D3130／smoke0x534D3130、6/7要素key、全raw/x/receipt読み戻し後に144000内側系列。B4999・R20・共通120系列を全3配分で共有、BCa主6区間・N30/df29/.995。原標本t df4/SEsqrt5/Apop sqrt5。旧新pool／対応比較／n差検定なし。未生成hashを固定済みとせず、指定smokeはM09保存6標本の先頭5値だけ。詳細は `evidence/rq_m10/SPEC.md`／`CODEX_RECEIPT.md`。
 
+主1回・指定smoke1回・retry0で新n5原標本60／144,000系列を完了。**M10 H1/H2は両分布とも保留**（H1上限はG.002574183／L.002651573で+.0025を超え、H2のL/U4区間は0をまたぐ）。各N30／df29／99.5%区間による固定帯の同等性を確立できず、非同等の証明・nの因果効果とはしない。旧M08/M09 n20の支持は保持。無効・欠測0、BCa警告G16系列／L1系列（各1原標本）、警告除外なし。主外側33.21秒／Peak RSS228,687,872 bytes。全11表・6主区間・全60raw→x・指定36indices→means→端点の独立監査で不一致0、残143,964生成過程完全監査ではない。
+
+全1,515pytest成功128.31秒／新AppTest15／pip check成功。実IABの37保存条件222指標・主18区間、5実download・5行raw/x／7200端点診断・3コホートHTML表示・6組ID復元・旧Lab代表操作を確認。通常pytest／保存UI／監査から主を起動せず、science source22／9旧参照と旧証拠・依存を保持。入口は `mathscape/allocation_ui.py`（新Lab/モードなし）、数理 `mathscape/small_sample.py`、実行 `scripts/run_small_sample_guarded.py`、監査 `python scripts/audit_small_sample.py evidence/rq_m10`。詳細は `evidence/rq_m10/REPORT.md`／`validation.json`／`browser/verification.json`。新成果はレビュー待ち、060〜063 In Progress・Next060のみ。
+
 ## 最新の受入と実行状態：RQ-M09
 
 このM09節は提出時の履歴。現在はOwner受入済み・056〜059 Done／Next=falseで、上記M10のNext060だけが有効。
