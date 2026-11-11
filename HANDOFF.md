@@ -1,6 +1,22 @@
 # MATHSCAPE — minimal handoff
 
+## 最新の受入と実行状態：RQ-M10
+
+M09はOwner受入済み。提出HEAD `1bf925b55a838650ee020fe09f806cf64e8ebc02`、科学成果 `de49a3a59aebb474ede35b320e82956ba45cc1dc`、事前固定 `9f3e5d6245e5c22a636795baaf9eb8297452d8ba`、PR #9、056〜059 Done／Next=falseを採用。M09 n20のH1/H2両分布支持、M08の限定支持とG_U上限−3.729004272334764e−8、旧未検証を保持し、旧レビュー待ちは開始条件にしない。受入はmerge・外部科学レビュー・Owner本人の個別新操作とは別。
+
+開始tree clean／HEAD一致／別worktreeなし、PR #9 Open・未merge。新branch `feat/rq-m10-small-sample`。固定仕様全文・末尾プロンプト・060〜063・Home、AGENTS有無/提示ルール、README/HANDOFF、Gitと並行作業を確認。旧1396pytest成功94.08秒、pip check成功。060受領→061生成前固定→062主1回/独立監査→063保存UI/検証/新PR/同期。Next060のみ、開始した票のみIn Progress、新成果Done/Owner受入は代行しない。
+
+新n5×60原標本、主0x4D3130／smoke0x534D3130、6/7要素key、全raw/x/receipt読み戻し後に144000内側系列。B4999・R20・共通120系列を全3配分で共有、BCa主6区間・N30/df29/.995。原標本t df4/SEsqrt5/Apop sqrt5。旧新pool／対応比較／n差検定なし。未生成hashを固定済みとせず、指定smokeはM09保存6標本の先頭5値だけ。詳細は `evidence/rq_m10/SPEC.md`／`CODEX_RECEIPT.md`。
+
+主1回・指定smoke1回・retry0で新n5原標本60／144,000系列を完了。**M10 H1/H2は両分布とも保留**（H1上限はG.002574183／L.002651573で+.0025を超え、H2のL/U4区間は0をまたぐ）。各N30／df29／99.5%区間による固定帯の同等性を確立できず、非同等の証明・nの因果効果とはしない。旧M08/M09 n20の支持は保持。無効・欠測0、BCa警告G16系列／L1系列（各1原標本）、警告除外なし。主外側33.21秒／Peak RSS228,687,872 bytes。全11表・6主区間・全60raw→x・指定36indices→means→端点の独立監査で不一致0、残143,964生成過程完全監査ではない。
+
+全1,515pytest成功128.31秒／新AppTest15／pip check成功。実IABの37保存条件222指標・主18区間、5実download・5行raw/x／7200端点診断・3コホートHTML表示・6組ID復元・旧Lab代表操作を確認。通常pytest／保存UI／監査から主を起動せず、science source22／9旧参照と旧証拠・依存を保持。入口は `mathscape/allocation_ui.py`（新Lab/モードなし）、数理 `mathscape/small_sample.py`、実行 `scripts/run_small_sample_guarded.py`、監査 `python scripts/audit_small_sample.py evidence/rq_m10`。詳細は `evidence/rq_m10/REPORT.md`／`validation.json`／`browser/verification.json`。新成果はレビュー待ち、060〜063 In Progress・Next060のみ。
+
+提出先は [stacked PR #10](https://github.com/Tone75/mathscape/pull/10)、科学成果SHA `a53c1b5b72ca3bcf2d7dd1bdc82efe4643fd5df5`、生成前固定SHA `db057a98efe9d4437f22186fdfbbb04290d7d8a6`。baseは受入済み `feat/rq-m09-independent-cohort`。科学成果固定後の文書commitと提出HEADを区別し、最新提出HEADは `gh pr view 10 --repo Tone75/mathscape --json headRefOid` で取得する。Notion仕様・060〜063・Homeへ結果/6区間/18条件への参照/資源/検証と未検証/SHA/PRを同期済み、PENDING_NOTION_SYNCなし。060〜063 In Progress・Next060のみ、新成果はOwnerレビュー待ち。14既存heads/tags・18既存PR refsと旧証拠・依存を保持し、追加実験・merge・tag・Releaseは行わず停止する。
+
 ## 最新の受入と実行状態：RQ-M09
+
+このM09節は提出時の履歴。現在はOwner受入済み・056〜059 Done／Next=falseで、上記M10のNext060だけが有効。
 
 Owner受入済みM08 HEAD `85382fd3ae8966dcf197d4006de21ea6edf9ef9f`、科学成果 `b68026a5f938c10ad10d6f57e0d8f900dcda8348`、事前固定 `697c673f69a68f040d7d072ae3b90f356be8abd6`、PR #8、052〜055 Doneを採用。M08の限定H1/H2支持・G_U近境界性と旧未検証を保持し、下記の旧レビュー待ちは開始条件にしない。開始tree clean・別worktreeなし、新branch `feat/rq-m09-independent-cohort`。仕様全文・末尾プロンプト・056〜059・Home・AGENTS有無・README／HANDOFFを確認し、CODEX_RECEIPTを残した。開始時1268pytest成功62.52秒、pip check成功。
 

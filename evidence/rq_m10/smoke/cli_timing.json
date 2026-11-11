@@ -1,0 +1,7 @@
+{
+  "command": "/usr/bin/time -p python scripts/run_small_sample_benchmark.py --smoke",
+  "external_cli_wall_seconds": 0.62,
+  "user_seconds": 0.47,
+  "sys_seconds": 0.12,
+  "scope": "sole specified smoke, not main"
+}

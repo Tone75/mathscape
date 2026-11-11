@@ -1,7 +1,7 @@
 # MATHSCAPE｜数学を触れる実験室
 
 数式やパラメータを動かし、数学的な現象を視覚的・直感的に探索するローカルWebアプリです。
-Inference Labを含む **RQ-M01 / v0.2** はOwner受入・ユーザー動作確認が完了し、**RQ-M02〜RQ-M08** もOwner承認済みです。RQ-M05のC/Tに限定した±1pp内同等性と、M08の固定パネルに限定したH1/H2支持・G_U境界近接・旧未検証を保持します。今回のRQ-M09は新しい独立60原標本を事前commit後に生成し、同じ120系列予算のP30/P120同等性を新コホート単独で追試し、H1/H2とも両分布で支持されました。旧新pool・対応比較はせず、新成果をPR #9へレビュー待ちで提出しました。承認と外部科学レビュー・Owner本人の個別新操作・PR mergeを区別し、既存PR #1〜#8、main、公開済みReleaseを保持します。GitHubで公開するのはソースコードであり、インターネット上でホスティングされたアプリではありません。外部Webホスティングや有料APIは利用しません。
+Inference Labを含む **RQ-M01 / v0.2** はOwner受入・ユーザー動作確認が完了し、**RQ-M02〜RQ-M09** もOwner承認済みです。RQ-M05のC/Tに限定した±1pp内同等性と、M08の固定パネルに限定したH1/H2支持・G_U境界近接・旧未検証を保持します。RQ-M09のn20でのH1/H2両分布支持を保持し、今回のRQ-M10はn5の新60原標本で同じ実用帯を検証します。旧新pool・対応比較・n20対n5差の検定はせず、新成果をレビュー待ちで提出します。承認と外部科学レビュー・Owner本人の個別新操作・PR mergeを区別し、既存PR #1〜#9、main、公開済みReleaseを保持します。GitHubで公開するのはソースコードであり、インターネット上でホスティングされたアプリではありません。外部Webホスティングや有料APIは利用しません。
 
 v0.1.1ではFractalの中心座標・表示幅とChaosのrの初期値をSession Stateへ集約し、ボタンやプリセット操作時の重複初期値警告を修正しました。ズーム・パン・直接入力・プリセット・手動操作・Lab切り替えの既存動作を維持しています。既存のv0.1.0タグとReleaseは保持しています。
 
@@ -79,7 +79,21 @@ python -m pytest -q
 
 ## 数学的モデルと計算の限界
 
+## RQ-M10：標本が5個でも、同じ結論？
+
+新G/L×seed0,1,2×outer0..9の各n5原標本60個を、生成規則・全ID/キー・数理・判定・独立監査・guard・環境の事前commit後に生成する固定実験です。B4999・R20・共通120系列をP30=4×30／P60=2×60／P120=1×120で共有。BCa P120対P30のみが主比較で、各分布N30／df29の99.5%近似t区間6本とH1±.0025／H2分散比(.8,1.25)を維持します。原標本のt区間はdf4、SE=s/√5、Apopの母SE=1/√5です。
+
+警告と数理的無効を区別し、有効なq=0/1や尾部警告を除外しません。必要BCa無効では原標本主量NA・計画N30を保持し、conditional_完全例を主判定へ使いません。旧M08/M09とのpool・同一ID対応・nの効果検定、n5全列挙は対象外。小さな計算変動を被覆や母平均推定の高精度と解釈しません。詳細と受領は [SPEC.md](evidence/rq_m10/SPEC.md)／[CODEX_RECEIPT.md](evidence/rq_m10/CODEX_RECEIPT.md)。主1回・指定smoke1回、通常pytest／保存UI／独立監査は主を起動しません。
+
+主1回・指定smoke1回・retry0で新n5原標本60／144,000系列を完了。**M10 H1/H2は両分布とも保留**（H1上限はG.002574183／L.002651573で+.0025を超え、H2のL/U4区間は0をまたぐ）。各N30／df29／99.5%区間による固定帯の同等性を確立できず、非同等の証明・nの因果効果とはしない。旧M08/M09 n20の支持は保持。無効・欠測0、BCa警告G16系列／L1系列（各1原標本）、警告除外なし。主外側33.21秒／Peak RSS228,687,872 bytes。全11表・6主区間・全60raw→x・指定36indices→means→端点の独立監査で不一致0、残143,964生成過程完全監査ではない。
+
+全1,515pytest成功128.31秒／新AppTest15／pip check成功。実IABの37保存条件222指標・主18区間、5実download・5行raw/x／7200端点診断・3コホートHTML表示・6組ID復元・旧Lab代表操作を確認。通常pytest／保存UI／監査から主を起動せず、science source22／9旧参照と旧証拠・依存を保持。入口は `mathscape/allocation_ui.py`（新Lab/モードなし）、数理 `mathscape/small_sample.py`、実行 `scripts/run_small_sample_guarded.py`、監査 `python scripts/audit_small_sample.py evidence/rq_m10`。詳細は `evidence/rq_m10/REPORT.md`／`validation.json`／`browser/verification.json`。新成果はレビュー待ち、060〜063 In Progress・Next060のみ。
+
+提出先は [stacked PR #10](https://github.com/Tone75/mathscape/pull/10)、科学成果SHA `a53c1b5b72ca3bcf2d7dd1bdc82efe4643fd5df5`、生成前固定SHA `db057a98efe9d4437f22186fdfbbb04290d7d8a6`。baseは受入済み `feat/rq-m09-independent-cohort`。科学成果固定後の文書commitと提出HEADを区別し、最新提出HEADは `gh pr view 10 --repo Tone75/mathscape --json headRefOid` で取得する。Notion仕様・060〜063・Homeへ結果/6区間/18条件への参照/資源/検証と未検証/SHA/PRを同期済み、PENDING_NOTION_SYNCなし。060〜063 In Progress・Next060のみ、新成果はOwnerレビュー待ち。14既存heads/tags・18既存PR refsと旧証拠・依存を保持し、追加実験・merge・tag・Releaseは行わず停止する。
+
 ### RQ-M09：標本を変えても、同じ結論？
+
+RQ-M09は2026-11-11にOwner受入済み、056〜059 Done／Next=falseです。以下の提出時レビュー待ちは履歴であり、現在の開始条件ではありません。n20のH1/H2両分布支持と旧未検証範囲を保持します。
 
 Owner受入済みM08 HEAD `85382fd3ae8966dcf197d4006de21ea6edf9ef9f`、PR #8、052〜055 Doneを採用します。M08の限定H1/H2支持とG_U近境界性・旧未検証を保持し、M09を新しい独立60原標本で直接追試します。M08とのpool・旧新IDによる対応比較はせず、新コホート単独で判定します。
 

@@ -1,0 +1,87 @@
+{
+  "question_id": "RQ-M10",
+  "scope": "smokeonly:M09savedouter0first5/R2/common12/B99 allocation4x3/2x6/1x12,noM10originalgeneration,noscientificdecisions",
+  "originals_per_cell": 1,
+  "R": 2,
+  "streams_per_budget": 12,
+  "B": 99,
+  "namespace": 1397567792,
+  "source_files_sha256": {
+    "mathscape/small_sample.py": "3b33c0cfe6dbe3f18b09d72aaa596f158dc1080f338a96fbe38df8f9715c55ea",
+    "mathscape/replication.py": "9ab8e94af082e2b74458773bcbe8f2914129ccd841426498b3bfc6483eb3cf4f",
+    "mathscape/allocation.py": "69187537b398feafaa58ca0b5672cb87cf7f05ef9ab600c9723c96bf583f0958",
+    "mathscape/finite_k.py": "2e204b4c562055ad13b335a189bbafdd8fdb486a4de80e2e5543060f8f2da877",
+    "mathscape/matched_stability.py": "1ef9f91910d9cec6b690d92179f329d61782f5cc56b27862e595b260637e322c",
+    "mathscape/matched_moments.py": "2c968c674ceb78b8b716a94d5f3165b928162c6c04150ba5d2d2b446f9926135",
+    "mathscape/stability.py": "e27f2bf98378911cb1c0502bb93a5d944fd5dd2978354e6fbd99595d2bc5f070",
+    "mathscape/bootstrap.py": "24d4ffbc8e5b463ee6770a35e1d17beca9ee41a37083d457dbca25abd9f7b6cb",
+    "mathscape/inference.py": "6e26d2a6991ecfca0729e7057f0eda63bf100b0941fc0b397caa2eb13e226708",
+    "scripts/run_allocation_benchmark.py": "fc5f5372511cb987d64a70445be0f2a47f32908bfe8ad7b2db71ed30a74a5359",
+    "scripts/run_small_sample_benchmark.py": "6192c164c8a332a587d028cd0989a753e6a6412293bbfc2e9ef942aeb552a553",
+    "scripts/run_small_sample_guarded.py": "008882ff025244dd9ee5eca3a47040cc20f92e300a94c836efcb0baa9f4c98c7",
+    "scripts/audit_small_sample.py": "6db135f90b1f01129d1d51293f658d3fcf2042f17774eb4a71636b8c71f06da5",
+    "scripts/run_bootstrap_benchmark.py": "9fdeabae419aecd487ff063775001880643c265207c7c5ea8192b455d72864a3",
+    "scripts/run_stability_benchmark.py": "4be7f9a10f7d328cc914c0aaceaf28d027718a44a2f8afd63a896e848b209488",
+    "tests/test_small_sample.py": "1f124125dd463c2a64b3a303166a4d3d55d25d763ae15f0f1ae7108ee416af85",
+    "tests/test_small_sample_runner.py": "944117c4bddedf8f6f470e7a5d760186d28c6fde4d197f49a2f79bb86d3832d1",
+    "tests/test_small_sample_guard.py": "9585caee2b195737ae772c1e2d8cca31a64a4493680c2858d3eec7a678d6b9b0",
+    "tests/test_small_sample_audit.py": "cbb6e45c61cb3d558b126e1b27e8750902070e671fa751782a9654ff98398242",
+    "requirements.txt": "dcb36fe5c1d5413b4918722462d3382f171d839c0e69b45725b57b871b2bce5d",
+    "evidence/rq_m10/SPEC.md": "c8addbc41599462975949230aabbfce2745c9b6e9557b0bcf7f0c05a12bef304",
+    "evidence/rq_m10/CODEX_RECEIPT.md": "201b2a37994650ef2d4bb9bb2c12860aeb345f0f0742128c94f941e30b463d87"
+  },
+  "environment": {
+    "python": "3.12.13",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "plotly": "6.9.0",
+    "os": "Darwin",
+    "os_release": "25.6.0",
+    "architecture": "arm64",
+    "streamlit": "1.67.0",
+    "pytest": "9.2.0"
+  },
+  "status": "completed",
+  "completed_cells": 6,
+  "cells": [
+    {
+      "distribution": "gamma",
+      "master_seed": 0,
+      "valid_entries": 72
+    },
+    {
+      "distribution": "gamma",
+      "master_seed": 1,
+      "valid_entries": 72
+    },
+    {
+      "distribution": "gamma",
+      "master_seed": 2,
+      "valid_entries": 72
+    },
+    {
+      "distribution": "lognormal",
+      "master_seed": 0,
+      "valid_entries": 72
+    },
+    {
+      "distribution": "lognormal",
+      "master_seed": 1,
+      "valid_entries": 72
+    },
+    {
+      "distribution": "lognormal",
+      "master_seed": 2,
+      "valid_entries": 72
+    }
+  ],
+  "mother_samples_generated": 0,
+  "saved_originals_used": 6,
+  "inner_streams": 144,
+  "bootstrap_samples": 14256,
+  "logical_resampling_indices": 71280,
+  "process_wall_seconds": 0.5806844169273973,
+  "process_peak_rss_bytes": 113868800,
+  "output_bytes_before_resources": 6106,
+  "output_bytes_total": 9883
+}

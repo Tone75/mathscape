@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "scope": "Offline artifact data check, separate from actual browser HTML rendering",
+  "BCa_conditions": 6,
+  "M_and_Q_values": 12,
+  "bars_match_saved_995_original_intervals": true,
+  "fixed_n5_sample_df4_comparison_df29": true,
+  "external_script_or_stylesheet_tags": [],
+  "embedded_Plotly": true,
+  "all18_or_H6_claimed_in_HTML": false
+}

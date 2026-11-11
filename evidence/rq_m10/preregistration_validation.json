@@ -1,0 +1,25 @@
+{
+  "question_id": "RQ-M10",
+  "phase": "before_main_original_generation",
+  "baseline": {
+    "tracked_existing_tests": 1396,
+    "passed": 1396,
+    "wall_seconds": 94.08
+  },
+  "preregistration_fixtures": {
+    "passed": 104,
+    "failed": 0,
+    "wall_seconds": 7.31,
+    "core": 30,
+    "runner_and_guard": 38,
+    "independent_saved_audit": 36,
+    "actual_RNG_or_main_in_tests": false
+  },
+  "pip_check": "passed",
+  "dependencies_added_or_updated": false,
+  "source_count": 22,
+  "accepted_M09_reference_file_count": 9,
+  "main_originals_generated_or_viewed": false,
+  "future_original_hashes_preregistered": false,
+  "source_review": "Core/runner/guard and final independent auditor read-only cross-reviews found no major mismatch. Main remains blocked on prereg commit, not Owner reacceptance."
+}
