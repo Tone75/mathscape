@@ -493,5 +493,7 @@ M09既知結果を踏まえた発展実験で新原標本・namespaceも異な�
 
 公開一次資料：[NumPy SeedSequence](https://numpy.org/doc/stable/reference/random/bit_generators/generated/numpy.random.SeedSequence.html)、[PCG64](https://numpy.org/doc/stable/reference/random/bit_generators/pcg64.html)、[SciPy bootstrap](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.bootstrap.html)、[t分布](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.t.html)、[lognormal](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.lognorm.html)。本RQの幅・判定・schema・停止規約は[固定SPEC](SPEC.md)／[manifest](manifest.json)の設計判断で、公式API資料が最適配分や実用幅を保証する意味ではない。
 
-科学成果commitを固定後、新stacked PR・最終提出HEAD・Notion同期・公開容量を提出記録へ追記する。事前固定commitと生成後receiptは上記確定値。新成果Done／Owner受入・外部査読・merge・tag／Releaseは代行せずレビュー待ちで提出する。
+提出先は [stacked PR #10](https://github.com/Tone75/mathscape/pull/10)、科学成果SHA `a53c1b5b72ca3bcf2d7dd1bdc82efe4643fd5df5`、生成前固定SHA `db057a98efe9d4437f22186fdfbbb04290d7d8a6`。baseは受入済み `feat/rq-m09-independent-cohort`。科学成果固定後の文書commitと提出HEADを区別し、最新提出HEADは `gh pr view 10 --repo Tone75/mathscape --json headRefOid` で取得する。Notion仕様・060〜063・Homeへ結果/6区間/18条件への参照/資源/検証と未検証/SHA/PRを同期済み、PENDING_NOTION_SYNCなし。060〜063 In Progress・Next060のみ、新成果はOwnerレビュー待ち。14既存heads/tags・18既存PR refsと旧証拠・依存を保持し、追加実験・merge・tag・Releaseは行わず停止する。
+
+最終提出SHAを同じcommitへ自己参照で埋め込まず、PRのheadRefOidと最終Notion提出記録から取得する。文書commitは生成前固定ソース・原標本・端点・集計・判定を変更しない。最終公開容量と安全性は validation.json のartifact_sizeおよび最終Notion提出記録に保存する。
 

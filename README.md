@@ -89,6 +89,8 @@ python -m pytest -q
 
 全1,515pytest成功128.31秒／新AppTest15／pip check成功。実IABの37保存条件222指標・主18区間、5実download・5行raw/x／7200端点診断・3コホートHTML表示・6組ID復元・旧Lab代表操作を確認。通常pytest／保存UI／監査から主を起動せず、science source22／9旧参照と旧証拠・依存を保持。入口は `mathscape/allocation_ui.py`（新Lab/モードなし）、数理 `mathscape/small_sample.py`、実行 `scripts/run_small_sample_guarded.py`、監査 `python scripts/audit_small_sample.py evidence/rq_m10`。詳細は `evidence/rq_m10/REPORT.md`／`validation.json`／`browser/verification.json`。新成果はレビュー待ち、060〜063 In Progress・Next060のみ。
 
+提出先は [stacked PR #10](https://github.com/Tone75/mathscape/pull/10)、科学成果SHA `a53c1b5b72ca3bcf2d7dd1bdc82efe4643fd5df5`、生成前固定SHA `db057a98efe9d4437f22186fdfbbb04290d7d8a6`。baseは受入済み `feat/rq-m09-independent-cohort`。科学成果固定後の文書commitと提出HEADを区別し、最新提出HEADは `gh pr view 10 --repo Tone75/mathscape --json headRefOid` で取得する。Notion仕様・060〜063・Homeへ結果/6区間/18条件への参照/資源/検証と未検証/SHA/PRを同期済み、PENDING_NOTION_SYNCなし。060〜063 In Progress・Next060のみ、新成果はOwnerレビュー待ち。14既存heads/tags・18既存PR refsと旧証拠・依存を保持し、追加実験・merge・tag・Releaseは行わず停止する。
+
 ### RQ-M09：標本を変えても、同じ結論？
 
 RQ-M09は2026-11-11にOwner受入済み、056〜059 Done／Next=falseです。以下の提出時レビュー待ちは履歴であり、現在の開始条件ではありません。n20のH1/H2両分布支持と旧未検証範囲を保持します。
