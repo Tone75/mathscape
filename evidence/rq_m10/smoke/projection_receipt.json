@@ -1,0 +1,63 @@
+{
+  "question_id": "RQ-M10",
+  "role": "smoke_only_M09_outer0_first5_never_main",
+  "reference_accepted_head": "1bf925b55a838650ee020fe09f806cf64e8ebc02",
+  "namespace": 1397567792,
+  "records": [
+    {
+      "distribution": "gamma",
+      "master_seed": 0,
+      "outer_id": 0,
+      "parent_n": 20,
+      "n": 5,
+      "parent_sha256": "f55048bc91ff4085657167e8fa5336b18f1bbe41255285fc975ae196c8d5a180",
+      "projection_sha256": "251361e78ca975077724a51e751169388811c3bd9d5057fc97e421c2442e9c6c"
+    },
+    {
+      "distribution": "gamma",
+      "master_seed": 1,
+      "outer_id": 0,
+      "parent_n": 20,
+      "n": 5,
+      "parent_sha256": "a8236b95965faf39b408b933bf6d47693bbbebf6568cd0054e6b0455bf2483a5",
+      "projection_sha256": "22b99310d3d437b0afffc64070c3ede23a2e910643318168747574978189ac2f"
+    },
+    {
+      "distribution": "gamma",
+      "master_seed": 2,
+      "outer_id": 0,
+      "parent_n": 20,
+      "n": 5,
+      "parent_sha256": "df5a311d35c0dcc064847d8987e72a00ad8a5e1f15e9fdd91cadd9358c4046d1",
+      "projection_sha256": "24fdc9ae9273fd6ff7b904e314f5f402a553d6dbee09ad28f8db0c7b000427a1"
+    },
+    {
+      "distribution": "lognormal",
+      "master_seed": 0,
+      "outer_id": 0,
+      "parent_n": 20,
+      "n": 5,
+      "parent_sha256": "3ed76eaf4515b8721d05d70acd96f8778bd0434b160b90145d87b168bd605a75",
+      "projection_sha256": "aa4dc653d6926e1efe96f56feaca53b801bcfe2595a360ca75110ea3f23044af"
+    },
+    {
+      "distribution": "lognormal",
+      "master_seed": 1,
+      "outer_id": 0,
+      "parent_n": 20,
+      "n": 5,
+      "parent_sha256": "50b00f23f5b84d1c8739a19a2aca1c393b3683bd33fcb8bb4bb65b1f3b3dbb78",
+      "projection_sha256": "3b4ffdffd0184c7b98f27b9c034f919efa1215230cce9b09f7b38cb5f8896db8"
+    },
+    {
+      "distribution": "lognormal",
+      "master_seed": 2,
+      "outer_id": 0,
+      "parent_n": 20,
+      "n": 5,
+      "parent_sha256": "4bbafd08445f91af7818ef4f1d5df3fdf669c1ef3798536e724ab71f8a7fde8f",
+      "projection_sha256": "5025364f8b2f02bb72c75e5d2a47d3eb68cec26e6797762cb368841ffc96d684"
+    }
+  ],
+  "projection_file_sha256": "dc9ae9c5f38d7765342a89209d50d9f0deda658b8bfc6722ec0f0950f677a2ca"
+}

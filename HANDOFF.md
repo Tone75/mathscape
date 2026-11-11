@@ -1,6 +1,16 @@
 # MATHSCAPE — minimal handoff
 
+## 最新の受入と実行状態：RQ-M10
+
+M09はOwner受入済み。提出HEAD `1bf925b55a838650ee020fe09f806cf64e8ebc02`、科学成果 `de49a3a59aebb474ede35b320e82956ba45cc1dc`、事前固定 `9f3e5d6245e5c22a636795baaf9eb8297452d8ba`、PR #9、056〜059 Done／Next=falseを採用。M09 n20のH1/H2両分布支持、M08の限定支持とG_U上限−3.729004272334764e−8、旧未検証を保持し、旧レビュー待ちは開始条件にしない。受入はmerge・外部科学レビュー・Owner本人の個別新操作とは別。
+
+開始tree clean／HEAD一致／別worktreeなし、PR #9 Open・未merge。新branch `feat/rq-m10-small-sample`。固定仕様全文・末尾プロンプト・060〜063・Home、AGENTS有無/提示ルール、README/HANDOFF、Gitと並行作業を確認。旧1396pytest成功94.08秒、pip check成功。060受領→061生成前固定→062主1回/独立監査→063保存UI/検証/新PR/同期。Next060のみ、開始した票のみIn Progress、新成果Done/Owner受入は代行しない。
+
+新n5×60原標本、主0x4D3130／smoke0x534D3130、6/7要素key、全raw/x/receipt読み戻し後に144000内側系列。B4999・R20・共通120系列を全3配分で共有、BCa主6区間・N30/df29/.995。原標本t df4/SEsqrt5/Apop sqrt5。旧新pool／対応比較／n差検定なし。未生成hashを固定済みとせず、指定smokeはM09保存6標本の先頭5値だけ。詳細は `evidence/rq_m10/SPEC.md`／`CODEX_RECEIPT.md`。
+
 ## 最新の受入と実行状態：RQ-M09
+
+このM09節は提出時の履歴。現在はOwner受入済み・056〜059 Done／Next=falseで、上記M10のNext060だけが有効。
 
 Owner受入済みM08 HEAD `85382fd3ae8966dcf197d4006de21ea6edf9ef9f`、科学成果 `b68026a5f938c10ad10d6f57e0d8f900dcda8348`、事前固定 `697c673f69a68f040d7d072ae3b90f356be8abd6`、PR #8、052〜055 Doneを採用。M08の限定H1/H2支持・G_U近境界性と旧未検証を保持し、下記の旧レビュー待ちは開始条件にしない。開始tree clean・別worktreeなし、新branch `feat/rq-m09-independent-cohort`。仕様全文・末尾プロンプト・056〜059・Home・AGENTS有無・README／HANDOFFを確認し、CODEX_RECEIPTを残した。開始時1268pytest成功62.52秒、pip check成功。
 
