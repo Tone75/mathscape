@@ -116,11 +116,11 @@
   ],
   "report": "REPORT.md",
   "changed_files_size_definition": "Full uncompressed working-tree file sizes across the PR, including modified legacy source and documentation.",
-  "pull_request": null,
+  "pull_request": "https://github.com/Tone75/mathscape/pull/11",
   "submission_head_lookup": "gh pr view --repo Tone75/mathscape feat/rq-m11-enumerated-reference --json headRefOid",
   "public_change": {
     "files": 172,
-    "bytes": 11869798,
+    "bytes": 11870592,
     "findings": []
   }
 }

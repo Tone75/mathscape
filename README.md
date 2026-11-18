@@ -85,6 +85,8 @@ Inference Lab →「同じ予算で、どう測る？」→「小標本 M10（n5
 
 BCaの上下両端点がともに0.10標本SE以内の実測RMSEに収まった原標本は、ガンマ **21/30**、対数正規 **22/30** でした。両群とも設計基準の27/30を下回り、H11-Eはこの保存データで記述的不支持です。必要な無効・欠測は0件。母平均の被覆や、M10の配分比較が保留となった理由はこの判定の対象外です。
 
+解析前固定は `e601ebf5f73a1e6336d67f85df3b0c3014d5db7e`、科学成果は `b7d1fb7774db357bb8aeb838803a02f9d59eff87` です。全1,593テストと独立監査を通過し、M10を基点とする [PR #11](https://github.com/Tone75/mathscape/pull/11) でOwnerレビュー待ちです。
+
 [研究レポート](evidence/rq_m11/REPORT.md) · [全原標本の指標](evidence/rq_m11/original_metrics.csv) · [上下端点の誤差](evidence/rq_m11/endpoint_metrics.csv) · [独立監査](evidence/rq_m11/independent_audit.json) · [検証記録](evidence/rq_m11/validation.json)
 
 ## RQ-M10：標本が5個でも、同じ結論？

@@ -8,6 +8,8 @@ M11は同じ60標本・保存144,000系列の決定的な追加解析。解析�
 
 [科学レポート](evidence/rq_m11/REPORT.md)、[検証](evidence/rq_m11/validation.json)、[資源](evidence/rq_m11/cli_resources.json)、[初回監査の停止原因](evidence/rq_m11/audit_correction/README.md)。Ownerレビュー待ち。Nextは064のみ。
 
+全1,593 pytest成功（143.54秒）。実ブラウザで旧4 Lab・保存3コホートを往復し、M11の5実ダウンロードと取得HTMLの9図を確認した。提出先は [stacked PR #11](https://github.com/Tone75/mathscape/pull/11)。baseは `feat/rq-m10-small-sample`。提出HEADは `gh pr view 11 --repo Tone75/mathscape --json headRefOid` で確認できる。MATH-064〜067はIn Progress。Owner受入と外部科学レビューは未実施。
+
 ## RQ-M10 提出時の記録
 
 M09はOwner受入済み。提出HEAD `1bf925b55a838650ee020fe09f806cf64e8ebc02`、科学成果 `de49a3a59aebb474ede35b320e82956ba45cc1dc`、事前固定 `9f3e5d6245e5c22a636795baaf9eb8297452d8ba`、PR #9、056〜059 Done／Next=falseを採用。M09 n20のH1/H2両分布支持、M08の限定支持とG_U上限−3.729004272334764e−8、旧未検証を保持し、旧レビュー待ちは開始条件にしない。受入はmerge・外部科学レビュー・Owner本人の個別新操作とは別。
