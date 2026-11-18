@@ -1,6 +1,14 @@
 # MATHSCAPE — minimal handoff
 
-## 最新の受入と実行状態：RQ-M10
+## RQ-M11 の引き継ぎ
+
+M10は提出HEAD `bd01ae7ff55b1e8593a4b3bd003587db2732c050` でOwner受入済み。MATH-060〜063はDone。M10のn5でのH1/H2両群保留、M08/M09のn20での限定的支持を保持する。
+
+M11は同じ60標本・保存144,000系列の決定的な追加解析。解析前固定 `e601ebf5f73a1e6336d67f85df3b0c3014d5db7e`、入力一覧照合の修正 `dd3d184b9d22278f9e4002c1b096497c5f1e77fd`、科学成果 `b7d1fb7774db357bb8aeb838803a02f9d59eff87`。上下両端点のRMSEが0.10標本SE以内だったのはG 21/30、L 22/30。必要無効・欠測0で、H11-Eは両群・全体とも記述的不支持。主1回・再実行0。監査は初回が入力一覧で停止し、修正版で全保存比較・36系列の復元が不一致0となった。
+
+[科学レポート](evidence/rq_m11/REPORT.md)、[検証](evidence/rq_m11/validation.json)、[資源](evidence/rq_m11/cli_resources.json)、[初回監査の停止原因](evidence/rq_m11/audit_correction/README.md)。Ownerレビュー待ち。Nextは064のみ。
+
+## RQ-M10 提出時の記録
 
 M09はOwner受入済み。提出HEAD `1bf925b55a838650ee020fe09f806cf64e8ebc02`、科学成果 `de49a3a59aebb474ede35b320e82956ba45cc1dc`、事前固定 `9f3e5d6245e5c22a636795baaf9eb8297452d8ba`、PR #9、056〜059 Done／Next=falseを採用。M09 n20のH1/H2両分布支持、M08の限定支持とG_U上限−3.729004272334764e−8、旧未検証を保持し、旧レビュー待ちは開始条件にしない。受入はmerge・外部科学レビュー・Owner本人の個別新操作とは別。
 

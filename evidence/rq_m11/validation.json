@@ -1,0 +1,126 @@
+{
+  "question": "RQ-M11",
+  "review": "submitted for Owner review",
+  "date": "2026-11-19",
+  "m10_accepted_head": "bd01ae7ff55b1e8593a4b3bd003587db2732c050",
+  "preanalysis_commit": "e601ebf5f73a1e6336d67f85df3b0c3014d5db7e",
+  "inventory_correction_commit": "dd3d184b9d22278f9e4002c1b096497c5f1e77fd",
+  "scientific_commit": "b7d1fb7774db357bb8aeb838803a02f9d59eff87",
+  "prior_m10": "Owner accepted. H1/H2 held in both n5 groups.",
+  "preanalysis_fixtures": {
+    "passed": 66,
+    "pytest_seconds": 1.83,
+    "evidence": "preanalysis_tests.txt"
+  },
+  "tests": {
+    "existing": 1515,
+    "new": 78,
+    "total_passed": 1593,
+    "failed": 0,
+    "new_saved_view_tests": 12,
+    "pytest_seconds": 143.54,
+    "external_cli_seconds": 143.94,
+    "peak_rss_bytes": 788004864,
+    "scope": "Full suite on submission code. Timed outside the main analysis and independent audit.",
+    "evidence": "pytest.txt",
+    "pip_check": "No broken requirements found."
+  },
+  "preserved_inputs": 77,
+  "preserved_initial_file_digests": 137,
+  "scientific_outputs": {
+    "ordered_resamples": 187500,
+    "ordered_indices": 937500,
+    "originals": 60,
+    "saved_common_streams": 144000,
+    "compared_endpoints": 576000,
+    "reconstructed_streams": 36,
+    "streams_with_no_archived_indices": 143964,
+    "audit_mismatches": 0,
+    "audit": "independent_audit.json",
+    "unmodified_primary_outputs": "audit_correction/preservation.json",
+    "H11_E": {
+      "gamma_passed": 21,
+      "lognormal_passed": 22,
+      "planned_each": 30,
+      "required_each": 27,
+      "invalid": 0,
+      "missing": 0,
+      "status": "not_supported"
+    },
+    "retained_finite_B_warning_streams": {
+      "gamma": 16,
+      "lognormal": 1
+    }
+  },
+  "resources": {
+    "main": {
+      "status": "completed",
+      "external_cli_wall_seconds": 1.56,
+      "peak_rss_bytes": 310263808,
+      "time_l_rss_bytes": 310263808,
+      "supervisor_rusage_bytes": 310263808,
+      "supervisor_wall_seconds": 1.537012082990259
+    },
+    "audit": {
+      "status": "stopped",
+      "external_cli_wall_seconds": 0.65,
+      "peak_rss_bytes": 98828288,
+      "time_l_rss_bytes": 98828288,
+      "supervisor_rusage_bytes": 98828288,
+      "supervisor_wall_seconds": 0.6306756250560284
+    },
+    "audit_correction": {
+      "status": "completed",
+      "external_cli_wall_seconds": 1.36,
+      "peak_rss_bytes": 202964992,
+      "time_l_rss_bytes": 202964992,
+      "supervisor_rusage_bytes": 202964992,
+      "supervisor_wall_seconds": 1.3455290421843529
+    },
+    "main_launches": 1,
+    "independent_saved_audit_launches": 2,
+    "completed_numerical_audits": 1,
+    "new_originals": 0,
+    "new_bootstrap_series": 0,
+    "prng_replays": 0,
+    "smoke": 0,
+    "scope": "Each external /usr/bin/time -lp includes launcher, input checks, worker and persistence. Tests and browser are separate.",
+    "main_retries": 0,
+    "corrected_audit_launches": 1
+  },
+  "limits": {
+    "wall_seconds_per_main_or_audit": 180,
+    "peak_rss_bytes": 2147483648,
+    "public_bytes": 52428800
+  },
+  "browser": {
+    "primary_evidence": "browser/verification.json",
+    "regression_evidence": "browser/final_representative.json",
+    "observed_states_in_primary_session": 26,
+    "final_representative_repeat_restored": true,
+    "actual_downloads": 5,
+    "comparison_csv_fields": 124800,
+    "html_rendered_graphs": 9,
+    "actual_browser": "IAB",
+    "all_four_labs": true,
+    "all_three_saved_cohorts": true,
+    "archived_K1_NA": true,
+    "created_tabs_closed": 3,
+    "started_servers_stopped": 3,
+    "unexpected_browser_console_messages": 0
+  },
+  "limitations": [
+    "Finite accepted M10 n5 data with 2400 stored B4999 streams per original",
+    "No population coverage inference, external scientific review, arbitrary precision proof or Owner operation",
+    "Other browsers and mobile devices were not exercised"
+  ],
+  "report": "REPORT.md",
+  "changed_files_size_definition": "Full uncompressed working-tree file sizes across the PR, including modified legacy source and documentation.",
+  "pull_request": null,
+  "submission_head_lookup": "gh pr view --repo Tone75/mathscape feat/rq-m11-enumerated-reference --json headRefOid",
+  "public_change": {
+    "files": 172,
+    "bytes": 11869798,
+    "findings": []
+  }
+}

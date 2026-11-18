@@ -1,0 +1,93 @@
+- heading "全列挙参照とのずれ · RQ-M11" [level=1]
+- paragraph: BCa：G 21/30、L 22/30 が0.10SE以内。両群とも27/30基準に未達。固定保存データの記述的判断です。
+- paragraph: n5・B4999・各原標本R20×120系列。保存binary64の3125順序付き添字による条件付き有限分布を参照します。全60個のeと、固定した各分布最小／最大BCa例の上下2400端点分布だけを表示します。全144000系列の図示ではありません。白実線=逆CDF参照、紫破線=linear参照。母集団真値・90%保証・M10保留の原因説明ではありません。
+- toolbar:
+  - button "Download plot as a PNG":
+  - button "Zoom":
+  - button "Pan":
+  - button "Box Select":
+  - button "Lasso Select":
+  - button "Zoom in":
+  - button "Zoom out":
+  - button "Autoscale":
+  - button "Reset axes":
+- toolbar:
+  - button "Download plot as a PNG":
+  - button "Zoom":
+  - button "Pan":
+  - button "Box Select":
+  - button "Lasso Select":
+  - button "Zoom in":
+  - button "Zoom out":
+  - button "Autoscale":
+  - button "Reset axes":
+- toolbar:
+  - button "Download plot as a PNG":
+  - button "Zoom":
+  - button "Pan":
+  - button "Box Select":
+  - button "Lasso Select":
+  - button "Zoom in":
+  - button "Zoom out":
+  - button "Autoscale":
+  - button "Reset axes":
+- toolbar:
+  - button "Download plot as a PNG":
+  - button "Zoom":
+  - button "Pan":
+  - button "Box Select":
+  - button "Lasso Select":
+  - button "Zoom in":
+  - button "Zoom out":
+  - button "Autoscale":
+  - button "Reset axes":
+- toolbar:
+  - button "Download plot as a PNG":
+  - button "Zoom":
+  - button "Pan":
+  - button "Box Select":
+  - button "Lasso Select":
+  - button "Zoom in":
+  - button "Zoom out":
+  - button "Autoscale":
+  - button "Reset axes":
+- toolbar:
+  - button "Download plot as a PNG":
+  - button "Zoom":
+  - button "Pan":
+  - button "Box Select":
+  - button "Lasso Select":
+  - button "Zoom in":
+  - button "Zoom out":
+  - button "Autoscale":
+  - button "Reset axes":
+- toolbar:
+  - button "Download plot as a PNG":
+  - button "Zoom":
+  - button "Pan":
+  - button "Box Select":
+  - button "Lasso Select":
+  - button "Zoom in":
+  - button "Zoom out":
+  - button "Autoscale":
+  - button "Reset axes":
+- toolbar:
+  - button "Download plot as a PNG":
+  - button "Zoom":
+  - button "Pan":
+  - button "Box Select":
+  - button "Lasso Select":
+  - button "Zoom in":
+  - button "Zoom out":
+  - button "Autoscale":
+  - button "Reset axes":
+- toolbar:
+  - button "Download plot as a PNG":
+  - button "Zoom":
+  - button "Pan":
+  - button "Box Select":
+  - button "Lasso Select":
+  - button "Zoom in":
+  - button "Zoom out":
+  - button "Autoscale":
+  - button "Reset axes":
