@@ -567,6 +567,7 @@ def check_input_receipt(source, output, root=None):
     source_prefix = source.relative_to(root)
     source_manifest = json.loads((source/'manifest.json').read_bytes())
     required = set(source_manifest['source_files_sha256'])
+    required.add('mathscape/__init__.py')
     for filename in ('manifest.json','originals/receipt.json','hypotheses.json','REPORT.md','resources.json','independent_audit.json'):
         required.add(str(source_prefix/filename))
     expected_names = {f'{dist}_seed{seed}.npz' for dist in DISTRIBUTIONS for seed in (0,1,2)}

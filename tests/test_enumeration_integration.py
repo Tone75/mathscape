@@ -161,6 +161,14 @@ def synthetic_roundtrip(tmp_path_factory):
         output = root / 'invented_m11'
         output.mkdir()
         known = {}
+        package_init = root / 'mathscape/__init__.py'
+        package_init.parent.mkdir()
+        package_init.write_text('"""Invented package input, frozen separately from the M10 manifest."""\n')
+        package_bytes = package_init.read_bytes()
+        from hashlib import sha1
+        known['mathscape/__init__.py'] = dict(
+            sha256=sha256(package_bytes).hexdigest(),
+            git_blob=sha1(b'blob '+str(len(package_bytes)).encode()+b'\0'+package_bytes).hexdigest())
         for path in sorted(source.rglob('*')):
             if path.is_file():
                 content = path.read_bytes()

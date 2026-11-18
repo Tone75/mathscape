@@ -116,6 +116,35 @@ def verify(freeze):
         raise ValueError("Frozen manifest, environment or accepted inputs changed")
     return stored
 
+def verify_audit_correction(correction):
+    """Bind the corrected inventory check to the original inputs and saved outputs."""
+    original = json.loads((EVIDENCE / "input_receipt.json").read_text())["preanalysis_commit"]
+    if git("rev-parse", "HEAD").decode().strip() != correction or correction == original:
+        raise ValueError("Expected the committed correction")
+    subprocess.run(["git", "merge-base", "--is-ancestor", original, correction], cwd=ROOT, check=True)
+    allowed = {"scripts/audit_enumerated_reference.py", "scripts/run_enumeration.py",
+               "tests/test_enumeration_integration.py"}
+    stored = json.loads((EVIDENCE / "manifest.json").read_text())
+    current = manifest()
+    check_committed_files((*FROZEN, "evidence/rq_m11/manifest.json",
+                           "evidence/rq_m11/audit_correction/preservation.json"), correction)
+    check_committed_files(("evidence/rq_m11/manifest.json",), original)
+    for name in allowed:
+        historical = hashlib.sha256(git("show", f"{original}:{name}")).hexdigest()
+        if historical != stored["frozen_sources"][name]:
+            raise ValueError(f"Original frozen source mismatch at {name}")
+        current["frozen_sources"][name] = historical
+    if current != stored:
+        raise ValueError("Correction changed the frozen inputs, scientific sources or environment")
+    preserved = json.loads((EVIDENCE / "audit_correction/preservation.json").read_text())
+    if preserved["original_commit"] != original:
+        raise ValueError("Wrong preserved main attempt")
+    for name, expected in preserved["result_bytes_sha256"].items():
+        if digest(EVIDENCE / name) != expected:
+            raise ValueError(f"Preserved result changed at {name}")
+    return stored
+
+
 def directory_size(path):
     return sum(p.stat().st_size for p in path.rglob("*") if p.is_file())
 
@@ -132,7 +161,7 @@ def peak_bytes(value):
     return int(value if sys.platform == "darwin" else value * 1024)
 
 def worker(action, freeze, output):
-    verified = verify(freeze)
+    verified = verify_audit_correction(freeze) if action == "audit_correction" else verify(freeze)
     if action == "main":
         from scripts.analyze_enumerated_reference import analyze
         write_once(output / "input_receipt.json", {
@@ -156,12 +185,19 @@ def over_limit(elapsed, rss, evidence_bytes):
     return None
 
 def supervise(action, freeze, output):
-    if action == "audit":
+    if action in ("audit", "audit_correction"):
         main_record = json.loads((output / "main_resources.json").read_text())
-        if main_record["status"] != "completed" or main_record["preanalysis_commit"] != freeze:
+        expected = (json.loads((output / "input_receipt.json").read_text())["preanalysis_commit"]
+                    if action == "audit_correction" else freeze)
+        if main_record["status"] != "completed" or main_record["preanalysis_commit"] != expected:
             raise ValueError("Completed matching main result required")
+    if action == "audit_correction":
+        failed = json.loads((output / "audit_resources.json").read_text())
+        if failed["status"] != "stopped" or failed["guard_stop"] is not None:
+            raise ValueError("Expected preserved code failure in the first audit")
     overhead = other_public_bytes()
-    record = {"phase": action, "preanalysis_commit": freeze, "new_draws": 0,
+    record = {"phase": action, "source_commit": freeze,
+              "preanalysis_commit": expected if action == "audit_correction" else freeze, "new_draws": 0,
               "wall_cap_seconds": WALL, "peak_rss_cap_bytes": RSS}
     write_once(output / f"{action}_attempt.json", record)
     code = "from scripts.run_enumeration import worker; import sys; from pathlib import Path; worker(sys.argv[1], sys.argv[2], Path(sys.argv[3]))"
@@ -195,7 +231,7 @@ def supervise(action, freeze, output):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("phase", choices=("freeze","main","audit"))
+    parser.add_argument("phase", choices=("freeze","main","audit","audit_correction"))
     parser.add_argument("--commit")
     args = parser.parse_args()
     if args.phase == "freeze":
