@@ -1,0 +1,15 @@
+{
+  "phase": "main",
+  "preanalysis_commit": "9fe423b9bf95eba00e7d40824ed503c3a24586c2",
+  "wall_cap": 180,
+  "rss_cap_bytes": 2147483648,
+  "public_cap_bytes": 52428800,
+  "new_random_series": 0,
+  "status": "completed",
+  "external_worker_exit": 0,
+  "exit_code": 0,
+  "guard_stop": null,
+  "wall_seconds": 1.7670251249801368,
+  "peak_rss_bytes": 215236608,
+  "public_bytes_at_finish": 4737146
+}

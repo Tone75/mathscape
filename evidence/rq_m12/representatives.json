@@ -1,0 +1,45 @@
+{
+  "rule": "u min/max pergroup; ties seed,outer ascending",
+  "examples": [
+    {
+      "selection": "minimum",
+      "distribution": "gamma",
+      "master_seed": 2,
+      "outer_id": 9,
+      "sample_sha256": "3f15d328360fe74017e4c21fef554837cda481f229d6fc40ba94954372a526d3",
+      "u": 0.009983468311950638,
+      "margin": 0.09001653168804936,
+      "rank_u": 1
+    },
+    {
+      "selection": "maximum",
+      "distribution": "gamma",
+      "master_seed": 1,
+      "outer_id": 8,
+      "sample_sha256": "458f9e99bc331ac8f282d0d3618b040ef21bbad4742a1f24bd8d28f3169e825b",
+      "u": 0.16521474722984456,
+      "margin": -0.06521474722984455,
+      "rank_u": 30
+    },
+    {
+      "selection": "minimum",
+      "distribution": "lognormal",
+      "master_seed": 2,
+      "outer_id": 1,
+      "sample_sha256": "9fa793fd91a5b4e453720a31449724c86090c5292525f9e3f6fb63b96800cc96",
+      "u": 0.005326389380249962,
+      "margin": 0.09467361061975005,
+      "rank_u": 1
+    },
+    {
+      "selection": "maximum",
+      "distribution": "lognormal",
+      "master_seed": 2,
+      "outer_id": 3,
+      "sample_sha256": "60c1b4ba9f851b96d35ea00d2e13d5a33b124b3526dd6b8960e06fc3e0a43010",
+      "u": 0.35149599270031373,
+      "margin": -0.25149599270031375,
+      "rank_u": 30
+    }
+  ]
+}

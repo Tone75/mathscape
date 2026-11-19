@@ -1,0 +1,8 @@
+{
+  "phase": "audit",
+  "preanalysis_commit": "9fe423b9bf95eba00e7d40824ed503c3a24586c2",
+  "wall_cap": 180,
+  "rss_cap_bytes": 2147483648,
+  "public_cap_bytes": 52428800,
+  "new_random_series": 0
+}

@@ -1,0 +1,9 @@
+distribution,m11_pass,m12_pass,count,ids
+gamma,False,False,4,1:3;1:8;2:1;2:2
+gamma,False,True,5,0:3;0:6;1:5;2:0;2:7
+gamma,True,False,0,
+gamma,True,True,21,0:0;0:1;0:2;0:4;0:5;0:7;0:8;0:9;1:0;1:1;1:2;1:4;1:6;1:7;1:9;2:3;2:4;2:5;2:6;2:8;2:9
+lognormal,False,False,5,0:6;1:6;2:2;2:3;2:6
+lognormal,False,True,3,1:0;1:4;2:4
+lognormal,True,False,0,
+lognormal,True,True,22,0:0;0:1;0:2;0:3;0:4;0:5;0:7;0:8;0:9;1:1;1:2;1:3;1:5;1:7;1:8;1:9;2:0;2:1;2:5;2:7;2:8;2:9
