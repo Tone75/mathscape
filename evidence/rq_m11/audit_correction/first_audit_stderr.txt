@@ -1,0 +1,31 @@
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "scripts/run_enumeration.py", line 146, in worker
+    report = audit(SOURCE, output)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "scripts/audit_enumerated_reference.py", line 980, in audit
+    manifest, input_receipt, original_receipt = check_input_receipt(source,output)
+                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "scripts/audit_enumerated_reference.py", line 579, in check_input_receipt
+    raise ValueError('accepted input file inventory differs from the frozen source contract')
+ValueError: accepted input file inventory differs from the frozen source contract
+real 0.65
+user 0.44
+sys 0.12
+            98828288  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               33140  page reclaims
+                 417  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 849  voluntary context switches
+                 711  involuntary context switches
+           714830160  instructions retired
+           270833172  cycles elapsed
+            15925704  peak memory footprint

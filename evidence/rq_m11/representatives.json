@@ -1,0 +1,49 @@
+{
+  "rule": "BCa perpopulation min/max e; ties seed,outer ascending",
+  "examples": [
+    {
+      "selection": "minimum",
+      "distribution": "gamma",
+      "method": "bca",
+      "master_seed": 0,
+      "outer_id": 2,
+      "sample_sha256": "f3afc0eb7ab593da5ebb795ff361c8048b896b71d78cdf347c314f02f0541f7e",
+      "e": 0.020654817262186584,
+      "margin": 0.07934518273781342,
+      "rank_e": 1
+    },
+    {
+      "selection": "maximum",
+      "distribution": "gamma",
+      "method": "bca",
+      "master_seed": 2,
+      "outer_id": 2,
+      "sample_sha256": "cf094ae0000c02db8512020aee10a7449b72f9e1cb5adb5a22401f8a1dfbc781",
+      "e": 0.21757203243938242,
+      "margin": -0.11757203243938241,
+      "rank_e": 30
+    },
+    {
+      "selection": "minimum",
+      "distribution": "lognormal",
+      "method": "bca",
+      "master_seed": 0,
+      "outer_id": 8,
+      "sample_sha256": "c11ca7d100045388f4791df5f4d92be48cee4809399c674e213e59bd3df4b651",
+      "e": 0.024785824990204427,
+      "margin": 0.07521417500979558,
+      "rank_e": 1
+    },
+    {
+      "selection": "maximum",
+      "distribution": "lognormal",
+      "method": "bca",
+      "master_seed": 2,
+      "outer_id": 3,
+      "sample_sha256": "60c1b4ba9f851b96d35ea00d2e13d5a33b124b3526dd6b8960e06fc3e0a43010",
+      "e": 0.3999438461937184,
+      "margin": -0.2999438461937184,
+      "rank_e": 30
+    }
+  ]
+}

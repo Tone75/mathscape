@@ -1,0 +1,15 @@
+{
+  "phase": "audit_correction",
+  "source_commit": "dd3d184b9d22278f9e4002c1b096497c5f1e77fd",
+  "preanalysis_commit": "e601ebf5f73a1e6336d67f85df3b0c3014d5db7e",
+  "new_draws": 0,
+  "wall_cap_seconds": 180,
+  "peak_rss_cap_bytes": 2147483648,
+  "status": "completed",
+  "exit_code": 0,
+  "guard_stop": null,
+  "wall_seconds": 1.3455290421843529,
+  "peak_rss_bytes": 202964992,
+  "evidence_bytes_at_finish": 5815890,
+  "other_public_bytes_at_start": 244298
+}

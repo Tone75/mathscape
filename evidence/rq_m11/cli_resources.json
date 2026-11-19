@@ -1,0 +1,36 @@
+{
+  "main": {
+    "status": "completed",
+    "external_cli_wall_seconds": 1.56,
+    "peak_rss_bytes": 310263808,
+    "time_l_rss_bytes": 310263808,
+    "supervisor_rusage_bytes": 310263808,
+    "supervisor_wall_seconds": 1.537012082990259
+  },
+  "audit": {
+    "status": "stopped",
+    "external_cli_wall_seconds": 0.65,
+    "peak_rss_bytes": 98828288,
+    "time_l_rss_bytes": 98828288,
+    "supervisor_rusage_bytes": 98828288,
+    "supervisor_wall_seconds": 0.6306756250560284
+  },
+  "audit_correction": {
+    "status": "completed",
+    "external_cli_wall_seconds": 1.36,
+    "peak_rss_bytes": 202964992,
+    "time_l_rss_bytes": 202964992,
+    "supervisor_rusage_bytes": 202964992,
+    "supervisor_wall_seconds": 1.3455290421843529
+  },
+  "main_launches": 1,
+  "independent_saved_audit_launches": 2,
+  "completed_numerical_audits": 1,
+  "new_originals": 0,
+  "new_bootstrap_series": 0,
+  "prng_replays": 0,
+  "smoke": 0,
+  "scope": "Each external /usr/bin/time -lp includes launcher, input checks, worker and persistence. Tests and browser are separate.",
+  "main_retries": 0,
+  "corrected_audit_launches": 1
+}

@@ -1,0 +1,14 @@
+{
+  "phase": "audit",
+  "preanalysis_commit": "e601ebf5f73a1e6336d67f85df3b0c3014d5db7e",
+  "new_draws": 0,
+  "wall_cap_seconds": 180,
+  "peak_rss_cap_bytes": 2147483648,
+  "status": "stopped",
+  "exit_code": 1,
+  "guard_stop": null,
+  "wall_seconds": 0.6306756250560284,
+  "peak_rss_bytes": 98828288,
+  "evidence_bytes_at_finish": 5775436,
+  "other_public_bytes_at_start": 241374
+}

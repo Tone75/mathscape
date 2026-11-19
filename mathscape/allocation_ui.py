@@ -361,6 +361,13 @@ def render_allocation_view():
     st.sidebar.selectbox('同一予算の配分',list(ALLOCATIONS),format_func=lambda name:f'{name} · J{ALLOCATIONS[name][0]}×K{ALLOCATIONS[name][1]}',key='au_allocation',on_change=_remember)
     st.sidebar.selectbox('同一予算の手法',list(METHODS),format_func=METHODS.get,key='au_method',on_change=_remember)
     st.sidebar.caption('B4999・α=.05・R20固定、JK=120。コホート×分布ごとseed／ID／rを復元し、配分・手法・Lab・モード切替で同じ原標本を保持します。旧新の同じIDは別の原標本です。')
+    if small:
+        from mathscape.enumeration_ui import preview, render_enumeration_view
+        detail=st.sidebar.selectbox('M10の保存詳細', ['配分の保存結果','全列挙参照とのずれ（M11）'], key='au_m10_detail')
+        if detail=='全列挙参照とのずれ（M11）':
+            render_enumeration_view(state)
+            return
+        st.info(preview())
     selection=state['selections'][state['distribution']];cohort=state['cohort'];evidence=_evidence(cohort);original_cell=receipt=record=None
     try:
         path=evidence/'panels'/f'{state["distribution"]}_seed{selection["seed"]}.npz';panel=_panel(str(path),path.stat().st_mtime_ns)

@@ -1,0 +1,61 @@
+{
+  "status": "passed",
+  "actual_browser": "IAB",
+  "recorded_states": 26,
+  "console_warning_or_errors": 0,
+  "downloads": [
+    {
+      "filename": "rq_m11_summary.csv",
+      "bytes": 1289,
+      "sha256": "74a2be800305853a1dded125f7defc6a39517f8a2a94bdeccac6787b03653b68"
+    },
+    {
+      "filename": "rq_m11_hypotheses.json",
+      "bytes": 2088,
+      "sha256": "df46e9dc9f67323e5d146d61f063fa46c777f9b3df0645095fa30a8a86485b6d"
+    },
+    {
+      "filename": "rq_m11_lognormal_seed2_outer3_reference.csv",
+      "bytes": 845366,
+      "sha256": "30aae70d2f5d1587d45e9dfb914159c30b06bc47edb9b9a2e5efc57d80573de9"
+    },
+    {
+      "filename": "rq_m11_lognormal_seed2_outer3_comparison.csv",
+      "bytes": 1775425,
+      "sha256": "02cd763c0f643a768dc842316fb39c7921295de18b9080d6ef1c1b136c20fb52"
+    },
+    {
+      "filename": "rq_m11_overview.html",
+      "bytes": 5179987,
+      "sha256": "487071ef445552bbdef413a182d53f0ed991b60b88b575b13152b1acf3a307fe"
+    }
+  ],
+  "download_condition": "lognormal_seed2_outer3",
+  "sample_sha256": "60c1b4ba9f851b96d35ea00d2e13d5a33b124b3526dd6b8960e06fc3e0a43010",
+  "actual_events": 5,
+  "exact_stored_files": 3,
+  "reference_rows": 3470,
+  "ordered_means": 3125,
+  "position_indices": 15625,
+  "supports": 341,
+  "reference_endpoints": 4,
+  "comparison_rows": 2400,
+  "selected_comparison_fields_checked": 124800,
+  "all_four_fixed_extrema_hash_and_metric_matched": true,
+  "all_four_labs": true,
+  "all_three_saved_cohorts": true,
+  "K1_NA_observed": true,
+  "returned_population_ID_hash_and_r": true,
+  "downloaded_HTML_rendered_plot_count": 9,
+  "HTML_source": "Download bytes identical to saved HTML, served via single-path loopback",
+  "server_exceptions": 0,
+  "duplicate_default_warnings": 0,
+  "created_tabs_closed": 2,
+  "started_servers_stopped": 2,
+  "not_tested": [
+    "Other devices and browser engines",
+    "Owner individual UI operations",
+    "External scientific review"
+  ],
+  "percentile_method_and_BCa_observed": true
+}

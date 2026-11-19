@@ -1,0 +1,2 @@
+python -m pytest -q
+1593 passed in 143.54s (0:02:23)

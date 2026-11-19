@@ -1,0 +1,12 @@
+{
+  "operation": "G r13 → L maximum representative, restore L r7",
+  "observed": [
+    "  - paragraph: 予算反復 r",
+    "  - combobox \"予算反復 r\": \"7\"",
+    "  - heading \"全通りを数えた基準から、どれだけずれる？\" [level=3]:",
+    "    - text: 全通りを数えた基準から、どれだけずれる？",
+    "    - paragraph: 保存判定：記述的不支持。全30個が完備し27/30以上が基準です。各原標本で上下端点RMSEの大きい方 e≤0.10 を合格とします。母集団の90%保証やM10保留の原因説明ではありません。",
+    "  - paragraph: 監査済み保存結果 · L：標準化対数正規 · seed2 · ID3 · SHA-256 60c1b4ba9f851b96d35ea00d2e13d5a33b124b3526dd6b8960e06fc3e0a43010。新しい原標本・再標本・推論は生成しません。"
+  ],
+  "console_warnings_errors": 0
+}
