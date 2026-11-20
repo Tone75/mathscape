@@ -363,7 +363,9 @@ def render_allocation_view():
     st.sidebar.caption('B4999・α=.05・R20固定、JK=120。コホート×分布ごとseed／ID／rを復元し、配分・手法・Lab・モード切替で同じ原標本を保持します。旧新の同じIDは別の原標本です。')
     if small:
         from mathscape.enumeration_ui import preview, render_enumeration_view
+        st.session_state.setdefault('au_m10_detail',state.get('m10_detail','配分の保存結果'))
         detail=st.sidebar.selectbox('M10の保存詳細', ['配分の保存結果','全列挙参照とのずれ（M11）'], key='au_m10_detail')
+        state['m10_detail']=detail
         if detail=='全列挙参照とのずれ（M11）':
             render_enumeration_view(state)
             return

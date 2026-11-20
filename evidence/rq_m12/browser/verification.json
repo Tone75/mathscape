@@ -1,0 +1,45 @@
+{
+  "status": "passed",
+  "browser": "Codex in-app browser on macOS, using three dedicated loopback Streamlit sessions",
+  "records": {
+    "legacy": "legacy.json",
+    "movement": "movement_states.json",
+    "saved_display_comparison": "display_checks.json",
+    "state_restoration": "route_restore.json",
+    "actual_downloads": "downloads.json",
+    "screenshot": "cdf_movement.jpg"
+  },
+  "scope": [
+    "Beta PDF, Chaos r=2.5 preset, Fractal zoom and reset, Inference M05 archived K1 NA",
+    "M08/M09/M10 saved cohorts, M11 result and summary CSV",
+    "M12 G/L counts, both endpoints, four fixed minimum/maximum examples, distribution-specific identity and saved selection",
+    "Fixed CDF support retained for changed q, one-ULP positive support displacement, visible step chart and A/C/Y traces",
+    "Final UI restored L seed2 outer3, r7 k11 upper and the same SHA and g after M07 and Probability Explorer roundtrips"
+  ],
+  "legacy_observations": 21,
+  "movement_observations": 19,
+  "route_observations": 3,
+  "M12_actual_downloads": 5,
+  "old_actual_downloads": 1,
+  "byte_exact_exports": 4,
+  "selected_series_download": {
+    "rows": 2400,
+    "columns": 80,
+    "cells_checked": 192000,
+    "mismatches": 0
+  },
+  "console_warning_error_entries": 0,
+  "server_log_warning_error_matches": 0,
+  "temporary_tabs_closed": 3,
+  "loopback_servers_stopped": 3,
+  "development_corrections": [
+    "The first nested-route AppTest found loss of navigation state when leaving the Lab or mode. Corrected separate persisted selections and observed both return paths in the final browser session.",
+    "The private CSV checker initially assumed a different position for the SE column. Checked the archived/exported order and compared every saved field without changing the downloads."
+  ],
+  "untested": [
+    "Other browser engines, devices and Owner individual operations",
+    "M12 downloads are CSV/JSON. Prior self-contained HTML downloads were outside the browser checks for this submission."
+  ],
+  "recorded_display_assertions": 199,
+  "recorded_display_mismatches": 0
+}

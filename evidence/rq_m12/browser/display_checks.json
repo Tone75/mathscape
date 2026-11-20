@@ -1,0 +1,203 @@
+{
+  "status": "passed",
+  "question_id": "RQ-M12",
+  "verification": "Recorded browser accessibility text vs persisted arrays/CSV/JSON only; no browser, inference, CDF selection, aggregation or science/audit rerun.",
+  "snapshot_file": "movement_states.json",
+  "snapshot_sha256": "1679365cbcc7e872a5de933f31c69838f08b7836840a5173c89b690b38f8efaa",
+  "recorded_states": 19,
+  "full_numerical_states": 10,
+  "partial_initial_states": [
+    "M12 initial"
+  ],
+  "checked_assertions": 199,
+  "mismatch_count": 0,
+  "failed_checks": [],
+  "full_state_values": [
+    {
+      "name": "G0-0-r0k0-lower",
+      "distribution": "gamma",
+      "master_seed": 0,
+      "outer_id": 0,
+      "r": 0,
+      "k": 0,
+      "endpoint": "lower",
+      "series_id": 0,
+      "sample_sha256": "b49e3fa28f384f8fdeb95dacd6f854d38ed088d121db7fa1b0a26e33da5f8b9d",
+      "g": 0.028617789582911213,
+      "movement_code": 1,
+      "lower_RMS": 0.02230821135641088,
+      "upper_RMS": 0.0028617789582911506
+    },
+    {
+      "name": "G0-0-r0k1-lower",
+      "distribution": "gamma",
+      "master_seed": 0,
+      "outer_id": 0,
+      "r": 0,
+      "k": 1,
+      "endpoint": "lower",
+      "series_id": 1,
+      "sample_sha256": "b49e3fa28f384f8fdeb95dacd6f854d38ed088d121db7fa1b0a26e33da5f8b9d",
+      "g": 0.0,
+      "movement_code": 0,
+      "lower_RMS": 0.02230821135641088,
+      "upper_RMS": 0.0028617789582911506
+    },
+    {
+      "name": "G0-1-r0k7-upper-near",
+      "distribution": "gamma",
+      "master_seed": 0,
+      "outer_id": 1,
+      "r": 0,
+      "k": 7,
+      "endpoint": "upper",
+      "series_id": 7,
+      "sample_sha256": "1f300dcc7a3b16f5cbd0941d6da8c60f51352aada9a1eaef22394b5b5affd83c",
+      "g": 2.7420847397595407e-16,
+      "movement_code": 1,
+      "lower_RMS": 0.028017849123776258,
+      "upper_RMS": 0.02673428995646896
+    },
+    {
+      "name": "G：標準化ガンマ · minimum u · seed2/ID9",
+      "distribution": "gamma",
+      "master_seed": 2,
+      "outer_id": 9,
+      "r": 0,
+      "k": 7,
+      "endpoint": "upper",
+      "series_id": 7,
+      "sample_sha256": "3f15d328360fe74017e4c21fef554837cda481f229d6fc40ba94954372a526d3",
+      "g": 0.0,
+      "movement_code": 0,
+      "lower_RMS": 0.009983468311950638,
+      "upper_RMS": 0.007119156606890165
+    },
+    {
+      "name": "G：標準化ガンマ · maximum u · seed1/ID8",
+      "distribution": "gamma",
+      "master_seed": 1,
+      "outer_id": 8,
+      "r": 0,
+      "k": 7,
+      "endpoint": "upper",
+      "series_id": 7,
+      "sample_sha256": "458f9e99bc331ac8f282d0d3618b040ef21bbad4742a1f24bd8d28f3169e825b",
+      "g": 0.23961431676509645,
+      "movement_code": 1,
+      "lower_RMS": 0.03664228807623532,
+      "upper_RMS": 0.16521474722984456
+    },
+    {
+      "name": "L：標準化対数正規 · minimum u · seed2/ID1",
+      "distribution": "lognormal",
+      "master_seed": 2,
+      "outer_id": 1,
+      "r": 0,
+      "k": 0,
+      "endpoint": "lower",
+      "series_id": 0,
+      "sample_sha256": "9fa793fd91a5b4e453720a31449724c86090c5292525f9e3f6fb63b96800cc96",
+      "g": 0.0,
+      "movement_code": 0,
+      "lower_RMS": 0.0004360874939468121,
+      "upper_RMS": 0.005326389380249962
+    },
+    {
+      "name": "L：標準化対数正規 · maximum u · seed2/ID3",
+      "distribution": "lognormal",
+      "master_seed": 2,
+      "outer_id": 3,
+      "r": 0,
+      "k": 0,
+      "endpoint": "lower",
+      "series_id": 0,
+      "sample_sha256": "60c1b4ba9f851b96d35ea00d2e13d5a33b124b3526dd6b8960e06fc3e0a43010",
+      "g": 0.0,
+      "movement_code": 0,
+      "lower_RMS": 0.01701283159925042,
+      "upper_RMS": 0.35149599270031373
+    },
+    {
+      "name": "L2-3-r7k11-upper",
+      "distribution": "lognormal",
+      "master_seed": 2,
+      "outer_id": 3,
+      "r": 7,
+      "k": 11,
+      "endpoint": "upper",
+      "series_id": 851,
+      "sample_sha256": "60c1b4ba9f851b96d35ea00d2e13d5a33b124b3526dd6b8960e06fc3e0a43010",
+      "g": -0.6014754516333525,
+      "movement_code": -1,
+      "lower_RMS": 0.01701283159925042,
+      "upper_RMS": 0.35149599270031373
+    },
+    {
+      "name": "Restored G2nd representative",
+      "distribution": "gamma",
+      "master_seed": 1,
+      "outer_id": 8,
+      "r": 0,
+      "k": 7,
+      "endpoint": "upper",
+      "series_id": 7,
+      "sample_sha256": "458f9e99bc331ac8f282d0d3618b040ef21bbad4742a1f24bd8d28f3169e825b",
+      "g": 0.23961431676509645,
+      "movement_code": 1,
+      "lower_RMS": 0.03664228807623532,
+      "upper_RMS": 0.16521474722984456
+    },
+    {
+      "name": "Restored L q_B and r",
+      "distribution": "lognormal",
+      "master_seed": 2,
+      "outer_id": 3,
+      "r": 7,
+      "k": 11,
+      "endpoint": "upper",
+      "series_id": 851,
+      "sample_sha256": "60c1b4ba9f851b96d35ea00d2e13d5a33b124b3526dd6b8960e06fc3e0a43010",
+      "g": -0.6014754516333525,
+      "movement_code": -1,
+      "lower_RMS": 0.01701283159925042,
+      "upper_RMS": 0.35149599270031373
+    }
+  ],
+  "fixed_representatives_verified": 4,
+  "saved_direction_codes_observed": [
+    -1,
+    0,
+    1
+  ],
+  "near_distinct_states": [
+    "G0-1-r0k7-upper-near"
+  ],
+  "restore_states": [
+    {
+      "name": "Restored G2nd representative",
+      "distribution": "gamma",
+      "master_seed": 1,
+      "outer_id": 8,
+      "r": 0,
+      "k": 7,
+      "endpoint": "upper"
+    },
+    {
+      "name": "Restored L q_B and r",
+      "distribution": "lognormal",
+      "master_seed": 2,
+      "outer_id": 3,
+      "r": 7,
+      "k": 11,
+      "endpoint": "upper"
+    }
+  ],
+  "saved_decision": "not_supported",
+  "limitations": [
+    "Only text/values actually present in movement_states.json were checked.",
+    "The selected u metric itself and numeric CDF plot coordinates are not captured in these filtered text records; no comparison of them is claimed.",
+    "The CDF screenshot/visual appearance and actual downloaded payload bytes are outside this checker; Root records browser actions and a separate download validator checks payloads.",
+    "Near-point verification compares stored A/C/index/g values and the recorded tiny nonzero g; no inverse-CDF or RMS was recalculated."
+  ]
+}

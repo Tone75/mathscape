@@ -1,0 +1,231 @@
+{
+  "states": [
+    {
+      "name": "Probability initial",
+      "evidence": [
+        "  - heading \"LABORATORY\" [level=1]",
+        "    - radio \"Probability Explorer\" [checked]",
+        "    - radio \"Chaos Explorer\"",
+        "    - radio \"Fractal Explorer\"",
+        "    - radio \"Inference Lab\"",
+        "  - combobox \"分布\": 正規分布",
+        "  - heading \"MATHSCAPE\" [level=1]:",
+        "  - heading \"Probability Explorer\" [level=2]:",
+        "  - heading \"数学的な意味\" [level=3]:",
+        "  - heading \"試してみる\" [level=3]:"
+      ]
+    },
+    {
+      "name": "Probability options",
+      "evidence": [
+        "  - option \"正規分布\" [selected]:",
+        "  - option \"ガンマ分布\":",
+        "  - option \"ベータ分布\":"
+      ]
+    },
+    {
+      "name": "Beta",
+      "evidence": [
+        "  - generic: ベータ分布",
+        "  - generic: ベータ分布, selected",
+        "  - combobox \"分布\" [active]: ベータ分布",
+        "  - paragraph: 形状 α",
+        "  - group \"形状 α\":",
+        "    - slider \"形状 α 形状 α\": \"2\"",
+        "  - paragraph: 形状 β",
+        "  - group \"形状 β\":",
+        "    - slider \"形状 β 形状 β\": \"2\"",
+        "    - generic: α",
+        "    - generic: β",
+        "    - generic: α",
+        "    - generic: β",
+        "    - generic: α",
+        "    - generic: β",
+        "  - generic: B(α, β)",
+        "  - generic: α−1",
+        "  - generic: β−1",
+        "  - text: α, β >",
+        "    - paragraph: 定義域は0<x<1です。x=0,1は描画格子から除外します。α<1ではx→0+、β<1ではx→1−で密度が無限大に発散します。省略した端点の密度をゼロとして扱っていません。",
+        "  - paragraph: αとβは形状を決めます。α=βなら左右対称、α=β=1なら一様分布です。平均はα/(α+β)、分散はαβ/[(α+β)²(α+β+1)]。",
+        "  - paragraph: α=β=0.5、1、5を比べると、両端に偏る形から中央に集まる形への変化が見えます。"
+      ]
+    },
+    {
+      "name": "Chaos",
+      "evidence": [
+        "    - slider \"成長パラメータ r 成長パラメータ r\": \"3.8\"",
+        "    - slider \"初期値 x₀ 初期値 x₀\": \"0.2\"",
+        "    - slider \"反復回数 N 反復回数 N\": \"80\"",
+        "    - slider \"初期差の指数 log₁₀(δ) 初期差の指数 log₁₀(δ)\": \"-8\"",
+        "  - heading \"Chaos Explorer\" [level=2]:"
+      ]
+    },
+    {
+      "name": "Chaos presets",
+      "evidence": [
+        "  - button \"Collapse sidebar\" [expanded]:",
+        "  - button \"Open\":",
+        "  - button \"Deploy\":",
+        "  - button \"Main menu\":",
+        "    - button \"Download plot as a PNG\":",
+        "    - button \"Zoom\":",
+        "    - button \"Pan\":",
+        "    - button \"Zoom in\":",
+        "    - button \"Zoom out\":",
+        "    - button \"Autoscale\":",
+        "    - button \"Reset axes\":",
+        "    - button \"Fullscreen\":",
+        "    - button \"Download plot as a PNG\":",
+        "    - button \"Zoom\":",
+        "    - button \"Pan\":",
+        "    - button \"Zoom in\":",
+        "    - button \"Zoom out\":",
+        "    - button \"Autoscale\":",
+        "    - button \"Reset axes\":",
+        "    - button \"Fullscreen\":",
+        "    - button \"Download plot as a PNG\":",
+        "    - button \"Zoom\":"
+      ]
+    },
+    {
+      "name": "Chaos preset selector",
+      "evidence": [
+        "  - paragraph: 観察プリセット",
+        "  - combobox \"観察プリセット\": 自由探索",
+        "  - paragraph: 初期値0.2では、r=2.5で固定点0.6への収束、r=3.2で周期2の振る舞いを観察できます。初期値0や1では例外的な軌道になります。プリセットはrのみを変更します。r=3.9で初期差を変え、2軌道が離れる様子を比べてみましょう。"
+      ]
+    },
+    {
+      "name": "Chaos preset choices",
+      "evidence": [
+        "  - option \"自由探索\" [selected]:",
+        "  - option \"安定固定点 · r=2.5\":",
+        "  - option \"周期2 · r=3.2\":",
+        "  - option \"複雑な軌道 · r=3.9\":"
+      ]
+    },
+    {
+      "name": "Chaos preset 2.5",
+      "evidence": [
+        "  - combobox \"観察プリセット\" [active]: 安定固定点 · r=2.5",
+        "    - slider \"成長パラメータ r 成長パラメータ r\": \"2.5\""
+      ]
+    },
+    {
+      "name": "Fractal controls",
+      "evidence": [
+        "  - spinbutton \"表示幅（実軸・虚軸共通）\": \"3.0000000\"",
+        "  - button \"＋ ズームイン\":",
+        "  - button \"− ズームアウト\":",
+        "  - button \"全体表示に戻す\":"
+      ]
+    },
+    {
+      "name": "Fractal zoom",
+      "evidence": [
+        "  - spinbutton \"表示幅（実軸・虚軸共通）\": \"1.5000000\""
+      ]
+    },
+    {
+      "name": "Fractal reset",
+      "evidence": [
+        "  - spinbutton \"表示幅（実軸・虚軸共通）\": \"3.0000000\""
+      ]
+    },
+    {
+      "name": "Inference modes",
+      "evidence": [
+        "    - radio \"Probability Explorer\"",
+        "    - radio \"Chaos Explorer\"",
+        "    - radio \"Fractal Explorer\"",
+        "    - radio \"Inference Lab\" [checked] [active]",
+        "    - radio \"t推論の探索\" [checked]",
+        "    - radio \"信頼区間の方法比較\"",
+        "    - radio \"再標本化回数と端点の安定性\"",
+        "    - radio \"分布の形と被覆\"",
+        "    - radio \"同じ歪度、違う分布\"",
+        "    - radio \"同じ標本でも端点は揺れる\"",
+        "    - radio \"揺れの測り方にも揺れがある\"",
+        "    - radio \"同じ予算で、どう測る？\"",
+        "  - heading \"Inference Lab\" [level=2]:"
+      ]
+    },
+    {
+      "name": "M05 stability not applicable",
+      "evidence": [
+        "  - paragraph: 保存結果専用 · n=20、α=0.05、B=4,999、K=1固定。旧自由操作のαから独立しています。生成・bootstrap・主実験は起動しません。",
+        "    - paragraph: 表示条件：G：標準化ガンマ ／ seed=0 ／ 原標本ID=0 ／ n20・固定α=.05・B4999・K1",
+        "    - paragraph: K=1のため端点SD_L・SD_U・S・Ase・Apopは全方法（tも含む）でNA／対象外です。0で埋めず、端点の条件付き計算変動を推定しません。旧RQ-M03/M04の安定性表示とは実験配分が異なります。"
+      ]
+    },
+    {
+      "name": "Budget cohort",
+      "evidence": [
+        "  - combobox \"保存コホート\": 旧パネル M08",
+        "  - heading \"Inference Lab · 標本を変えても、同じ結論？\" [level=2]:"
+      ]
+    },
+    {
+      "name": "Cohort choices",
+      "evidence": [
+        "  - option \"旧パネル M08\" [selected]:",
+        "  - option \"新標本 M09\":",
+        "  - option \"小標本 M10（n5）\":"
+      ]
+    },
+    {
+      "name": "M10",
+      "evidence": [
+        "  - combobox \"保存コホート\" [active]: 小標本 M10（n5）",
+        "  - combobox \"M10の保存詳細\": 配分の保存結果",
+        "  - paragraph: 保存結果専用 · 小標本M10、n5・原標本t df4・配分比較df29・固定α=.05・B4999・R20・各分布N30。P30=J4×K30、P60=J2×K60、P120=J1×K120。生成・推論・実験は実行しません。"
+      ]
+    },
+    {
+      "name": "M10 options",
+      "evidence": [
+        "  - option \"配分の保存結果\" [selected]:",
+        "  - option \"全列挙参照とのずれ（M11）\":"
+      ]
+    },
+    {
+      "name": "M11 restored saved interface",
+      "evidence": [
+        "  - paragraph: 21 / 30",
+        "  - paragraph: 22 / 30",
+        "  - paragraph: 監査済み保存結果 · G：標準化ガンマ · seed0 · ID0 · SHA-256 b49e3fa28f384f8fdeb95dacd6f854d38ed088d121db7fa1b0a26e33da5f8b9d。新しい原標本・再標本・推論は生成しません。"
+      ]
+    },
+    {
+      "name": "M11 download disclosure",
+      "evidence": [
+        "  - button \"M11保存要約CSVを保存\":",
+        "  - button \"M11保存判定JSONを保存\":",
+        "  - button \"選択標本の全列挙参照CSVを保存\":",
+        "  - button \"選択標本の2400系列比較CSVを保存\":",
+        "  - button \"M11自己完結HTMLを保存\":"
+      ]
+    },
+    {
+      "name": "M09 settled",
+      "evidence": [
+        "  - combobox \"保存コホート\" [active]: 新標本 M09",
+        "  - paragraph: 保存結果専用 · 旧パネルM08／新標本M09。n20・固定α=.05・B4999・R20・各分布N30。P30=J4×K30、P60=J2×K60、P120=J1×K120。操作で生成・推論・実験を実行しません。",
+        "  - paragraph: 原標本SHA-256：f55048bc91ff4085657167e8fa5336b18f1bbe41255285fc975ae196c8d5a180。新標本M09の保存raw／receiptと一致。namespace=0x4D3039、原標本キー=[5058617, 1, 20, 0, 0, 0]。同じM08 IDの原標本とは別です。"
+      ]
+    },
+    {
+      "name": "M08 return",
+      "evidence": [
+        "  - combobox \"保存コホート\" [active]: 旧パネル M08",
+        "  - paragraph: 原標本SHA-256：cfd609b63189516de31eb72a968c2097a6ce97ac1ce456772f955cf3de5a74df。M07・M06・M05保存hashと同じouter IDで一致。M07由来の原標本だけを再利用し、旧端点系列は混ぜません。受入入力HEAD：39bcdc367320b6da513df72d2fa43bfdb7f060f4"
+      ]
+    }
+  ],
+  "console": [],
+  "m11_actual_summary_csv": {
+    "matches_saved_bytes": true,
+    "bytes": 1289,
+    "sha256": "74a2be800305853a1dded125f7defc6a39517f8a2a94bdeccac6787b03653b68"
+  }
+}

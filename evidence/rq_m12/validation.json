@@ -1,0 +1,140 @@
+{
+  "question": "RQ-M12",
+  "date": "2026-11-20",
+  "review": "Owner review requested",
+  "accepted": "0deb14fa313dc27380afbb43e6b132386aa40206",
+  "analysis_freeze": "9fe423b9bf95eba00e7d40824ed503c3a24586c2",
+  "scientific_results_commit": "a3ae1d8d3e4d4a59cb5040dab267c6880b212fb9",
+  "pull_request": null,
+  "submission_head_lookup": "gh pr view feat/rq-m12-probability-movement --repo Tone75/mathscape --json headRefOid",
+  "frozen_input_files": 185,
+  "frozen_sources": 12,
+  "frozen_origins": 60,
+  "preregistration_fixture_tests": {
+    "passed": 74,
+    "pytest_seconds": 4.94
+  },
+  "full_pytest": {
+    "passed": 1684,
+    "pytest_seconds": 237.49,
+    "external_wall_seconds": 238.25,
+    "peak_rss_bytes": 770523136,
+    "existing_baseline": 1593,
+    "added": 91
+  },
+  "pip_check": "No broken requirements found.",
+  "scientific_audit": {
+    "originals": 60,
+    "B": 4999,
+    "series_per_original": 2400,
+    "saved_common_series": 144000,
+    "BCa_endpoints": 288000,
+    "reconstructed_archived_series": 36,
+    "remaining_from_saved_inputs": 143964,
+    "mismatches": 0,
+    "report": "independent_audit.json"
+  },
+  "execution": {
+    "main": {
+      "external_wall_seconds": 1.8,
+      "external_peak_rss_bytes": 215236608,
+      "guard": {
+        "phase": "main",
+        "preanalysis_commit": "9fe423b9bf95eba00e7d40824ed503c3a24586c2",
+        "wall_cap": 180,
+        "rss_cap_bytes": 2147483648,
+        "public_cap_bytes": 52428800,
+        "new_random_series": 0,
+        "status": "completed",
+        "external_worker_exit": 0,
+        "exit_code": 0,
+        "guard_stop": null,
+        "wall_seconds": 1.7670251249801368,
+        "peak_rss_bytes": 215236608,
+        "public_bytes_at_finish": 4737146
+      }
+    },
+    "audit": {
+      "external_wall_seconds": 2.87,
+      "external_peak_rss_bytes": 308330496,
+      "guard": {
+        "phase": "audit",
+        "preanalysis_commit": "9fe423b9bf95eba00e7d40824ed503c3a24586c2",
+        "wall_cap": 180,
+        "rss_cap_bytes": 2147483648,
+        "public_cap_bytes": 52428800,
+        "new_random_series": 0,
+        "status": "completed",
+        "external_worker_exit": 0,
+        "exit_code": 0,
+        "guard_stop": null,
+        "wall_seconds": 2.847234250046313,
+        "peak_rss_bytes": 308330496,
+        "public_bytes_at_finish": 4770782
+      }
+    },
+    "main_launches": 1,
+    "audit_launches": 1,
+    "retries": 0,
+    "new_originals": 0,
+    "new_bootstrap_series": 0,
+    "prng_replays": 0,
+    "m11_scientific_runs": 0
+  },
+  "browser": {
+    "status": "passed",
+    "browser": "Codex in-app browser on macOS, using three dedicated loopback Streamlit sessions",
+    "records": {
+      "legacy": "legacy.json",
+      "movement": "movement_states.json",
+      "saved_display_comparison": "display_checks.json",
+      "state_restoration": "route_restore.json",
+      "actual_downloads": "downloads.json",
+      "screenshot": "cdf_movement.jpg"
+    },
+    "scope": [
+      "Beta PDF, Chaos r=2.5 preset, Fractal zoom and reset, Inference M05 archived K1 NA",
+      "M08/M09/M10 saved cohorts, M11 result and summary CSV",
+      "M12 G/L counts, both endpoints, four fixed minimum/maximum examples, distribution-specific identity and saved selection",
+      "Fixed CDF support retained for changed q, one-ULP positive support displacement, visible step chart and A/C/Y traces",
+      "Final UI restored L seed2 outer3, r7 k11 upper and the same SHA and g after M07 and Probability Explorer roundtrips"
+    ],
+    "legacy_observations": 21,
+    "movement_observations": 19,
+    "route_observations": 3,
+    "M12_actual_downloads": 5,
+    "old_actual_downloads": 1,
+    "byte_exact_exports": 4,
+    "selected_series_download": {
+      "rows": 2400,
+      "columns": 80,
+      "cells_checked": 192000,
+      "mismatches": 0
+    },
+    "console_warning_error_entries": 0,
+    "server_log_warning_error_matches": 0,
+    "temporary_tabs_closed": 3,
+    "loopback_servers_stopped": 3,
+    "development_corrections": [
+      "The first nested-route AppTest found loss of navigation state when leaving the Lab or mode. Corrected separate persisted selections and observed both return paths in the final browser session.",
+      "The private CSV checker initially assumed a different position for the SE column. Checked the archived/exported order and compared every saved field without changing the downloads."
+    ],
+    "untested": [
+      "Other browser engines, devices and Owner individual operations",
+      "M12 downloads are CSV/JSON. Prior self-contained HTML downloads were outside the browser checks for this submission."
+    ],
+    "recorded_display_assertions": 199,
+    "recorded_display_mismatches": 0
+  },
+  "not_tested": [
+    "Population coverage and general n5 claims",
+    "Other browsers and mobile devices",
+    "External review and Owner individual operations"
+  ],
+  "size_basis": "Sum of full uncompressed files changed from the accepted M11 revision, including existing documents/source files touched.",
+  "public_change": {
+    "files": 107,
+    "bytes": 5015520,
+    "findings": []
+  }
+}

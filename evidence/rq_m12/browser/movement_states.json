@@ -1,0 +1,352 @@
+{
+  "states": [
+    {
+      "name": "Initial",
+      "lines": [
+        "    - radio \"Probability Explorer\" [checked]",
+        "    - radio \"Chaos Explorer\"",
+        "    - radio \"Fractal Explorer\"",
+        "    - radio \"Inference Lab\""
+      ]
+    },
+    {
+      "name": "M11 detail choices",
+      "lines": [
+        "  - option \"全列挙端点との総ずれ（M11）\" [selected]:",
+        "  - option \"補正確率を替えた端点移動（M12）\":"
+      ]
+    },
+    {
+      "name": "M12 initial",
+      "lines": [
+        "  - heading \"LABORATORY\" [level=1]",
+        "  - heading \"MATHSCAPE\" [level=1]:",
+        "  - heading \"Inference Lab · 標本が5個でも、同じ結論？\" [level=2]:",
+        "  - heading \"全通りを数えた基準から、どれだけずれる？\" [level=3]:",
+        "  - heading \"確率の揺れは、端点をどれだけ動かす？\" [level=3]:",
+        "  - paragraph: 26 / 30",
+        "  - paragraph: 25 / 30",
+        "  - paragraph: 原標本SHA-256：b49e3fa28f384f8fdeb95dacd6f854d38ed088d121db7fa1b0a26e33da5f8b9d。3配分で系列を重複計上しません。旧配分・旧手法の選択は復帰用に保持します。",
+        "  - paragraph: 移動を表示する端点",
+        "  - combobox \"移動を表示する端点\": lower",
+        "  - paragraph: 移動を表示する系列 k",
+        "  - spinbutton \"移動を表示する系列 k\": \"0\"",
+        "  - paragraph: 下端の移動RMS（SE単位）",
+        "  - paragraph: 同一点／上下の分類は保存支持点の厳密な同一性です。qが違っても同じ段に留まれます。近接した別の支持点への移動を0へ丸めず、上表・CSVで17桁精度の値を確認できます。Yは有限Bの別の経験分布から得たlinear端点で、このCDF上の点とは限りません。",
+        "  - generic \"固定したu最小／最大の代表例\":",
+        "    - paragraph: 固定したu最小／最大の代表例"
+      ]
+    },
+    {
+      "name": "G0-0-r0k0-lower",
+      "lines": [
+        "  - paragraph: 26 / 30",
+        "  - paragraph: 25 / 30",
+        "    - paragraph: H12-Q：記述的不支持。必要30標本がすべて完備し、上下RMSがともに0.10標本SE以内の標本が27/30以上という記述基準です。",
+        "    - paragraph: G：標準化ガンマ ／ seed0 ／ 原標本ID0 ／ n5・α=.05・B4999・R20×120共通系列",
+        "  - paragraph: 原標本SHA-256：b49e3fa28f384f8fdeb95dacd6f854d38ed088d121db7fa1b0a26e33da5f8b9d。3配分で系列を重複計上しません。旧配分・旧手法の選択は復帰用に保持します。",
+        "  - paragraph: 選択系列 r=0, k=0（保存ID0） · lower：qは変化 ／ 上へ移動。g=0.028617789582911213 標本SE",
+        "  - paragraph: 下端の移動RMS（SE単位）",
+        "  - paragraph: \"0.022308211356410881\"",
+        "  - paragraph: 上端の移動RMS（SE単位）",
+        "  - paragraph: \"0.0028617789582911506\"",
+        "  - paragraph: 保存合否=True ／ 余裕0.10−u=0.077691788643589124。判定は丸め前の保存値で行い、画面の丸めや許容差を使いません。",
+        "  - toolbar:",
+        "    - button \"Download plot as a PNG\":",
+        "    - button \"Zoom\":",
+        "    - button \"Pan\":",
+        "    - button \"Zoom in\":",
+        "    - button \"Zoom out\":",
+        "    - button \"Autoscale\":"
+      ]
+    },
+    {
+      "name": "G0-0-r0k1-lower",
+      "lines": [
+        "  - paragraph: 26 / 30",
+        "  - paragraph: 25 / 30",
+        "    - paragraph: H12-Q：記述的不支持。必要30標本がすべて完備し、上下RMSがともに0.10標本SE以内の標本が27/30以上という記述基準です。",
+        "    - paragraph: G：標準化ガンマ ／ seed0 ／ 原標本ID0 ／ n5・α=.05・B4999・R20×120共通系列",
+        "  - paragraph: 原標本SHA-256：b49e3fa28f384f8fdeb95dacd6f854d38ed088d121db7fa1b0a26e33da5f8b9d。3配分で系列を重複計上しません。旧配分・旧手法の選択は復帰用に保持します。",
+        "  - paragraph: 選択系列 r=0, k=1（保存ID1） · lower：qは変化 ／ 同じ支持点。g=0 標本SE",
+        "  - paragraph: 下端の移動RMS（SE単位）",
+        "  - paragraph: \"0.022308211356410881\"",
+        "  - paragraph: 上端の移動RMS（SE単位）",
+        "  - paragraph: \"0.0028617789582911506\"",
+        "  - paragraph: 保存合否=True ／ 余裕0.10−u=0.077691788643589124。判定は丸め前の保存値で行い、画面の丸めや許容差を使いません。",
+        "  - toolbar:",
+        "    - button \"Download plot as a PNG\":",
+        "    - button \"Zoom\":",
+        "    - button \"Pan\":",
+        "    - button \"Zoom in\":",
+        "    - button \"Zoom out\":",
+        "    - button \"Autoscale\":"
+      ]
+    },
+    {
+      "name": "Endpoint choices",
+      "lines": [
+        "  - option \"lower\" [selected]:",
+        "  - option \"upper\":"
+      ]
+    },
+    {
+      "name": "Original ID control",
+      "lines": [
+        "  - spinbutton \"同一予算の原標本ID\": \"0\""
+      ]
+    },
+    {
+      "name": "G0-1-r0k7-upper-near",
+      "lines": [
+        "  - paragraph: 26 / 30",
+        "  - paragraph: 25 / 30",
+        "    - paragraph: H12-Q：記述的不支持。必要30標本がすべて完備し、上下RMSがともに0.10標本SE以内の標本が27/30以上という記述基準です。",
+        "    - paragraph: G：標準化ガンマ ／ seed0 ／ 原標本ID1 ／ n5・α=.05・B4999・R20×120共通系列",
+        "  - paragraph: 原標本SHA-256：1f300dcc7a3b16f5cbd0941d6da8c60f51352aada9a1eaef22394b5b5affd83c。3配分で系列を重複計上しません。旧配分・旧手法の選択は復帰用に保持します。",
+        "  - paragraph: 選択系列 r=0, k=7（保存ID7） · upper：qは変化 ／ 上へ移動。g=2.7420847397595407e-16 標本SE",
+        "  - paragraph: 下端の移動RMS（SE単位）",
+        "  - paragraph: \"0.028017849123776258\"",
+        "  - paragraph: 上端の移動RMS（SE単位）",
+        "  - paragraph: \"0.026734289956468961\"",
+        "  - paragraph: 保存合否=True ／ 余裕0.10−u=0.071982150876223755。判定は丸め前の保存値で行い、画面の丸めや許容差を使いません。",
+        "  - toolbar:",
+        "    - button \"Download plot as a PNG\":",
+        "    - button \"Zoom\":",
+        "    - button \"Pan\":",
+        "    - button \"Zoom in\":",
+        "    - button \"Zoom out\":",
+        "    - button \"Autoscale\":"
+      ]
+    },
+    {
+      "name": "Representatives",
+      "lines": [
+        "  - spinbutton \"移動を表示する系列 k\": \"7\""
+      ]
+    },
+    {
+      "name": "Fixed example actions",
+      "lines": [
+        "  - button \"Open\":",
+        "  - button \"Open\":",
+        "  - button \"Open\":",
+        "  - spinbutton \"同一予算の原標本ID\": \"1\"",
+        "  - button \"Decrement\":",
+        "  - button \"Increment\":",
+        "  - button \"Open\":",
+        "  - button \"Open\":",
+        "  - button \"Open\":",
+        "  - button \"Open\":",
+        "  - button \"Deploy\":",
+        "  - button \"Main menu\":",
+        "  - button \"Open\":",
+        "  - button \"Open\":",
+        "  - spinbutton \"移動を表示する系列 k\": \"7\"",
+        "  - button \"Decrement\":",
+        "  - button \"Increment\":",
+        "    - button \"Download plot as a PNG\":",
+        "    - button \"Zoom\":",
+        "    - button \"Pan\":",
+        "    - button \"Zoom in\":",
+        "    - button \"Zoom out\":",
+        "    - button \"Autoscale\":",
+        "    - button \"Reset axes\":",
+        "    - button \"Fullscreen\":",
+        "  - button \"Show/hide columns\":",
+        "  - button \"Download as CSV\":",
+        "  - button \"Search\":",
+        "  - button \"Fullscreen\":",
+        "  - button \"Show/hide columns\":",
+        "  - button \"Download as CSV\":",
+        "  - button \"Search\":"
+      ]
+    },
+    {
+      "name": "G：標準化ガンマ · minimum u · seed2/ID9",
+      "lines": [
+        "  - paragraph: 26 / 30",
+        "  - paragraph: 25 / 30",
+        "    - paragraph: H12-Q：記述的不支持。必要30標本がすべて完備し、上下RMSがともに0.10標本SE以内の標本が27/30以上という記述基準です。",
+        "    - paragraph: G：標準化ガンマ ／ seed2 ／ 原標本ID9 ／ n5・α=.05・B4999・R20×120共通系列",
+        "  - paragraph: 原標本SHA-256：3f15d328360fe74017e4c21fef554837cda481f229d6fc40ba94954372a526d3。3配分で系列を重複計上しません。旧配分・旧手法の選択は復帰用に保持します。",
+        "  - paragraph: 選択系列 r=0, k=7（保存ID7） · upper：qは変化 ／ 同じ支持点。g=0 標本SE",
+        "  - paragraph: 下端の移動RMS（SE単位）",
+        "  - paragraph: \"0.0099834683119506377\"",
+        "  - paragraph: 上端の移動RMS（SE単位）",
+        "  - paragraph: \"0.0071191566068901646\"",
+        "  - paragraph: 保存合否=True ／ 余裕0.10−u=0.090016531688049364。判定は丸め前の保存値で行い、画面の丸めや許容差を使いません。",
+        "  - toolbar:",
+        "    - button \"Download plot as a PNG\":",
+        "    - button \"Zoom\":",
+        "    - button \"Pan\":",
+        "    - button \"Zoom in\":",
+        "    - button \"Zoom out\":",
+        "    - button \"Autoscale\":"
+      ]
+    },
+    {
+      "name": "G：標準化ガンマ · maximum u · seed1/ID8",
+      "lines": [
+        "  - paragraph: 26 / 30",
+        "  - paragraph: 25 / 30",
+        "    - paragraph: H12-Q：記述的不支持。必要30標本がすべて完備し、上下RMSがともに0.10標本SE以内の標本が27/30以上という記述基準です。",
+        "    - paragraph: G：標準化ガンマ ／ seed1 ／ 原標本ID8 ／ n5・α=.05・B4999・R20×120共通系列",
+        "  - paragraph: 原標本SHA-256：458f9e99bc331ac8f282d0d3618b040ef21bbad4742a1f24bd8d28f3169e825b。3配分で系列を重複計上しません。旧配分・旧手法の選択は復帰用に保持します。",
+        "  - paragraph: 選択系列 r=0, k=7（保存ID7） · upper：qは変化 ／ 上へ移動。g=0.23961431676509645 標本SE",
+        "  - paragraph: 下端の移動RMS（SE単位）",
+        "  - paragraph: \"0.036642288076235319\"",
+        "  - paragraph: 上端の移動RMS（SE単位）",
+        "  - paragraph: \"0.16521474722984456\"",
+        "  - paragraph: 保存合否=False ／ 余裕0.10−u=-0.06521474722984455。判定は丸め前の保存値で行い、画面の丸めや許容差を使いません。",
+        "  - toolbar:",
+        "    - button \"Download plot as a PNG\":",
+        "    - button \"Zoom\":",
+        "    - button \"Pan\":",
+        "    - button \"Zoom in\":",
+        "    - button \"Zoom out\":",
+        "    - button \"Autoscale\":"
+      ]
+    },
+    {
+      "name": "L：標準化対数正規 · minimum u · seed2/ID1",
+      "lines": [
+        "  - paragraph: 26 / 30",
+        "  - paragraph: 25 / 30",
+        "    - paragraph: H12-Q：記述的不支持。必要30標本がすべて完備し、上下RMSがともに0.10標本SE以内の標本が27/30以上という記述基準です。",
+        "    - paragraph: L：標準化対数正規 ／ seed2 ／ 原標本ID1 ／ n5・α=.05・B4999・R20×120共通系列",
+        "  - paragraph: 原標本SHA-256：9fa793fd91a5b4e453720a31449724c86090c5292525f9e3f6fb63b96800cc96。3配分で系列を重複計上しません。旧配分・旧手法の選択は復帰用に保持します。",
+        "  - paragraph: 選択系列 r=0, k=0（保存ID0） · lower：qは変化 ／ 同じ支持点。g=0 標本SE",
+        "  - paragraph: 下端の移動RMS（SE単位）",
+        "  - paragraph: \"0.0004360874939468121\"",
+        "  - paragraph: 上端の移動RMS（SE単位）",
+        "  - paragraph: \"0.0053263893802499617\"",
+        "  - paragraph: 保存合否=True ／ 余裕0.10−u=0.094673610619750048。判定は丸め前の保存値で行い、画面の丸めや許容差を使いません。",
+        "  - toolbar:",
+        "    - button \"Download plot as a PNG\":",
+        "    - button \"Zoom\":",
+        "    - button \"Pan\":",
+        "    - button \"Zoom in\":",
+        "    - button \"Zoom out\":",
+        "    - button \"Autoscale\":"
+      ]
+    },
+    {
+      "name": "L：標準化対数正規 · maximum u · seed2/ID3",
+      "lines": [
+        "  - paragraph: 26 / 30",
+        "  - paragraph: 25 / 30",
+        "    - paragraph: H12-Q：記述的不支持。必要30標本がすべて完備し、上下RMSがともに0.10標本SE以内の標本が27/30以上という記述基準です。",
+        "    - paragraph: L：標準化対数正規 ／ seed2 ／ 原標本ID3 ／ n5・α=.05・B4999・R20×120共通系列",
+        "  - paragraph: 原標本SHA-256：60c1b4ba9f851b96d35ea00d2e13d5a33b124b3526dd6b8960e06fc3e0a43010。3配分で系列を重複計上しません。旧配分・旧手法の選択は復帰用に保持します。",
+        "  - paragraph: 選択系列 r=0, k=0（保存ID0） · lower：qは変化 ／ 同じ支持点。g=0 標本SE",
+        "  - paragraph: 下端の移動RMS（SE単位）",
+        "  - paragraph: \"0.017012831599250419\"",
+        "  - paragraph: 上端の移動RMS（SE単位）",
+        "  - paragraph: \"0.35149599270031373\"",
+        "  - paragraph: 保存合否=False ／ 余裕0.10−u=-0.25149599270031375。判定は丸め前の保存値で行い、画面の丸めや許容差を使いません。",
+        "  - toolbar:",
+        "    - button \"Download plot as a PNG\":",
+        "    - button \"Zoom\":",
+        "    - button \"Pan\":",
+        "    - button \"Zoom in\":",
+        "    - button \"Zoom out\":",
+        "    - button \"Autoscale\":"
+      ]
+    },
+    {
+      "name": "L2-3-r7k11-upper",
+      "lines": [
+        "  - paragraph: 26 / 30",
+        "  - paragraph: 25 / 30",
+        "    - paragraph: H12-Q：記述的不支持。必要30標本がすべて完備し、上下RMSがともに0.10標本SE以内の標本が27/30以上という記述基準です。",
+        "    - paragraph: L：標準化対数正規 ／ seed2 ／ 原標本ID3 ／ n5・α=.05・B4999・R20×120共通系列",
+        "  - paragraph: 原標本SHA-256：60c1b4ba9f851b96d35ea00d2e13d5a33b124b3526dd6b8960e06fc3e0a43010。3配分で系列を重複計上しません。旧配分・旧手法の選択は復帰用に保持します。",
+        "  - paragraph: 選択系列 r=7, k=11（保存ID851） · upper：qは変化 ／ 下へ移動。g=-0.60147545163335248 標本SE",
+        "  - paragraph: 下端の移動RMS（SE単位）",
+        "  - paragraph: \"0.017012831599250419\"",
+        "  - paragraph: 上端の移動RMS（SE単位）",
+        "  - paragraph: \"0.35149599270031373\"",
+        "  - paragraph: 保存合否=False ／ 余裕0.10−u=-0.25149599270031375。判定は丸め前の保存値で行い、画面の丸めや許容差を使いません。",
+        "  - toolbar:",
+        "    - button \"Download plot as a PNG\":",
+        "    - button \"Zoom\":",
+        "    - button \"Pan\":",
+        "    - button \"Zoom in\":",
+        "    - button \"Zoom out\":",
+        "    - button \"Autoscale\":"
+      ]
+    },
+    {
+      "name": "saved CDF figure",
+      "lines": [
+        "−1−0.500.511.522.500.20.40.60.81 固定した全列挙CDFA = Q(q*)C = Q(q_B)Y：保存有限B端点同じ段差上でq*をq_Bに置き換える条件付き平均の支持点／計算端点（観測単位）累積確率／選択確率 "
+      ]
+    },
+    {
+      "name": "Restored G2nd representative",
+      "lines": [
+        "  - paragraph: 26 / 30",
+        "  - paragraph: 25 / 30",
+        "    - paragraph: H12-Q：記述的不支持。必要30標本がすべて完備し、上下RMSがともに0.10標本SE以内の標本が27/30以上という記述基準です。",
+        "    - paragraph: G：標準化ガンマ ／ seed1 ／ 原標本ID8 ／ n5・α=.05・B4999・R20×120共通系列",
+        "  - paragraph: 原標本SHA-256：458f9e99bc331ac8f282d0d3618b040ef21bbad4742a1f24bd8d28f3169e825b。3配分で系列を重複計上しません。旧配分・旧手法の選択は復帰用に保持します。",
+        "  - paragraph: 選択系列 r=0, k=7（保存ID7） · upper：qは変化 ／ 上へ移動。g=0.23961431676509645 標本SE",
+        "  - paragraph: 下端の移動RMS（SE単位）",
+        "  - paragraph: \"0.036642288076235319\"",
+        "  - paragraph: 上端の移動RMS（SE単位）",
+        "  - paragraph: \"0.16521474722984456\"",
+        "  - paragraph: 保存合否=False ／ 余裕0.10−u=-0.06521474722984455。判定は丸め前の保存値で行い、画面の丸めや許容差を使いません。",
+        "  - toolbar:",
+        "    - button \"Download plot as a PNG\":",
+        "    - button \"Zoom\":",
+        "    - button \"Pan\":",
+        "    - button \"Zoom in\":",
+        "    - button \"Zoom out\":",
+        "    - button \"Autoscale\":"
+      ]
+    },
+    {
+      "name": "Restored L q_B and r",
+      "lines": [
+        "  - paragraph: 26 / 30",
+        "  - paragraph: 25 / 30",
+        "    - paragraph: H12-Q：記述的不支持。必要30標本がすべて完備し、上下RMSがともに0.10標本SE以内の標本が27/30以上という記述基準です。",
+        "    - paragraph: L：標準化対数正規 ／ seed2 ／ 原標本ID3 ／ n5・α=.05・B4999・R20×120共通系列",
+        "  - paragraph: 原標本SHA-256：60c1b4ba9f851b96d35ea00d2e13d5a33b124b3526dd6b8960e06fc3e0a43010。3配分で系列を重複計上しません。旧配分・旧手法の選択は復帰用に保持します。",
+        "  - paragraph: 選択系列 r=7, k=11（保存ID851） · upper：qは変化 ／ 下へ移動。g=-0.60147545163335248 標本SE",
+        "  - paragraph: 下端の移動RMS（SE単位）",
+        "  - paragraph: \"0.017012831599250419\"",
+        "  - paragraph: 上端の移動RMS（SE単位）",
+        "  - paragraph: \"0.35149599270031373\"",
+        "  - paragraph: 保存合否=False ／ 余裕0.10−u=-0.25149599270031375。判定は丸め前の保存値で行い、画面の丸めや許容差を使いません。",
+        "  - toolbar:",
+        "    - button \"Download plot as a PNG\":",
+        "    - button \"Zoom\":",
+        "    - button \"Pan\":",
+        "    - button \"Zoom in\":",
+        "    - button \"Zoom out\":",
+        "    - button \"Autoscale\":"
+      ]
+    },
+    {
+      "name": "Return to M11",
+      "lines": [
+        "  - paragraph: 21 / 30",
+        "  - paragraph: 22 / 30",
+        "  - paragraph: 監査済み保存結果 · L：標準化対数正規 · seed2 · ID3 · SHA-256 60c1b4ba9f851b96d35ea00d2e13d5a33b124b3526dd6b8960e06fc3e0a43010。新しい原標本・再標本・推論は生成しません。",
+        "  - button \"M11保存要約CSVを保存\":",
+        "  - button \"M11保存判定JSONを保存\":",
+        "  - button \"M11自己完結HTMLを保存\":"
+      ]
+    }
+  ],
+  "console": [],
+  "actual_download_buttons": [
+    "M12全60原標本CSVを保存",
+    "M12全120端点指標CSVを保存",
+    "M12群別要約CSVを保存",
+    "選択標本の2400系列・両端点CSVを保存",
+    "M12群判定・4分類JSONを保存"
+  ]
+}
