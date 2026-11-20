@@ -87,7 +87,7 @@ Inference Labの「同じ予算で、どう測る？」から小標本M10を選�
 
 解析前固定 `9fe423b9bf95eba00e7d40824ed503c3a24586c2`、科学成果 `a3ae1d8d3e4d4a59cb5040dab267c6880b212fb9`。[科学レポート](evidence/rq_m12/REPORT.md) · [群別要約](evidence/rq_m12/summary.csv) · [M11との4分類・ID](evidence/rq_m12/classification_ids.csv) · [検証](evidence/rq_m12/validation.json)
 
-この提出では1,684テストが成功し、実ブラウザから取得した選択標本CSVの全2,400行を保存値と照合しました。
+この提出では1,684テストが成功し、実ブラウザから取得した選択標本CSVの全2,400行を保存値と照合しました。 提出先は受入済みM11をベースにした[レビュー用PR #12](https://github.com/Tone75/mathscape/pull/12)です。Ownerレビュー待ちです。提出HEADは同PRの最新コミットで確認できます。
 
 ## RQ-M11｜全通りを数えた基準から、どれだけずれる？
 

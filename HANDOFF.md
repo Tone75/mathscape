@@ -8,6 +8,8 @@ H12-QはG26/30・L25/30で記述的不支持。必要無効・欠測・不明0�
 
 全1,684テスト成功（既存1,593、新規91、237.49秒）。pip check成功。実ブラウザで4 Labの代表操作、M08〜M12の保存表示、両群の固定最小・最大例、標本・系列の復元を確認した。M12を5ファイル、M11を1ファイル実取得。M12系列CSVの192,000セルが一致した。別のブラウザ・端末、外部査読、Owner本人の個別操作は未検証。
 
+UI・ブラウザ検証・レポートを含む提出時コミットは `ed0c5e86a195e49b7ed4dca2343049569cc0d9ed`。[レビュー用PR #12](https://github.com/Tone75/mathscape/pull/12) のbaseは受入済みM11、現時点の提出HEADは `gh pr view 12 --repo Tone75/mathscape --json headRefOid` で取得できる。仕様・068〜071・Homeの同期先には提出HEADを記録する。
+
 ## RQ-M11 提出時の記録
 
 2026-11-20 JSTにOwnerが提出HEAD `0deb14fa313dc27380afbb43e6b132386aa40206` を受入。MATH-064〜067はDone、Next=false。以下は提出時の記録。

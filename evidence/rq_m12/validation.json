@@ -5,7 +5,7 @@
   "accepted": "0deb14fa313dc27380afbb43e6b132386aa40206",
   "analysis_freeze": "9fe423b9bf95eba00e7d40824ed503c3a24586c2",
   "scientific_results_commit": "a3ae1d8d3e4d4a59cb5040dab267c6880b212fb9",
-  "pull_request": null,
+  "pull_request": "https://github.com/Tone75/mathscape/pull/12",
   "submission_head_lookup": "gh pr view feat/rq-m12-probability-movement --repo Tone75/mathscape --json headRefOid",
   "frozen_input_files": 185,
   "frozen_sources": 12,
@@ -134,7 +134,7 @@
   "size_basis": "Sum of full uncompressed files changed from the accepted M11 revision, including existing documents/source files touched.",
   "public_change": {
     "files": 107,
-    "bytes": 5015520,
+    "bytes": 5016174,
     "findings": []
   }
 }
