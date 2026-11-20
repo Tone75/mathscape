@@ -1,6 +1,18 @@
 # MATHSCAPE — minimal handoff
 
-## RQ-M11 の引き継ぎ
+## RQ-M12 提出記録
+
+開始HEADはM11受入済み `0deb14fa313dc27380afbb43e6b132386aa40206`。解析前固定 `9fe423b9bf95eba00e7d40824ed503c3a24586c2`、科学成果 `a3ae1d8d3e4d4a59cb5040dab267c6880b212fb9`。主解析1回、監査1回、再試行・新規乱数0。独立な整数順位で全288,000端点・分類を照合、不一致0。36系列は保存indicesから接続を確認した。
+
+H12-QはG26/30・L25/30で記述的不支持。必要無効・欠測・不明0。M11とM12の両方に合格したのはG21・L22、M12のみ合格はG5・L3。補正確率による端点移動と母平均の被覆は異なる問いである。M12はOwnerレビュー待ち。MATH-068〜071はIn Progress、Nextは068のみ。[REPORT](evidence/rq_m12/REPORT.md) · [4分類](evidence/rq_m12/classification.csv) · [独立監査](evidence/rq_m12/independent_audit.json) · [検証](evidence/rq_m12/validation.json)
+
+全1,684テスト成功（既存1,593、新規91、237.49秒）。pip check成功。実ブラウザで4 Labの代表操作、M08〜M12の保存表示、両群の固定最小・最大例、標本・系列の復元を確認した。M12を5ファイル、M11を1ファイル実取得。M12系列CSVの192,000セルが一致した。別のブラウザ・端末、外部査読、Owner本人の個別操作は未検証。
+
+UI・ブラウザ検証・レポートを含む提出時コミットは `ed0c5e86a195e49b7ed4dca2343049569cc0d9ed`。[レビュー用PR #12](https://github.com/Tone75/mathscape/pull/12) のbaseは受入済みM11、現時点の提出HEADは `gh pr view 12 --repo Tone75/mathscape --json headRefOid` で取得できる。仕様・068〜071・Homeの同期先には提出HEADを記録する。
+
+## RQ-M11 提出時の記録
+
+2026-11-20 JSTにOwnerが提出HEAD `0deb14fa313dc27380afbb43e6b132386aa40206` を受入。MATH-064〜067はDone、Next=false。以下は提出時の記録。
 
 M10は提出HEAD `bd01ae7ff55b1e8593a4b3bd003587db2732c050` でOwner受入済み。MATH-060〜063はDone。M10のn5でのH1/H2両群保留、M08/M09のn20での限定的支持を保持する。
 

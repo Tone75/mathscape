@@ -1,0 +1,53 @@
+{
+  "states": [
+    {
+      "label": "before",
+      "lines": [
+        "  - combobox \"予算反復 r\": \"7\"",
+        "  - combobox \"M10の保存詳細\": 全列挙参照とのずれ（M11）",
+        "  - combobox \"M11の保存解析\": 補正確率を替えた端点移動（M12）",
+        "  - paragraph: 26 / 30",
+        "  - paragraph: 完備30 ／ 必要無効0 ／ 欠測0 ／ 判定不明0。計画分母は30を保持。",
+        "  - paragraph: 25 / 30",
+        "  - paragraph: 完備30 ／ 必要無効0 ／ 欠測0 ／ 判定不明0。計画分母は30を保持。",
+        "    - paragraph: L：標準化対数正規 ／ seed2 ／ 原標本ID3 ／ n5・α=.05・B4999・R20×120共通系列",
+        "  - paragraph: 原標本SHA-256：60c1b4ba9f851b96d35ea00d2e13d5a33b124b3526dd6b8960e06fc3e0a43010。3配分で系列を重複計上しません。旧配分・旧手法の選択は復帰用に保持します。",
+        "  - combobox \"移動を表示する端点\": upper",
+        "  - paragraph: 選択系列 r=7, k=11（保存ID851） · upper：qは変化 ／ 下へ移動。g=-0.60147545163335248 標本SE"
+      ]
+    },
+    {
+      "label": "after M07 mode roundtrip",
+      "lines": [
+        "  - combobox \"予算反復 r\": \"7\"",
+        "  - combobox \"M10の保存詳細\": 全列挙参照とのずれ（M11）",
+        "  - combobox \"M11の保存解析\": 補正確率を替えた端点移動（M12）",
+        "  - paragraph: 26 / 30",
+        "  - paragraph: 完備30 ／ 必要無効0 ／ 欠測0 ／ 判定不明0。計画分母は30を保持。",
+        "  - paragraph: 25 / 30",
+        "  - paragraph: 完備30 ／ 必要無効0 ／ 欠測0 ／ 判定不明0。計画分母は30を保持。",
+        "    - paragraph: L：標準化対数正規 ／ seed2 ／ 原標本ID3 ／ n5・α=.05・B4999・R20×120共通系列",
+        "  - paragraph: 原標本SHA-256：60c1b4ba9f851b96d35ea00d2e13d5a33b124b3526dd6b8960e06fc3e0a43010。3配分で系列を重複計上しません。旧配分・旧手法の選択は復帰用に保持します。",
+        "  - combobox \"移動を表示する端点\": upper",
+        "  - paragraph: 選択系列 r=7, k=11（保存ID851） · upper：qは変化 ／ 下へ移動。g=-0.60147545163335248 標本SE"
+      ]
+    },
+    {
+      "label": "after Probability Lab roundtrip",
+      "lines": [
+        "  - combobox \"予算反復 r\": \"7\"",
+        "  - combobox \"M10の保存詳細\": 全列挙参照とのずれ（M11）",
+        "  - combobox \"M11の保存解析\": 補正確率を替えた端点移動（M12）",
+        "  - paragraph: 26 / 30",
+        "  - paragraph: 完備30 ／ 必要無効0 ／ 欠測0 ／ 判定不明0。計画分母は30を保持。",
+        "  - paragraph: 25 / 30",
+        "  - paragraph: 完備30 ／ 必要無効0 ／ 欠測0 ／ 判定不明0。計画分母は30を保持。",
+        "    - paragraph: L：標準化対数正規 ／ seed2 ／ 原標本ID3 ／ n5・α=.05・B4999・R20×120共通系列",
+        "  - paragraph: 原標本SHA-256：60c1b4ba9f851b96d35ea00d2e13d5a33b124b3526dd6b8960e06fc3e0a43010。3配分で系列を重複計上しません。旧配分・旧手法の選択は復帰用に保持します。",
+        "  - combobox \"移動を表示する端点\": upper",
+        "  - paragraph: 選択系列 r=7, k=11（保存ID851） · upper：qは変化 ／ 下へ移動。g=-0.60147545163335248 標本SE"
+      ]
+    }
+  ],
+  "console_warnings_errors": []
+}

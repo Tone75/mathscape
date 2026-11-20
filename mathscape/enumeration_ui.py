@@ -211,13 +211,22 @@ def render_enumeration_view(state):
     except (OSError, KeyError, ValueError, IndexError, TypeError) as error:
         st.error(f'科学判定は未検証・保留です。保存対応を確認できません（{type(error).__name__}）。')
         return
+    st.session_state.setdefault('enumeration_detail',state.get('enumeration_detail','全列挙端点との総ずれ（M11）'))
+    detail=st.selectbox('M11の保存解析', ['全列挙端点との総ずれ（M11）','補正確率を替えた端点移動（M12）'], key='enumeration_detail')
+    state['enumeration_detail']=detail
+    if detail=='補正確率を替えた端点移動（M12）':
+        from mathscape.movement_ui import render_movement_view
+        render_movement_view(state)
+        return
     groups = data['hypotheses']['groups']
     for column, distribution in zip(st.columns(2), LABELS):
         group = groups[distribution]
         column.metric(LABELS[distribution] + ' · BCa 0.10SE以内', f'{group["pass_count"]} / {group["planned_N"]}')
     st.info('保存判定：' + STATUS[data['hypotheses']['status']] + '。全30個が完備し27/30以上が基準です。各原標本で上下端点RMSEの大きい方 e≤0.10 を合格とします。母集団の90%保証やM10保留の原因説明ではありません。')
     st.caption(f'監査済み保存結果 · {LABELS[data["distribution"]]} · seed{data["seed"]} · ID{data["outer"]} · SHA-256 {data["digest"]}。新しい原標本・再標本・推論は生成しません。')
+    st.session_state.setdefault('enumeration_method',state.get('enumeration_method','bca'))
     method = st.selectbox('全列挙詳細の手法', METHODS, format_func=lambda name:'BCa（主対象）' if name=='bca' else 'percentile（記述対照）', key='enumeration_method')
+    state['enumeration_method']=method
     original = _selected_rows(data, 'original_metrics', method)[0]
     st.metric('選択原標本の e（標本SE単位）', original['e'])
     st.caption('合格=' + original['pass_flag'] + ' ／ 余裕 0.10−e=' + original['margin'] + '。表示丸めや数値許容差で判定を変えません。')
